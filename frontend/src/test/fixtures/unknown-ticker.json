@@ -1,0 +1,17 @@
+[
+ {
+  "event": "stage",
+  "data": {
+   "stage": "validate",
+   "status": "started"
+  }
+ },
+ {
+  "event": "error",
+  "data": {
+   "stage": "validate",
+   "message": "ticker not found",
+   "terminal": true
+  }
+ }
+]

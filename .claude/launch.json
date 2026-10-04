@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:backend"],
+      "port": 8000
+    },
+    {
+      "name": "backend-offline",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["cross-env", "DEMO_OFFLINE=1", "npm", "run", "start:backend"],
+      "port": 8000
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:frontend"],
+      "port": 3000
+    }
+  ]
+}

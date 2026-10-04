@@ -1,0 +1,694 @@
+{
+ "judge_model": "claude-haiku-4-5",
+ "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "rows": [
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4591,
+   "statements": 34,
+   "unsupported": [],
+   "error": null,
+   "response_words": 86,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3764,
+   "statements": 16,
+   "unsupported": [],
+   "error": null,
+   "response_words": 86,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4324,
+   "statements": 23,
+   "unsupported": [],
+   "error": null,
+   "response_words": 123,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3668,
+   "statements": 20,
+   "unsupported": [],
+   "error": null,
+   "response_words": 118,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.9032,
+   "answer_relevancy": 0.5984,
+   "statements": 31,
+   "unsupported": [
+    {
+     "statement": "Apple Inc. (AAPL) Forward P/E of 34.8 is +59% above the peer median, leaving little room for disappointment.",
+     "reason": "While the context confirms Forward P/E is +59% above peer median, the phrase \"leaving little room for disappointment\" is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "Severity-3 risks for Apple Inc. (AAPL) are longstanding, generic filing disclosures rather than new events.",
+     "reason": "The context lists severity-3 risks but does not characterize them as longstanding, generic filing disclosures or distinguish them from new events."
+    },
+    {
+     "statement": "No clear evidence justifies moving away from the preliminary HOLD signal for Apple Inc. (AAPL).",
+     "reason": "The context shows preliminary_signal: HOLD, but does not explicitly state whether evidence justifies moving away from it. This is an interpretation based on the data presented."
+    }
+   ],
+   "error": null,
+   "response_words": 187,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 35,
+   "unsupported": [],
+   "error": null,
+   "response_words": 152,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.8571,
+   "answer_relevancy": null,
+   "statements": 21,
+   "unsupported": [
+    {
+     "statement": "Microsoft Corporation (MSFT) sells accessories.",
+     "reason": "The context does not mention Microsoft selling accessories. The business summary focuses on operating systems, software, devices like PCs and tablets, but does not list accessories."
+    },
+    {
+     "statement": "Microsoft Corporation (MSFT) overlaps with Apple Inc.'s accessories line.",
+     "reason": "The context does not indicate that Microsoft sells accessories, so there is no basis to infer an overlap with Apple's accessories line."
+    },
+    {
+     "statement": "Amazon.com, Inc. (AMZN) overlaps with Apple Inc.'s HomePod.",
+     "reason": "The context does not mention Amazon making smart speakers or devices comparable to HomePod. While Amazon makes Echo devices, the context does not explicitly establish that Echo devices overlap with HomePod functionality."
+    }
+   ],
+   "error": null,
+   "response_words": 75,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.5625,
+   "statements": 22,
+   "unsupported": [],
+   "error": null,
+   "response_words": 101,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3139,
+   "statements": 17,
+   "unsupported": [],
+   "error": null,
+   "response_words": 90,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.95,
+   "answer_relevancy": 0.4806,
+   "statements": 20,
+   "unsupported": [
+    {
+     "statement": "The median serves as a rough yardstick for comparison.",
+     "reason": "While the context provides peer median values for comparison purposes, the statement that the median serves as a \"rough yardstick\" is an interpretive characterization not explicitly stated in the context"
+    }
+   ],
+   "error": null,
+   "response_words": 126,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3131,
+   "statements": 26,
+   "unsupported": [],
+   "error": null,
+   "response_words": 127,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8462,
+   "answer_relevancy": 0.5563,
+   "statements": 39,
+   "unsupported": [
+    {
+     "statement": "NVIDIA Corporation (NVDA) P/B is high.",
+     "reason": "While P/B of 24.7 is provided, the context does not explicitly characterize it as high or provide a benchmark for comparison."
+    },
+    {
+     "statement": "Competitors such as AMD and Broadcom could take market share from NVIDIA Corporation (NVDA).",
+     "reason": "The context includes a risk stating \"Competitors could take market share from the company and hurt its financial results.\" AMD and Broadcom are listed as peers in the comps section, but the risk does not specifically name these competitors."
+    },
+    {
+     "statement": "The three severity-3 risks are longstanding filing disclosures rather than new events.",
+     "reason": "The context does not provide information about whether these risks are longstanding filing disclosures or new events."
+    },
+    {
+     "statement": "Recent news regarding NVIDIA Corporation (NVDA) share buyback increase is supportive.",
+     "reason": "The context includes a news headline about the $150 Billion share repurchase authorization increase, but does not explicitly characterize it as supportive."
+    },
+    {
+     "statement": "No evidence justifies overriding the preliminary BUY signal for NVIDIA Corporation (NVDA).",
+     "reason": "The context does not provide analysis or conclusion about whether evidence justifies overriding the preliminary BUY signal."
+    },
+    {
+     "statement": "Risks temper confidence in the preliminary BUY signal for NVIDIA Corporation (NVDA).",
+     "reason": "The context does not explicitly state that risks temper confidence in the preliminary BUY signal."
+    }
+   ],
+   "error": null,
+   "response_words": 197,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 0.9565,
+   "answer_relevancy": null,
+   "statements": 23,
+   "unsupported": [
+    {
+     "statement": "Export controls restrict NVIDIA Corporation's sales outside the United States.",
+     "reason": "The context mentions 'shifting and expanding export control restrictions, impacting our ability to serve customers outside the United States' and specific restrictions on products to certain regions, but does not explicitly state that export controls restrict sales outside the US in general terms."
+    }
+   ],
+   "error": null,
+   "response_words": 142,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.6667,
+   "answer_relevancy": null,
+   "statements": 18,
+   "unsupported": [
+    {
+     "statement": "AMD (Advanced Micro Devices, Inc.) offers gaming GPUs.",
+     "reason": "The context does not mention AMD offering gaming GPUs. The business summary mentions 'Client and Gaming' segment but does not specify gaming GPUs as a product offering."
+    },
+    {
+     "statement": "AMD's AI accelerators, gaming GPUs, and data center GPUs directly overlap NVIDIA Corporation's core products.",
+     "reason": "While AMD offers AI accelerators and data center GPUs which overlap with NVIDIA's offerings, the statement includes gaming GPUs which is not confirmed in the context for AMD. Additionally, the word 'directly' cannot be inferred from the context."
+    },
+    {
+     "statement": "AVGO's networking connectivity, ethernet switching, and custom silicon overlap NVIDIA Corporation's data center networking platforms.",
+     "reason": "While the context confirms AVGO supplies these products and NVIDIA offers data center networking platforms, the context does not explicitly state that these products overlap with NVIDIA's offerings."
+    },
+    {
+     "statement": "INTC's discrete GPUs, data center AI products, and networking offerings overlap NVIDIA Corporation's compute and graphics offerings.",
+     "reason": "While the context confirms Intel offers these products and NVIDIA offers compute and graphics products, the context does not explicitly state that these products overlap with NVIDIA's offerings."
+    },
+    {
+     "statement": "MRVL's data center semiconductors and ethernet switches overlap NVIDIA Corporation's data center networking platforms.",
+     "reason": "While the context confirms MRVL supplies these products and NVIDIA offers data center networking platforms, the context does not explicitly state that these products overlap with NVIDIA's offerings."
+    },
+    {
+     "statement": "QCOM's automotive ADAS/AD and digital cockpit chips overlap NVIDIA Corporation's automotive and autonomous vehicle platforms.",
+     "reason": "While the context confirms QCOM offers these automotive products and NVIDIA offers automotive platforms, the context does not explicitly state that these products overlap with NVIDIA's offerings."
+    }
+   ],
+   "error": null,
+   "response_words": 88,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 0.963,
+   "answer_relevancy": 0.5946,
+   "statements": 27,
+   "unsupported": [
+    {
+     "statement": "JPMorgan Chase & Co. is the largest company in its peer group.",
+     "reason": "While JPMorgan Chase & Co. has the largest market cap ($883.53B) compared to its peers listed in the context, the statement cannot be directly inferred as the context does not explicitly state this comparison or claim."
+    }
+   ],
+   "error": null,
+   "response_words": 106,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.2273,
+   "statements": 18,
+   "unsupported": [],
+   "error": null,
+   "response_words": 92,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.8,
+   "answer_relevancy": 0.4823,
+   "statements": 25,
+   "unsupported": [
+    {
+     "statement": "Goldman Sachs and Morgan Stanley sit at similar price-to-book levels to JPMorgan Chase & Co. among the peers.",
+     "reason": "JPMorgan Chase has P/B of 2.5, Goldman Sachs has 2.5, and Morgan Stanley has 2.8. While Goldman Sachs matches exactly, Morgan Stanley at 2.8 is notably higher. The statement is partially supported but not entirely accurate as Morgan Stanley's 2.8 is meaningfully different from JPMorgan's 2.5."
+    },
+    {
+     "statement": "The premium valuation is supported by stronger fundamentals.",
+     "reason": "While the context shows JPMorgan Chase has higher multiples and stronger metrics (higher ROE, higher revenue growth), the context does not explicitly state that the premium valuation is supported by stronger fundamentals. This is an inference rather than a direct statement from the context."
+    },
+    {
+     "statement": "A lower dividend yield fits a higher-valued stock.",
+     "reason": "This is a general financial principle or interpretation, not a direct statement from the context. The context does not explicitly state this relationship."
+    },
+    {
+     "statement": "The analyst mean target and consensus label represent third-party views.",
+     "reason": "While the analyst mean target and consensus label are from analysts (third parties), the context does not explicitly state that they represent third-party views. This is an inference."
+    },
+    {
+     "statement": "The analyst mean target and consensus label are not conclusions of this report.",
+     "reason": "The context does not contain any statement indicating whether the analyst mean target and consensus label are or are not conclusions of the report. This cannot be directly inferred from the context."
+    }
+   ],
+   "error": null,
+   "response_words": 139,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.226,
+   "statements": 21,
+   "unsupported": [],
+   "error": null,
+   "response_words": 114,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8043,
+   "answer_relevancy": 0.5527,
+   "statements": 46,
+   "unsupported": [
+    {
+     "statement": "JPMorgan Chase & Co. (JPM) return on equity supports a premium book multiple.",
+     "reason": "While the context shows JPM has higher ROE (17.8% vs 12.6% median) and a premium P/B (2.5 vs 1.5 median), the statement that ROE 'supports' the premium is an inference about valuation justification that is not explicitly stated in the context."
+    },
+    {
+     "statement": "JPMorgan Chase & Co. (JPM) revenue growth signals strong top-line momentum.",
+     "reason": "While the context shows JPM has 30.4% revenue growth, the characterization of this as 'signaling strong top-line momentum' is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "The price-to-book premium leaves less room for multiple expansion for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the context shows JPM has a P/B premium, the statement that this 'leaves less room for multiple expansion' is an inference about future valuation potential not explicitly stated in the context."
+    },
+    {
+     "statement": "Severity-3 risks could pressure earnings for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the context lists severity-3 risks, the statement that they 'could pressure earnings' is an inference about potential impact not explicitly stated in the context."
+    },
+    {
+     "statement": "Severity-3 risks could pressure capital for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the context lists severity-3 risks, the statement that they 'could pressure capital' is an inference about potential impact not explicitly stated in the context."
+    },
+    {
+     "statement": "The severity-3 risks are standard, long-standing disclosures for a large diversified bank.",
+     "reason": "While the context lists severity-3 risks, the characterization that they are 'standard, long-standing disclosures' is not explicitly stated in the context."
+    },
+    {
+     "statement": "The severity-3 risks are not new events.",
+     "reason": "While the context lists severity-3 risks, the statement that they are 'not new events' is not explicitly stated in the context."
+    },
+    {
+     "statement": "Recent news for JPMorgan Chase & Co. (JPM) includes routine institutional buying.",
+     "reason": "The context shows news headlines about stock holdings being boosted and stock being bought by various entities, which can be characterized as institutional buying, though the characterization as 'routine' is an interpretation."
+    },
+    {
+     "statement": "No clear evidence justifies departing from the preliminary BUY signal for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the context shows a preliminary_signal of BUY, the statement that 'no clear evidence justifies departing' from it is an interpretation and conclusion not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 184,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 18,
+   "unsupported": [],
+   "error": null,
+   "response_words": 130,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 31,
+   "unsupported": [],
+   "error": null,
+   "response_words": 88,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3638,
+   "statements": 31,
+   "unsupported": [],
+   "error": null,
+   "response_words": 94,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.401,
+   "statements": 20,
+   "unsupported": [],
+   "error": null,
+   "response_words": 91,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9091,
+   "answer_relevancy": 0.3939,
+   "statements": 22,
+   "unsupported": [
+    {
+     "statement": "The peer median net margin is approximately 2.0%.",
+     "reason": "The context states that the peer median Net margin is 3.0%, not approximately 2.0%."
+    },
+    {
+     "statement": "Costco Wholesale Corporation's premium valuation does not exist alongside a higher margin compared to peers.",
+     "reason": "The context shows Costco's Net margin is +1% above the peer median (3.0% vs 3.0% peer median), so it does have a higher margin. This statement is contradicted by the data."
+    }
+   ],
+   "error": null,
+   "response_words": 115,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3942,
+   "statements": 19,
+   "unsupported": [],
+   "error": null,
+   "response_words": 119,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8511,
+   "answer_relevancy": 0.5905,
+   "statements": 47,
+   "unsupported": [
+    {
+     "statement": "Costco's ROE points to a strong balance sheet.",
+     "reason": "While ROE of 28.4% is strong, the context does not explicitly state that it points to a strong balance sheet. ROE measures return on equity, not balance sheet strength directly."
+    },
+    {
+     "statement": "Costco's Forward P/E premium leaves little room for disappointment.",
+     "reason": "While the context shows a 95% premium, it does not explicitly state that this leaves little room for disappointment. This is an interpretation."
+    },
+    {
+     "statement": "The Severity-3 risks are long-standing business risks.",
+     "reason": "The context does not explicitly state whether the Severity-3 risks are long-standing or new. This is an interpretation not directly supported by the context."
+    },
+    {
+     "statement": "The Severity-3 risks are not new events.",
+     "reason": "The context does not explicitly state whether the Severity-3 risks are new events or not. This is an interpretation not directly supported by the context."
+    },
+    {
+     "statement": "The Q4 news is positive.",
+     "reason": "The context includes news about Q4 earnings beat and sales growth, which are positive indicators, but does not explicitly characterize the news as positive."
+    },
+    {
+     "statement": "The Q4 news is already in line with the growth score.",
+     "reason": "The context does not explicitly state that Q4 news is in line with the growth score. This is an interpretation."
+    },
+    {
+     "statement": "Nothing clearly justifies moving away from HOLD.",
+     "reason": "The context does not explicitly state this conclusion. This is an interpretation of the scorecard results."
+    }
+   ],
+   "error": null,
+   "response_words": 188,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 30,
+   "unsupported": [],
+   "error": null,
+   "response_words": 139,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.8182,
+   "answer_relevancy": null,
+   "statements": 11,
+   "unsupported": [
+    {
+     "statement": "Sam's Club sells groceries and general merchandise, similar to Costco Wholesale Corporation.",
+     "reason": "While the context mentions that Walmart operates warehouse clubs and offers grocery items, and Costco offers merchandise including groceries, the context does not explicitly state that Sam's Club specifically sells these items or make a direct comparison between Sam's Club and Costco's product offerings."
+    },
+    {
+     "statement": "Dollar General Corporation's product offerings overlap with Costco Wholesale Corporation's groceries.",
+     "reason": "While the context shows that both Dollar General and Costco offer groceries, it does not explicitly state or directly compare that their product offerings overlap."
+    }
+   ],
+   "error": null,
+   "response_words": 82,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4518,
+   "statements": 27,
+   "unsupported": [],
+   "error": null,
+   "response_words": 85,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.398,
+   "statements": 15,
+   "unsupported": [],
+   "error": null,
+   "response_words": 94,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9167,
+   "answer_relevancy": 0.348,
+   "statements": 24,
+   "unsupported": [
+    {
+     "statement": "Tesla trades at a steep premium against the peer median on every multiple that can be compared.",
+     "reason": "The context shows Tesla's multiples compared to peer median: Forward P/E +1838%, P/E (ttm) +1450%, EV/EBITDA +655%, EV/Revenue +1324%, Revenue growth +1242%. However, Debt/Equity shows -84% (lower, not premium), and Net margin comparison is null. So Tesla does not trade at a premium on every multiple that can be compared."
+    },
+    {
+     "statement": "The valuation gap suggests the market is pricing in outcomes well beyond those of traditional automakers.",
+     "reason": "While the context provides extensive data showing Tesla's significant valuation premiums across multiple metrics compared to peers, the specific interpretation that this suggests the market is pricing in outcomes well beyond traditional automakers is an inference not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 127,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.95,
+   "answer_relevancy": 0.4017,
+   "statements": 20,
+   "unsupported": [
+    {
+     "statement": "The three most severe risks relate to Tesla's business model.",
+     "reason": "The three risks rated 3 relate to competition/demand, operational/production, and competition/market dynamics. While these could be considered business model related, the context does not explicitly state they relate to Tesla's business model."
+    }
+   ],
+   "error": null,
+   "response_words": 111,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8485,
+   "answer_relevancy": 0.5516,
+   "statements": 33,
+   "unsupported": [
+    {
+     "statement": "The market prices Tesla well beyond a traditional automaker valuation.",
+     "reason": "While the context shows Tesla's multiples are significantly higher than peer medians (e.g., EV/Revenue +1324%, Forward P/E +1838%), the specific characterization of this as pricing 'well beyond a traditional automaker valuation' is an interpretation not explicitly stated."
+    },
+    {
+     "statement": "Tesla's low Debt/Equity ratio signals a strong balance sheet.",
+     "reason": "While Tesla's Debt/Equity of 0.18 is lower than the peer median of 1.15, the interpretation that this 'signals a strong balance sheet' is an inference not explicitly stated in the context."
+    },
+    {
+     "statement": "Tesla's Forward P/E of 171.4 leaves little room for disappointment.",
+     "reason": "This is an interpretive statement about valuation risk. While the high Forward P/E is stated, the specific characterization about 'room for disappointment' is not explicitly provided in the context."
+    },
+    {
+     "statement": "Severity-3 risks are standard, long-disclosed filing risks.",
+     "reason": "While the context lists Severity-3 risks, it does not explicitly characterize them as 'standard, long-disclosed filing risks'. This is an interpretation not directly stated."
+    },
+    {
+     "statement": "Positive Q3 delivery news is not material enough to override the balanced scores.",
+     "reason": "While the context includes news about Q3 deliveries and the scorecard shows balanced scores (total 0), the specific statement that Q3 news is 'not material enough to override' the scores is an interpretation not explicitly stated."
+    }
+   ],
+   "error": null,
+   "response_words": 159,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 24,
+   "unsupported": [],
+   "error": null,
+   "response_words": 148,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 27,
+   "unsupported": [],
+   "error": null,
+   "response_words": 84,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T11:08:54+00:00"
+  }
+ ],
+ "skipped": [],
+ "failed": {}
+}

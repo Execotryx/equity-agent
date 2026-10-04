@@ -1,0 +1,1572 @@
+{
+ "generated_at": "2026-10-03T11:08:33+00:00",
+ "ticker": "TSLA",
+ "financials": {
+  "snapshot": {
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "Consumer Cyclical",
+   "industry": "Auto Manufacturers",
+   "currency": "USD",
+   "price": 370.59,
+   "market_cap": 1463662804992.0,
+   "week52_low": 297.38,
+   "week52_high": 498.83,
+   "business_summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla…"
+  },
+  "multiples": {
+   "pe_ttm": 333.86487,
+   "pe_fwd": 171.39409,
+   "ev_ebitda": 133.601,
+   "ev_revenue": 13.867,
+   "price_to_book": 16.84883,
+   "net_margin": 0.03671,
+   "roe": 0.046669997,
+   "revenue_growth": 0.255,
+   "debt_to_equity": 0.18373,
+   "dividend_yield": null
+  },
+  "revenue_history": [
+   {
+    "year": 2022,
+    "value": 81462000000.0
+   },
+   {
+    "year": 2023,
+    "value": 96773000000.0
+   },
+   {
+    "year": 2024,
+    "value": 97690000000.0
+   },
+   {
+    "year": 2025,
+    "value": 94827000000.0
+   }
+  ],
+  "ebitda_history": [
+   {
+    "year": 2022,
+    "value": 17657000000.0
+   },
+   {
+    "year": 2023,
+    "value": 14796000000.0
+   },
+   {
+    "year": 2024,
+    "value": 14708000000.0
+   },
+   {
+    "year": 2025,
+    "value": 11764000000.0
+   }
+  ],
+  "net_income_history": [
+   {
+    "year": 2022,
+    "value": 12583000000.0
+   },
+   {
+    "year": 2023,
+    "value": 14999000000.0
+   },
+   {
+    "year": 2024,
+    "value": 7130000000.0
+   },
+   {
+    "year": 2025,
+    "value": 3794000000.0
+   }
+  ],
+  "price_history": [
+   {
+    "date": "2025-10-03",
+    "close": 429.8299865722656
+   },
+   {
+    "date": "2025-10-06",
+    "close": 453.25
+   },
+   {
+    "date": "2025-10-07",
+    "close": 433.0899963378906
+   },
+   {
+    "date": "2025-10-08",
+    "close": 438.69000244140625
+   },
+   {
+    "date": "2025-10-09",
+    "close": 435.5400085449219
+   },
+   {
+    "date": "2025-10-10",
+    "close": 413.489990234375
+   },
+   {
+    "date": "2025-10-13",
+    "close": 435.8999938964844
+   },
+   {
+    "date": "2025-10-14",
+    "close": 429.239990234375
+   },
+   {
+    "date": "2025-10-15",
+    "close": 435.1499938964844
+   },
+   {
+    "date": "2025-10-16",
+    "close": 428.75
+   },
+   {
+    "date": "2025-10-17",
+    "close": 439.30999755859375
+   },
+   {
+    "date": "2025-10-20",
+    "close": 447.42999267578125
+   },
+   {
+    "date": "2025-10-21",
+    "close": 442.6000061035156
+   },
+   {
+    "date": "2025-10-22",
+    "close": 438.9700012207031
+   },
+   {
+    "date": "2025-10-23",
+    "close": 448.9800109863281
+   },
+   {
+    "date": "2025-10-24",
+    "close": 433.7200012207031
+   },
+   {
+    "date": "2025-10-27",
+    "close": 452.4200134277344
+   },
+   {
+    "date": "2025-10-28",
+    "close": 460.54998779296875
+   },
+   {
+    "date": "2025-10-29",
+    "close": 461.510009765625
+   },
+   {
+    "date": "2025-10-30",
+    "close": 440.1000061035156
+   },
+   {
+    "date": "2025-10-31",
+    "close": 456.55999755859375
+   },
+   {
+    "date": "2025-11-03",
+    "close": 468.3699951171875
+   },
+   {
+    "date": "2025-11-04",
+    "close": 444.260009765625
+   },
+   {
+    "date": "2025-11-05",
+    "close": 462.07000732421875
+   },
+   {
+    "date": "2025-11-06",
+    "close": 445.9100036621094
+   },
+   {
+    "date": "2025-11-07",
+    "close": 429.5199890136719
+   },
+   {
+    "date": "2025-11-10",
+    "close": 445.2300109863281
+   },
+   {
+    "date": "2025-11-11",
+    "close": 439.6199951171875
+   },
+   {
+    "date": "2025-11-12",
+    "close": 430.6000061035156
+   },
+   {
+    "date": "2025-11-13",
+    "close": 401.989990234375
+   },
+   {
+    "date": "2025-11-14",
+    "close": 404.3500061035156
+   },
+   {
+    "date": "2025-11-17",
+    "close": 408.9200134277344
+   },
+   {
+    "date": "2025-11-18",
+    "close": 401.25
+   },
+   {
+    "date": "2025-11-19",
+    "close": 403.989990234375
+   },
+   {
+    "date": "2025-11-20",
+    "close": 395.2300109863281
+   },
+   {
+    "date": "2025-11-21",
+    "close": 391.0899963378906
+   },
+   {
+    "date": "2025-11-24",
+    "close": 417.7799987792969
+   },
+   {
+    "date": "2025-11-25",
+    "close": 419.3999938964844
+   },
+   {
+    "date": "2025-11-26",
+    "close": 426.5799865722656
+   },
+   {
+    "date": "2025-11-28",
+    "close": 430.1700134277344
+   },
+   {
+    "date": "2025-12-01",
+    "close": 430.1400146484375
+   },
+   {
+    "date": "2025-12-02",
+    "close": 429.239990234375
+   },
+   {
+    "date": "2025-12-03",
+    "close": 446.739990234375
+   },
+   {
+    "date": "2025-12-04",
+    "close": 454.5299987792969
+   },
+   {
+    "date": "2025-12-05",
+    "close": 455.0
+   },
+   {
+    "date": "2025-12-08",
+    "close": 439.5799865722656
+   },
+   {
+    "date": "2025-12-09",
+    "close": 445.1700134277344
+   },
+   {
+    "date": "2025-12-10",
+    "close": 451.45001220703125
+   },
+   {
+    "date": "2025-12-11",
+    "close": 446.8900146484375
+   },
+   {
+    "date": "2025-12-12",
+    "close": 458.9599914550781
+   },
+   {
+    "date": "2025-12-15",
+    "close": 475.30999755859375
+   },
+   {
+    "date": "2025-12-16",
+    "close": 489.8800048828125
+   },
+   {
+    "date": "2025-12-17",
+    "close": 467.260009765625
+   },
+   {
+    "date": "2025-12-18",
+    "close": 483.3699951171875
+   },
+   {
+    "date": "2025-12-19",
+    "close": 481.20001220703125
+   },
+   {
+    "date": "2025-12-22",
+    "close": 488.7300109863281
+   },
+   {
+    "date": "2025-12-23",
+    "close": 485.55999755859375
+   },
+   {
+    "date": "2025-12-24",
+    "close": 485.3999938964844
+   },
+   {
+    "date": "2025-12-26",
+    "close": 475.19000244140625
+   },
+   {
+    "date": "2025-12-29",
+    "close": 459.6400146484375
+   },
+   {
+    "date": "2025-12-30",
+    "close": 454.42999267578125
+   },
+   {
+    "date": "2025-12-31",
+    "close": 449.7200012207031
+   },
+   {
+    "date": "2026-01-02",
+    "close": 438.07000732421875
+   },
+   {
+    "date": "2026-01-05",
+    "close": 451.6700134277344
+   },
+   {
+    "date": "2026-01-06",
+    "close": 432.9599914550781
+   },
+   {
+    "date": "2026-01-07",
+    "close": 431.4100036621094
+   },
+   {
+    "date": "2026-01-08",
+    "close": 435.79998779296875
+   },
+   {
+    "date": "2026-01-09",
+    "close": 445.010009765625
+   },
+   {
+    "date": "2026-01-12",
+    "close": 448.9599914550781
+   },
+   {
+    "date": "2026-01-13",
+    "close": 447.20001220703125
+   },
+   {
+    "date": "2026-01-14",
+    "close": 439.20001220703125
+   },
+   {
+    "date": "2026-01-15",
+    "close": 438.57000732421875
+   },
+   {
+    "date": "2026-01-16",
+    "close": 437.5
+   },
+   {
+    "date": "2026-01-20",
+    "close": 419.25
+   },
+   {
+    "date": "2026-01-21",
+    "close": 431.44000244140625
+   },
+   {
+    "date": "2026-01-22",
+    "close": 449.3599853515625
+   },
+   {
+    "date": "2026-01-23",
+    "close": 449.05999755859375
+   },
+   {
+    "date": "2026-01-26",
+    "close": 435.20001220703125
+   },
+   {
+    "date": "2026-01-27",
+    "close": 430.8999938964844
+   },
+   {
+    "date": "2026-01-28",
+    "close": 431.4599914550781
+   },
+   {
+    "date": "2026-01-29",
+    "close": 416.55999755859375
+   },
+   {
+    "date": "2026-01-30",
+    "close": 430.4100036621094
+   },
+   {
+    "date": "2026-02-02",
+    "close": 421.80999755859375
+   },
+   {
+    "date": "2026-02-03",
+    "close": 421.9599914550781
+   },
+   {
+    "date": "2026-02-04",
+    "close": 406.010009765625
+   },
+   {
+    "date": "2026-02-05",
+    "close": 397.2099914550781
+   },
+   {
+    "date": "2026-02-06",
+    "close": 411.1099853515625
+   },
+   {
+    "date": "2026-02-09",
+    "close": 417.32000732421875
+   },
+   {
+    "date": "2026-02-10",
+    "close": 425.2099914550781
+   },
+   {
+    "date": "2026-02-11",
+    "close": 428.2699890136719
+   },
+   {
+    "date": "2026-02-12",
+    "close": 417.07000732421875
+   },
+   {
+    "date": "2026-02-13",
+    "close": 417.44000244140625
+   },
+   {
+    "date": "2026-02-17",
+    "close": 410.6300048828125
+   },
+   {
+    "date": "2026-02-18",
+    "close": 411.32000732421875
+   },
+   {
+    "date": "2026-02-19",
+    "close": 411.7099914550781
+   },
+   {
+    "date": "2026-02-20",
+    "close": 411.82000732421875
+   },
+   {
+    "date": "2026-02-23",
+    "close": 399.8299865722656
+   },
+   {
+    "date": "2026-02-24",
+    "close": 409.3800048828125
+   },
+   {
+    "date": "2026-02-25",
+    "close": 417.3999938964844
+   },
+   {
+    "date": "2026-02-26",
+    "close": 408.5799865722656
+   },
+   {
+    "date": "2026-02-27",
+    "close": 402.510009765625
+   },
+   {
+    "date": "2026-03-02",
+    "close": 403.32000732421875
+   },
+   {
+    "date": "2026-03-03",
+    "close": 392.42999267578125
+   },
+   {
+    "date": "2026-03-04",
+    "close": 405.94000244140625
+   },
+   {
+    "date": "2026-03-05",
+    "close": 405.54998779296875
+   },
+   {
+    "date": "2026-03-06",
+    "close": 396.7300109863281
+   },
+   {
+    "date": "2026-03-09",
+    "close": 398.67999267578125
+   },
+   {
+    "date": "2026-03-10",
+    "close": 399.239990234375
+   },
+   {
+    "date": "2026-03-11",
+    "close": 407.82000732421875
+   },
+   {
+    "date": "2026-03-12",
+    "close": 395.010009765625
+   },
+   {
+    "date": "2026-03-13",
+    "close": 391.20001220703125
+   },
+   {
+    "date": "2026-03-16",
+    "close": 395.55999755859375
+   },
+   {
+    "date": "2026-03-17",
+    "close": 399.2699890136719
+   },
+   {
+    "date": "2026-03-18",
+    "close": 392.7799987792969
+   },
+   {
+    "date": "2026-03-19",
+    "close": 380.29998779296875
+   },
+   {
+    "date": "2026-03-20",
+    "close": 367.9599914550781
+   },
+   {
+    "date": "2026-03-23",
+    "close": 380.8500061035156
+   },
+   {
+    "date": "2026-03-24",
+    "close": 383.0299987792969
+   },
+   {
+    "date": "2026-03-25",
+    "close": 385.95001220703125
+   },
+   {
+    "date": "2026-03-26",
+    "close": 372.1099853515625
+   },
+   {
+    "date": "2026-03-27",
+    "close": 361.8299865722656
+   },
+   {
+    "date": "2026-03-30",
+    "close": 355.2799987792969
+   },
+   {
+    "date": "2026-03-31",
+    "close": 371.75
+   },
+   {
+    "date": "2026-04-01",
+    "close": 381.260009765625
+   },
+   {
+    "date": "2026-04-02",
+    "close": 360.5899963378906
+   },
+   {
+    "date": "2026-04-06",
+    "close": 352.82000732421875
+   },
+   {
+    "date": "2026-04-07",
+    "close": 346.6499938964844
+   },
+   {
+    "date": "2026-04-08",
+    "close": 343.25
+   },
+   {
+    "date": "2026-04-09",
+    "close": 345.6199951171875
+   },
+   {
+    "date": "2026-04-10",
+    "close": 348.95001220703125
+   },
+   {
+    "date": "2026-04-13",
+    "close": 352.4200134277344
+   },
+   {
+    "date": "2026-04-14",
+    "close": 364.20001220703125
+   },
+   {
+    "date": "2026-04-15",
+    "close": 391.95001220703125
+   },
+   {
+    "date": "2026-04-16",
+    "close": 388.8999938964844
+   },
+   {
+    "date": "2026-04-17",
+    "close": 400.6199951171875
+   },
+   {
+    "date": "2026-04-20",
+    "close": 392.5
+   },
+   {
+    "date": "2026-04-21",
+    "close": 386.4200134277344
+   },
+   {
+    "date": "2026-04-22",
+    "close": 387.510009765625
+   },
+   {
+    "date": "2026-04-23",
+    "close": 373.7200012207031
+   },
+   {
+    "date": "2026-04-24",
+    "close": 376.29998779296875
+   },
+   {
+    "date": "2026-04-27",
+    "close": 378.6700134277344
+   },
+   {
+    "date": "2026-04-28",
+    "close": 376.0199890136719
+   },
+   {
+    "date": "2026-04-29",
+    "close": 372.79998779296875
+   },
+   {
+    "date": "2026-04-30",
+    "close": 381.6300048828125
+   },
+   {
+    "date": "2026-05-01",
+    "close": 390.82000732421875
+   },
+   {
+    "date": "2026-05-04",
+    "close": 392.510009765625
+   },
+   {
+    "date": "2026-05-05",
+    "close": 389.3699951171875
+   },
+   {
+    "date": "2026-05-06",
+    "close": 398.7300109863281
+   },
+   {
+    "date": "2026-05-07",
+    "close": 411.7900085449219
+   },
+   {
+    "date": "2026-05-08",
+    "close": 428.3500061035156
+   },
+   {
+    "date": "2026-05-11",
+    "close": 445.0
+   },
+   {
+    "date": "2026-05-12",
+    "close": 433.45001220703125
+   },
+   {
+    "date": "2026-05-13",
+    "close": 445.2699890136719
+   },
+   {
+    "date": "2026-05-14",
+    "close": 443.29998779296875
+   },
+   {
+    "date": "2026-05-15",
+    "close": 422.239990234375
+   },
+   {
+    "date": "2026-05-18",
+    "close": 409.989990234375
+   },
+   {
+    "date": "2026-05-19",
+    "close": 404.1099853515625
+   },
+   {
+    "date": "2026-05-20",
+    "close": 417.260009765625
+   },
+   {
+    "date": "2026-05-21",
+    "close": 417.8500061035156
+   },
+   {
+    "date": "2026-05-22",
+    "close": 426.010009765625
+   },
+   {
+    "date": "2026-05-26",
+    "close": 433.5899963378906
+   },
+   {
+    "date": "2026-05-27",
+    "close": 440.3599853515625
+   },
+   {
+    "date": "2026-05-28",
+    "close": 442.1000061035156
+   },
+   {
+    "date": "2026-05-29",
+    "close": 435.7900085449219
+   },
+   {
+    "date": "2026-06-01",
+    "close": 415.8800048828125
+   },
+   {
+    "date": "2026-06-02",
+    "close": 423.739990234375
+   },
+   {
+    "date": "2026-06-03",
+    "close": 423.70001220703125
+   },
+   {
+    "date": "2026-06-04",
+    "close": 418.45001220703125
+   },
+   {
+    "date": "2026-06-05",
+    "close": 391.0
+   },
+   {
+    "date": "2026-06-08",
+    "close": 408.95001220703125
+   },
+   {
+    "date": "2026-06-09",
+    "close": 396.67999267578125
+   },
+   {
+    "date": "2026-06-10",
+    "close": 381.5899963378906
+   },
+   {
+    "date": "2026-06-11",
+    "close": 399.1499938964844
+   },
+   {
+    "date": "2026-06-12",
+    "close": 406.42999267578125
+   },
+   {
+    "date": "2026-06-15",
+    "close": 411.1499938964844
+   },
+   {
+    "date": "2026-06-16",
+    "close": 404.6600036621094
+   },
+   {
+    "date": "2026-06-17",
+    "close": 396.3800048828125
+   },
+   {
+    "date": "2026-06-18",
+    "close": 400.489990234375
+   },
+   {
+    "date": "2026-06-22",
+    "close": 405.04998779296875
+   },
+   {
+    "date": "2026-06-23",
+    "close": 381.6099853515625
+   },
+   {
+    "date": "2026-06-24",
+    "close": 375.5299987792969
+   },
+   {
+    "date": "2026-06-25",
+    "close": 375.1199951171875
+   },
+   {
+    "date": "2026-06-26",
+    "close": 379.7099914550781
+   },
+   {
+    "date": "2026-06-29",
+    "close": 411.8399963378906
+   },
+   {
+    "date": "2026-06-30",
+    "close": 420.6000061035156
+   },
+   {
+    "date": "2026-07-01",
+    "close": 425.29998779296875
+   },
+   {
+    "date": "2026-07-02",
+    "close": 393.45001220703125
+   },
+   {
+    "date": "2026-07-06",
+    "close": 419.7699890136719
+   },
+   {
+    "date": "2026-07-07",
+    "close": 402.8999938964844
+   },
+   {
+    "date": "2026-07-08",
+    "close": 394.05999755859375
+   },
+   {
+    "date": "2026-07-09",
+    "close": 406.54998779296875
+   },
+   {
+    "date": "2026-07-10",
+    "close": 407.760009765625
+   },
+   {
+    "date": "2026-07-13",
+    "close": 394.760009765625
+   },
+   {
+    "date": "2026-07-14",
+    "close": 396.17999267578125
+   },
+   {
+    "date": "2026-07-15",
+    "close": 394.4599914550781
+   },
+   {
+    "date": "2026-07-16",
+    "close": 391.05999755859375
+   },
+   {
+    "date": "2026-07-17",
+    "close": 380.8399963378906
+   },
+   {
+    "date": "2026-07-20",
+    "close": 369.57000732421875
+   },
+   {
+    "date": "2026-07-21",
+    "close": 378.92999267578125
+   },
+   {
+    "date": "2026-07-22",
+    "close": 374.010009765625
+   },
+   {
+    "date": "2026-07-23",
+    "close": 319.69000244140625
+   },
+   {
+    "date": "2026-07-24",
+    "close": 313.0299987792969
+   },
+   {
+    "date": "2026-07-27",
+    "close": 309.2200012207031
+   },
+   {
+    "date": "2026-07-28",
+    "close": 307.44000244140625
+   },
+   {
+    "date": "2026-07-29",
+    "close": 298.32000732421875
+   },
+   {
+    "date": "2026-07-30",
+    "close": 308.8500061035156
+   },
+   {
+    "date": "2026-07-31",
+    "close": 311.2099914550781
+   },
+   {
+    "date": "2026-08-03",
+    "close": 322.0799865722656
+   },
+   {
+    "date": "2026-08-04",
+    "close": 327.3500061035156
+   },
+   {
+    "date": "2026-08-05",
+    "close": 321.54998779296875
+   },
+   {
+    "date": "2026-08-06",
+    "close": 319.5299987792969
+   },
+   {
+    "date": "2026-08-07",
+    "close": 328.5799865722656
+   },
+   {
+    "date": "2026-08-10",
+    "close": 330.8800048828125
+   },
+   {
+    "date": "2026-08-11",
+    "close": 332.80999755859375
+   },
+   {
+    "date": "2026-08-12",
+    "close": 327.510009765625
+   },
+   {
+    "date": "2026-08-13",
+    "close": 339.9599914550781
+   },
+   {
+    "date": "2026-08-14",
+    "close": 342.2699890136719
+   },
+   {
+    "date": "2026-08-17",
+    "close": 339.29998779296875
+   },
+   {
+    "date": "2026-08-18",
+    "close": 336.8699951171875
+   },
+   {
+    "date": "2026-08-19",
+    "close": 351.1199951171875
+   },
+   {
+    "date": "2026-08-20",
+    "close": 345.1300048828125
+   },
+   {
+    "date": "2026-08-21",
+    "close": 362.8599853515625
+   },
+   {
+    "date": "2026-08-24",
+    "close": 348.95001220703125
+   },
+   {
+    "date": "2026-08-25",
+    "close": 350.25
+   },
+   {
+    "date": "2026-08-26",
+    "close": 345.82000732421875
+   },
+   {
+    "date": "2026-08-27",
+    "close": 354.80999755859375
+   },
+   {
+    "date": "2026-08-28",
+    "close": 348.75
+   },
+   {
+    "date": "2026-08-31",
+    "close": 367.95001220703125
+   },
+   {
+    "date": "2026-09-01",
+    "close": 356.0899963378906
+   },
+   {
+    "date": "2026-09-02",
+    "close": 357.010009765625
+   },
+   {
+    "date": "2026-09-03",
+    "close": 376.3699951171875
+   },
+   {
+    "date": "2026-09-04",
+    "close": 354.0799865722656
+   },
+   {
+    "date": "2026-09-08",
+    "close": 368.1600036621094
+   },
+   {
+    "date": "2026-09-09",
+    "close": 367.80999755859375
+   },
+   {
+    "date": "2026-09-10",
+    "close": 363.55999755859375
+   },
+   {
+    "date": "2026-09-11",
+    "close": 365.44000244140625
+   },
+   {
+    "date": "2026-09-14",
+    "close": 358.9700012207031
+   },
+   {
+    "date": "2026-09-15",
+    "close": 356.5799865722656
+   },
+   {
+    "date": "2026-09-16",
+    "close": 358.0799865722656
+   },
+   {
+    "date": "2026-09-17",
+    "close": 366.20001220703125
+   },
+   {
+    "date": "2026-09-18",
+    "close": 364.2699890136719
+   },
+   {
+    "date": "2026-09-21",
+    "close": 375.29998779296875
+   },
+   {
+    "date": "2026-09-22",
+    "close": 378.8999938964844
+   },
+   {
+    "date": "2026-09-23",
+    "close": 380.1199951171875
+   },
+   {
+    "date": "2026-09-24",
+    "close": 377.94000244140625
+   },
+   {
+    "date": "2026-09-25",
+    "close": 372.1099853515625
+   },
+   {
+    "date": "2026-09-28",
+    "close": 357.45001220703125
+   },
+   {
+    "date": "2026-09-29",
+    "close": 352.8399963378906
+   },
+   {
+    "date": "2026-09-30",
+    "close": 354.80999755859375
+   },
+   {
+    "date": "2026-10-01",
+    "close": 354.1099853515625
+   },
+   {
+    "date": "2026-10-02",
+    "close": 370.5899963378906
+   }
+  ],
+  "analyst_target_mean": 395.56894,
+  "analyst_recommendation": "buy"
+ },
+ "comps": {
+  "metric_set": "general",
+  "metrics": [
+   "pe_ttm",
+   "pe_fwd",
+   "ev_ebitda",
+   "ev_revenue",
+   "net_margin",
+   "revenue_growth",
+   "debt_to_equity"
+  ],
+  "primary_metric": "pe_fwd",
+  "rows": [
+   {
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "market_cap": 1463662804992.0,
+    "multiples": {
+     "pe_ttm": 333.86487,
+     "pe_fwd": 171.39409,
+     "ev_ebitda": 133.601,
+     "ev_revenue": 13.867,
+     "price_to_book": 16.84883,
+     "net_margin": 0.03671,
+     "roe": 0.046669997,
+     "revenue_growth": 0.255,
+     "debt_to_equity": 0.18373,
+     "dividend_yield": null
+    },
+    "is_target": true,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla…"
+   },
+   {
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "market_cap": 70791413760.0,
+    "multiples": {
+     "pe_ttm": 34.941963,
+     "pe_fwd": 5.2007575,
+     "ev_ebitda": 10.592,
+     "ev_revenue": 0.94,
+     "price_to_book": 1.1071347,
+     "net_margin": 0.01051,
+     "roe": 0.03164,
+     "revenue_growth": 0.019,
+     "debt_to_equity": 2.02341,
+     "dividend_yield": 0.0092
+    },
+    "is_target": false,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "General Motors Company designs, builds, and sells trucks, crossovers, cars, and automobile parts worldwide. It operates through GM North America, GM International, and GM Financial segments. The company markets its vehicles primarily under the Buick, Cadillac, Chevrolet, GMC, Baojun, and Wuling brand names. In addition, it sells trucks, crossovers, cars, and automobile parts through retail dealers, distributors and dealers, as well as to fleet customers, including daily rental car companies, commercial fleet customers, leasing companies, and governments. Further, the company offers various…"
+   },
+   {
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "market_cap": 48249909248.0,
+    "multiples": {
+     "pe_ttm": null,
+     "pe_fwd": 6.18543,
+     "ev_ebitda": 24.789,
+     "ev_revenue": 1.008,
+     "price_to_book": 1.350748,
+     "net_margin": -0.03935,
+     "roe": -0.18252,
+     "revenue_growth": -0.038,
+     "debt_to_equity": 4.567080000000001,
+     "dividend_yield": 0.0496
+    },
+    "is_target": false,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "Ford Motor Company develops, delivers, and services Ford trucks, sport utility vehicles, commercial vans and cars, and Lincoln luxury vehicles in the United States, Canada, the United Kingdom, Mexico, and internationally. It operates through Ford Blue, Ford Model e, Ford Pro, and Ford Credit segments. The company sells Ford and Lincoln internal combustion engine and hybrid vehicles, electric vehicles, service parts, accessories, and digital services for retail customers; develops EV and digital vehicle technologies, and software; and provides telematics and EV charging solutions. It also…"
+   },
+   {
+    "ticker": "TM",
+    "name": "Toyota Motor Corporation",
+    "market_cap": 214917464064.0,
+    "multiples": {
+     "pe_ttm": 8.134917,
+     "pe_fwd": 11.501268,
+     "ev_ebitda": 6.243,
+     "ev_revenue": 0.673,
+     "price_to_book": 14.396745,
+     "net_margin": 0.0863,
+     "roe": 0.12404,
+     "revenue_growth": 0.104,
+     "debt_to_equity": 1.14974,
+     "dividend_yield": 0.0345
+    },
+    "is_target": false,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "Toyota Motor Corporation designs, manufactures, assembles, and sells passenger vehicles, minivans and commercial vehicles, and related parts and accessories in Japan, North America, Europe, Asia, Central and South America, Oceania, Africa, the Middle East, and internationally. The company operates through Automotive, Financial Services, and All Other segments. The company offers subcompact and compact cars; mini-vehicles; mid-size, luxury, sports, and specialty cars; recreational and sport-utility vehicles; pickup trucks; minivans; trucks; and buses. It also develops and sells battery and…"
+   },
+   {
+    "ticker": "RIVN",
+    "name": "Rivian Automotive, Inc.",
+    "market_cap": 20704407552.0,
+    "multiples": {
+     "pe_ttm": null,
+     "pe_fwd": -8.203445,
+     "ev_ebitda": -7.652,
+     "ev_revenue": 3.53,
+     "price_to_book": 3.8143504,
+     "net_margin": -0.54955,
+     "roe": -0.57523,
+     "revenue_growth": 0.272,
+     "debt_to_equity": 1.0440800000000001,
+     "dividend_yield": null
+    },
+    "is_target": false,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "Rivian Automotive, Inc., together with its subsidiaries, develops, manufactures, and sells category-defining electric vehicles. It operates through two segments, Automotive, and Software and Services. The company offers consumer vehicles, including a two-row, five-passenger pickup truck under the R1T brand; and a three-row, seven-passenger sport utility vehicle under the R1S name. It also provides software and services, such as vehicle electrical architecture and software development, as well as Autonomy+, remarketing, vehicle repair and maintenance services, software subscriptions, vehicle…"
+   },
+   {
+    "ticker": "LI",
+    "name": "Li Auto Inc.",
+    "market_cap": 10447064064.0,
+    "multiples": {
+     "pe_ttm": null,
+     "pe_fwd": 19.284275,
+     "ev_ebitda": 53.417,
+     "ev_revenue": -0.571,
+     "price_to_book": 1.082126,
+     "net_margin": -0.04401,
+     "roe": -0.0657,
+     "revenue_growth": -0.151,
+     "debt_to_equity": 0.22272999999999998,
+     "dividend_yield": null
+    },
+    "is_target": false,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "business_summary": "Li Auto Inc. operates in the energy vehicle market in the People's Republic of China. The company designs, develops, manufactures, and sells premium smart electric vehicles. Its product line comprises multi-purpose vehicles and sport utility vehicles. The company offers sales and after sales management, and technology development and corporate management services, as well as manufacturing equipment. It offers its products through online and offline channels. The company was formerly known as Leading Ideal Inc. and changed its name to Li Auto Inc. in July 2020. Li Auto Inc. was founded in…"
+   }
+  ],
+  "median": {
+   "pe_ttm": 21.53844,
+   "pe_fwd": 8.843349,
+   "ev_ebitda": 17.6905,
+   "ev_revenue": 0.974,
+   "price_to_book": 1.350748,
+   "net_margin": -0.03935,
+   "roe": -0.0657,
+   "revenue_growth": 0.019,
+   "debt_to_equity": 1.14974,
+   "dividend_yield": 0.0345
+  },
+  "target_vs_median_pct": {
+   "pe_ttm": 14.500884465170179,
+   "pe_fwd": 18.38112925318225,
+   "ev_ebitda": 6.552132500494616,
+   "ev_revenue": 13.23716632443532,
+   "net_margin": null,
+   "revenue_growth": 12.421052631578949,
+   "debt_to_equity": -0.840198653608642
+  },
+  "peer_rationales": {
+   "GM": "Designs, builds and sells cars, crossovers and trucks; also sells vehicles to leasing companies.",
+   "F": "Sells electric vehicles, SUVs and cars, plus service parts and EV charging solutions.",
+   "TM": "Manufactures and sells passenger and sport-utility vehicles; develops and sells battery products.",
+   "RIVN": "Manufactures and sells electric SUVs and pickups, with repair and maintenance services.",
+   "LI": "Designs, manufactures and sells electric SUVs in China, via online and offline channels."
+  },
+  "peer_origin": {
+   "GM": "agent",
+   "F": "agent",
+   "TM": "agent",
+   "RIVN": "agent",
+   "LI": "agent"
+  },
+  "exclusions": [],
+  "sources": [
+   "https://www.companieshistory.com/tesla-competitors",
+   "https://www.hudson-labs.com/research/tesla-competitors-tsla",
+   "https://teslamotorsclub.com/tmc/threads/what-companies-are-considered-the-most-direct-competitors-to-tesla.70902",
+   "https://www.globaldata.com/company-profile/tesla-inc/competitors",
+   "https://www.reuters.com/business/autos-transportation/tesla-market-cap-eclipses-that-top-5-rival-carmakers-combined-2021-10-26"
+  ],
+  "insufficient": false
+ },
+ "competitor_search": [
+  {
+   "title": "Tesla Competitors 2026",
+   "url": "https://www.companieshistory.com/tesla-competitors",
+   "domain": "companieshistory.com",
+   "snippet": "## FAQs Who are Tesla’s main competitors in 2026? Tesla’s main competitors in 2026 are BYD, Toyota, General Motors, Ford, Volkswagen Group, Rivian, Lucid, NIO, XPeng, and Li Auto. BYD leads global EV sales at 17.1% share, while Tesla holds 59% of the U.S. EV market. What is Tesla’s market cap compared to competitors? [...] Tesla has roughly 10 direct EV competitors and many more indirect rivals. Direct competitors include BYD, Rivian, Lucid, NIO, XPeng, Li Auto, and Polestar. Indirect competitors are legacy automakers like Toyota, GM, Ford, VW, and Honda. Sources: Darius Website Facebook X…"
+  },
+  {
+   "title": "Tesla's Top Competitors and Peers in 2026 | Hudson Labs",
+   "url": "https://www.hudson-labs.com/research/tesla-competitors-tsla",
+   "domain": "hudson-labs.com",
+   "snippet": "| Ticker | Company Name | Subsector | Market Cap | --- --- | | TSLA | Tesla Inc | Auto Manufacturers | $1.49T | | LCID | Lucid Group Inc | Auto Manufacturers | $3.20B | | RIVN | Rivian Automotive, Inc. | Auto Manufacturers | $19.07B | | GM | General Motors Co | Auto Manufacturers | $67.99B | | $F | Ford Motor Co | Auto Manufacturers | $48.47B | | NIO | NIO Inc | Unclassified | $13.96B | Tesla vs. Lucid Group Inc. (LCID) [...] Conclusion Tesla’s leadership in the EV and automotive technology space is being challenged by a diverse set of competitors, each with distinct strategies and product…"
+  },
+  {
+   "title": "What companies are considered the most direct competitors to Tesla? | Tesla Motors Club",
+   "url": "https://teslamotorsclub.com/tmc/threads/what-companies-are-considered-the-most-direct-competitors-to-tesla.70902",
+   "domain": "teslamotorsclub.com",
+   "snippet": "Tesla competes head to head with makers of high end luxury vehicles like BMW and Mercedes and most of the sales it takes would have gone to ICE cars. The Tesla Model 3 will most directly compete with BMWs 3 Series and other entry level models from luxury brands. BMW is the closest thing to a automaker competitor though they don't compete with electric car models. [...] You've stumbled into a very interesting question. Effectively, Tesla has no competitors. There are three \\categories\\ of future competitors in the (electric) car market: (1) The existing large automakers (2) Rising Chinese…"
+  },
+  {
+   "title": "Tesla Inc Peers & Key Competitors - GlobalData",
+   "url": "https://www.globaldata.com/company-profile/tesla-inc/competitors",
+   "domain": "globaldata.com",
+   "snippet": "Public Toyota Motor Corp Headquarters Japan No. of employees 390,927 Revenue $325.7B Entity type Public General Motors Co Headquarters United States of America No. of employees 156,000 Revenue $185.0B Entity type Public Bayerische Motoren Werke AG Headquarters Germany No. of employees 154,540 Revenue $150.6B Entity type Public Benchmark the company against the market with exclusive information on key competitors [...] View more Top 10 Original Equipment Manufacturers in the World by Market Capitalization Top 10 Automotive OEM Companies in the World in 2021 by P/E Top 9 Automotive OEMs in the…"
+  },
+  {
+   "title": "Tesla market cap eclipses that of top 5 rival carmakers combined",
+   "url": "https://www.reuters.com/business/autos-transportation/tesla-market-cap-eclipses-that-top-5-rival-carmakers-combined-2021-10-26",
+   "domain": "reuters.com",
+   "snippet": "Xpeng Inc$41.15 bln EV 27,041 Guangzhou, China Li Auto$35.34 bln EV 32,624 Bejing, China Kia Corp (000270.KS)34.37 trillion won ($29.20 bln)ICE 1.3 mln Seoul, South Korea Nissan Motors 2.5 trillion yen ($21.8 bln)ICE 4 mln Yokohama, Nikola (NKLA.O)$4.42 bln EV N/A Phoenix, Arizona, Canoo Inc (GOEV.O)$1.77 bln EV N/A Torrance, California, United States Lordstown Motors (RIDE.O)$888.4 mln EV N/A Lordtown, Ohio, United States Workhorse Group (WKHS.O)$800.7 mln EV N/A Loveland Ohio, United States [...] Skip to main content Exclusive news, data and analytics for financial market professionals…"
+  }
+ ],
+ "risks": {
+  "filing": {
+   "ticker": "TSLA",
+   "form": "10-K",
+   "filing_date": "2026-01-29",
+   "accession_no": "0001628280-26-003952",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  },
+  "headings": [
+   "Risks Related to Our Ability to Grow Our Business",
+   "We may experience issues or delays in developing, launching and ramping the production of our products, services and features, or we may be unable to control our manufacturing costs.",
+   "Our suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable to us, or we may be unable to manage these components effectively.",
+   "We may be unable to meet our projected construction timelines, costs and production ramps at new factories, or we may experience difficulties in generating and maintaining demand for products manufactured there and related services.",
+   "We may be unable to grow our global product sales, delivery and installation capabilities and our servicing and vehicle charging networks, or we may be unable to accurately project and effectively manage our growth.",
+   "We will need to maintain and significantly grow our access to battery cells, including through the development and manufacture of our own cells, and control our related costs.",
+   "Our future growth and success are dependent upon demand for our electric vehicles and adoption of autonomous driving solutions.",
+   "In addition, electric vehicles still constitute a small percentage of overall vehicle sales. As a result, the market for our vehicles could be negatively affected by numerous factors, such as:",
+   "We face strong competition for our products and services from a growing list of established and new competitors.",
+   "Growth of our business is also dependent upon our ability to develop and commercialize Bots, including Optimus, which is in a nascent industry that has yet to develop commercially.",
+   "Risks Related to Our Operations",
+   "We may experience issues with lithium-ion cells or other components manufactured at our Gigafactories, which may harm the production and profitability of our vehicle and energy storage products.",
+   "We face risks associated with maintaining and expanding our international operations, including unfavorable and uncertain regulatory, political, economic, tax and labor conditions.",
+   "Our business may suffer if our products or features contain defects, fail to perform as expected or take longer than expected to become fully functional.",
+   "If our products contain design or manufacturing defects, whether relating to our software or hardware, that cause them not to perform as designed or intended or that require repair, or certain features of our vehicles such as new driver",
+   "We may be required to defend or insure against product liability claims.",
+   "We will need to maintain public credibility and confidence in our long-term business prospects in order to succeed.",
+   "We may be unable to effectively grow, or manage the compliance, residual value, financing and credit risks related to, our various financing programs.",
+   "If we are unable to attract, hire and retain key employees and qualified personnel, our ability to compete may be harmed.",
+   "We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer.",
+   "Any unauthorized control or manipulation of our products’ systems could result in loss of confidence in us and our products.",
+   "Our business may be adversely affected by any disruptions caused by union activities.",
+   "We may choose to or be compelled to undertake product recalls or take other similar actions.",
+   "Our current and future warranty reserves may be insufficient to cover future warranty claims.",
+   "Our insurance coverage strategy may not be adequate to protect us from all business risks.",
+   "Our debt agreements contain covenant restrictions that may limit our ability to operate our business.",
+   "Additional funds may not be available to us when we need or want them.",
+   "We may be negatively impacted by any early obsolescence of our manufacturing and other equipment.",
+   "There is no guarantee that we will have sufficient cash flow from our business to pay our indebtedness or that we will not incur additional indebtedness.",
+   "We are exposed to fluctuations in currency exchange rates.",
+   "We may not be able to adequately protect or defend ourselves against intellectual property infringement claims, which may be time-consuming and expensive, or affect the freedom to operate our business.",
+   "Our operations could be adversely affected by events outside of our control, such as natural disasters, wars or health epidemics.",
+   "Risks Related to Government Laws and Regulations",
+   "Demand for our products and services may be impacted by the status of government and economic incentives supporting the development and adoption of such products.",
+   "We are subject to evolving laws and regulations that could impose substantial costs, legal prohibitions or unfavorable changes upon our operations or products.",
+   "Any failure by us to comply with a variety of U.S. and international privacy and consumer protection laws may harm us.",
+   "We could be subject to liability, penalties and other restrictive sanctions and adverse consequences arising out of certain governmental investigations and proceedings.",
+   "We may face regulatory challenges to or limitations on our ability to sell vehicles directly.",
+   "Risks Related to the Ownership of Our Common Stock",
+   "The trading price of our common stock is likely to continue to be volatile.",
+   "Our financial results may vary significantly from period to period due to fluctuations in our operating costs and other factors.",
+   "We may fail to meet our publicly announced guidance or other expectations about our business, which could cause our stock price to decline.",
+   "If Elon Musk were forced to sell shares of our common stock, either that he has the ability to pledge to secure certain personal loan obligations, or in satisfaction of other obligations, such sales could cause our stock price to decline.",
+   "Anti-takeover provisions contained in our governing documents, applicable laws and certain of our debt facilities could impair a takeover attempt."
+  ],
+  "headings_truncated": false,
+  "risks": [
+   {
+    "title": "Dependence on EV demand and autonomy adoption",
+    "category": "competition",
+    "severity": 3,
+    "explanation": "Future growth and success depend on demand for Tesla's electric vehicles and on adoption of autonomous driving solutions.",
+    "source_heading": "Our future growth and success are dependent upon demand for our electric vehicles and adoption of autonomous driving solutions."
+   },
+   {
+    "title": "Production ramp delays and cost control",
+    "category": "operational",
+    "severity": 3,
+    "explanation": "Tesla may face issues or delays developing, launching and ramping production of products, services and features, or fail to control manufacturing costs.",
+    "source_heading": "We may experience issues or delays in developing, launching and ramping the production of our products, services and features, or we may be unable to control our manufacturing costs."
+   },
+   {
+    "title": "Intensifying competition from established and new rivals",
+    "category": "competition",
+    "severity": 3,
+    "explanation": "Tesla faces strong competition for its products and services from a growing list of established and new competitors.",
+    "source_heading": "We face strong competition for our products and services from a growing list of established and new competitors."
+   },
+   {
+    "title": "Heavy reliance on Elon Musk",
+    "category": "operational",
+    "severity": 2,
+    "explanation": "Tesla is highly dependent on the services of Elon Musk, its Technoking and Chief Executive Officer.",
+    "source_heading": "We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer."
+   },
+   {
+    "title": "Supplier delivery, pricing and quality failures",
+    "category": "supply_chain",
+    "severity": 2,
+    "explanation": "Suppliers may fail to deliver components on acceptable schedules, prices, quality and volumes, or Tesla may fail to manage these components effectively.",
+    "source_heading": "Our suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable to us, or we may be unable to manage these components effectively."
+   },
+   {
+    "title": "Government investigations and potential sanctions",
+    "category": "legal",
+    "severity": 2,
+    "explanation": "Governmental investigations and proceedings could expose Tesla to liability, penalties, restrictive sanctions and other adverse consequences.",
+    "source_heading": "We could be subject to liability, penalties and other restrictive sanctions and adverse consequences arising out of certain governmental investigations and proceedings."
+   }
+  ]
+ },
+ "news": [
+  {
+   "title": "Tesla, Inc. $TSLA Shares Purchased by GoalVest Advisory LLC",
+   "url": "https://www.marketbeat.com/instant-alerts/filing-tesla-inc-tsla-shares-purchased-by-goalvest-advisory-llc-2026-10-02",
+   "domain": "marketbeat.com",
+   "published": "Fri, 02 Oct 2026 17:04:44 GMT"
+  },
+  {
+   "title": "Tesla Inc Stock (TSLA) Opened Up by 4.34% on Oct 2: Facts Behind the Movement",
+   "url": "https://www.tradingkey.com/news/market-movers/262198064-market-movers-tsla-20261002",
+   "domain": "tradingkey.com",
+   "published": "Fri, 02 Oct 2026 13:00:00 GMT"
+  },
+  {
+   "title": "TSLA News | TESLA INC (NASDAQ:TSLA) | ChartMill.com",
+   "url": "https://www.chartmill.com/stock/quote/TSLA/news",
+   "domain": "chartmill.com",
+   "published": "Thu, 01 Oct 2026 00:00:00 GMT"
+  },
+  {
+   "title": "Tesla Stock Gains As European Demand Boosts Q3 Deliveries - Tesla (NASDAQ:TSLA) - Benzinga",
+   "url": "https://www.benzinga.com/markets/large-cap/26/10/62138697/tesla-stock-gains-as-european-demand-boosts-q3-deliveries",
+   "domain": "benzinga.com",
+   "published": "Fri, 02 Oct 2026 15:25:55 GMT"
+  }
+ ],
+ "news_error": null,
+ "scorecard": {
+  "factors": [
+   {
+    "name": "valuation",
+    "score": -1,
+    "detail": "Forward P/E 171.4 vs peer median 8.8 (+1838%; band ±15%)"
+   },
+   {
+    "name": "growth",
+    "score": 1,
+    "detail": "Revenue growth 25.5% vs peer median 1.9% (+23.6 pts; band ±5 pts)"
+   },
+   {
+    "name": "profitability",
+    "score": 1,
+    "detail": "Net margin 3.7% vs peer median -3.9% (+7.6 pts; band ±5 pts)"
+   },
+   {
+    "name": "analyst_upside",
+    "score": 0,
+    "detail": "mean analyst target 395.57 vs price 370.59 (+6.7%; band ±10%)"
+   },
+   {
+    "name": "momentum",
+    "score": -1,
+    "detail": "price 370.59 below its 200-day average 393.18; at 36% of the 52-week range"
+   }
+  ],
+  "total": 0,
+  "preliminary_signal": "HOLD"
+ },
+ "analyst": {
+  "signal": "HOLD",
+  "confidence": 0.6,
+  "changed_from_preliminary": false,
+  "change_reason": null,
+  "valuation_summary": "Tesla trades at a steep premium to auto peers: Forward P/E 171.4 vs peer median 8.8 (+1838%), EV/EBITDA 133.6 vs 17.7, and EV/Revenue 13.9 vs 1.0. The market prices it well beyond a traditional automaker.",
+  "thesis": [
+   "Revenue growth of 25.5% far exceeds the peer median of 1.9%.",
+   "Net margin of 3.7% beats the peer median of -3.9%.",
+   "Low Debt/Equity of 0.18 versus peer median 1.15 signals a strong balance sheet."
+  ],
+  "counterpoints": [
+   "Forward P/E of 171.4 is +1838% above peer median, leaving little room for disappointment.",
+   "Net income fell from $15.00B in 2023 to $3.79B in 2025.",
+   "Severity-3 risks cover EV demand, production ramp costs, and intensifying competition."
+  ],
+  "signal_reasoning": "The scorecard totals 0: growth (+1) and profitability (+1) offset by valuation (-1) and momentum (-1), with analyst upside neutral at +6.7%. Severity-3 risks are standard, long-disclosed filing risks, and the positive Q3 delivery news is not material enough to override the balanced scores. The preliminary HOLD is kept.",
+  "preliminary_signal": "HOLD",
+  "reviewed": true
+ },
+ "signal": "HOLD",
+ "signal_reviewed": true,
+ "narrative": {
+  "company_overview": "Tesla, Inc. (TSLA) designs, develops, manufactures, leases and sells electric vehicles, along with energy generation and storage systems, in the United States, China and internationally. It reports two segments, Automotive and Energy Generation and Storage. Beyond vehicles, it sells automotive regulatory credits, non-warranty maintenance, collision and insurance services, parts and retail merchandise. It sits in the Auto Manufacturers industry within the Consumer Cyclical sector, with a market capitalization of $1.46T and a share price of 370.59 USD against a 52-week range of 297.38 to 498.83.",
+  "financial_commentary": "Revenue rose from $81.46B in fiscal 2022 to $96.77B in 2023 and $97.69B in 2024, then eased to $94.83B in 2025. Net income followed a weaker path: $12.58B in 2022 and $15.00B in 2023, then $7.13B in 2024 and $3.79B in 2025. Profit has therefore fallen sharply even though revenue is broadly flat over the last three years. The current net margin is 3.7% and return on equity is 4.7%. Reported revenue growth is 25.5%, which contrasts with the lower annual revenue in the latest fiscal year. Debt to equity is a low 0.18.",
+  "comps_commentary": "Against the peer median, Tesla trades at a steep premium on every multiple that can be compared. Our primary measure, forward P/E, is 171.4 versus a peer median of 8.8, a premium of +1838%. Trailing P/E is 333.9 against 21.5 (+1450%). EV/EBITDA of 133.6 compares with 17.7 (+655%), and EV/Revenue of 13.9 compares with 1.0 (+1324%). Tesla's revenue growth of 25.5% is well above the peer median of 1.9% (+1242%), and its 3.7% net margin compares with a peer median of -3.9%. Leverage is lighter, with debt to equity of 0.18 against 1.15 (-84%). The peer set includes GM, Ford, Toyota, Rivian and Li Auto, several of which lack some multiples. The valuation gap suggests the market is pricing in outcomes well beyond those of traditional automakers.",
+  "risk_commentary": "The three most severe risks, each rated 3, relate to the business model. Tesla's future growth depends on demand for its electric vehicles and on adoption of autonomous driving solutions. It may also face delays in developing, launching and ramping production of products and features, or fail to control manufacturing costs. Competition from a growing list of established and new rivals is a further top-rated risk. Recent headlines noting European demand lifting third-quarter deliveries relate to the demand theme.\n\nRisks rated 2 include heavy reliance on Elon Musk as Chief Executive Officer, supplier failures on delivery schedules, pricing, quality and volumes, and government investigations that could bring liability, penalties or sanctions."
+ },
+ "narrative_markdown": "## Company overview\n\nTesla, Inc. (TSLA) designs, develops, manufactures, leases and sells electric vehicles, along with energy generation and storage systems, in the United States, China and internationally. It reports two segments, Automotive and Energy Generation and Storage. Beyond vehicles, it sells automotive regulatory credits, non-warranty maintenance, collision and insurance services, parts and retail merchandise. It sits in the Auto Manufacturers industry within the Consumer Cyclical sector, with a market capitalization of $1.46T and a share price of 370.59 USD against a 52-week range of 297.38 to 498.83.\n\n## Financial commentary\n\nRevenue rose from $81.46B in fiscal 2022 to $96.77B in 2023 and $97.69B in 2024, then eased to $94.83B in 2025. Net income followed a weaker path: $12.58B in 2022 and $15.00B in 2023, then $7.13B in 2024 and $3.79B in 2025. Profit has therefore fallen sharply even though revenue is broadly flat over the last three years. The current net margin is 3.7% and return on equity is 4.7%. Reported revenue growth is 25.5%, which contrasts with the lower annual revenue in the latest fiscal year. Debt to equity is a low 0.18.\n\n## Comps commentary\n\nAgainst the peer median, Tesla trades at a steep premium on every multiple that can be compared. Our primary measure, forward P/E, is 171.4 versus a peer median of 8.8, a premium of +1838%. Trailing P/E is 333.9 against 21.5 (+1450%). EV/EBITDA of 133.6 compares with 17.7 (+655%), and EV/Revenue of 13.9 compares with 1.0 (+1324%). Tesla's revenue growth of 25.5% is well above the peer median of 1.9% (+1242%), and its 3.7% net margin compares with a peer median of -3.9%. Leverage is lighter, with debt to equity of 0.18 against 1.15 (-84%). The peer set includes GM, Ford, Toyota, Rivian and Li Auto, several of which lack some multiples. The valuation gap suggests the market is pricing in outcomes well beyond those of traditional automakers.\n\n## Risk commentary\n\nThe three most severe risks, each rated 3, relate to the business model. Tesla's future growth depends on demand for its electric vehicles and on adoption of autonomous driving solutions. It may also face delays in developing, launching and ramping production of products and features, or fail to control manufacturing costs. Competition from a growing list of established and new rivals is a further top-rated risk. Recent headlines noting European demand lifting third-quarter deliveries relate to the demand theme.\n\nRisks rated 2 include heavy reliance on Elon Musk as Chief Executive Officer, supplier failures on delivery schedules, pricing, quality and volumes, and government investigations that could bring liability, penalties or sanctions.",
+ "timings_ms": {
+  "validate": 0,
+  "financials": 5,
+  "news": 7,
+  "comps": 3779,
+  "comps_ready": 3780,
+  "comps_explain": 3753,
+  "risk": 7990,
+  "scorecard": 0,
+  "analyst": 6234,
+  "signal_ready": 14226,
+  "writer": 7734,
+  "total": 15728
+ },
+ "llm_usage": [
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 2497,
+   "output_tokens": 131,
+   "ms": 2187,
+   "cost_usd": 0.012608,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3716,
+   "output_tokens": 247,
+   "ms": 3753,
+   "cost_usd": 0.019804,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "risk",
+   "model": "claude-opus-5-5",
+   "input_tokens": 2684,
+   "output_tokens": 768,
+   "ms": 7983,
+   "cost_usd": 0.026096,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "analyst",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3809,
+   "output_tokens": 482,
+   "ms": 6233,
+   "cost_usd": 0.024876,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "writer",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 2727,
+   "output_tokens": 1002,
+   "ms": 7734,
+   "cost_usd": 0.015474,
+   "request_id": null,
+   "error": null
+  }
+ ],
+ "cache_hits": [
+  "quote:TSLA",
+  "tavily:competitors:tesla, inc. main competitors auto manufacturers",
+  "filing:TSLA",
+  "risk:0001628280-26-003952",
+  "fin:TSLA",
+  "tavily:news:tesla, inc. stock news"
+ ],
+ "quality_warnings": [],
+ "disclaimer": "Educational project - not investment advice."
+}

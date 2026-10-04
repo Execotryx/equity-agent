@@ -1,0 +1,902 @@
+{
+ "judge_model": "claude-haiku-4-5",
+ "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "rows": [
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4735,
+   "statements": 34,
+   "unsupported": [],
+   "error": null,
+   "response_words": 88,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3852,
+   "statements": 17,
+   "unsupported": [],
+   "error": null,
+   "response_words": 94,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.875,
+   "answer_relevancy": 0.3538,
+   "statements": 16,
+   "unsupported": [
+    {
+     "statement": "Apple's net margin premium partly frames the valuation premium.",
+     "reason": "While the context shows Apple has a 58% net margin premium and various valuation premiums, the context does not explicitly state that the net margin premium frames or explains the valuation premium. This is an inference not directly stated."
+    },
+    {
+     "statement": "The peer set median should be read with some caution due to the mixed composition of the peer set.",
+     "reason": "While the context shows the peer set has mixed composition (platform companies and hardware makers), the context does not explicitly state that the median should be read with caution. This is an inference not directly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 107,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3019,
+   "statements": 12,
+   "unsupported": [],
+   "error": null,
+   "response_words": 124,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8,
+   "answer_relevancy": 0.6059,
+   "statements": 35,
+   "unsupported": [
+    {
+     "statement": "Apple Inc.'s net margin of 27.6% partly offsets the premium valuation multiples.",
+     "reason": "While the context shows both the net margin of 27.6% and premium valuation multiples, the word \"partly\" and the concept of offsetting is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "Apple Inc.'s net income rose to $112.01B.",
+     "reason": "The context shows net income of $112.01B for 2025, but does not explicitly state it \"rose\" - this requires comparison to prior years which is an inference."
+    },
+    {
+     "statement": "Apple Inc. demonstrates strong momentum.",
+     "reason": "The context shows momentum factor has a score of +1, indicating positive momentum, though \"strong\" is a subjective characterization not explicitly stated."
+    },
+    {
+     "statement": "Apple Inc.'s Forward P/E premium leaves little room for disappointment.",
+     "reason": "While the context shows a 59% Forward P/E premium, the phrase \"leaves little room for disappointment\" is an interpretation and judgment not explicitly stated."
+    },
+    {
+     "statement": "Severity-3 risks for Apple Inc. are longstanding, generic filing disclosures rather than new events.",
+     "reason": "The context lists severity-3 risks but does not characterize them as longstanding, generic filing disclosures or distinguish them from new events. This is an interpretation not in the context."
+    },
+    {
+     "statement": "News regarding Apple Inc. is routine institutional trading plus a modest target cut.",
+     "reason": "The context shows news items about institutional trading and a target cut, but the characterization as \"routine\" and \"modest\" are interpretations not explicitly stated."
+    },
+    {
+     "statement": "No clear justification exists for moving the preliminary HOLD signal for Apple Inc.",
+     "reason": "The context shows a preliminary HOLD signal but does not explicitly state whether there is or is not justification for changing it. This is an interpretation beyond what is stated."
+    }
+   ],
+   "error": null,
+   "response_words": 192,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 36,
+   "unsupported": [],
+   "error": null,
+   "response_words": 155,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.3077,
+   "answer_relevancy": null,
+   "statements": 13,
+   "unsupported": [
+    {
+     "statement": "Microsoft Corporation (MSFT) competes with Apple Inc. in software.",
+     "reason": "While Microsoft is mentioned as a competitor, the context does not specifically state that Microsoft competes with Apple in software. The context only mentions competition in personal computers and smartphones."
+    },
+    {
+     "statement": "Microsoft Corporation (MSFT) competes with Apple Inc. in cloud services.",
+     "reason": "The context does not explicitly mention that Microsoft competes with Apple in cloud services. While Apple provides cloud services according to the business summary, there is no direct statement about Microsoft competing in this area."
+    },
+    {
+     "statement": "Alphabet Inc. (GOOGL) offers Android smartphones that overlap with Apple Inc.'s offerings.",
+     "reason": "The context mentions Google as a competitor that 'continuously innovate and strategize to challenge Apple's market dominance,' but does not explicitly state that Google offers Android smartphones or that they overlap with Apple's offerings."
+    },
+    {
+     "statement": "Alphabet Inc. (GOOGL) offers Pixel devices that overlap with Apple Inc.'s offerings.",
+     "reason": "The context does not mention Pixel devices or any specific device offerings from Google/Alphabet."
+    },
+    {
+     "statement": "Alphabet Inc. (GOOGL) operates an app store that overlaps with Apple Inc.'s offerings.",
+     "reason": "The context does not mention that Google operates an app store or that it overlaps with Apple's App Store."
+    },
+    {
+     "statement": "Alphabet Inc. (GOOGL) provides cloud services that overlap with Apple Inc.'s offerings.",
+     "reason": "The context does not explicitly state that Google provides cloud services that overlap with Apple's cloud services."
+    },
+    {
+     "statement": "Amazon.com, Inc. (AMZN) offers tablets that compete with Apple Inc.'s offerings.",
+     "reason": "The context does not mention that Amazon offers tablets that compete with Apple's iPad."
+    },
+    {
+     "statement": "Amazon.com, Inc. (AMZN) offers smart speakers that compete with Apple Inc.'s offerings.",
+     "reason": "The context does not explicitly mention that Amazon offers smart speakers that compete with Apple's HomePod or other offerings."
+    },
+    {
+     "statement": "Amazon.com, Inc. (AMZN) provides cloud services that compete with Apple Inc.'s offerings.",
+     "reason": "The context does not explicitly state that Amazon provides cloud services that compete with Apple's cloud services."
+    }
+   ],
+   "error": null,
+   "response_words": 62,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.5402,
+   "statements": 18,
+   "unsupported": [],
+   "error": null,
+   "response_words": 77,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3788,
+   "statements": 19,
+   "unsupported": [],
+   "error": null,
+   "response_words": 93,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9167,
+   "answer_relevancy": 0.4263,
+   "statements": 24,
+   "unsupported": [
+    {
+     "statement": "Intel's negative net margin pulls the peer medians down.",
+     "reason": "While Intel does have a negative net margin, the context does not explicitly state that this pulls the peer medians down. The peer median net margin is 21.0%, which is positive, suggesting other peers' positive margins offset Intel's negative margin. This statement cannot be directly inferred from the context."
+    },
+    {
+     "statement": "Qualcomm's revenue decline pulls the peer medians down.",
+     "reason": "While Qualcomm does have negative revenue growth (-4.0%), the context does not explicitly state that this pulls the peer medians down. The peer median revenue growth is 36.5%, which is positive, suggesting other peers' strong growth offsets Qualcomm's decline. This statement cannot be directly inferred from the context."
+    }
+   ],
+   "error": null,
+   "response_words": 136,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.8846,
+   "answer_relevancy": 0.3534,
+   "statements": 26,
+   "unsupported": [
+    {
+     "statement": "Export controls represent the first highest severity risk.",
+     "reason": "While export controls have severity 3, the context does not establish an ordering or ranking among the three severity-3 risks."
+    },
+    {
+     "statement": "Supply-demand mismatch represents the second highest severity risk.",
+     "reason": "While supply-demand mismatch has severity 3, the context does not establish an ordering or ranking among the three severity-3 risks."
+    },
+    {
+     "statement": "Competition represents the third highest severity risk.",
+     "reason": "While competition has severity 3, the context does not establish an ordering or ranking among the three severity-3 risks."
+    }
+   ],
+   "error": null,
+   "response_words": 149,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.7955,
+   "answer_relevancy": 0.5793,
+   "statements": 44,
+   "unsupported": [
+    {
+     "statement": "The $150 billion share repurchase authorization increase signals strong capital return capacity for NVIDIA Corporation.",
+     "reason": "While the $150 billion repurchase authorization is mentioned in the news, the context does not explicitly state that it signals strong capital return capacity. This is an inference beyond what is directly stated."
+    },
+    {
+     "statement": "Supply-demand mismatches and competition could pressure NVIDIA Corporation's share price.",
+     "reason": "While the context identifies these as risks, it does not explicitly state they could pressure the share price. This is an inference."
+    },
+    {
+     "statement": "Supply-demand mismatches and competition could pressure NVIDIA Corporation's results.",
+     "reason": "While the context identifies these as risks, it does not explicitly state they could pressure results. This is an inference."
+    },
+    {
+     "statement": "NVIDIA Corporation's price near the top of the range leaves little room for error.",
+     "reason": "While the price is near the top of the range, the context does not explicitly state this leaves little room for error. This is an inference."
+    },
+    {
+     "statement": "Severity-3 risks on export controls are longstanding filing disclosures for NVIDIA Corporation.",
+     "reason": "The context mentions export control risks but does not explicitly state they are longstanding filing disclosures. This is an inference."
+    },
+    {
+     "statement": "Severity-3 risks on export controls are not new events for NVIDIA Corporation.",
+     "reason": "The context mentions export control risks but does not explicitly state whether they are new or longstanding. This is an inference."
+    },
+    {
+     "statement": "Severity-3 risks on supply and competition are longstanding filing disclosures for NVIDIA Corporation.",
+     "reason": "The context mentions these risks but does not explicitly state they are longstanding filing disclosures. This is an inference."
+    },
+    {
+     "statement": "Severity-3 risks on supply and competition are not new events for NVIDIA Corporation.",
+     "reason": "The context mentions these risks but does not explicitly state whether they are new or longstanding. This is an inference."
+    },
+    {
+     "statement": "The buyback news is supportive for NVIDIA Corporation.",
+     "reason": "While the context mentions the $150 billion share repurchase authorization, it does not explicitly state that this news is supportive. This is an inference."
+    }
+   ],
+   "error": null,
+   "response_words": 193,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 30,
+   "unsupported": [],
+   "error": null,
+   "response_words": 147,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 7,
+   "unsupported": [],
+   "error": null,
+   "response_words": 63,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.5797,
+   "statements": 24,
+   "unsupported": [],
+   "error": null,
+   "response_words": 98,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3268,
+   "statements": 14,
+   "unsupported": [],
+   "error": null,
+   "response_words": 80,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.92,
+   "answer_relevancy": 0.4626,
+   "statements": 25,
+   "unsupported": [
+    {
+     "statement": "The premium valuation of JPMorgan Chase & Co. is supported by stronger fundamentals.",
+     "reason": "While the context shows JPM trades at a premium and has stronger metrics (higher ROE, revenue growth), the context does not explicitly state that the premium valuation is supported by stronger fundamentals. This is an inference rather than a direct statement."
+    },
+    {
+     "statement": "Goldman Sachs and Morgan Stanley are the closest peers to JPMorgan Chase & Co. on valuation.",
+     "reason": "While Goldman Sachs has a P/B of 2.5 (same as JPM) and Morgan Stanley has a P/B of 2.8 (closest to JPM's 2.5), the context does not explicitly state they are the closest peers on valuation. This is an inference based on P/B ratios alone."
+    }
+   ],
+   "error": null,
+   "response_words": 141,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.9048,
+   "answer_relevancy": 0.3429,
+   "statements": 21,
+   "unsupported": [
+    {
+     "statement": "Recent news headlines mainly concern institutional share purchases.",
+     "reason": "While some headlines mention share purchases by Saudi Central Bank, RFG Advisory LLC, and West Family Investments Inc., the news section also includes headlines about stock price movements and analyst price targets, so the headlines do not 'mainly' concern institutional share purchases."
+    },
+    {
+     "statement": "Recent news headlines mainly concern analyst price targets.",
+     "reason": "Only one headline explicitly mentions analyst price targets ('JPMorgan Chase & Co. (NYSE:JPM) Stock Has Average Price Target of $363.29'), while others concern share purchases and stock movements, so the headlines do not 'mainly' concern analyst price targets."
+    }
+   ],
+   "error": null,
+   "response_words": 114,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.9286,
+   "answer_relevancy": 0.5404,
+   "statements": 42,
+   "unsupported": [
+    {
+     "statement": "The Severity-3 risks for JPMorgan Chase & Co. (JPM) are standard, long-standing disclosures for a large bank.",
+     "reason": "The context does not provide information about whether these risks are standard, long-standing, or new. This is an inference not directly supported by the context."
+    },
+    {
+     "statement": "The Severity-3 risks for JPMorgan Chase & Co. (JPM) are not new events.",
+     "reason": "The context does not provide information about whether these risks are new or long-standing. This is an inference not directly supported by the context."
+    },
+    {
+     "statement": "No clear evidence justifies moving the preliminary BUY signal for JPMorgan Chase & Co. (JPM).",
+     "reason": "The context does not provide explicit information about whether evidence justifies moving the preliminary BUY signal. This is an interpretive conclusion not directly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 175,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 19,
+   "unsupported": [],
+   "error": null,
+   "response_words": 130,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.087,
+   "answer_relevancy": null,
+   "statements": 23,
+   "unsupported": [
+    {
+     "statement": "Bank of America Corporation (BAC) offers consumer deposits.",
+     "reason": "The context does not provide specific information about BAC's product offerings, only that it is a competitor in the diversified banks category."
+    },
+    {
+     "statement": "Bank of America Corporation (BAC) offers credit cards.",
+     "reason": "The context does not provide specific information about BAC's product offerings, only that it is a competitor in the diversified banks category."
+    },
+    {
+     "statement": "Bank of America Corporation (BAC) offers commercial lending.",
+     "reason": "The context does not provide specific information about BAC's product offerings, only that it is a competitor in the diversified banks category."
+    },
+    {
+     "statement": "Bank of America Corporation (BAC) offers investment banking.",
+     "reason": "The context does not provide specific information about BAC's product offerings, only that it is a competitor in the diversified banks category."
+    },
+    {
+     "statement": "Bank of America Corporation (BAC) offers wealth management.",
+     "reason": "The context does not provide specific information about BAC's product offerings, only that it is a competitor in the diversified banks category."
+    },
+    {
+     "statement": "Citigroup Inc. (C) offers cards.",
+     "reason": "The context does not provide specific information about Citigroup's product offerings, only that it is in the diversified banks category."
+    },
+    {
+     "statement": "Citigroup Inc. (C) offers retail banking.",
+     "reason": "The context does not provide specific information about Citigroup's product offerings, only that it is in the diversified banks category."
+    },
+    {
+     "statement": "Citigroup Inc. (C) offers treasury services.",
+     "reason": "The context does not provide specific information about Citigroup's product offerings, only that it is in the diversified banks category."
+    },
+    {
+     "statement": "Citigroup Inc. (C) offers investment banking.",
+     "reason": "The context does not provide specific information about Citigroup's product offerings, only that it is in the diversified banks category."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) offers consumer banking.",
+     "reason": "Wells Fargo & Company (WFC) is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) offers commercial banking.",
+     "reason": "Wells Fargo & Company (WFC) is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) offers mortgages.",
+     "reason": "Wells Fargo & Company (WFC) is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) offers cards.",
+     "reason": "Wells Fargo & Company (WFC) is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) offers wealth management for US customers.",
+     "reason": "Wells Fargo & Company (WFC) is not mentioned in the provided context."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) offers investment banking.",
+     "reason": "The context lists Goldman Sachs in the 'Capital Markets' subsector and mentions it as a competitor, but does not explicitly state its specific service offerings."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) offers trading.",
+     "reason": "The context does not provide specific information about Goldman Sachs' product offerings, only that it is in the Capital Markets subsector."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) offers asset management and wealth management for institutional clients.",
+     "reason": "The context does not provide specific information about Goldman Sachs' product offerings, only that it is in the Capital Markets subsector."
+    },
+    {
+     "statement": "Morgan Stanley (MS) offers investment banking.",
+     "reason": "The context lists Morgan Stanley in the 'Capital Markets' subsector and mentions it as a competitor, but does not explicitly state its specific service offerings."
+    },
+    {
+     "statement": "Morgan Stanley (MS) offers institutional securities.",
+     "reason": "The context does not provide specific information about Morgan Stanley's product offerings, only that it is in the Capital Markets subsector."
+    },
+    {
+     "statement": "Morgan Stanley (MS) offers wealth management.",
+     "reason": "The context does not provide specific information about Morgan Stanley's product offerings, only that it is in the Capital Markets subsector."
+    },
+    {
+     "statement": "Morgan Stanley (MS) overlaps with JPMorgan Chase & Co. (JPM) in investment banking, institutional securities, and wealth management segments.",
+     "reason": "While both Morgan Stanley and JPMorgan Chase are listed as competitors, the context does not explicitly state the specific overlapping segments between them."
+    }
+   ],
+   "error": null,
+   "response_words": 79,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3696,
+   "statements": 29,
+   "unsupported": [],
+   "error": null,
+   "response_words": 90,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 0.8333,
+   "answer_relevancy": 0.3983,
+   "statements": 18,
+   "unsupported": [
+    {
+     "statement": "Costco Wholesale Corporation operates using a low-margin, high-volume business model.",
+     "reason": "While the context shows a 3.0% net margin and high revenue growth, the term \"low-margin, high-volume business model\" is not explicitly stated in the context. This is an inference about the business model that cannot be directly inferred from the provided data."
+    },
+    {
+     "statement": "Costco Wholesale Corporation profit has kept pace with sales.",
+     "reason": "While net income grew from $5.84B to $8.10B and revenue grew from $226.95B to $275.24B, the statement \"kept pace\" is subjective and not explicitly stated. The profit growth rate (38.7%) exceeds revenue growth rate (21.2%), so this cannot be directly inferred as stated."
+    },
+    {
+     "statement": "Costco Wholesale Corporation fourth-quarter fiscal 2026 sales growth is consistent with the annual growth rate of 11.1%.",
+     "reason": "While the Q4 2026 sales growth is 11.2% and the annual revenue growth is 11.1%, the statement that they are \"consistent\" is an interpretation. The figures are very similar but the context does not explicitly state they are consistent or comparable in this manner."
+    }
+   ],
+   "error": null,
+   "response_words": 95,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.8,
+   "answer_relevancy": 0.3683,
+   "statements": 20,
+   "unsupported": [
+    {
+     "statement": "Enterprise-value multiples show the same premium pattern as P/E multiples.",
+     "reason": "While the context shows both EV multiples and P/E multiples are at premiums, it does not explicitly state they show the same pattern. The EV/EBITDA is +117% while Forward P/E is +95%, which are different magnitudes, so this inference cannot be directly confirmed."
+    },
+    {
+     "statement": "The market is paying a premium for Costco Wholesale Corporation's growth.",
+     "reason": "While the context shows Costco has higher revenue growth (11.1% vs 5.9% peer median) and higher valuation multiples, the statement that the market is paying a premium specifically for growth is an inference that cannot be directly confirmed from the data alone."
+    },
+    {
+     "statement": "The market is paying a premium for Costco Wholesale Corporation's balance-sheet strength.",
+     "reason": "While Costco has a stronger balance sheet (lower leverage), the context does not explicitly state that the market premium is attributable to balance-sheet strength. The premium could be due to other factors."
+    },
+    {
+     "statement": "Less room exists for Costco Wholesale Corporation's valuation if growth slows.",
+     "reason": "This is a forward-looking inference about valuation sensitivity that cannot be directly inferred from the provided data. While Costco trades at a premium, the statement about what happens if growth slows is not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 111,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3857,
+   "statements": 20,
+   "unsupported": [],
+   "error": null,
+   "response_words": 108,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.7381,
+   "answer_relevancy": 0.5905,
+   "statements": 42,
+   "unsupported": [
+    {
+     "statement": "Costco trades at a steep premium to peers.",
+     "reason": "While the context shows Costco trades at significant premiums across multiple metrics (Forward P/E +95%, EV/EBITDA +117%, EV/Revenue +66%, P/E ttm +37%), the characterization as \"steep\" is an interpretation not explicitly stated."
+    },
+    {
+     "statement": "The premium reflects faster growth at Costco.",
+     "reason": "While Costco has higher revenue growth (11.1% vs 5.9%), the context does not explicitly state that the premium reflects this growth."
+    },
+    {
+     "statement": "The premium reflects a stronger balance sheet at Costco.",
+     "reason": "While Costco has a lower Debt/Equity ratio (0.24 vs 1.08 peer median), the context does not explicitly state that the premium reflects the balance sheet strength."
+    },
+    {
+     "statement": "The premium leaves little room for disappointment.",
+     "reason": "This is an interpretation or inference about valuation implications not explicitly stated in the context."
+    },
+    {
+     "statement": "Costco's revenue growth signals continued share gains.",
+     "reason": "While Costco has higher revenue growth, the context does not explicitly state that this signals continued share gains."
+    },
+    {
+     "statement": "Costco's balance sheet is strong and efficient.",
+     "reason": "While the context shows a low Debt/Equity ratio (0.24) and high ROE (28.4%), the characterization as \"strong and efficient\" is an interpretation not explicitly stated."
+    },
+    {
+     "statement": "The Forward P/E of 36.8 implies high expectations are already priced in.",
+     "reason": "This is an interpretation about valuation implications not explicitly stated in the context."
+    },
+    {
+     "statement": "Recent news on Q4 sales supports Costco's fundamentals.",
+     "reason": "While Q4 sales data is provided, the context does not explicitly state that this supports fundamentals."
+    },
+    {
+     "statement": "The Q4 sales news is consistent with the growth score already captured.",
+     "reason": "While both show positive growth, the context does not explicitly state that the Q4 sales news is consistent with the growth score."
+    },
+    {
+     "statement": "Severity-3 risks are longstanding business risks for Costco.",
+     "reason": "The context lists Severity-3 risks but does not explicitly characterize them as longstanding."
+    },
+    {
+     "statement": "Severity-3 risks are not new events for Costco.",
+     "reason": "The context lists Severity-3 risks but does not explicitly state whether they are new or longstanding."
+    }
+   ],
+   "error": null,
+   "response_words": 188,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 20,
+   "unsupported": [],
+   "error": null,
+   "response_words": 136,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.5556,
+   "answer_relevancy": null,
+   "statements": 9,
+   "unsupported": [
+    {
+     "statement": "Target Corporation (TGT) sells groceries and general merchandise to the same shoppers as Costco Wholesale Corporation.",
+     "reason": "While the context mentions Target as a competitor, it does not explicitly state that Target sells groceries or that it targets the same shoppers as Costco. The context does not provide sufficient information to directly infer this statement."
+    },
+    {
+     "statement": "PriceSmart, Inc. (PSMT) operates membership warehouse clubs.",
+     "reason": "The context does not provide any information about PriceSmart, Inc. operating membership warehouse clubs. PriceSmart is only mentioned in a quality vs value comparison table without details about its business model."
+    },
+    {
+     "statement": "PriceSmart, Inc. sells groceries and general merchandise.",
+     "reason": "The context does not provide information about what PriceSmart, Inc. sells. It is only mentioned in a competitive analysis comparison without details about its product offerings."
+    },
+    {
+     "statement": "The Kroger Co. competes for food and household purchases.",
+     "reason": "While the context lists The Kroger Co. as a competitor and mentions it in the Value & Membership Retail (Food, Beverage & Restaurants) category, it does not explicitly state that it competes for food and household purchases. The statement cannot be directly inferred from the context."
+    }
+   ],
+   "error": null,
+   "response_words": 68,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4518,
+   "statements": 22,
+   "unsupported": [],
+   "error": null,
+   "response_words": 80,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 0.9286,
+   "answer_relevancy": 0.3486,
+   "statements": 14,
+   "unsupported": [
+    {
+     "statement": "Tesla, Inc. (TSLA) sales stayed near $95B to $98B during the period.",
+     "reason": "The revenue data shows 2022: $81.46B, 2023: $96.77B, 2024: $97.69B, and 2025: $94.83B. While 2023-2025 revenues are in the $95B-$98B range, 2022 revenue of $81.46B is significantly lower, so the statement is not entirely accurate for the full period."
+    }
+   ],
+   "error": null,
+   "response_words": 80,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9048,
+   "answer_relevancy": 0.3334,
+   "statements": 21,
+   "unsupported": [
+    {
+     "statement": "The market is pricing in expectations far beyond those for traditional automakers.",
+     "reason": "While the context shows Tesla's multiples are significantly higher than peer medians (2671% higher Forward P/E, 1161% higher EV/EBITDA, etc.), the specific interpretation that this represents expectations \"far beyond those for traditional automakers\" is an inference or conclusion rather than a direct statement in the context."
+    },
+    {
+     "statement": "The median should be read with caution due to the mixed composition of the peer set.",
+     "reason": "While the context shows the peer set is mixed, the specific recommendation to read the median with caution is an inference or conclusion rather than an explicit statement in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 134,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.8333,
+   "answer_relevancy": 0.3976,
+   "statements": 24,
+   "unsupported": [
+    {
+     "statement": "Tesla's valuation premium makes reliance on demand and autonomous driving adoption matter significantly.",
+     "reason": "While the context shows Tesla has high valuation multiples (Forward P/E of 171.4 vs peer median of 6.2), the context does not explicitly connect this valuation premium to the significance of demand and autonomy adoption risks."
+    },
+    {
+     "statement": "Tesla's own battery cell production represents a moderate risk for Tesla, Inc.",
+     "reason": "The risk explanation mentions 'including making its own' regarding battery cells, but does not explicitly state that Tesla's own production is a risk. The risk is about securing supply and controlling costs, not about the production itself being a risk."
+    },
+    {
+     "statement": "Stronger European demand affects the demand risk for Tesla, Inc.",
+     "reason": "While the headline mentions stronger European demand boosting Q3 deliveries, the context does not explicitly state that this affects the demand risk. The demand risk is about future growth depending on demand, but a single positive data point does not necessarily resolve or directly affect the risk assessment."
+    },
+    {
+     "statement": "A single data point does not resolve the demand risk for Tesla, Inc.",
+     "reason": "The context does not explicitly state that a single data point cannot resolve the demand risk. This is a logical inference but not directly stated in the provided information."
+    }
+   ],
+   "error": null,
+   "response_words": 124,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.925,
+   "answer_relevancy": 0.5506,
+   "statements": 40,
+   "unsupported": [
+    {
+     "statement": "Tesla's Forward P/E of 171.4 versus peer median 6.2 leaves little room for disappointment.",
+     "reason": "While the data shows the Forward P/E comparison, the inference that this \"leaves little room for disappointment\" is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "Tesla's severity-3 risks are standard for Tesla.",
+     "reason": "The context does not provide information about what risks are standard for Tesla or how these compare to Tesla's historical risk profile."
+    },
+    {
+     "statement": "The positive delivery news is not material enough to shift the balance.",
+     "reason": "While positive delivery news is mentioned, the context does not explicitly state whether it is material enough or not to shift the balance."
+    }
+   ],
+   "error": null,
+   "response_words": 192,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 23,
+   "unsupported": [],
+   "error": null,
+   "response_words": 145,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.2778,
+   "answer_relevancy": null,
+   "statements": 18,
+   "unsupported": [
+    {
+     "statement": "GM (General Motors Company) sells sedans to US consumers.",
+     "reason": "The context does not provide specific information about the types of vehicles GM sells or whether they sell to US consumers specifically."
+    },
+    {
+     "statement": "GM (General Motors Company) sells SUVs to US consumers.",
+     "reason": "The context does not provide specific information about the types of vehicles GM sells or whether they sell to US consumers specifically."
+    },
+    {
+     "statement": "GM (General Motors Company) sells electric vehicles to US consumers.",
+     "reason": "The context does not provide specific information about whether GM sells electric vehicles."
+    },
+    {
+     "statement": "F (Ford Motor Company) sells electric vehicles to US consumers.",
+     "reason": "The context does not provide specific information about whether Ford sells electric vehicles."
+    },
+    {
+     "statement": "F (Ford Motor Company) sells gasoline vehicles to US consumers.",
+     "reason": "The context does not provide specific information about the types of vehicles Ford sells."
+    },
+    {
+     "statement": "F (Ford Motor Company) sells vehicles to international consumers.",
+     "reason": "The context does not provide specific information about Ford's international sales."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) sells electric SUVs.",
+     "reason": "The context does not provide specific information about the types of electric vehicles Rivian sells."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) sells electric trucks.",
+     "reason": "The context does not provide specific information about the types of electric vehicles Rivian sells."
+    },
+    {
+     "statement": "TM (Toyota Motor Corporation) sells sedans.",
+     "reason": "The context does not provide specific information about the types of vehicles Toyota sells."
+    },
+    {
+     "statement": "TM (Toyota Motor Corporation) sells SUVs.",
+     "reason": "The context does not provide specific information about the types of vehicles Toyota sells."
+    },
+    {
+     "statement": "TM (Toyota Motor Corporation) sells electrified vehicles.",
+     "reason": "The context does not provide specific information about whether Toyota sells electrified vehicles."
+    },
+    {
+     "statement": "LCID (Lucid Group, Inc.) sells electric sedans.",
+     "reason": "The context does not provide specific information about the types of electric vehicles Lucid sells."
+    },
+    {
+     "statement": "LCID (Lucid Group, Inc.) sells electric SUVs.",
+     "reason": "The context does not provide specific information about the types of electric vehicles Lucid sells."
+    }
+   ],
+   "error": null,
+   "response_words": 66,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-03T09:28:34+00:00"
+  }
+ ],
+ "skipped": [],
+ "failed": {}
+}

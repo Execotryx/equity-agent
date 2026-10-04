@@ -1,0 +1,155 @@
+{
+ "answers": [
+  {
+   "agent": "comps",
+   "input_tokens": 2493,
+   "model": "claude-opus-5-5",
+   "ms": 3299,
+   "output": {
+    "peers": [
+     {
+      "name": "Intel Corporation",
+      "ticker": "INTC"
+     },
+     {
+      "name": "GlobalFoundries Inc.",
+      "ticker": "GFS"
+     },
+     {
+      "name": "United Microelectronics Corporation",
+      "ticker": "UMC"
+     },
+     {
+      "name": "Tower Semiconductor Ltd.",
+      "ticker": "TSEM"
+     },
+     {
+      "name": "Micron Technology, Inc.",
+      "ticker": "MU"
+     }
+    ]
+   },
+   "output_tokens": 142,
+   "type": "PeerPicks"
+  },
+  {
+   "agent": "comps",
+   "input_tokens": 3636,
+   "model": "claude-opus-5-5",
+   "ms": 4140,
+   "output": {
+    "rationales": [
+     {
+      "rationale": "Intel Foundry offers wafer fabrication, overlapping TSMC's semiconductor manufacturing services.",
+      "ticker": "INTC"
+     },
+     {
+      "rationale": "Semiconductor foundry providing wafer fabrication services, including radio frequency technologies, like TSMC.",
+      "ticker": "GFS"
+     },
+     {
+      "rationale": "Taiwan-based wafer foundry manufacturing integrated circuits, with assembly and testing services.",
+      "ticker": "UMC"
+     },
+     {
+      "rationale": "Independent foundry offering mixed-signal and RF CMOS process technologies, overlapping TSMC's offerings.",
+      "ticker": "TSEM"
+     },
+     {
+      "rationale": "Manufactures semiconductor memory products; search results list Micron as a TSMC competitor.",
+      "ticker": "MU"
+     }
+    ]
+   },
+   "output_tokens": 273,
+   "type": "PeerRationales"
+  },
+  {
+   "agent": "risk",
+   "input_tokens": 3380,
+   "model": "claude-opus-5-5",
+   "ms": 8878,
+   "output": {
+    "risks": [
+     {
+      "category": "macro",
+      "explanation": "Any global systemic political, economic and financial crisis, including indirect effects, could hurt the business, results of operations and financial condition.",
+      "severity": 3,
+      "source_heading": "Any global systemic political, economic and financial crisis (as well as the indirect effects flowing therefrom) could negatively affect our business, results of operations, and financial condition.",
+      "title": "Global political, economic and financial crises"
+     },
+     {
+      "category": "macro",
+      "explanation": "Reliance on highly cyclical semiconductor and electronics industries, prone to downturns and overcapacity, may make revenue, margins and earnings fluctuate significantly.",
+      "severity": 3,
+      "source_heading": "Since we are dependent on the highly cyclical semiconductor and electronics industries, which have experienced significant and sometimes prolonged periods of downturn and overcapacity, our revenue, margins and earnings may fluctuate significantly.",
+      "title": "Dependence on cyclical semiconductor industry"
+     },
+     {
+      "category": "competition",
+      "explanation": "Failing to stay a technology leader, respond quickly to changing market dynamics, or maintain product quality could make the company less competitive.",
+      "severity": 3,
+      "source_heading": "If we are unable to remain a technological leader in the semiconductor industry, unable to timely respond to fast- changing semiconductor market dynamics, or unable to maintain our edge in product quality, we may become less competitive.",
+      "title": "Losing technological leadership"
+     },
+     {
+      "category": "operational",
+      "explanation": "Failure to manage the complexity of global operations and the challenges of global expansion could adversely affect business, financial condition and results.",
+      "severity": 2,
+      "source_heading": "If we are unable to successfully manage the complexity of our global operations and deal with the challenges and risks related to our global expansion, our business, financial condition and results of operations could be adversely affected.",
+      "title": "Managing complex global operations and expansion"
+     },
+     {
+      "category": "operational",
+      "explanation": "Disruptive events or industrial accidents where the company, its customers or suppliers operate could materially harm operational results.",
+      "severity": 2,
+      "source_heading": "Our operational results could also be materially and adversely affected by disruptive events or industrial accidents, in the locations in which we, our customers or our suppliers operate.",
+      "title": "Disruptive events and industrial accidents"
+     },
+     {
+      "category": "supply_chain",
+      "explanation": "The company may be unable to obtain necessary equipment on time and at reasonable cost, which it needs to remain competitive.",
+      "severity": 2,
+      "source_heading": "We may be unable to obtain in a timely manner and at a reasonable cost equipment that is necessary for us to remain competitive.",
+      "title": "Timely, affordable access to key equipment"
+     }
+    ]
+   },
+   "output_tokens": 876,
+   "type": "RiskSelection"
+  },
+  {
+   "agent": "analyst",
+   "input_tokens": 3978,
+   "model": "claude-opus-5-5",
+   "ms": 6293,
+   "output": {
+    "change_reason": null,
+    "changed_from_preliminary": false,
+    "confidence": 0.75,
+    "counterpoints": [
+     "Severity-3 risks: global crises and dependence on a cyclical semiconductor industry could swing earnings.",
+     "Losing technological leadership is a severity-3 competitive risk in a capital-intensive industry.",
+     "Price at 97% of the 52-week range may leave little room after a strong run."
+    ],
+    "signal": "BUY",
+    "signal_reasoning": "All five factors score +1 for a total of 5: valuation (Forward P/E -28% vs peers), growth (+12.3 pts), profitability (+33.0 pts), analyst upside (+16.8%) and momentum (above 200-day average). The severity-3 risks are generic, long-standing filing risks rather than new events, and recent news is neutral to positive, so the preliminary BUY is retained.\"",
+    "thesis": [
+     "Revenue growth of 36.0% beats the 23.7% peer median by 52%.",
+     "Net margin of 49.9% versus 16.9% peer median shows exceptional profitability.",
+     "Forward P/E of 21.6 sits 28% below peers despite superior fundamentals."
+    ],
+    "valuation_summary": "TSM trades at a Forward P/E of 21.6 versus a peer median of 29.9 (-28%), with EV/EBITDA of 5.4 versus 25.7 (-79%). Trailing P/E of 35.3 is +10% above the peer median, and P/B of 97.2 looks unusual."
+   },
+   "output_tokens": 495,
+   "type": "AnalystOutput"
+  }
+ ],
+ "writer": {
+  "input_tokens": 2900,
+  "markdown": "## Company overview\n\nTaiwan Semiconductor Manufacturing Company Limited (TSM) operates in the semiconductor industry within the technology sector. According to its business summary, it manufactures, packages, tests and sells integrated circuits and other semiconductor devices across Taiwan, China, Europe, the Middle East, Africa, Japan, the United States and other markets. Its wafer fabrication processes cover CMOS logic, mixed-signal, radio frequency, embedded memory and bipolar CMOS mixed-signal, and it also provides customer and engineering support services. With a market capitalization of $2.45T and a price of 472.78, near the top of its 52-week range of 266.82-479.00, it is one of the largest companies among its foundry peers.\n\n## Financial commentary\n\nRevenue fell from $2.26T in fiscal 2022 to $2.16T in 2023, then rebounded to $2.89T in 2024 and $3.81T in 2025. Net income followed a similar path: $992.92B in 2022, $851.74B in 2023, $1.16T in 2024 and $1.70T in 2025. The dip in 2023 and the subsequent recovery fit the cyclical pattern described in the company's risk disclosures.\n\nProfitability is strong, with a net margin of 49.9% and a return on equity of 40.0%. Revenue growth is given as 36.0%. Debt/Equity is a modest 0.17, and the dividend yield is 0.9%. The P/B ratio of 97.2 is high.\n\n## Comps commentary\n\nThe primary comparison is Forward P/E, where TSM trades at 21.6 against a peer median of 29.9, which is 28% lower. On trailing earnings the picture is closer, with a P/E of 35.3 that sits 10% above the peer median of 32.2. Enterprise-value multiples are well below the peers: EV/EBITDA of 5.4 is 79% under the median of 25.7, and EV/Revenue of 3.9 is 61% under the median of 10.0.\n\nOperating metrics are stronger than the peer median. Net margin of 49.9% compares with a median of 16.9%, a difference of +195%, and revenue growth of 36.0% compares with 23.7%, or +52%. Debt/Equity is 17% above the peer median, at 0.17 versus 0.14. The peer set is wide-ranging, including Intel with a negative net margin and Micron with revenue growth of 379.3%, so the median should be read with care.\n\n## Risk commentary\n\nThe three most severe risks in the filings each carry a severity of 3. The first is exposure to global political, economic and financial crises, which could hurt results and financial condition. The second is dependence on the highly cyclical semiconductor and electronics industries, where downturns and overcapacity can make revenue, margins and earnings swing sharply. The third is the possibility of losing technological leadership if the company fails to respond quickly to changing market dynamics or maintain product quality.\n\nThree risks carry a severity of 2: managing the complexity of global operations and expansion, disruptive events or industrial accidents affecting the company, its customers or suppliers, and obtaining key equipment on time and at reasonable cost. The recent news headlines mostly describe share price moves and peer comparisons, and they do not relate directly to these risks.",
+  "model": "claude-sonnet-5-5",
+  "ms": 8032,
+  "output_tokens": 1091
+ }
+}

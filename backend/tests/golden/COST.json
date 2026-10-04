@@ -1,0 +1,1545 @@
+{
+ "agent_inputs": [
+  {
+   "agent": "analyst",
+   "user": "{\"company\":{\"analyst_mean_target\":\"1057.94\",\"analyst_recommendation\":\"buy\",\"business_summary\":\"Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…\",\"currency\":\"USD\",\"industry\":\"Discount Stores\",\"market_cap\":\"$408.09B\",\"multiples\":{\"Debt/Equity\":\"0.24\",\"Dividend yield\":\"0.6%\",\"EV/EBITDA\":\"27.4\",\"EV/Revenue\":\"1.3\",\"Forward P/E\":\"36.8\",\"Net margin\":\"3.0%\",\"P/B\":\"11.4\",\"P/E (ttm)\":\"44.3\",\"ROE\":\"28.4%\",\"Revenue growth\":\"11.1%\"},\"name\":\"Costco Wholesale Corporation\",\"net_income_by_fiscal_year\":{\"2022\":\"$5.84B\",\"2023\":\"$6.29B\",\"2024\":\"$7.37B\",\"2025\":\"$8.10B\"},\"price\":\"920.65\",\"revenue_by_fiscal_year\":{\"2022\":\"$226.95B\",\"2023\":\"$242.29B\",\"2024\":\"$254.45B\",\"2025\":\"$275.24B\"},\"sector\":\"Consumer Defensive\",\"ticker\":\"COST\",\"week52_range\":\"844.06-1096.50\"},\"comps\":{\"metric_set\":\"general\",\"peer_median\":{\"Debt/Equity\":\"1.17\",\"EV/EBITDA\":\"12.0\",\"EV/Revenue\":\"0.9\",\"Forward P/E\":\"17.6\",\"Net margin\":\"3.5%\",\"P/E (ttm)\":\"18.2\",\"Revenue growth\":\"5.6%\"},\"peers\":[{\"Debt/Equity\":\"0.72\",\"EV/EBITDA\":\"20.4\",\"EV/Revenue\":\"1.2\",\"Forward P/E\":\"32.3\",\"Net margin\":\"3.0%\",\"P/E (ttm)\":\"37.6\",\"Revenue growth\":\"5.9%\",\"market_cap\":\"$827.17B\",\"name\":\"Walmart Inc.\",\"ticker\":\"WMT\"},{\"Debt/Equity\":\"1.08\",\"EV/EBITDA\":\"9.9\",\"EV/Revenue\":\"0.8\",\"Forward P/E\":\"16.3\",\"Net margin\":\"4.1%\",\"P/E (ttm)\":\"16.2\",\"Revenue growth\":\"5.3%\",\"market_cap\":\"$70.87B\",\"name\":\"Target Corporation\",\"ticker\":\"TGT\"},{\"Debt/Equity\":\"1.26\",\"EV/EBITDA\":\"12.6\",\"EV/Revenue\":\"0.6\",\"Forward P/E\":\"18.9\",\"Net margin\":\"2.6%\",\"P/E (ttm)\":\"20.2\",\"Revenue growth\":\"15.7%\",\"market_cap\":\"$11.99B\",\"name\":\"BJ's Wholesale Club Holdings, Inc.\",\"ticker\":\"BJ\"},{\"Debt/Equity\":\"1.70\",\"EV/EBITDA\":\"11.3\",\"EV/Revenue\":\"0.9\",\"Forward P/E\":\"14.3\",\"Net margin\":\"3.9%\",\"P/E (ttm)\":\"15.8\",\"Revenue growth\":\"5.2%\",\"market_cap\":\"$26.24B\",\"name\":\"Dollar General Corporation\",\"ticker\":\"DG\"}],\"primary_multiple\":\"Forward P/E\",\"target\":{\"Debt/Equity\":\"0.24\",\"EV/EBITDA\":\"27.4\",\"EV/Revenue\":\"1.3\",\"Forward P/E\":\"36.8\",\"Net margin\":\"3.0%\",\"P/E (ttm)\":\"44.3\",\"Revenue growth\":\"11.1%\",\"ticker\":\"COST\"},\"target_vs_peer_median\":{\"Debt/Equity\":\"-80%\",\"EV/EBITDA\":\"+129%\",\"EV/Revenue\":\"+51%\",\"Forward P/E\":\"+109%\",\"Net margin\":\"-12%\",\"P/E (ttm)\":\"+143%\",\"Revenue growth\":\"+98%\"}},\"news\":[{\"headline\":\"Costco Q4 2026 earnings: Sales rise 11.2% to $93.9B | COST Stock News\",\"published\":\"Thu, 24 Sep 2026 20:15:00 GMT\",\"source\":\"stocktitan.net\"},{\"headline\":\"Here's What Analysts Are Forecasting For Costco Wholesale Corporation (NASDAQ:COST) After Its Yearly Results - Simply Wall St News\",\"published\":\"Sun, 27 Sep 2026 12:30:38 GMT\",\"source\":\"simplywall.st\"},{\"headline\":\"Should You Buy, Hold or Sell Costco Stock After Its Q4 Earnings Beat? — Noticias de TradingView\",\"published\":\"Wed, 30 Sep 2026 13:00:00 GMT\",\"source\":\"es.tradingview.com\"},{\"headline\":\"Costco Wholesale Corp (COST) Stock Price Live, Chart & News - TradingKey\",\"published\":\"Thu, 24 Sep 2026 11:00:00 GMT\",\"source\":\"tradingkey.com\"},{\"headline\":\"Costco Wholesale Corporation Reports Fourth Quarter and Fiscal Year 2026 Operating Results\",\"published\":\"Thu, 24 Sep 2026 20:15:00 GMT\",\"source\":\"finance.yahoo.com\"}],\"risks\":[{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 1\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 2\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 3\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 4\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 5\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 6\"}],\"scorecard\":{\"factors\":[{\"detail\":\"Forward P/E 36.8 vs peer median 17.6 (+109%; band ±15%)\",\"factor\":\"valuation\",\"score\":-1},{\"detail\":\"Revenue growth 11.1% vs peer median 5.6% (+5.5 pts; band ±5 pts)\",\"factor\":\"growth\",\"score\":1},{\"detail\":\"Net margin 3.0% vs peer median 3.5% (-0.4 pts; band ±5 pts)\",\"factor\":\"profitability\",\"score\":0},{\"detail\":\"mean analyst target 1057.94 vs price 920.65 (+14.9%; band ±10%)\",\"factor\":\"analyst_upside\",\"score\":1},{\"detail\":\"price 920.65 below its 200-day average 959.43; at 30% of the 52-week range\",\"factor\":\"momentum\",\"score\":-1}],\"preliminary_signal\":\"HOLD\",\"total\":0}}"
+  },
+  {
+   "agent": "comps",
+   "user": "{\"company\":{\"business_summary\":\"Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…\",\"industry\":\"Discount Stores\",\"name\":\"Costco Wholesale Corporation\",\"sector\":\"Consumer Defensive\",\"ticker\":\"COST\"},\"peers\":[{\"business_summary\":\"Walmart Inc. engages in the operation of retail and wholesale stores and clubs, ecommerce websites, and mobile applications worldwide. The company operates through three segments: Walmart U.S., Walmart International, and Sam's Club U.S. It operates supercenters, supermarkets, warehouse clubs, cash and carry stores, and discount stores under Walmart and Walmart Neighborhood Market brands; membership-only warehouse clubs; and ecommerce websites, such as walmart.com.mx, walmart.ca, flipkart.com, PhonePe and other sites. It offers grocery items, including dry grocery, snacks, dairy, meat,…\",\"industry\":\"Discount Stores\",\"name\":\"Walmart Inc.\",\"sector\":\"Consumer Defensive\",\"ticker\":\"WMT\"},{\"business_summary\":\"Target Corporation operates as a general merchandise retailer in the United States. It offers apparel for women, men, young adults, kids, toddlers, and babies, as well as jewelry, accessories, and shoes; and beauty products, such as skin and bath care, cosmetics, hair care, oral care, deodorant, and shaving products. The company also provides food and beverage products comprising dry and perishable grocery, including snacks, candy, beverages, deli, bakery, meat, produce, and food service; electronics which includes video games and consoles, toys, sporting goods, entertainment, and luggage;…\",\"industry\":\"Discount Stores\",\"name\":\"Target Corporation\",\"sector\":\"Consumer Defensive\",\"ticker\":\"TGT\"},{\"business_summary\":\"BJ's Wholesale Club Holdings, Inc., together with its subsidiaries, operates membership warehouse clubs on the eastern half of the United States. The company offers groceries, fresh food, general merchandise, gasoline, and other ancillary services. It sells its products through its clubs; the BJs.com website; and its mobile app. The company was formerly known as Beacon Holding Inc. and changed its name to BJ's Wholesale Club Holdings, Inc. in February 2018. BJ's Wholesale Club Holdings, Inc. was founded in 1984 and is headquartered in Marlborough, Massachusetts.\",\"industry\":\"Discount Stores\",\"name\":\"BJ's Wholesale Club Holdings, Inc.\",\"sector\":\"Consumer Defensive\",\"ticker\":\"BJ\"},{\"business_summary\":\"Dollar General Corporation, a discount retailer, provides various merchandise products in the southern, southwestern, midwestern, and eastern United States. It offers consumable products, including paper towels, bath tissues, paper dinnerware, trash and storage bags, disinfectants, and laundry products; packaged food, such as cereals, pasta, canned soups, canned meats, fruits and vegetables, condiments, spices, sugar, and flour; and perishables, including milk, eggs, bread, refrigerated and frozen food, beer, wine, and produce; candy, cookies, crackers, salty snacks, and carbonated…\",\"industry\":\"Discount Stores\",\"name\":\"Dollar General Corporation\",\"sector\":\"Consumer Defensive\",\"ticker\":\"DG\"}],\"search_results\":[{\"snippet\":\"| Company Name | Ticker | Market Cap (USD, Approx.) | Subsector | Market Cap | --- --- | Costco Wholesale Corp | COST | $350B+ | Discount Stores | $442.85B | | Walmart Inc. (Sam’s Club) | WMT | $500B+ | Discount Stores | $986.71B | | BJ’s Wholesale Club Holdings Inc. | BJ | $10B+ | Discount Stores | $12.67B | | Target Corporation | TGT | $60B+ | Discount Stores | $54.70B | | Kroger Co. | KR | $30B+ | Grocery Stores | $45.50B | | Amazon.com, Inc. | AMZN | $1.8T+ | Internet Retail | $2.29T | [...] Costco operates in a highly competitive environment, facing challenges from both traditional and…\",\"source\":\"hudson-labs.com\",\"title\":\"Costco Competitors: COST Top Rivals in 2026 | Hudson Labs\"},{\"snippet\":\"Among Costco’s direct competitors, Sam’s Club and BJ’s Wholesale are the only other membership-based warehouse clubs operating at scale in the U.S. Costco competitors in 2026 span warehouse clubs, grocery chains, discount retailers, and e-commerce platforms including Amazon, Target, and Kroger. Costco’s Kirkland Signature private label and a 89.7% renewal rate are what sets Costco apart from its competitors in a market where switching costs are nearly zero. ## Costco Competitors [...] ## FAQs How many competitors does Costco have? Costco has two direct warehouse club competitors in the U.S.…\",\"source\":\"companieshistory.com\",\"title\":\"Costco Competitors 2026: Top Rivals, Market Share And Industry Analysis\"},{\"snippet\":\"The top Costco competitors are Walmart, Amazon, Home Depot, The Kroger Company, Target, Kmart, Lowe’s and others. Costco is a wholesale retail corporation that was formed during the year 1976 and is headquartered in Washington, United States. It is a popular chain of membership-only warehouses at the global level. This brand is also famous for its retail in organic food, rotisserie chicken, prime beef, and wine. [...] This discount store has a lot of support from the customer providing a wide range of choices at feasible prices. Due to its low prices of products, Aldi stores provide more…\",\"source\":\"marketing91.com\",\"title\":\"Top 17 Costco Alternatives & Competitors in 2026\"},{\"snippet\":\"Walmart Inc.(WMT) High Quality·Quality 93%·Value 60%BJ's Wholesale Club Holdings, Inc.(BJ) Investable·Quality 87%·Value 30%Target Corporation(TGT) Value Play·Quality 40%·Value 60%Amazon.com, Inc.(AMZN) High Quality·Quality 93%·Value 80%PriceSmart, Inc.(PSMT) High Quality·Quality 87%·Value 60%The Kroger Co.(KR) High Quality·Quality 93%·Value 80% Quality vs Value comparison of Costco Wholesale Corporation (COST) and competitors [...] A comprehensive competitive analysis of Costco Wholesale Corporation (COST) in the Value & Membership Retail (Food, Beverage & Restaurants) within the US stock…\",\"source\":\"koalagains.com\",\"title\":\"Costco Wholesale Corporation (COST) Competitive Analysis & Comparison (2026)\"},{\"snippet\":\"In the United States, Costco's main competitors operating membership warehouses are Sam's Club (a subsidiary of Walmart) and BJ's Wholesale Club. Costco employs 316,000 full and part-time employees worldwide. Costco had 90.3 million members in 2017. In 2020, Costco had 105.5 million members. In 2021, the company had 111.6 million members. As of November 2023( Costco had 129.5 million members. As of February 2026, Costco has over 145.9 million cardholders and 81.4 paid memberships, which is up\",\"source\":\"en.wikipedia.org\",\"title\":\"Costco - Wikipedia\"}]}"
+  },
+  {
+   "agent": "comps",
+   "user": "{\"company\":{\"business_summary\":\"Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…\",\"industry\":\"Discount Stores\",\"name\":\"Costco Wholesale Corporation\",\"sector\":\"Consumer Defensive\",\"ticker\":\"COST\"},\"search_results\":[{\"snippet\":\"| Company Name | Ticker | Market Cap (USD, Approx.) | Subsector | Market Cap | --- --- | Costco Wholesale Corp | COST | $350B+ | Discount Stores | $442.85B | | Walmart Inc. (Sam’s Club) | WMT | $500B+ | Discount Stores | $986.71B | | BJ’s Wholesale Club Holdings Inc. | BJ | $10B+ | Discount Stores | $12.67B | | Target Corporation | TGT | $60B+ | Discount Stores | $54.70B | | Kroger Co. | KR | $30B+ | Grocery Stores | $45.50B | | Amazon.com, Inc. | AMZN | $1.8T+ | Internet Retail | $2.29T | [...] Costco operates in a highly competitive environment, facing challenges from both traditional and…\",\"source\":\"hudson-labs.com\",\"title\":\"Costco Competitors: COST Top Rivals in 2026 | Hudson Labs\"},{\"snippet\":\"Among Costco’s direct competitors, Sam’s Club and BJ’s Wholesale are the only other membership-based warehouse clubs operating at scale in the U.S. Costco competitors in 2026 span warehouse clubs, grocery chains, discount retailers, and e-commerce platforms including Amazon, Target, and Kroger. Costco’s Kirkland Signature private label and a 89.7% renewal rate are what sets Costco apart from its competitors in a market where switching costs are nearly zero. ## Costco Competitors [...] ## FAQs How many competitors does Costco have? Costco has two direct warehouse club competitors in the U.S.…\",\"source\":\"companieshistory.com\",\"title\":\"Costco Competitors 2026: Top Rivals, Market Share And Industry Analysis\"},{\"snippet\":\"The top Costco competitors are Walmart, Amazon, Home Depot, The Kroger Company, Target, Kmart, Lowe’s and others. Costco is a wholesale retail corporation that was formed during the year 1976 and is headquartered in Washington, United States. It is a popular chain of membership-only warehouses at the global level. This brand is also famous for its retail in organic food, rotisserie chicken, prime beef, and wine. [...] This discount store has a lot of support from the customer providing a wide range of choices at feasible prices. Due to its low prices of products, Aldi stores provide more…\",\"source\":\"marketing91.com\",\"title\":\"Top 17 Costco Alternatives & Competitors in 2026\"},{\"snippet\":\"Walmart Inc.(WMT) High Quality·Quality 93%·Value 60%BJ's Wholesale Club Holdings, Inc.(BJ) Investable·Quality 87%·Value 30%Target Corporation(TGT) Value Play·Quality 40%·Value 60%Amazon.com, Inc.(AMZN) High Quality·Quality 93%·Value 80%PriceSmart, Inc.(PSMT) High Quality·Quality 87%·Value 60%The Kroger Co.(KR) High Quality·Quality 93%·Value 80% Quality vs Value comparison of Costco Wholesale Corporation (COST) and competitors [...] A comprehensive competitive analysis of Costco Wholesale Corporation (COST) in the Value & Membership Retail (Food, Beverage & Restaurants) within the US stock…\",\"source\":\"koalagains.com\",\"title\":\"Costco Wholesale Corporation (COST) Competitive Analysis & Comparison (2026)\"},{\"snippet\":\"In the United States, Costco's main competitors operating membership warehouses are Sam's Club (a subsidiary of Walmart) and BJ's Wholesale Club. Costco employs 316,000 full and part-time employees worldwide. Costco had 90.3 million members in 2017. In 2020, Costco had 105.5 million members. In 2021, the company had 111.6 million members. As of November 2023( Costco had 129.5 million members. As of February 2026, Costco has over 145.9 million cardholders and 81.4 paid memberships, which is up\",\"source\":\"en.wikipedia.org\",\"title\":\"Costco - Wikipedia\"}]}"
+  },
+  {
+   "agent": "risk",
+   "user": "{\"company\":\"Costco Wholesale Corporation\",\"filing\":\"10-K\",\"risk_headings\":[\"Business and Operating Risks\",\"We are highly dependent on the financial performance of our U.S. and Canadian operations.\",\"We may be unsuccessful implementing our growth strategy, including expanding our business in existing markets and new markets, and integrating acquisitions, which could have an adverse impact on our business, financial condition and results of operations.\",\"We seek to expand in existing markets to attain a greater overall market share. A new warehouse may draw members away from our existing warehouses and adversely affect their comparable sales performance, member traffic, and profitability.\",\"Our failure to maintain membership growth, loyalty and brand recognition could adversely affect our results of operations.\",\"Disruptions in merchandise distribution or processing, packaging, manufacturing, and other facilities could adversely affect sales and member satisfaction.\",\"We may not timely identify or effectively respond to consumer tastes and preferences, which could negatively affect our relationship with our members, the demand for our products and services, and our market share.\",\"Availability and performance of our IT systems are vital to our business. Failure to successfully execute IT projects and have IT systems available to our business would adversely impact our operations.\",\"We are subject to payment-related risks.\",\"We might sell products that cause illness or injury to our members, harm to our reputation, and expose us to litigation.\",\"If we do not successfully develop and maintain a relevant and comprehensive digital experience for our members, our results of operations could be adversely impacted.\",\"Inability to attract, train and retain qualified employees could adversely impact our business, financial condition and results of operations.\",\"We may incur property, casualty or other losses not covered by our insurance.\",\"Market and Other External Risks\",\"We face strong competition from other retailers and warehouse club operators, which could adversely affect our business, financial condition and results of operations.\",\"General economic factors, domestically and internationally, may adversely affect our business, financial condition, and results of operations.\",\"Suppliers may be unable to timely supply us with quality merchandise at competitive prices or may fail to adhere to our high standards, resulting in adverse effects on our business, merchandise inventories, sales, and profit margins.\",\"Fluctuations in foreign-exchange rates may adversely affect our results of operations.\",\"Natural disasters, extreme weather conditions, or other catastrophic events could negatively affect our business, financial condition, and results of operations.\",\"Pandemics and other health crises could affect our business, financial condition and results of operations in many respects.\",\"The severity and duration of pandemics;\",\"Evolving macroeconomic factors, including general economic uncertainty, unemployment rates, and recessionary pressures;\",\"Changes in labor markets affecting us and our suppliers;\",\"Unknown consequences on our business performance and initiatives stemming from the substantial investment of time and other resources to the pandemic response;\",\"The pace of post-pandemic recovery;\",\"The long-term impact of the pandemic on our business, including consumer behaviors; and\",\"Disruption and volatility within the financial and credit markets.\",\"Failure to meet financial market expectations could adversely affect the market price and volatility of our stock.\",\"Legal and Regulatory Risks\",\"Changes in or failure to comply with laws and regulations could adversely impact our business, financial condition and results of operations.\",\"Changes in accounting standards and subjective assumptions, estimates and judgments by management related to complex accounting matters could significantly affect our financial condition and results of operations.\",\"Changes in rules or interpretation or changes in underlying assumptions, estimates or judgments by our management could significantly change our reported or expected financial performance and have a material impact on our consolidated financial statements.\",\"We are exposed to risks relating to evaluations of controls required by Section 404 of the Sarbanes-Oxley Act and otherwise.\",\"Changes in federal, state and foreign tax rates and legislation, could adversely affect our financial condition and results of operations.\",\"Failure or perceived failure to meet our environmental, social or governance (ESG) goals or expectations set by changing public interest and government regulation of ESG topics could result in reputational harm or adversely affect our business.\",\"We are involved in a number of legal proceedings and audits and some of these outcomes could adversely affect our business, financial condition and results of operations.\"],\"ticker\":\"COST\"}"
+  },
+  {
+   "agent": "writer",
+   "user": "{\"company\":{\"analyst_mean_target\":\"1057.94\",\"analyst_recommendation\":\"buy\",\"business_summary\":\"Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…\",\"currency\":\"USD\",\"industry\":\"Discount Stores\",\"market_cap\":\"$408.09B\",\"multiples\":{\"Debt/Equity\":\"0.24\",\"Dividend yield\":\"0.6%\",\"EV/EBITDA\":\"27.4\",\"EV/Revenue\":\"1.3\",\"Forward P/E\":\"36.8\",\"Net margin\":\"3.0%\",\"P/B\":\"11.4\",\"P/E (ttm)\":\"44.3\",\"ROE\":\"28.4%\",\"Revenue growth\":\"11.1%\"},\"name\":\"Costco Wholesale Corporation\",\"net_income_by_fiscal_year\":{\"2022\":\"$5.84B\",\"2023\":\"$6.29B\",\"2024\":\"$7.37B\",\"2025\":\"$8.10B\"},\"price\":\"920.65\",\"revenue_by_fiscal_year\":{\"2022\":\"$226.95B\",\"2023\":\"$242.29B\",\"2024\":\"$254.45B\",\"2025\":\"$275.24B\"},\"sector\":\"Consumer Defensive\",\"ticker\":\"COST\",\"week52_range\":\"844.06-1096.50\"},\"comps\":{\"metric_set\":\"general\",\"peer_median\":{\"Debt/Equity\":\"1.17\",\"EV/EBITDA\":\"12.0\",\"EV/Revenue\":\"0.9\",\"Forward P/E\":\"17.6\",\"Net margin\":\"3.5%\",\"P/E (ttm)\":\"18.2\",\"Revenue growth\":\"5.6%\"},\"peers\":[{\"Debt/Equity\":\"0.72\",\"EV/EBITDA\":\"20.4\",\"EV/Revenue\":\"1.2\",\"Forward P/E\":\"32.3\",\"Net margin\":\"3.0%\",\"P/E (ttm)\":\"37.6\",\"Revenue growth\":\"5.9%\",\"market_cap\":\"$827.17B\",\"name\":\"Walmart Inc.\",\"ticker\":\"WMT\"},{\"Debt/Equity\":\"1.08\",\"EV/EBITDA\":\"9.9\",\"EV/Revenue\":\"0.8\",\"Forward P/E\":\"16.3\",\"Net margin\":\"4.1%\",\"P/E (ttm)\":\"16.2\",\"Revenue growth\":\"5.3%\",\"market_cap\":\"$70.87B\",\"name\":\"Target Corporation\",\"ticker\":\"TGT\"},{\"Debt/Equity\":\"1.26\",\"EV/EBITDA\":\"12.6\",\"EV/Revenue\":\"0.6\",\"Forward P/E\":\"18.9\",\"Net margin\":\"2.6%\",\"P/E (ttm)\":\"20.2\",\"Revenue growth\":\"15.7%\",\"market_cap\":\"$11.99B\",\"name\":\"BJ's Wholesale Club Holdings, Inc.\",\"ticker\":\"BJ\"},{\"Debt/Equity\":\"1.70\",\"EV/EBITDA\":\"11.3\",\"EV/Revenue\":\"0.9\",\"Forward P/E\":\"14.3\",\"Net margin\":\"3.9%\",\"P/E (ttm)\":\"15.8\",\"Revenue growth\":\"5.2%\",\"market_cap\":\"$26.24B\",\"name\":\"Dollar General Corporation\",\"ticker\":\"DG\"}],\"primary_multiple\":\"Forward P/E\",\"target\":{\"Debt/Equity\":\"0.24\",\"EV/EBITDA\":\"27.4\",\"EV/Revenue\":\"1.3\",\"Forward P/E\":\"36.8\",\"Net margin\":\"3.0%\",\"P/E (ttm)\":\"44.3\",\"Revenue growth\":\"11.1%\",\"ticker\":\"COST\"},\"target_vs_peer_median\":{\"Debt/Equity\":\"-80%\",\"EV/EBITDA\":\"+129%\",\"EV/Revenue\":\"+51%\",\"Forward P/E\":\"+109%\",\"Net margin\":\"-12%\",\"P/E (ttm)\":\"+143%\",\"Revenue growth\":\"+98%\"}},\"news\":[{\"headline\":\"Costco Q4 2026 earnings: Sales rise 11.2% to $93.9B | COST Stock News\",\"published\":\"Thu, 24 Sep 2026 20:15:00 GMT\",\"source\":\"stocktitan.net\"},{\"headline\":\"Here's What Analysts Are Forecasting For Costco Wholesale Corporation (NASDAQ:COST) After Its Yearly Results - Simply Wall St News\",\"published\":\"Sun, 27 Sep 2026 12:30:38 GMT\",\"source\":\"simplywall.st\"},{\"headline\":\"Should You Buy, Hold or Sell Costco Stock After Its Q4 Earnings Beat? — Noticias de TradingView\",\"published\":\"Wed, 30 Sep 2026 13:00:00 GMT\",\"source\":\"es.tradingview.com\"},{\"headline\":\"Costco Wholesale Corp (COST) Stock Price Live, Chart & News - TradingKey\",\"published\":\"Thu, 24 Sep 2026 11:00:00 GMT\",\"source\":\"tradingkey.com\"},{\"headline\":\"Costco Wholesale Corporation Reports Fourth Quarter and Fiscal Year 2026 Operating Results\",\"published\":\"Thu, 24 Sep 2026 20:15:00 GMT\",\"source\":\"finance.yahoo.com\"}],\"risks\":[{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 1\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 2\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 3\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 4\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 5\"},{\"category\":\"other\",\"explanation\":\"Could hurt results.\",\"severity\":2,\"title\":\"Risk 6\"}]}"
+  }
+ ],
+ "report": {
+  "analyst": {
+   "change_reason": null,
+   "changed_from_preliminary": false,
+   "confidence": 0.6,
+   "counterpoints": [
+    "Premium valuation.",
+    "Slower growth.",
+    "Regulatory pressure."
+   ],
+   "preliminary_signal": "HOLD",
+   "reviewed": true,
+   "signal": "HOLD",
+   "signal_reasoning": "The scorecard total is 0; nothing justifies a change.",
+   "thesis": [
+    "Strong margins.",
+    "Solid balance sheet.",
+    "Market leader."
+   ],
+   "valuation_summary": "Valued in line with the scorecard."
+  },
+  "cache_hits": [],
+  "competitor_search": [
+   {
+    "domain": "hudson-labs.com",
+    "snippet": "| Company Name | Ticker | Market Cap (USD, Approx.) | Subsector | Market Cap | --- --- | Costco Wholesale Corp | COST | $350B+ | Discount Stores | $442.85B | | Walmart Inc. (Sam’s Club) | WMT | $500B+ | Discount Stores | $986.71B | | BJ’s Wholesale Club Holdings Inc. | BJ | $10B+ | Discount Stores | $12.67B | | Target Corporation | TGT | $60B+ | Discount Stores | $54.70B | | Kroger Co. | KR | $30B+ | Grocery Stores | $45.50B | | Amazon.com, Inc. | AMZN | $1.8T+ | Internet Retail | $2.29T | [...] Costco operates in a highly competitive environment, facing challenges from both traditional and…",
+    "title": "Costco Competitors: COST Top Rivals in 2026 | Hudson Labs",
+    "url": "https://www.hudson-labs.com/research/costco-competitors-cost"
+   },
+   {
+    "domain": "companieshistory.com",
+    "snippet": "Among Costco’s direct competitors, Sam’s Club and BJ’s Wholesale are the only other membership-based warehouse clubs operating at scale in the U.S. Costco competitors in 2026 span warehouse clubs, grocery chains, discount retailers, and e-commerce platforms including Amazon, Target, and Kroger. Costco’s Kirkland Signature private label and a 89.7% renewal rate are what sets Costco apart from its competitors in a market where switching costs are nearly zero. ## Costco Competitors [...] ## FAQs How many competitors does Costco have? Costco has two direct warehouse club competitors in the U.S.…",
+    "title": "Costco Competitors 2026: Top Rivals, Market Share And Industry Analysis",
+    "url": "https://www.companieshistory.com/costco-competitors"
+   },
+   {
+    "domain": "marketing91.com",
+    "snippet": "The top Costco competitors are Walmart, Amazon, Home Depot, The Kroger Company, Target, Kmart, Lowe’s and others. Costco is a wholesale retail corporation that was formed during the year 1976 and is headquartered in Washington, United States. It is a popular chain of membership-only warehouses at the global level. This brand is also famous for its retail in organic food, rotisserie chicken, prime beef, and wine. [...] This discount store has a lot of support from the customer providing a wide range of choices at feasible prices. Due to its low prices of products, Aldi stores provide more…",
+    "title": "Top 17 Costco Alternatives & Competitors in 2026",
+    "url": "https://www.marketing91.com/top-10-costco-competitors"
+   },
+   {
+    "domain": "koalagains.com",
+    "snippet": "Walmart Inc.(WMT) High Quality·Quality 93%·Value 60%BJ's Wholesale Club Holdings, Inc.(BJ) Investable·Quality 87%·Value 30%Target Corporation(TGT) Value Play·Quality 40%·Value 60%Amazon.com, Inc.(AMZN) High Quality·Quality 93%·Value 80%PriceSmart, Inc.(PSMT) High Quality·Quality 87%·Value 60%The Kroger Co.(KR) High Quality·Quality 93%·Value 80% Quality vs Value comparison of Costco Wholesale Corporation (COST) and competitors [...] A comprehensive competitive analysis of Costco Wholesale Corporation (COST) in the Value & Membership Retail (Food, Beverage & Restaurants) within the US stock…",
+    "title": "Costco Wholesale Corporation (COST) Competitive Analysis & Comparison (2026)",
+    "url": "https://koalagains.com/stocks/NASDAQ/COST/competition"
+   },
+   {
+    "domain": "en.wikipedia.org",
+    "snippet": "In the United States, Costco's main competitors operating membership warehouses are Sam's Club (a subsidiary of Walmart) and BJ's Wholesale Club. Costco employs 316,000 full and part-time employees worldwide. Costco had 90.3 million members in 2017. In 2020, Costco had 105.5 million members. In 2021, the company had 111.6 million members. As of November 2023( Costco had 129.5 million members. As of February 2026, Costco has over 145.9 million cardholders and 81.4 paid memberships, which is up",
+    "title": "Costco - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Costco"
+   }
+  ],
+  "comps": {
+   "exclusions": [],
+   "insufficient": false,
+   "median": {
+    "debt_to_equity": 1.1689500000000002,
+    "dividend_yield": 0.019799999999999998,
+    "ev_ebitda": 11.9595,
+    "ev_revenue": 0.8575,
+    "net_margin": 0.034515000000000004,
+    "pe_fwd": 17.6165145,
+    "pe_ttm": 18.2149525,
+    "price_to_book": 4.71808515,
+    "revenue_growth": 0.055999999999999994,
+    "roe": 0.24361000500000002
+   },
+   "metric_set": "general",
+   "metrics": [
+    "pe_ttm",
+    "pe_fwd",
+    "ev_ebitda",
+    "ev_revenue",
+    "net_margin",
+    "revenue_growth",
+    "debt_to_equity"
+   ],
+   "peer_origin": {
+    "BJ": "agent",
+    "DG": "agent",
+    "TGT": "agent",
+    "WMT": "agent"
+   },
+   "peer_rationales": {
+    "BJ": "Sells similar products.",
+    "DG": "Sells similar products.",
+    "TGT": "Sells similar products.",
+    "WMT": "Sells similar products."
+   },
+   "primary_metric": "pe_fwd",
+   "rows": [
+    {
+     "business_summary": "Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…",
+     "industry": "Discount Stores",
+     "is_target": true,
+     "market_cap": 408092835840.0,
+     "multiples": {
+      "debt_to_equity": 0.23953,
+      "dividend_yield": 0.0064,
+      "ev_ebitda": 27.358,
+      "ev_revenue": 1.296,
+      "net_margin": 0.03043,
+      "pe_fwd": 36.8047,
+      "pe_ttm": 44.32595,
+      "price_to_book": 11.398273,
+      "revenue_growth": 0.111,
+      "roe": 0.28402
+     },
+     "name": "Costco Wholesale Corporation",
+     "sector": "Consumer Defensive",
+     "ticker": "COST"
+    },
+    {
+     "business_summary": "Walmart Inc. engages in the operation of retail and wholesale stores and clubs, ecommerce websites, and mobile applications worldwide. The company operates through three segments: Walmart U.S., Walmart International, and Sam's Club U.S. It operates supercenters, supermarkets, warehouse clubs, cash and carry stores, and discount stores under Walmart and Walmart Neighborhood Market brands; membership-only warehouse clubs; and ecommerce websites, such as walmart.com.mx, walmart.ca, flipkart.com, PhonePe and other sites. It offers grocery items, including dry grocery, snacks, dairy, meat,…",
+     "industry": "Discount Stores",
+     "is_target": false,
+     "market_cap": 827172388864.0,
+     "multiples": {
+      "debt_to_equity": 0.7165300000000001,
+      "dividend_yield": 0.0095,
+      "ev_ebitda": 20.359,
+      "ev_revenue": 1.219,
+      "net_margin": 0.03,
+      "pe_fwd": 32.27914,
+      "pe_ttm": 37.63899,
+      "price_to_book": 8.429137,
+      "revenue_growth": 0.059,
+      "roe": 0.22313999
+     },
+     "name": "Walmart Inc.",
+     "sector": "Consumer Defensive",
+     "ticker": "WMT"
+    },
+    {
+     "business_summary": "Target Corporation operates as a general merchandise retailer in the United States. It offers apparel for women, men, young adults, kids, toddlers, and babies, as well as jewelry, accessories, and shoes; and beauty products, such as skin and bath care, cosmetics, hair care, oral care, deodorant, and shaving products. The company also provides food and beverage products comprising dry and perishable grocery, including snacks, candy, beverages, deli, bakery, meat, produce, and food service; electronics which includes video games and consoles, toys, sporting goods, entertainment, and luggage;…",
+     "industry": "Discount Stores",
+     "is_target": false,
+     "market_cap": 70869467136.0,
+     "multiples": {
+      "debt_to_equity": 1.07583,
+      "dividend_yield": 0.0296,
+      "ev_ebitda": 9.889,
+      "ev_revenue": 0.789,
+      "net_margin": 0.04078,
+      "pe_fwd": 16.33845,
+      "pe_ttm": 16.182571,
+      "price_to_book": 3.97179,
+      "revenue_growth": 0.053,
+      "roe": 0.26408002
+     },
+     "name": "Target Corporation",
+     "sector": "Consumer Defensive",
+     "ticker": "TGT"
+    },
+    {
+     "business_summary": "BJ's Wholesale Club Holdings, Inc., together with its subsidiaries, operates membership warehouse clubs on the eastern half of the United States. The company offers groceries, fresh food, general merchandise, gasoline, and other ancillary services. It sells its products through its clubs; the BJs.com website; and its mobile app. The company was formerly known as Beacon Holding Inc. and changed its name to BJ's Wholesale Club Holdings, Inc. in February 2018. BJ's Wholesale Club Holdings, Inc. was founded in 1984 and is headquartered in Marlborough, Massachusetts.",
+     "industry": "Discount Stores",
+     "is_target": false,
+     "market_cap": 11994843136.0,
+     "multiples": {
+      "debt_to_equity": 1.26207,
+      "dividend_yield": null,
+      "ev_ebitda": 12.634,
+      "ev_revenue": 0.643,
+      "net_margin": 0.02606,
+      "pe_fwd": 18.894579,
+      "pe_ttm": 20.247334,
+      "price_to_book": 5.4643803,
+      "revenue_growth": 0.157,
+      "roe": 0.27673
+     },
+     "name": "BJ's Wholesale Club Holdings, Inc.",
+     "sector": "Consumer Defensive",
+     "ticker": "BJ"
+    },
+    {
+     "business_summary": "Dollar General Corporation, a discount retailer, provides various merchandise products in the southern, southwestern, midwestern, and eastern United States. It offers consumable products, including paper towels, bath tissues, paper dinnerware, trash and storage bags, disinfectants, and laundry products; packaged food, such as cereals, pasta, canned soups, canned meats, fruits and vegetables, condiments, spices, sugar, and flour; and perishables, including milk, eggs, bread, refrigerated and frozen food, beer, wine, and produce; candy, cookies, crackers, salty snacks, and carbonated…",
+     "industry": "Discount Stores",
+     "is_target": false,
+     "market_cap": 26240161792.0,
+     "multiples": {
+      "debt_to_equity": 1.69811,
+      "dividend_yield": 0.019799999999999998,
+      "ev_ebitda": 11.285,
+      "ev_revenue": 0.926,
+      "net_margin": 0.03903,
+      "pe_fwd": 14.349745,
+      "pe_ttm": 15.83755,
+      "price_to_book": 2.824977,
+      "revenue_growth": 0.052,
+      "roe": 0.19692
+     },
+     "name": "Dollar General Corporation",
+     "sector": "Consumer Defensive",
+     "ticker": "DG"
+    }
+   ],
+   "sources": [
+    "https://www.hudson-labs.com/research/costco-competitors-cost",
+    "https://www.companieshistory.com/costco-competitors",
+    "https://www.marketing91.com/top-10-costco-competitors",
+    "https://koalagains.com/stocks/NASDAQ/COST/competition",
+    "https://en.wikipedia.org/wiki/Costco"
+   ],
+   "target_vs_median_pct": {
+    "debt_to_equity": -0.7950896103340606,
+    "ev_ebitda": 1.2875538275011498,
+    "ev_revenue": 0.5113702623906706,
+    "net_margin": -0.1183543386933219,
+    "pe_fwd": 1.0892157753453442,
+    "pe_ttm": 1.4334924837163316,
+    "revenue_growth": 0.9821428571428574
+   }
+  },
+  "disclaimer": "Educational project - not investment advice.",
+  "financials": {
+   "analyst_recommendation": "buy",
+   "analyst_target_mean": 1057.9429,
+   "ebitda_history": [
+    {
+     "value": 9898000000.0,
+     "year": 2022
+    },
+    {
+     "value": 10724000000.0,
+     "year": 2023
+    },
+    {
+     "value": 12146000000.0,
+     "year": 2024
+    },
+    {
+     "value": 13398000000.0,
+     "year": 2025
+    }
+   ],
+   "multiples": {
+    "debt_to_equity": 0.23953,
+    "dividend_yield": 0.0064,
+    "ev_ebitda": 27.358,
+    "ev_revenue": 1.296,
+    "net_margin": 0.03043,
+    "pe_fwd": 36.8047,
+    "pe_ttm": 44.32595,
+    "price_to_book": 11.398273,
+    "revenue_growth": 0.111,
+    "roe": 0.28402
+   },
+   "net_income_history": [
+    {
+     "value": 5844000000.0,
+     "year": 2022
+    },
+    {
+     "value": 6292000000.0,
+     "year": 2023
+    },
+    {
+     "value": 7367000000.0,
+     "year": 2024
+    },
+    {
+     "value": 8099000000.0,
+     "year": 2025
+    }
+   ],
+   "price_history": [
+    {
+     "close": 910.0701293945312,
+     "date": "2025-10-03"
+    },
+    {
+     "close": 905.6558837890625,
+     "date": "2025-10-06"
+    },
+    {
+     "close": 909.4934692382812,
+     "date": "2025-10-07"
+    },
+    {
+     "close": 909.4934692382812,
+     "date": "2025-10-08"
+    },
+    {
+     "close": 937.4205932617188,
+     "date": "2025-10-09"
+    },
+    {
+     "close": 924.6153564453125,
+     "date": "2025-10-10"
+    },
+    {
+     "close": 930.1331176757812,
+     "date": "2025-10-13"
+    },
+    {
+     "close": 941.0195922851562,
+     "date": "2025-10-14"
+    },
+    {
+     "close": 949.4503784179688,
+     "date": "2025-10-15"
+    },
+    {
+     "close": 920.2506713867188,
+     "date": "2025-10-16"
+    },
+    {
+     "close": 930.898681640625,
+     "date": "2025-10-17"
+    },
+    {
+     "close": 930.679931640625,
+     "date": "2025-10-20"
+    },
+    {
+     "close": 932.0618286132812,
+     "date": "2025-10-21"
+    },
+    {
+     "close": 939.2001953125,
+     "date": "2025-10-22"
+    },
+    {
+     "close": 936.58544921875,
+     "date": "2025-10-23"
+    },
+    {
+     "close": 926.73291015625,
+     "date": "2025-10-24"
+    },
+    {
+     "close": 924.4561767578125,
+     "date": "2025-10-27"
+    },
+    {
+     "close": 918.7991943359375,
+     "date": "2025-10-28"
+    },
+    {
+     "close": 907.1272583007812,
+     "date": "2025-10-29"
+    },
+    {
+     "close": 914.84228515625,
+     "date": "2025-10-30"
+    },
+    {
+     "close": 907.4449462890625,
+     "date": "2025-10-31"
+    },
+    {
+     "close": 923.9620361328125,
+     "date": "2025-11-03"
+    },
+    {
+     "close": 936.606201171875,
+     "date": "2025-11-04"
+    },
+    {
+     "close": 930.9213256835938,
+     "date": "2025-11-05"
+    },
+    {
+     "close": 919.5216674804688,
+     "date": "2025-11-06"
+    },
+    {
+     "close": 918.685302734375,
+     "date": "2025-11-07"
+    },
+    {
+     "close": 911.536865234375,
+     "date": "2025-11-10"
+    },
+    {
+     "close": 909.8442993164062,
+     "date": "2025-11-11"
+    },
+    {
+     "close": 909.9837646484375,
+     "date": "2025-11-12"
+    },
+    {
+     "close": 921.0150146484375,
+     "date": "2025-11-13"
+    },
+    {
+     "close": 918.9242553710938,
+     "date": "2025-11-14"
+    },
+    {
+     "close": 908.5798950195312,
+     "date": "2025-11-17"
+    },
+    {
+     "close": 891.1468505859375,
+     "date": "2025-11-18"
+    },
+    {
+     "close": 886.6865844726562,
+     "date": "2025-11-19"
+    },
+    {
+     "close": 889.36474609375,
+     "date": "2025-11-20"
+    },
+    {
+     "close": 895.0595703125,
+     "date": "2025-11-21"
+    },
+    {
+     "close": 882.2262573242188,
+     "date": "2025-11-24"
+    },
+    {
+     "close": 890.400146484375,
+     "date": "2025-11-25"
+    },
+    {
+     "close": 904.2689819335938,
+     "date": "2025-11-26"
+    },
+    {
+     "close": 909.5755615234375,
+     "date": "2025-11-28"
+    },
+    {
+     "close": 907.9526977539062,
+     "date": "2025-12-01"
+    },
+    {
+     "close": 917.9784545898438,
+     "date": "2025-12-02"
+    },
+    {
+     "close": 918.2073974609375,
+     "date": "2025-12-03"
+    },
+    {
+     "close": 891.9234008789062,
+     "date": "2025-12-04"
+    },
+    {
+     "close": 890.7486572265625,
+     "date": "2025-12-05"
+    },
+    {
+     "close": 883.6201171875,
+     "date": "2025-12-08"
+    },
+    {
+     "close": 884.5360717773438,
+     "date": "2025-12-09"
+    },
+    {
+     "close": 870.567626953125,
+     "date": "2025-12-10"
+    },
+    {
+     "close": 880.5934448242188,
+     "date": "2025-12-11"
+    },
+    {
+     "close": 880.58349609375,
+     "date": "2025-12-12"
+    },
+    {
+     "close": 856.778564453125,
+     "date": "2025-12-15"
+    },
+    {
+     "close": 856.6093139648438,
+     "date": "2025-12-16"
+    },
+    {
+     "close": 858.859375,
+     "date": "2025-12-17"
+    },
+    {
+     "close": 853.8216552734375,
+     "date": "2025-12-18"
+    },
+    {
+     "close": 851.8602905273438,
+     "date": "2025-12-19"
+    },
+    {
+     "close": 846.2649536132812,
+     "date": "2025-12-22"
+    },
+    {
+     "close": 851.0338745117188,
+     "date": "2025-12-23"
+    },
+    {
+     "close": 868.0289306640625,
+     "date": "2025-12-24"
+    },
+    {
+     "close": 869.5123291015625,
+     "date": "2025-12-26"
+    },
+    {
+     "close": 864.026611328125,
+     "date": "2025-12-29"
+    },
+    {
+     "close": 861.8462524414062,
+     "date": "2025-12-30"
+    },
+    {
+     "close": 858.55078125,
+     "date": "2025-12-31"
+    },
+    {
+     "close": 850.7451782226562,
+     "date": "2026-01-02"
+    },
+    {
+     "close": 871.891845703125,
+     "date": "2026-01-05"
+    },
+    {
+     "close": 885.1930541992188,
+     "date": "2026-01-06"
+    },
+    {
+     "close": 878.7018432617188,
+     "date": "2026-01-07"
+    },
+    {
+     "close": 911.2879638671875,
+     "date": "2026-01-08"
+    },
+    {
+     "close": 920.8159790039062,
+     "date": "2026-01-09"
+    },
+    {
+     "close": 938.93603515625,
+     "date": "2026-01-12"
+    },
+    {
+     "close": 937.7909545898438,
+     "date": "2026-01-13"
+    },
+    {
+     "close": 946.8012084960938,
+     "date": "2026-01-14"
+    },
+    {
+     "close": 952.5458374023438,
+     "date": "2026-01-15"
+    },
+    {
+     "close": 959.375732421875,
+     "date": "2026-01-16"
+    },
+    {
+     "close": 960.0228271484375,
+     "date": "2026-01-20"
+    },
+    {
+     "close": 978.5411376953125,
+     "date": "2026-01-21"
+    },
+    {
+     "close": 971.8804931640625,
+     "date": "2026-01-22"
+    },
+    {
+     "close": 978.929443359375,
+     "date": "2026-01-23"
+    },
+    {
+     "close": 973.3739624023438,
+     "date": "2026-01-26"
+    },
+    {
+     "close": 966.0164794921875,
+     "date": "2026-01-27"
+    },
+    {
+     "close": 956.5581665039062,
+     "date": "2026-01-28"
+    },
+    {
+     "close": 948.7028198242188,
+     "date": "2026-01-29"
+    },
+    {
+     "close": 937.3972778320312,
+     "date": "2026-01-30"
+    },
+    {
+     "close": 965.4219970703125,
+     "date": "2026-02-02"
+    },
+    {
+     "close": 974.9529418945312,
+     "date": "2026-02-03"
+    },
+    {
+     "close": 975.3816528320312,
+     "date": "2026-02-04"
+    },
+    {
+     "close": 986.2884521484375,
+     "date": "2026-02-05"
+    },
+    {
+     "close": 998.1224365234375,
+     "date": "2026-02-06"
+    },
+    {
+     "close": 994.5632934570312,
+     "date": "2026-02-09"
+    },
+    {
+     "close": 968.2832641601562,
+     "date": "2026-02-10"
+    },
+    {
+     "close": 975.17236328125,
+     "date": "2026-02-11"
+    },
+    {
+     "close": 995.8294067382812,
+     "date": "2026-02-12"
+    },
+    {
+     "close": 1015.389892578125,
+     "date": "2026-02-13"
+    },
+    {
+     "close": 1008.9794311523438,
+     "date": "2026-02-17"
+    },
+    {
+     "close": 993.0579223632812,
+     "date": "2026-02-18"
+    },
+    {
+     "close": 984.8229370117188,
+     "date": "2026-02-19"
+    },
+    {
+     "close": 982.2806396484375,
+     "date": "2026-02-20"
+    },
+    {
+     "close": 983.0284423828125,
+     "date": "2026-02-23"
+    },
+    {
+     "close": 995.4007568359375,
+     "date": "2026-02-24"
+    },
+    {
+     "close": 991.7418823242188,
+     "date": "2026-02-25"
+    },
+    {
+     "close": 983.7462158203125,
+     "date": "2026-02-26"
+    },
+    {
+     "close": 1007.7232666015625,
+     "date": "2026-02-27"
+    },
+    {
+     "close": 999.7276000976562,
+     "date": "2026-03-02"
+    },
+    {
+     "close": 1004.71240234375,
+     "date": "2026-03-03"
+    },
+    {
+     "close": 1003.685546875,
+     "date": "2026-03-04"
+    },
+    {
+     "close": 979.5889282226562,
+     "date": "2026-03-05"
+    },
+    {
+     "close": 995.0717163085938,
+     "date": "2026-03-06"
+    },
+    {
+     "close": 1002.2498779296875,
+     "date": "2026-03-09"
+    },
+    {
+     "close": 994.3339233398438,
+     "date": "2026-03-10"
+    },
+    {
+     "close": 989.2195434570312,
+     "date": "2026-03-11"
+    },
+    {
+     "close": 1000.2759399414062,
+     "date": "2026-03-12"
+    },
+    {
+     "close": 1005.3704223632812,
+     "date": "2026-03-13"
+    },
+    {
+     "close": 998.70068359375,
+     "date": "2026-03-16"
+    },
+    {
+     "close": 993.1376342773438,
+     "date": "2026-03-17"
+    },
+    {
+     "close": 976.9468383789062,
+     "date": "2026-03-18"
+    },
+    {
+     "close": 971.822509765625,
+     "date": "2026-03-19"
+    },
+    {
+     "close": 969.3799438476562,
+     "date": "2026-03-20"
+    },
+    {
+     "close": 962.7999267578125,
+     "date": "2026-03-23"
+    },
+    {
+     "close": 970.8654174804688,
+     "date": "2026-03-24"
+    },
+    {
+     "close": 971.9022827148438,
+     "date": "2026-03-25"
+    },
+    {
+     "close": 976.677734375,
+     "date": "2026-03-26"
+    },
+    {
+     "close": 980.8749389648438,
+     "date": "2026-03-27"
+    },
+    {
+     "close": 993.556396484375,
+     "date": "2026-03-30"
+    },
+    {
+     "close": 993.4067993164062,
+     "date": "2026-03-31"
+    },
+    {
+     "close": 993.536376953125,
+     "date": "2026-04-01"
+    },
+    {
+     "close": 1011.880615234375,
+     "date": "2026-04-02"
+    },
+    {
+     "close": 1015.4596557617188,
+     "date": "2026-04-06"
+    },
+    {
+     "close": 1010.1359252929688,
+     "date": "2026-04-07"
+    },
+    {
+     "close": 1027.1441650390625,
+     "date": "2026-04-08"
+    },
+    {
+     "close": 1028.8988037109375,
+     "date": "2026-04-09"
+    },
+    {
+     "close": 995.4406127929688,
+     "date": "2026-04-10"
+    },
+    {
+     "close": 977.8740234375,
+     "date": "2026-04-13"
+    },
+    {
+     "close": 971.8424072265625,
+     "date": "2026-04-14"
+    },
+    {
+     "close": 981.7622680664062,
+     "date": "2026-04-15"
+    },
+    {
+     "close": 984.2147827148438,
+     "date": "2026-04-16"
+    },
+    {
+     "close": 996.8563232421875,
+     "date": "2026-04-17"
+    },
+    {
+     "close": 994.8125610351562,
+     "date": "2026-04-20"
+    },
+    {
+     "close": 1002.7583618164062,
+     "date": "2026-04-21"
+    },
+    {
+     "close": 1000.65478515625,
+     "date": "2026-04-22"
+    },
+    {
+     "close": 1011.3023071289062,
+     "date": "2026-04-23"
+    },
+    {
+     "close": 1008.0821533203125,
+     "date": "2026-04-24"
+    },
+    {
+     "close": 994.9820556640625,
+     "date": "2026-04-27"
+    },
+    {
+     "close": 990.9841918945312,
+     "date": "2026-04-28"
+    },
+    {
+     "close": 995.6399536132812,
+     "date": "2026-04-29"
+    },
+    {
+     "close": 1011.4519653320312,
+     "date": "2026-04-30"
+    },
+    {
+     "close": 1010.0940551757812,
+     "date": "2026-05-01"
+    },
+    {
+     "close": 1011.1823120117188,
+     "date": "2026-05-04"
+    },
+    {
+     "close": 1014.8065185546875,
+     "date": "2026-05-05"
+    },
+    {
+     "close": 994.1693725585938,
+     "date": "2026-05-06"
+    },
+    {
+     "close": 1010.4534912109375,
+     "date": "2026-05-07"
+    },
+    {
+     "close": 1007.1886596679688,
+     "date": "2026-05-08"
+    },
+    {
+     "close": 997.8834228515625,
+     "date": "2026-05-11"
+    },
+    {
+     "close": 1020.2578735351562,
+     "date": "2026-05-12"
+    },
+    {
+     "close": 1031.4400634765625,
+     "date": "2026-05-13"
+    },
+    {
+     "close": 1039.59716796875,
+     "date": "2026-05-14"
+    },
+    {
+     "close": 1047.284912109375,
+     "date": "2026-05-15"
+    },
+    {
+     "close": 1074.76123046875,
+     "date": "2026-05-18"
+    },
+    {
+     "close": 1092.5828857421875,
+     "date": "2026-05-19"
+    },
+    {
+     "close": 1072.30517578125,
+     "date": "2026-05-20"
+    },
+    {
+     "close": 1048.782470703125,
+     "date": "2026-05-21"
+    },
+    {
+     "close": 1026.6077880859375,
+     "date": "2026-05-22"
+    },
+    {
+     "close": 1001.3379516601562,
+     "date": "2026-05-26"
+    },
+    {
+     "close": 1002.0967407226562,
+     "date": "2026-05-27"
+    },
+    {
+     "close": 993.6202392578125,
+     "date": "2026-05-28"
+    },
+    {
+     "close": 954.8019409179688,
+     "date": "2026-05-29"
+    },
+    {
+     "close": 944.608154296875,
+     "date": "2026-06-01"
+    },
+    {
+     "close": 952.7552490234375,
+     "date": "2026-06-02"
+    },
+    {
+     "close": 960.30322265625,
+     "date": "2026-06-03"
+    },
+    {
+     "close": 970.8064575195312,
+     "date": "2026-06-04"
+    },
+    {
+     "close": 970.3272705078125,
+     "date": "2026-06-05"
+    },
+    {
+     "close": 973.2026977539062,
+     "date": "2026-06-08"
+    },
+    {
+     "close": 967.052490234375,
+     "date": "2026-06-09"
+    },
+    {
+     "close": 981.8090209960938,
+     "date": "2026-06-10"
+    },
+    {
+     "close": 974.1411743164062,
+     "date": "2026-06-11"
+    },
+    {
+     "close": 980.7905883789062,
+     "date": "2026-06-12"
+    },
+    {
+     "close": 977.895263671875,
+     "date": "2026-06-15"
+    },
+    {
+     "close": 985.11376953125,
+     "date": "2026-06-16"
+    },
+    {
+     "close": 964.0572509765625,
+     "date": "2026-06-17"
+    },
+    {
+     "close": 949.939697265625,
+     "date": "2026-06-18"
+    },
+    {
+     "close": 949.8397827148438,
+     "date": "2026-06-22"
+    },
+    {
+     "close": 956.1597900390625,
+     "date": "2026-06-23"
+    },
+    {
+     "close": 959.5643920898438,
+     "date": "2026-06-24"
+    },
+    {
+     "close": 940.7442626953125,
+     "date": "2026-06-25"
+    },
+    {
+     "close": 951.0279541015625,
+     "date": "2026-06-26"
+    },
+    {
+     "close": 945.17724609375,
+     "date": "2026-06-29"
+    },
+    {
+     "close": 933.9849853515625,
+     "date": "2026-06-30"
+    },
+    {
+     "close": 923.2021484375,
+     "date": "2026-07-01"
+    },
+    {
+     "close": 950.1593017578125,
+     "date": "2026-07-02"
+    },
+    {
+     "close": 948.7415771484375,
+     "date": "2026-07-06"
+    },
+    {
+     "close": 945.9959716796875,
+     "date": "2026-07-07"
+    },
+    {
+     "close": 951.6170043945312,
+     "date": "2026-07-08"
+    },
+    {
+     "close": 911.520751953125,
+     "date": "2026-07-09"
+    },
+    {
+     "close": 914.7955322265625,
+     "date": "2026-07-10"
+    },
+    {
+     "close": 924.9594116210938,
+     "date": "2026-07-13"
+    },
+    {
+     "close": 920.2868041992188,
+     "date": "2026-07-14"
+    },
+    {
+     "close": 915.0850830078125,
+     "date": "2026-07-15"
+    },
+    {
+     "close": 944.0690307617188,
+     "date": "2026-07-16"
+    },
+    {
+     "close": 939.37646484375,
+     "date": "2026-07-17"
+    },
+    {
+     "close": 934.3145141601562,
+     "date": "2026-07-20"
+    },
+    {
+     "close": 927.7449340820312,
+     "date": "2026-07-21"
+    },
+    {
+     "close": 925.8380126953125,
+     "date": "2026-07-22"
+    },
+    {
+     "close": 924.5899658203125,
+     "date": "2026-07-23"
+    },
+    {
+     "close": 935.030029296875,
+     "date": "2026-07-24"
+    },
+    {
+     "close": 951.5800170898438,
+     "date": "2026-07-27"
+    },
+    {
+     "close": 966.5800170898438,
+     "date": "2026-07-28"
+    },
+    {
+     "close": 974.030029296875,
+     "date": "2026-07-29"
+    },
+    {
+     "close": 954.1699829101562,
+     "date": "2026-07-30"
+    },
+    {
+     "close": 951.8900146484375,
+     "date": "2026-07-31"
+    },
+    {
+     "close": 954.0800170898438,
+     "date": "2026-08-03"
+    },
+    {
+     "close": 947.8499755859375,
+     "date": "2026-08-04"
+    },
+    {
+     "close": 941.989990234375,
+     "date": "2026-08-05"
+    },
+    {
+     "close": 949.1500244140625,
+     "date": "2026-08-06"
+    },
+    {
+     "close": 947.8200073242188,
+     "date": "2026-08-07"
+    },
+    {
+     "close": 952.75,
+     "date": "2026-08-10"
+    },
+    {
+     "close": 944.3200073242188,
+     "date": "2026-08-11"
+    },
+    {
+     "close": 949.5800170898438,
+     "date": "2026-08-12"
+    },
+    {
+     "close": 961.8499755859375,
+     "date": "2026-08-13"
+    },
+    {
+     "close": 961.0999755859375,
+     "date": "2026-08-14"
+    },
+    {
+     "close": 953.5,
+     "date": "2026-08-17"
+    },
+    {
+     "close": 961.3499755859375,
+     "date": "2026-08-18"
+    },
+    {
+     "close": 956.989990234375,
+     "date": "2026-08-19"
+    },
+    {
+     "close": 933.510009765625,
+     "date": "2026-08-20"
+    },
+    {
+     "close": 947.739990234375,
+     "date": "2026-08-21"
+    },
+    {
+     "close": 971.4000244140625,
+     "date": "2026-08-24"
+    },
+    {
+     "close": 960.010009765625,
+     "date": "2026-08-25"
+    },
+    {
+     "close": 956.1199951171875,
+     "date": "2026-08-26"
+    },
+    {
+     "close": 934.6599731445312,
+     "date": "2026-08-27"
+    },
+    {
+     "close": 945.469970703125,
+     "date": "2026-08-28"
+    },
+    {
+     "close": 943.8900146484375,
+     "date": "2026-08-31"
+    },
+    {
+     "close": 939.9600219726562,
+     "date": "2026-09-01"
+    },
+    {
+     "close": 928.47998046875,
+     "date": "2026-09-02"
+    },
+    {
+     "close": 925.4099731445312,
+     "date": "2026-09-03"
+    },
+    {
+     "close": 915.739990234375,
+     "date": "2026-09-04"
+    },
+    {
+     "close": 910.1799926757812,
+     "date": "2026-09-08"
+    },
+    {
+     "close": 902.5999755859375,
+     "date": "2026-09-09"
+    },
+    {
+     "close": 902.3800048828125,
+     "date": "2026-09-10"
+    },
+    {
+     "close": 904.77001953125,
+     "date": "2026-09-11"
+    },
+    {
+     "close": 918.9099731445312,
+     "date": "2026-09-14"
+    },
+    {
+     "close": 901.3499755859375,
+     "date": "2026-09-15"
+    },
+    {
+     "close": 893.739990234375,
+     "date": "2026-09-16"
+    },
+    {
+     "close": 893.9299926757812,
+     "date": "2026-09-17"
+    },
+    {
+     "close": 895.3099975585938,
+     "date": "2026-09-18"
+    },
+    {
+     "close": 898.47998046875,
+     "date": "2026-09-21"
+    },
+    {
+     "close": 899.4099731445312,
+     "date": "2026-09-22"
+    },
+    {
+     "close": 904.7000122070312,
+     "date": "2026-09-23"
+    },
+    {
+     "close": 896.47998046875,
+     "date": "2026-09-24"
+    },
+    {
+     "close": 922.77001953125,
+     "date": "2026-09-25"
+    },
+    {
+     "close": 922.9199829101562,
+     "date": "2026-09-28"
+    },
+    {
+     "close": 924.5900268554688,
+     "date": "2026-09-29"
+    },
+    {
+     "close": 910.3400268554688,
+     "date": "2026-09-30"
+    },
+    {
+     "close": 914.9400024414062,
+     "date": "2026-10-01"
+    },
+    {
+     "close": 920.6500244140625,
+     "date": "2026-10-02"
+    }
+   ],
+   "revenue_history": [
+    {
+     "value": 226954000000.0,
+     "year": 2022
+    },
+    {
+     "value": 242290000000.0,
+     "year": 2023
+    },
+    {
+     "value": 254453000000.0,
+     "year": 2024
+    },
+    {
+     "value": 275235000000.0,
+     "year": 2025
+    }
+   ],
+   "snapshot": {
+    "business_summary": "Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Iceland, New Zealand, and Sweden. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, deli, liquor, and tobacco; non-food merchandise comprising appliances, small electronics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture,…",
+    "currency": "USD",
+    "industry": "Discount Stores",
+    "market_cap": 408092835840.0,
+    "name": "Costco Wholesale Corporation",
+    "price": 920.65,
+    "sector": "Consumer Defensive",
+    "ticker": "COST",
+    "week52_high": 1096.5,
+    "week52_low": 844.06
+   }
+  },
+  "from_cache": false,
+  "llm_usage": [
+   {
+    "agent": "analyst",
+    "cost_usd": 0.008,
+    "error": null,
+    "input_tokens": 1000,
+    "model": "claude-opus-5-5",
+    "output_tokens": 200,
+    "request_id": null
+   },
+   {
+    "agent": "comps",
+    "cost_usd": 0.008,
+    "error": null,
+    "input_tokens": 1000,
+    "model": "claude-opus-5-5",
+    "output_tokens": 200,
+    "request_id": null
+   },
+   {
+    "agent": "comps",
+    "cost_usd": 0.008,
+    "error": null,
+    "input_tokens": 1000,
+    "model": "claude-opus-5-5",
+    "output_tokens": 200,
+    "request_id": null
+   },
+   {
+    "agent": "risk",
+    "cost_usd": 0.008,
+    "error": null,
+    "input_tokens": 1000,
+    "model": "claude-opus-5-5",
+    "output_tokens": 200,
+    "request_id": null
+   },
+   {
+    "agent": "writer",
+    "cost_usd": 0.004,
+    "error": null,
+    "input_tokens": 1000,
+    "model": "claude-sonnet-5-5",
+    "output_tokens": 200,
+    "request_id": null
+   }
+  ],
+  "narrative": {
+   "company_overview": "Costco Wholesale Corporation trades at 920.65.",
+   "comps_commentary": "The target is compared with its peer median.",
+   "financial_commentary": "Revenue is shown by fiscal year in the table.",
+   "risk_commentary": "The main risks come from the annual filing."
+  },
+  "narrative_markdown": "## Company overview\n\nCostco Wholesale Corporation trades at 920.65.\n\n## Financial commentary\n\nRevenue is shown by fiscal year in the table.\n\n## Comps commentary\n\nThe target is compared with its peer median.\n\n## Risk commentary\n\nThe main risks come from the annual filing.\n",
+  "news": [
+   {
+    "domain": "stocktitan.net",
+    "published": "Thu, 24 Sep 2026 20:15:00 GMT",
+    "title": "Costco Q4 2026 earnings: Sales rise 11.2% to $93.9B | COST Stock News",
+    "url": "https://www.stocktitan.net/news/COST/costco-wholesale-corporation-reports-fourth-quarter-and-fiscal-year-hsqvdvy2xqod.html"
+   },
+   {
+    "domain": "simplywall.st",
+    "published": "Sun, 27 Sep 2026 12:30:38 GMT",
+    "title": "Here's What Analysts Are Forecasting For Costco Wholesale Corporation (NASDAQ:COST) After Its Yearly Results - Simply Wall St News",
+    "url": "https://simplywall.st/stocks/us/consumer-retailing/nasdaq-cost/costco-wholesale/news/heres-what-analysts-are-forecasting-for-costco-wholesale-cor-1"
+   },
+   {
+    "domain": "es.tradingview.com",
+    "published": "Wed, 30 Sep 2026 13:00:00 GMT",
+    "title": "Should You Buy, Hold or Sell Costco Stock After Its Q4 Earnings Beat? — Noticias de TradingView",
+    "url": "https://es.tradingview.com/news/zacks:a06dc9cdb094b:0-should-you-buy-hold-or-sell-costco-stock-after-its-q4-earnings-beat"
+   },
+   {
+    "domain": "tradingkey.com",
+    "published": "Thu, 24 Sep 2026 11:00:00 GMT",
+    "title": "Costco Wholesale Corp (COST) Stock Price Live, Chart & News - TradingKey",
+    "url": "https://www.tradingkey.com/markets/stocks/cost"
+   },
+   {
+    "domain": "finance.yahoo.com",
+    "published": "Thu, 24 Sep 2026 20:15:00 GMT",
+    "title": "Costco Wholesale Corporation Reports Fourth Quarter and Fiscal Year 2026 Operating Results",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-reports-fourth-201500587.html"
+   }
+  ],
+  "news_error": null,
+  "quality_warnings": [],
+  "risks": {
+   "filing": {
+    "accession_no": "0000909832-25-000101",
+    "filing_date": "2025-10-08",
+    "form": "10-K",
+    "ticker": "COST",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+   },
+   "headings": [
+    "Business and Operating Risks",
+    "We are highly dependent on the financial performance of our U.S. and Canadian operations.",
+    "We may be unsuccessful implementing our growth strategy, including expanding our business in existing markets and new markets, and integrating acquisitions, which could have an adverse impact on our business, financial condition and results of operations.",
+    "We seek to expand in existing markets to attain a greater overall market share. A new warehouse may draw members away from our existing warehouses and adversely affect their comparable sales performance, member traffic, and profitability.",
+    "Our failure to maintain membership growth, loyalty and brand recognition could adversely affect our results of operations.",
+    "Disruptions in merchandise distribution or processing, packaging, manufacturing, and other facilities could adversely affect sales and member satisfaction.",
+    "We may not timely identify or effectively respond to consumer tastes and preferences, which could negatively affect our relationship with our members, the demand for our products and services, and our market share.",
+    "Availability and performance of our IT systems are vital to our business. Failure to successfully execute IT projects and have IT systems available to our business would adversely impact our operations.",
+    "We are subject to payment-related risks.",
+    "We might sell products that cause illness or injury to our members, harm to our reputation, and expose us to litigation.",
+    "If we do not successfully develop and maintain a relevant and comprehensive digital experience for our members, our results of operations could be adversely impacted.",
+    "Inability to attract, train and retain qualified employees could adversely impact our business, financial condition and results of operations.",
+    "We may incur property, casualty or other losses not covered by our insurance.",
+    "Market and Other External Risks",
+    "We face strong competition from other retailers and warehouse club operators, which could adversely affect our business, financial condition and results of operations.",
+    "General economic factors, domestically and internationally, may adversely affect our business, financial condition, and results of operations.",
+    "Suppliers may be unable to timely supply us with quality merchandise at competitive prices or may fail to adhere to our high standards, resulting in adverse effects on our business, merchandise inventories, sales, and profit margins.",
+    "Fluctuations in foreign-exchange rates may adversely affect our results of operations.",
+    "Natural disasters, extreme weather conditions, or other catastrophic events could negatively affect our business, financial condition, and results of operations.",
+    "Pandemics and other health crises could affect our business, financial condition and results of operations in many respects.",
+    "The severity and duration of pandemics;",
+    "Evolving macroeconomic factors, including general economic uncertainty, unemployment rates, and recessionary pressures;",
+    "Changes in labor markets affecting us and our suppliers;",
+    "Unknown consequences on our business performance and initiatives stemming from the substantial investment of time and other resources to the pandemic response;",
+    "The pace of post-pandemic recovery;",
+    "The long-term impact of the pandemic on our business, including consumer behaviors; and",
+    "Disruption and volatility within the financial and credit markets.",
+    "Failure to meet financial market expectations could adversely affect the market price and volatility of our stock.",
+    "Legal and Regulatory Risks",
+    "Changes in or failure to comply with laws and regulations could adversely impact our business, financial condition and results of operations.",
+    "Changes in accounting standards and subjective assumptions, estimates and judgments by management related to complex accounting matters could significantly affect our financial condition and results of operations.",
+    "Changes in rules or interpretation or changes in underlying assumptions, estimates or judgments by our management could significantly change our reported or expected financial performance and have a material impact on our consolidated financial statements.",
+    "We are exposed to risks relating to evaluations of controls required by Section 404 of the Sarbanes-Oxley Act and otherwise.",
+    "Changes in federal, state and foreign tax rates and legislation, could adversely affect our financial condition and results of operations.",
+    "Failure or perceived failure to meet our environmental, social or governance (ESG) goals or expectations set by changing public interest and government regulation of ESG topics could result in reputational harm or adversely affect our business.",
+    "We are involved in a number of legal proceedings and audits and some of these outcomes could adversely affect our business, financial condition and results of operations."
+   ],
+   "headings_truncated": false,
+   "risks": [
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "We are highly dependent on the financial performance of our U.S. and Canadian operations.",
+     "title": "Risk 1"
+    },
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "We may be unsuccessful implementing our growth strategy, including expanding our business in existing markets and new markets, and integrating acquisitions, which could have an adverse impact on our business, financial condition and results of operations.",
+     "title": "Risk 2"
+    },
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "We seek to expand in existing markets to attain a greater overall market share. A new warehouse may draw members away from our existing warehouses and adversely affect their comparable sales performance, member traffic, and profitability.",
+     "title": "Risk 3"
+    },
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "Our failure to maintain membership growth, loyalty and brand recognition could adversely affect our results of operations.",
+     "title": "Risk 4"
+    },
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "Disruptions in merchandise distribution or processing, packaging, manufacturing, and other facilities could adversely affect sales and member satisfaction.",
+     "title": "Risk 5"
+    },
+    {
+     "category": "other",
+     "explanation": "Could hurt results.",
+     "severity": 2,
+     "source_heading": "We may not timely identify or effectively respond to consumer tastes and preferences, which could negatively affect our relationship with our members, the demand for our products and services, and our market share.",
+     "title": "Risk 6"
+    }
+   ]
+  },
+  "scorecard": {
+   "factors": [
+    {
+     "detail": "Forward P/E 36.8 vs peer median 17.6 (+109%; band ±15%)",
+     "name": "valuation",
+     "score": -1
+    },
+    {
+     "detail": "Revenue growth 11.1% vs peer median 5.6% (+5.5 pts; band ±5 pts)",
+     "name": "growth",
+     "score": 1
+    },
+    {
+     "detail": "Net margin 3.0% vs peer median 3.5% (-0.4 pts; band ±5 pts)",
+     "name": "profitability",
+     "score": 0
+    },
+    {
+     "detail": "mean analyst target 1057.94 vs price 920.65 (+14.9%; band ±10%)",
+     "name": "analyst_upside",
+     "score": 1
+    },
+    {
+     "detail": "price 920.65 below its 200-day average 959.43; at 30% of the 52-week range",
+     "name": "momentum",
+     "score": -1
+    }
+   ],
+   "preliminary_signal": "HOLD",
+   "total": 0
+  },
+  "signal": "HOLD",
+  "signal_reviewed": true,
+  "ticker": "COST"
+ }
+}

@@ -1,0 +1,3180 @@
+[
+ {
+  "event": "stage",
+  "data": {
+   "stage": "validate",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "validate",
+   "status": "done",
+   "ms": 1,
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "snapshot",
+   "value": {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "currency": "USD",
+    "price": 333.69,
+    "market_cap": 4869931925504.0,
+    "week52_low": 243.42,
+    "week52_high": 345.34,
+    "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+   }
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "financials",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "comps",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "risk",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "news",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "news",
+   "ms": 10,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "news",
+   "value": [
+    {
+     "title": "Apple Inc. $AAPL Stock Bought by GTS Securities LLC",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-bought-by-gts-securities-llc-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:13:11 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Holdings Boosted by Flputnam Investment Management Co.",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-holdings-boosted-by-flputnam-investment-management-co-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:05:19 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Acquired by JNBA Financial Advisors",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-acquired-by-jnba-financial-advisors-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:20:44 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Sold by Cullinan Associates Inc.",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-sold-by-cullinan-associates-inc-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:05:02 GMT"
+    },
+    {
+     "title": "Apple Inc. Stock 12\u2011Month Price Target Cut to $335.75, Implies 2% Upside \u2014 TradingView News",
+     "url": "https://www.tradingview.com/news/tradingview:fd9cf9140fc9d:0-apple-inc-stock-12-month-price-target-cut-to-335-75-implies-2-upside",
+     "domain": "tradingview.com",
+     "published": "Fri, 02 Oct 2026 07:20:06 GMT"
+    }
+   ]
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "financials",
+   "ms": 11,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "financials",
+   "value": {
+    "snapshot": {
+     "ticker": "AAPL",
+     "name": "Apple Inc.",
+     "sector": "Technology",
+     "industry": "Consumer Electronics",
+     "currency": "USD",
+     "price": 333.69,
+     "market_cap": 4869931925504.0,
+     "week52_low": 243.42,
+     "week52_high": 345.34,
+     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+    },
+    "multiples": {
+     "pe_ttm": 38.2672,
+     "pe_fwd": 34.821583,
+     "ev_ebitda": 28.833,
+     "ev_revenue": 10.374,
+     "price_to_book": 45.338314,
+     "net_margin": 0.27618998,
+     "roe": 1.4875101,
+     "revenue_growth": 0.164,
+     "debt_to_equity": 0.78445,
+     "dividend_yield": 0.0033
+    },
+    "revenue_history": [
+     {
+      "year": 2022,
+      "value": 394328000000.0
+     },
+     {
+      "year": 2023,
+      "value": 383285000000.0
+     },
+     {
+      "year": 2024,
+      "value": 391035000000.0
+     },
+     {
+      "year": 2025,
+      "value": 416161000000.0
+     }
+    ],
+    "ebitda_history": [
+     {
+      "year": 2022,
+      "value": 130541000000.0
+     },
+     {
+      "year": 2023,
+      "value": 125820000000.0
+     },
+     {
+      "year": 2024,
+      "value": 134661000000.0
+     },
+     {
+      "year": 2025,
+      "value": 144748000000.0
+     }
+    ],
+    "net_income_history": [
+     {
+      "year": 2022,
+      "value": 99803000000.0
+     },
+     {
+      "year": 2023,
+      "value": 96995000000.0
+     },
+     {
+      "year": 2024,
+      "value": 93736000000.0
+     },
+     {
+      "year": 2025,
+      "value": 112010000000.0
+     }
+    ],
+    "price_history": [
+     {
+      "date": "2025-10-03",
+      "close": 257.07037353515625
+     },
+     {
+      "date": "2025-10-06",
+      "close": 255.74526977539062
+     },
+     {
+      "date": "2025-10-07",
+      "close": 255.53607177734375
+     },
+     {
+      "date": "2025-10-08",
+      "close": 257.1102600097656
+     },
+     {
+      "date": "2025-10-09",
+      "close": 253.1050262451172
+     },
+     {
+      "date": "2025-10-10",
+      "close": 244.3673095703125
+     },
+     {
+      "date": "2025-10-13",
+      "close": 246.74851989746094
+     },
+     {
+      "date": "2025-10-14",
+      "close": 246.8581085205078
+     },
+     {
+      "date": "2025-10-15",
+      "close": 248.42233276367188
+     },
+     {
+      "date": "2025-10-16",
+      "close": 246.53929138183594
+     },
+     {
+      "date": "2025-10-17",
+      "close": 251.36146545410156
+     },
+     {
+      "date": "2025-10-20",
+      "close": 261.27484130859375
+     },
+     {
+      "date": "2025-10-21",
+      "close": 261.8028564453125
+     },
+     {
+      "date": "2025-10-22",
+      "close": 257.4988098144531
+     },
+     {
+      "date": "2025-10-23",
+      "close": 258.6246032714844
+     },
+     {
+      "date": "2025-10-24",
+      "close": 261.8527526855469
+     },
+     {
+      "date": "2025-10-27",
+      "close": 267.8206787109375
+     },
+     {
+      "date": "2025-10-28",
+      "close": 268.0099792480469
+     },
+     {
+      "date": "2025-10-29",
+      "close": 268.7073974609375
+     },
+     {
+      "date": "2025-10-30",
+      "close": 270.401123046875
+     },
+     {
+      "date": "2025-10-31",
+      "close": 269.37493896484375
+     },
+     {
+      "date": "2025-11-03",
+      "close": 268.05975341796875
+     },
+     {
+      "date": "2025-11-04",
+      "close": 269.0461730957031
+     },
+     {
+      "date": "2025-11-05",
+      "close": 269.14581298828125
+     },
+     {
+      "date": "2025-11-06",
+      "close": 268.7771301269531
+     },
+     {
+      "date": "2025-11-07",
+      "close": 267.48193359375
+     },
+     {
+      "date": "2025-11-10",
+      "close": 268.6986083984375
+     },
+     {
+      "date": "2025-11-11",
+      "close": 274.5028076171875
+     },
+     {
+      "date": "2025-11-12",
+      "close": 272.7276306152344
+     },
+     {
+      "date": "2025-11-13",
+      "close": 272.2090759277344
+     },
+     {
+      "date": "2025-11-14",
+      "close": 271.6705017089844
+     },
+     {
+      "date": "2025-11-17",
+      "close": 266.73394775390625
+     },
+     {
+      "date": "2025-11-18",
+      "close": 266.71405029296875
+     },
+     {
+      "date": "2025-11-19",
+      "close": 267.8309631347656
+     },
+     {
+      "date": "2025-11-20",
+      "close": 265.5272521972656
+     },
+     {
+      "date": "2025-11-21",
+      "close": 270.75299072265625
+     },
+     {
+      "date": "2025-11-24",
+      "close": 275.1710205078125
+     },
+     {
+      "date": "2025-11-25",
+      "close": 276.2181701660156
+     },
+     {
+      "date": "2025-11-26",
+      "close": 276.79656982421875
+     },
+     {
+      "date": "2025-11-28",
+      "close": 278.0930480957031
+     },
+     {
+      "date": "2025-12-01",
+      "close": 282.3315124511719
+     },
+     {
+      "date": "2025-12-02",
+      "close": 285.4131164550781
+     },
+     {
+      "date": "2025-12-03",
+      "close": 283.378662109375
+     },
+     {
+      "date": "2025-12-04",
+      "close": 279.9380187988281
+     },
+     {
+      "date": "2025-12-05",
+      "close": 278.02325439453125
+     },
+     {
+      "date": "2025-12-08",
+      "close": 277.1356506347656
+     },
+     {
+      "date": "2025-12-09",
+      "close": 276.4275817871094
+     },
+     {
+      "date": "2025-12-10",
+      "close": 278.02325439453125
+     },
+     {
+      "date": "2025-12-11",
+      "close": 277.2752685546875
+     },
+     {
+      "date": "2025-12-12",
+      "close": 277.5246276855469
+     },
+     {
+      "date": "2025-12-15",
+      "close": 273.3658752441406
+     },
+     {
+      "date": "2025-12-16",
+      "close": 273.8645324707031
+     },
+     {
+      "date": "2025-12-17",
+      "close": 271.10205078125
+     },
+     {
+      "date": "2025-12-18",
+      "close": 271.4511413574219
+     },
+     {
+      "date": "2025-12-19",
+      "close": 272.9271240234375
+     },
+     {
+      "date": "2025-12-22",
+      "close": 270.23443603515625
+     },
+     {
+      "date": "2025-12-23",
+      "close": 271.62066650390625
+     },
+     {
+      "date": "2025-12-24",
+      "close": 273.06671142578125
+     },
+     {
+      "date": "2025-12-26",
+      "close": 272.6578063964844
+     },
+     {
+      "date": "2025-12-29",
+      "close": 273.0168762207031
+     },
+     {
+      "date": "2025-12-30",
+      "close": 272.33868408203125
+     },
+     {
+      "date": "2025-12-31",
+      "close": 271.12200927734375
+     },
+     {
+      "date": "2026-01-02",
+      "close": 270.2743225097656
+     },
+     {
+      "date": "2026-01-05",
+      "close": 266.5345153808594
+     },
+     {
+      "date": "2026-01-06",
+      "close": 261.6477966308594
+     },
+     {
+      "date": "2026-01-07",
+      "close": 259.623291015625
+     },
+     {
+      "date": "2026-01-08",
+      "close": 258.3368225097656
+     },
+     {
+      "date": "2026-01-09",
+      "close": 258.6659240722656
+     },
+     {
+      "date": "2026-01-12",
+      "close": 259.54351806640625
+     },
+     {
+      "date": "2026-01-13",
+      "close": 260.3413391113281
+     },
+     {
+      "date": "2026-01-14",
+      "close": 259.25433349609375
+     },
+     {
+      "date": "2026-01-15",
+      "close": 257.5090637207031
+     },
+     {
+      "date": "2026-01-16",
+      "close": 254.8363494873047
+     },
+     {
+      "date": "2026-01-20",
+      "close": 246.0303192138672
+     },
+     {
+      "date": "2026-01-21",
+      "close": 246.97775268554688
+     },
+     {
+      "date": "2026-01-22",
+      "close": 247.67584228515625
+     },
+     {
+      "date": "2026-01-23",
+      "close": 247.36668395996094
+     },
+     {
+      "date": "2026-01-26",
+      "close": 254.7166748046875
+     },
+     {
+      "date": "2026-01-27",
+      "close": 257.5688781738281
+     },
+     {
+      "date": "2026-01-28",
+      "close": 255.743896484375
+     },
+     {
+      "date": "2026-01-29",
+      "close": 257.5788879394531
+     },
+     {
+      "date": "2026-01-30",
+      "close": 258.775634765625
+     },
+     {
+      "date": "2026-02-02",
+      "close": 269.2770690917969
+     },
+     {
+      "date": "2026-02-03",
+      "close": 268.7485046386719
+     },
+     {
+      "date": "2026-02-04",
+      "close": 275.7394104003906
+     },
+     {
+      "date": "2026-02-05",
+      "close": 275.1610412597656
+     },
+     {
+      "date": "2026-02-06",
+      "close": 277.364990234375
+     },
+     {
+      "date": "2026-02-09",
+      "close": 274.13079833984375
+     },
+     {
+      "date": "2026-02-10",
+      "close": 273.19244384765625
+     },
+     {
+      "date": "2026-02-11",
+      "close": 275.00921630859375
+     },
+     {
+      "date": "2026-02-12",
+      "close": 261.2637634277344
+     },
+     {
+      "date": "2026-02-13",
+      "close": 255.32435607910156
+     },
+     {
+      "date": "2026-02-17",
+      "close": 263.4099426269531
+     },
+     {
+      "date": "2026-02-18",
+      "close": 263.8791198730469
+     },
+     {
+      "date": "2026-02-19",
+      "close": 260.11578369140625
+     },
+     {
+      "date": "2026-02-20",
+      "close": 264.1086730957031
+     },
+     {
+      "date": "2026-02-23",
+      "close": 265.705810546875
+     },
+     {
+      "date": "2026-02-24",
+      "close": 271.6552429199219
+     },
+     {
+      "date": "2026-02-25",
+      "close": 273.74151611328125
+     },
+     {
+      "date": "2026-02-26",
+      "close": 272.4637756347656
+     },
+     {
+      "date": "2026-02-27",
+      "close": 263.70941162109375
+     },
+     {
+      "date": "2026-03-02",
+      "close": 264.2484130859375
+     },
+     {
+      "date": "2026-03-03",
+      "close": 263.2801818847656
+     },
+     {
+      "date": "2026-03-04",
+      "close": 262.0523376464844
+     },
+     {
+      "date": "2026-03-05",
+      "close": 259.8263244628906
+     },
+     {
+      "date": "2026-03-06",
+      "close": 257.0013427734375
+     },
+     {
+      "date": "2026-03-09",
+      "close": 259.41705322265625
+     },
+     {
+      "date": "2026-03-10",
+      "close": 260.3653564453125
+     },
+     {
+      "date": "2026-03-11",
+      "close": 260.34539794921875
+     },
+     {
+      "date": "2026-03-12",
+      "close": 255.3043975830078
+     },
+     {
+      "date": "2026-03-13",
+      "close": 249.6744384765625
+     },
+     {
+      "date": "2026-03-16",
+      "close": 252.36964416503906
+     },
+     {
+      "date": "2026-03-17",
+      "close": 253.77711486816406
+     },
+     {
+      "date": "2026-03-18",
+      "close": 249.49476623535156
+     },
+     {
+      "date": "2026-03-19",
+      "close": 248.5165252685547
+     },
+     {
+      "date": "2026-03-20",
+      "close": 247.54823303222656
+     },
+     {
+      "date": "2026-03-23",
+      "close": 251.04200744628906
+     },
+     {
+      "date": "2026-03-24",
+      "close": 251.1917266845703
+     },
+     {
+      "date": "2026-03-25",
+      "close": 252.16998291015625
+     },
+     {
+      "date": "2026-03-26",
+      "close": 252.43951416015625
+     },
+     {
+      "date": "2026-03-27",
+      "close": 248.35679626464844
+     },
+     {
+      "date": "2026-03-30",
+      "close": 246.19065856933594
+     },
+     {
+      "date": "2026-03-31",
+      "close": 253.33790588378906
+     },
+     {
+      "date": "2026-04-01",
+      "close": 255.1746368408203
+     },
+     {
+      "date": "2026-04-02",
+      "close": 255.464111328125
+     },
+     {
+      "date": "2026-04-06",
+      "close": 258.39886474609375
+     },
+     {
+      "date": "2026-04-07",
+      "close": 253.0484161376953
+     },
+     {
+      "date": "2026-04-08",
+      "close": 258.4388122558594
+     },
+     {
+      "date": "2026-04-09",
+      "close": 260.0259704589844
+     },
+     {
+      "date": "2026-04-10",
+      "close": 260.0159912109375
+     },
+     {
+      "date": "2026-04-13",
+      "close": 258.73828125
+     },
+     {
+      "date": "2026-04-14",
+      "close": 258.3689270019531
+     },
+     {
+      "date": "2026-04-15",
+      "close": 265.95538330078125
+     },
+     {
+      "date": "2026-04-16",
+      "close": 262.9307861328125
+     },
+     {
+      "date": "2026-04-17",
+      "close": 269.7486267089844
+     },
+     {
+      "date": "2026-04-20",
+      "close": 272.5635681152344
+     },
+     {
+      "date": "2026-04-21",
+      "close": 265.69586181640625
+     },
+     {
+      "date": "2026-04-22",
+      "close": 272.68341064453125
+     },
+     {
+      "date": "2026-04-23",
+      "close": 272.9429016113281
+     },
+     {
+      "date": "2026-04-24",
+      "close": 270.5771179199219
+     },
+     {
+      "date": "2026-04-27",
+      "close": 267.1332702636719
+     },
+     {
+      "date": "2026-04-28",
+      "close": 270.2277526855469
+     },
+     {
+      "date": "2026-04-29",
+      "close": 269.688720703125
+     },
+     {
+      "date": "2026-04-30",
+      "close": 270.86663818359375
+     },
+     {
+      "date": "2026-05-01",
+      "close": 279.6409912109375
+     },
+     {
+      "date": "2026-05-04",
+      "close": 276.3368225097656
+     },
+     {
+      "date": "2026-05-05",
+      "close": 283.67376708984375
+     },
+     {
+      "date": "2026-05-06",
+      "close": 286.99786376953125
+     },
+     {
+      "date": "2026-05-07",
+      "close": 286.927978515625
+     },
+     {
+      "date": "2026-05-08",
+      "close": 292.7974853515625
+     },
+     {
+      "date": "2026-05-11",
+      "close": 292.42779541015625
+     },
+     {
+      "date": "2026-05-12",
+      "close": 294.54595947265625
+     },
+     {
+      "date": "2026-05-13",
+      "close": 298.6124572753906
+     },
+     {
+      "date": "2026-05-14",
+      "close": 297.9530334472656
+     },
+     {
+      "date": "2026-05-15",
+      "close": 299.9713134765625
+     },
+     {
+      "date": "2026-05-18",
+      "close": 297.5833435058594
+     },
+     {
+      "date": "2026-05-19",
+      "close": 298.7123718261719
+     },
+     {
+      "date": "2026-05-20",
+      "close": 301.98956298828125
+     },
+     {
+      "date": "2026-05-21",
+      "close": 304.7271728515625
+     },
+     {
+      "date": "2026-05-22",
+      "close": 308.55389404296875
+     },
+     {
+      "date": "2026-05-26",
+      "close": 308.0643005371094
+     },
+     {
+      "date": "2026-05-27",
+      "close": 310.5821533203125
+     },
+     {
+      "date": "2026-05-28",
+      "close": 312.24072265625
+     },
+     {
+      "date": "2026-05-29",
+      "close": 311.7911071777344
+     },
+     {
+      "date": "2026-06-01",
+      "close": 306.0460510253906
+     },
+     {
+      "date": "2026-06-02",
+      "close": 314.92840576171875
+     },
+     {
+      "date": "2026-06-03",
+      "close": 309.9926452636719
+     },
+     {
+      "date": "2026-06-04",
+      "close": 310.9618225097656
+     },
+     {
+      "date": "2026-06-05",
+      "close": 307.0751647949219
+     },
+     {
+      "date": "2026-06-08",
+      "close": 301.2801818847656
+     },
+     {
+      "date": "2026-06-09",
+      "close": 290.29962158203125
+     },
+     {
+      "date": "2026-06-10",
+      "close": 291.3287353515625
+     },
+     {
+      "date": "2026-06-11",
+      "close": 295.375244140625
+     },
+     {
+      "date": "2026-06-12",
+      "close": 290.879150390625
+     },
+     {
+      "date": "2026-06-15",
+      "close": 296.1645812988281
+     },
+     {
+      "date": "2026-06-16",
+      "close": 298.9821472167969
+     },
+     {
+      "date": "2026-06-17",
+      "close": 295.6949768066406
+     },
+     {
+      "date": "2026-06-18",
+      "close": 297.7532043457031
+     },
+     {
+      "date": "2026-06-22",
+      "close": 296.75408935546875
+     },
+     {
+      "date": "2026-06-23",
+      "close": 294.04638671875
+     },
+     {
+      "date": "2026-06-24",
+      "close": 292.8274230957031
+     },
+     {
+      "date": "2026-06-25",
+      "close": 274.91290283203125
+     },
+     {
+      "date": "2026-06-26",
+      "close": 283.53546142578125
+     },
+     {
+      "date": "2026-06-29",
+      "close": 281.4972229003906
+     },
+     {
+      "date": "2026-06-30",
+      "close": 289.11065673828125
+     },
+     {
+      "date": "2026-07-01",
+      "close": 294.1263427734375
+     },
+     {
+      "date": "2026-07-02",
+      "close": 308.3640441894531
+     },
+     {
+      "date": "2026-07-06",
+      "close": 312.3905944824219
+     },
+     {
+      "date": "2026-07-07",
+      "close": 310.3923034667969
+     },
+     {
+      "date": "2026-07-08",
+      "close": 313.1199645996094
+     },
+     {
+      "date": "2026-07-09",
+      "close": 315.947509765625
+     },
+     {
+      "date": "2026-07-10",
+      "close": 315.0483093261719
+     },
+     {
+      "date": "2026-07-13",
+      "close": 317.03656005859375
+     },
+     {
+      "date": "2026-07-14",
+      "close": 314.58868408203125
+     },
+     {
+      "date": "2026-07-15",
+      "close": 327.2178039550781
+     },
+     {
+      "date": "2026-07-16",
+      "close": 332.97283935546875
+     },
+     {
+      "date": "2026-07-17",
+      "close": 333.452392578125
+     },
+     {
+      "date": "2026-07-20",
+      "close": 326.3085632324219
+     },
+     {
+      "date": "2026-07-21",
+      "close": 327.45758056640625
+     },
+     {
+      "date": "2026-07-22",
+      "close": 325.60919189453125
+     },
+     {
+      "date": "2026-07-23",
+      "close": 321.3828430175781
+     },
+     {
+      "date": "2026-07-24",
+      "close": 332.7330322265625
+     },
+     {
+      "date": "2026-07-27",
+      "close": 336.61968994140625
+     },
+     {
+      "date": "2026-07-28",
+      "close": 339.78692626953125
+     },
+     {
+      "date": "2026-07-29",
+      "close": 337.8985900878906
+     },
+     {
+      "date": "2026-07-30",
+      "close": 333.1426696777344
+     },
+     {
+      "date": "2026-07-31",
+      "close": 308.6438293457031
+     },
+     {
+      "date": "2026-08-03",
+      "close": 303.1585693359375
+     },
+     {
+      "date": "2026-08-04",
+      "close": 309.1134033203125
+     },
+     {
+      "date": "2026-08-05",
+      "close": 310.7320251464844
+     },
+     {
+      "date": "2026-08-06",
+      "close": 312.14080810546875
+     },
+     {
+      "date": "2026-08-07",
+      "close": 313.05999755859375
+     },
+     {
+      "date": "2026-08-10",
+      "close": 308.260009765625
+     },
+     {
+      "date": "2026-08-11",
+      "close": 304.9100036621094
+     },
+     {
+      "date": "2026-08-12",
+      "close": 302.25
+     },
+     {
+      "date": "2026-08-13",
+      "close": 305.260009765625
+     },
+     {
+      "date": "2026-08-14",
+      "close": 305.92999267578125
+     },
+     {
+      "date": "2026-08-17",
+      "close": 305.5899963378906
+     },
+     {
+      "date": "2026-08-18",
+      "close": 310.0299987792969
+     },
+     {
+      "date": "2026-08-19",
+      "close": 316.8299865722656
+     },
+     {
+      "date": "2026-08-20",
+      "close": 311.29998779296875
+     },
+     {
+      "date": "2026-08-21",
+      "close": 309.3500061035156
+     },
+     {
+      "date": "2026-08-24",
+      "close": 310.3399963378906
+     },
+     {
+      "date": "2026-08-25",
+      "close": 309.8999938964844
+     },
+     {
+      "date": "2026-08-26",
+      "close": 313.45001220703125
+     },
+     {
+      "date": "2026-08-27",
+      "close": 314.5799865722656
+     },
+     {
+      "date": "2026-08-28",
+      "close": 319.70001220703125
+     },
+     {
+      "date": "2026-08-31",
+      "close": 316.8500061035156
+     },
+     {
+      "date": "2026-09-01",
+      "close": 325.1300048828125
+     },
+     {
+      "date": "2026-09-02",
+      "close": 324.9599914550781
+     },
+     {
+      "date": "2026-09-03",
+      "close": 328.2099914550781
+     },
+     {
+      "date": "2026-09-04",
+      "close": 319.9700012207031
+     },
+     {
+      "date": "2026-09-08",
+      "close": 316.2200012207031
+     },
+     {
+      "date": "2026-09-09",
+      "close": 315.3399963378906
+     },
+     {
+      "date": "2026-09-10",
+      "close": 326.57000732421875
+     },
+     {
+      "date": "2026-09-11",
+      "close": 332.2699890136719
+     },
+     {
+      "date": "2026-09-14",
+      "close": 333.0799865722656
+     },
+     {
+      "date": "2026-09-15",
+      "close": 331.3399963378906
+     },
+     {
+      "date": "2026-09-16",
+      "close": 332.4100036621094
+     },
+     {
+      "date": "2026-09-17",
+      "close": 337.0
+     },
+     {
+      "date": "2026-09-18",
+      "close": 336.1300048828125
+     },
+     {
+      "date": "2026-09-21",
+      "close": 338.9800109863281
+     },
+     {
+      "date": "2026-09-22",
+      "close": 339.75
+     },
+     {
+      "date": "2026-09-23",
+      "close": 337.0199890136719
+     },
+     {
+      "date": "2026-09-24",
+      "close": 335.9200134277344
+     },
+     {
+      "date": "2026-09-25",
+      "close": 341.07000732421875
+     },
+     {
+      "date": "2026-09-28",
+      "close": 338.3999938964844
+     },
+     {
+      "date": "2026-09-29",
+      "close": 329.3999938964844
+     },
+     {
+      "date": "2026-09-30",
+      "close": 333.0199890136719
+     },
+     {
+      "date": "2026-10-01",
+      "close": 330.32000732421875
+     },
+     {
+      "date": "2026-10-02",
+      "close": 333.69000244140625
+     }
+    ],
+    "analyst_target_mean": 328.09384,
+    "analyst_recommendation": "buy"
+   }
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "risk",
+   "ms": 12,
+   "status": "failed"
+  }
+ },
+ {
+  "event": "error",
+  "data": {
+   "stage": "risk",
+   "message": "model declined the request",
+   "terminal": false
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "comps",
+   "ms": 16,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "comps",
+   "value": {
+    "metric_set": "general",
+    "metrics": [
+     "pe_ttm",
+     "pe_fwd",
+     "ev_ebitda",
+     "ev_revenue",
+     "net_margin",
+     "revenue_growth",
+     "debt_to_equity"
+    ],
+    "primary_metric": "pe_fwd",
+    "rows": [
+     {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market_cap": 4869931925504.0,
+      "multiples": {
+       "pe_ttm": 38.2672,
+       "pe_fwd": 34.821583,
+       "ev_ebitda": 28.833,
+       "ev_revenue": 10.374,
+       "price_to_book": 45.338314,
+       "net_margin": 0.27618998,
+       "roe": 1.4875101,
+       "revenue_growth": 0.164,
+       "debt_to_equity": 0.78445,
+       "dividend_yield": 0.0033
+      },
+      "is_target": true,
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+     },
+     {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market_cap": 3842942959616.0,
+      "multiples": {
+       "pe_ttm": 28.831755,
+       "pe_fwd": 21.88853,
+       "ev_ebitda": 19.872,
+       "ev_revenue": 11.632,
+       "price_to_book": 8.688492,
+       "net_margin": 0.40305,
+       "roe": 0.34039003,
+       "revenue_growth": 0.177,
+       "debt_to_equity": 0.29118,
+       "dividend_yield": 0.0076
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint,\u2026"
+     },
+     {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market_cap": 4200982642688.0,
+      "multiples": {
+       "pe_ttm": 17.243977,
+       "pe_fwd": 22.791302,
+       "ev_ebitda": 23.29,
+       "ev_revenue": 9.045,
+       "price_to_book": 6.749057,
+       "net_margin": 0.54771,
+       "roe": 0.48676,
+       "revenue_growth": 0.242,
+       "debt_to_equity": 0.18859,
+       "dividend_yield": 0.0026
+      },
+      "is_target": false,
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription\u2026"
+     },
+     {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "market_cap": 357657378816.0,
+      "multiples": {
+       "pe_ttm": 32.761795,
+       "pe_fwd": 19.319212,
+       "ev_ebitda": 20.769,
+       "ev_revenue": 2.435,
+       "price_to_book": -252.25113,
+       "net_margin": 0.07525,
+       "roe": null,
+       "revenue_growth": 0.577,
+       "debt_to_equity": null,
+       "dividend_yield": 0.004699999999999999
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services\u2026"
+     },
+     {
+      "ticker": "HPQ",
+      "name": "HP Inc.",
+      "market_cap": 28965525504.0,
+      "multiples": {
+       "pe_ttm": 12.259542,
+       "pe_fwd": 10.235916,
+       "ev_ebitda": 7.585,
+       "ev_revenue": 0.594,
+       "price_to_book": -314.90195,
+       "net_margin": 0.04143,
+       "roe": null,
+       "revenue_growth": 0.125,
+       "debt_to_equity": null,
+       "dividend_yield": 0.0373
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "HP Inc. provides personal computing, printing, 3D printing, hybrid work, gaming, and other related technologies in the United States and internationally. The company operates through three segments: Personal Systems, Printing, and Corporate Investments. The Personal Systems segment offers commercial and consumer desktops and notebooks, workstations, thin clients, retail point-of-sale systems, displays, software, hybrid systems, and endpoint security and services, as well as lifecycle services, including support and deployment, configurations, and extended warranty services. The Printing\u2026"
+     }
+    ],
+    "median": {
+     "pe_ttm": 23.037866,
+     "pe_fwd": 20.603870999999998,
+     "ev_ebitda": 20.3205,
+     "ev_revenue": 5.74,
+     "price_to_book": 7.7187745,
+     "net_margin": 0.23915,
+     "roe": 0.41357501500000005,
+     "revenue_growth": 0.2095,
+     "debt_to_equity": 0.23988500000000001,
+     "dividend_yield": 0.006149999999999999
+    },
+    "target_vs_median_pct": {
+     "pe_ttm": 0.6610566273803311,
+     "pe_fwd": 0.6900505249717395,
+     "ev_ebitda": 0.4189119362220417,
+     "ev_revenue": 0.8073170731707318,
+     "net_margin": 0.15488178967175403,
+     "revenue_growth": -0.21718377088305485,
+     "debt_to_equity": 2.2701085937011483
+    },
+    "peer_rationales": {},
+    "peer_origin": {
+     "MSFT": "agent",
+     "GOOGL": "agent",
+     "DELL": "agent",
+     "HPQ": "agent"
+    },
+    "exclusions": [],
+    "sources": [
+     "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+     "https://www.scribd.com/document/604073816/Apple-Inc",
+     "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple",
+     "https://www.comparably.com/companies/apple/competitors",
+     "https://www.globaldata.com/company-profile/apple-inc/competitors"
+    ],
+    "insufficient": false
+   }
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "comps_explain",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "comps_explain",
+   "ms": 0,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "comps",
+   "value": {
+    "metric_set": "general",
+    "metrics": [
+     "pe_ttm",
+     "pe_fwd",
+     "ev_ebitda",
+     "ev_revenue",
+     "net_margin",
+     "revenue_growth",
+     "debt_to_equity"
+    ],
+    "primary_metric": "pe_fwd",
+    "rows": [
+     {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market_cap": 4869931925504.0,
+      "multiples": {
+       "pe_ttm": 38.2672,
+       "pe_fwd": 34.821583,
+       "ev_ebitda": 28.833,
+       "ev_revenue": 10.374,
+       "price_to_book": 45.338314,
+       "net_margin": 0.27618998,
+       "roe": 1.4875101,
+       "revenue_growth": 0.164,
+       "debt_to_equity": 0.78445,
+       "dividend_yield": 0.0033
+      },
+      "is_target": true,
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+     },
+     {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market_cap": 3842942959616.0,
+      "multiples": {
+       "pe_ttm": 28.831755,
+       "pe_fwd": 21.88853,
+       "ev_ebitda": 19.872,
+       "ev_revenue": 11.632,
+       "price_to_book": 8.688492,
+       "net_margin": 0.40305,
+       "roe": 0.34039003,
+       "revenue_growth": 0.177,
+       "debt_to_equity": 0.29118,
+       "dividend_yield": 0.0076
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint,\u2026"
+     },
+     {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market_cap": 4200982642688.0,
+      "multiples": {
+       "pe_ttm": 17.243977,
+       "pe_fwd": 22.791302,
+       "ev_ebitda": 23.29,
+       "ev_revenue": 9.045,
+       "price_to_book": 6.749057,
+       "net_margin": 0.54771,
+       "roe": 0.48676,
+       "revenue_growth": 0.242,
+       "debt_to_equity": 0.18859,
+       "dividend_yield": 0.0026
+      },
+      "is_target": false,
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription\u2026"
+     },
+     {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "market_cap": 357657378816.0,
+      "multiples": {
+       "pe_ttm": 32.761795,
+       "pe_fwd": 19.319212,
+       "ev_ebitda": 20.769,
+       "ev_revenue": 2.435,
+       "price_to_book": -252.25113,
+       "net_margin": 0.07525,
+       "roe": null,
+       "revenue_growth": 0.577,
+       "debt_to_equity": null,
+       "dividend_yield": 0.004699999999999999
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services\u2026"
+     },
+     {
+      "ticker": "HPQ",
+      "name": "HP Inc.",
+      "market_cap": 28965525504.0,
+      "multiples": {
+       "pe_ttm": 12.259542,
+       "pe_fwd": 10.235916,
+       "ev_ebitda": 7.585,
+       "ev_revenue": 0.594,
+       "price_to_book": -314.90195,
+       "net_margin": 0.04143,
+       "roe": null,
+       "revenue_growth": 0.125,
+       "debt_to_equity": null,
+       "dividend_yield": 0.0373
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "HP Inc. provides personal computing, printing, 3D printing, hybrid work, gaming, and other related technologies in the United States and internationally. The company operates through three segments: Personal Systems, Printing, and Corporate Investments. The Personal Systems segment offers commercial and consumer desktops and notebooks, workstations, thin clients, retail point-of-sale systems, displays, software, hybrid systems, and endpoint security and services, as well as lifecycle services, including support and deployment, configurations, and extended warranty services. The Printing\u2026"
+     }
+    ],
+    "median": {
+     "pe_ttm": 23.037866,
+     "pe_fwd": 20.603870999999998,
+     "ev_ebitda": 20.3205,
+     "ev_revenue": 5.74,
+     "price_to_book": 7.7187745,
+     "net_margin": 0.23915,
+     "roe": 0.41357501500000005,
+     "revenue_growth": 0.2095,
+     "debt_to_equity": 0.23988500000000001,
+     "dividend_yield": 0.006149999999999999
+    },
+    "target_vs_median_pct": {
+     "pe_ttm": 0.6610566273803311,
+     "pe_fwd": 0.6900505249717395,
+     "ev_ebitda": 0.4189119362220417,
+     "ev_revenue": 0.8073170731707318,
+     "net_margin": 0.15488178967175403,
+     "revenue_growth": -0.21718377088305485,
+     "debt_to_equity": 2.2701085937011483
+    },
+    "peer_rationales": {
+     "MSFT": "Sells similar products.",
+     "GOOGL": "Sells similar products.",
+     "DELL": "Sells similar products.",
+     "HPQ": "Sells similar products."
+    },
+    "peer_origin": {
+     "MSFT": "agent",
+     "GOOGL": "agent",
+     "DELL": "agent",
+     "HPQ": "agent"
+    },
+    "exclusions": [],
+    "sources": [
+     "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+     "https://www.scribd.com/document/604073816/Apple-Inc",
+     "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple",
+     "https://www.comparably.com/companies/apple/competitors",
+     "https://www.globaldata.com/company-profile/apple-inc/competitors"
+    ],
+    "insufficient": false
+   }
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "scorecard",
+   "value": {
+    "factors": [
+     {
+      "name": "valuation",
+      "score": -1,
+      "detail": "Forward P/E 34.8 vs peer median 20.6 (+69%; band \u00b115%)"
+     },
+     {
+      "name": "growth",
+      "score": 0,
+      "detail": "Revenue growth 16.4% vs peer median 20.9% (-4.5 pts; band \u00b15 pts)"
+     },
+     {
+      "name": "profitability",
+      "score": 0,
+      "detail": "Net margin 27.6% vs peer median 23.9% (+3.7 pts; band \u00b15 pts)"
+     },
+     {
+      "name": "analyst_upside",
+      "score": 0,
+      "detail": "mean analyst target 328.09 vs price 333.69 (-1.7%; band \u00b110%)"
+     },
+     {
+      "name": "momentum",
+      "score": 1,
+      "detail": "price 333.69 above its 200-day average 288.80; at 89% of the 52-week range"
+     }
+    ],
+    "total": 0,
+    "preliminary_signal": "HOLD"
+   }
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "analyst",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "writer",
+   "status": "started"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "analyst",
+   "ms": 0,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "partial",
+  "data": {
+   "key": "analyst",
+   "value": {
+    "signal": "HOLD",
+    "confidence": 0.6,
+    "changed_from_preliminary": false,
+    "change_reason": null,
+    "valuation_summary": "Valued in line with the scorecard.",
+    "thesis": [
+     "Strong margins.",
+     "Solid balance sheet.",
+     "Market leader."
+    ],
+    "counterpoints": [
+     "Premium valuation.",
+     "Slower growth.",
+     "Regulatory pressure."
+    ],
+    "signal_reasoning": "The scorecard total is 0; nothing justifies a change.",
+    "preliminary_signal": "HOLD",
+    "reviewed": true
+   }
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "## Company overview\n\nApple Inc. trades a"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "t 333.69.\n\n## Financial commentary\n\nReve"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "nue is shown by fiscal year in the table"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": ".\n\n## Comps commentary\n\nThe target is co"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "mpared with its peer median.\n\n## Risk co"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "mmentary\n\nThe main risks come from the a"
+  }
+ },
+ {
+  "event": "narrative",
+  "data": {
+   "delta": "nnual filing.\n"
+  }
+ },
+ {
+  "event": "stage",
+  "data": {
+   "stage": "writer",
+   "ms": 0,
+   "status": "done",
+   "cached": false
+  }
+ },
+ {
+  "event": "report",
+  "data": {
+   "generated_at": "2026-10-04T11:33:01+00:00",
+   "ticker": "AAPL",
+   "financials": {
+    "snapshot": {
+     "ticker": "AAPL",
+     "name": "Apple Inc.",
+     "sector": "Technology",
+     "industry": "Consumer Electronics",
+     "currency": "USD",
+     "price": 333.69,
+     "market_cap": 4869931925504.0,
+     "week52_low": 243.42,
+     "week52_high": 345.34,
+     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+    },
+    "multiples": {
+     "pe_ttm": 38.2672,
+     "pe_fwd": 34.821583,
+     "ev_ebitda": 28.833,
+     "ev_revenue": 10.374,
+     "price_to_book": 45.338314,
+     "net_margin": 0.27618998,
+     "roe": 1.4875101,
+     "revenue_growth": 0.164,
+     "debt_to_equity": 0.78445,
+     "dividend_yield": 0.0033
+    },
+    "revenue_history": [
+     {
+      "year": 2022,
+      "value": 394328000000.0
+     },
+     {
+      "year": 2023,
+      "value": 383285000000.0
+     },
+     {
+      "year": 2024,
+      "value": 391035000000.0
+     },
+     {
+      "year": 2025,
+      "value": 416161000000.0
+     }
+    ],
+    "ebitda_history": [
+     {
+      "year": 2022,
+      "value": 130541000000.0
+     },
+     {
+      "year": 2023,
+      "value": 125820000000.0
+     },
+     {
+      "year": 2024,
+      "value": 134661000000.0
+     },
+     {
+      "year": 2025,
+      "value": 144748000000.0
+     }
+    ],
+    "net_income_history": [
+     {
+      "year": 2022,
+      "value": 99803000000.0
+     },
+     {
+      "year": 2023,
+      "value": 96995000000.0
+     },
+     {
+      "year": 2024,
+      "value": 93736000000.0
+     },
+     {
+      "year": 2025,
+      "value": 112010000000.0
+     }
+    ],
+    "price_history": [
+     {
+      "date": "2025-10-03",
+      "close": 257.07037353515625
+     },
+     {
+      "date": "2025-10-06",
+      "close": 255.74526977539062
+     },
+     {
+      "date": "2025-10-07",
+      "close": 255.53607177734375
+     },
+     {
+      "date": "2025-10-08",
+      "close": 257.1102600097656
+     },
+     {
+      "date": "2025-10-09",
+      "close": 253.1050262451172
+     },
+     {
+      "date": "2025-10-10",
+      "close": 244.3673095703125
+     },
+     {
+      "date": "2025-10-13",
+      "close": 246.74851989746094
+     },
+     {
+      "date": "2025-10-14",
+      "close": 246.8581085205078
+     },
+     {
+      "date": "2025-10-15",
+      "close": 248.42233276367188
+     },
+     {
+      "date": "2025-10-16",
+      "close": 246.53929138183594
+     },
+     {
+      "date": "2025-10-17",
+      "close": 251.36146545410156
+     },
+     {
+      "date": "2025-10-20",
+      "close": 261.27484130859375
+     },
+     {
+      "date": "2025-10-21",
+      "close": 261.8028564453125
+     },
+     {
+      "date": "2025-10-22",
+      "close": 257.4988098144531
+     },
+     {
+      "date": "2025-10-23",
+      "close": 258.6246032714844
+     },
+     {
+      "date": "2025-10-24",
+      "close": 261.8527526855469
+     },
+     {
+      "date": "2025-10-27",
+      "close": 267.8206787109375
+     },
+     {
+      "date": "2025-10-28",
+      "close": 268.0099792480469
+     },
+     {
+      "date": "2025-10-29",
+      "close": 268.7073974609375
+     },
+     {
+      "date": "2025-10-30",
+      "close": 270.401123046875
+     },
+     {
+      "date": "2025-10-31",
+      "close": 269.37493896484375
+     },
+     {
+      "date": "2025-11-03",
+      "close": 268.05975341796875
+     },
+     {
+      "date": "2025-11-04",
+      "close": 269.0461730957031
+     },
+     {
+      "date": "2025-11-05",
+      "close": 269.14581298828125
+     },
+     {
+      "date": "2025-11-06",
+      "close": 268.7771301269531
+     },
+     {
+      "date": "2025-11-07",
+      "close": 267.48193359375
+     },
+     {
+      "date": "2025-11-10",
+      "close": 268.6986083984375
+     },
+     {
+      "date": "2025-11-11",
+      "close": 274.5028076171875
+     },
+     {
+      "date": "2025-11-12",
+      "close": 272.7276306152344
+     },
+     {
+      "date": "2025-11-13",
+      "close": 272.2090759277344
+     },
+     {
+      "date": "2025-11-14",
+      "close": 271.6705017089844
+     },
+     {
+      "date": "2025-11-17",
+      "close": 266.73394775390625
+     },
+     {
+      "date": "2025-11-18",
+      "close": 266.71405029296875
+     },
+     {
+      "date": "2025-11-19",
+      "close": 267.8309631347656
+     },
+     {
+      "date": "2025-11-20",
+      "close": 265.5272521972656
+     },
+     {
+      "date": "2025-11-21",
+      "close": 270.75299072265625
+     },
+     {
+      "date": "2025-11-24",
+      "close": 275.1710205078125
+     },
+     {
+      "date": "2025-11-25",
+      "close": 276.2181701660156
+     },
+     {
+      "date": "2025-11-26",
+      "close": 276.79656982421875
+     },
+     {
+      "date": "2025-11-28",
+      "close": 278.0930480957031
+     },
+     {
+      "date": "2025-12-01",
+      "close": 282.3315124511719
+     },
+     {
+      "date": "2025-12-02",
+      "close": 285.4131164550781
+     },
+     {
+      "date": "2025-12-03",
+      "close": 283.378662109375
+     },
+     {
+      "date": "2025-12-04",
+      "close": 279.9380187988281
+     },
+     {
+      "date": "2025-12-05",
+      "close": 278.02325439453125
+     },
+     {
+      "date": "2025-12-08",
+      "close": 277.1356506347656
+     },
+     {
+      "date": "2025-12-09",
+      "close": 276.4275817871094
+     },
+     {
+      "date": "2025-12-10",
+      "close": 278.02325439453125
+     },
+     {
+      "date": "2025-12-11",
+      "close": 277.2752685546875
+     },
+     {
+      "date": "2025-12-12",
+      "close": 277.5246276855469
+     },
+     {
+      "date": "2025-12-15",
+      "close": 273.3658752441406
+     },
+     {
+      "date": "2025-12-16",
+      "close": 273.8645324707031
+     },
+     {
+      "date": "2025-12-17",
+      "close": 271.10205078125
+     },
+     {
+      "date": "2025-12-18",
+      "close": 271.4511413574219
+     },
+     {
+      "date": "2025-12-19",
+      "close": 272.9271240234375
+     },
+     {
+      "date": "2025-12-22",
+      "close": 270.23443603515625
+     },
+     {
+      "date": "2025-12-23",
+      "close": 271.62066650390625
+     },
+     {
+      "date": "2025-12-24",
+      "close": 273.06671142578125
+     },
+     {
+      "date": "2025-12-26",
+      "close": 272.6578063964844
+     },
+     {
+      "date": "2025-12-29",
+      "close": 273.0168762207031
+     },
+     {
+      "date": "2025-12-30",
+      "close": 272.33868408203125
+     },
+     {
+      "date": "2025-12-31",
+      "close": 271.12200927734375
+     },
+     {
+      "date": "2026-01-02",
+      "close": 270.2743225097656
+     },
+     {
+      "date": "2026-01-05",
+      "close": 266.5345153808594
+     },
+     {
+      "date": "2026-01-06",
+      "close": 261.6477966308594
+     },
+     {
+      "date": "2026-01-07",
+      "close": 259.623291015625
+     },
+     {
+      "date": "2026-01-08",
+      "close": 258.3368225097656
+     },
+     {
+      "date": "2026-01-09",
+      "close": 258.6659240722656
+     },
+     {
+      "date": "2026-01-12",
+      "close": 259.54351806640625
+     },
+     {
+      "date": "2026-01-13",
+      "close": 260.3413391113281
+     },
+     {
+      "date": "2026-01-14",
+      "close": 259.25433349609375
+     },
+     {
+      "date": "2026-01-15",
+      "close": 257.5090637207031
+     },
+     {
+      "date": "2026-01-16",
+      "close": 254.8363494873047
+     },
+     {
+      "date": "2026-01-20",
+      "close": 246.0303192138672
+     },
+     {
+      "date": "2026-01-21",
+      "close": 246.97775268554688
+     },
+     {
+      "date": "2026-01-22",
+      "close": 247.67584228515625
+     },
+     {
+      "date": "2026-01-23",
+      "close": 247.36668395996094
+     },
+     {
+      "date": "2026-01-26",
+      "close": 254.7166748046875
+     },
+     {
+      "date": "2026-01-27",
+      "close": 257.5688781738281
+     },
+     {
+      "date": "2026-01-28",
+      "close": 255.743896484375
+     },
+     {
+      "date": "2026-01-29",
+      "close": 257.5788879394531
+     },
+     {
+      "date": "2026-01-30",
+      "close": 258.775634765625
+     },
+     {
+      "date": "2026-02-02",
+      "close": 269.2770690917969
+     },
+     {
+      "date": "2026-02-03",
+      "close": 268.7485046386719
+     },
+     {
+      "date": "2026-02-04",
+      "close": 275.7394104003906
+     },
+     {
+      "date": "2026-02-05",
+      "close": 275.1610412597656
+     },
+     {
+      "date": "2026-02-06",
+      "close": 277.364990234375
+     },
+     {
+      "date": "2026-02-09",
+      "close": 274.13079833984375
+     },
+     {
+      "date": "2026-02-10",
+      "close": 273.19244384765625
+     },
+     {
+      "date": "2026-02-11",
+      "close": 275.00921630859375
+     },
+     {
+      "date": "2026-02-12",
+      "close": 261.2637634277344
+     },
+     {
+      "date": "2026-02-13",
+      "close": 255.32435607910156
+     },
+     {
+      "date": "2026-02-17",
+      "close": 263.4099426269531
+     },
+     {
+      "date": "2026-02-18",
+      "close": 263.8791198730469
+     },
+     {
+      "date": "2026-02-19",
+      "close": 260.11578369140625
+     },
+     {
+      "date": "2026-02-20",
+      "close": 264.1086730957031
+     },
+     {
+      "date": "2026-02-23",
+      "close": 265.705810546875
+     },
+     {
+      "date": "2026-02-24",
+      "close": 271.6552429199219
+     },
+     {
+      "date": "2026-02-25",
+      "close": 273.74151611328125
+     },
+     {
+      "date": "2026-02-26",
+      "close": 272.4637756347656
+     },
+     {
+      "date": "2026-02-27",
+      "close": 263.70941162109375
+     },
+     {
+      "date": "2026-03-02",
+      "close": 264.2484130859375
+     },
+     {
+      "date": "2026-03-03",
+      "close": 263.2801818847656
+     },
+     {
+      "date": "2026-03-04",
+      "close": 262.0523376464844
+     },
+     {
+      "date": "2026-03-05",
+      "close": 259.8263244628906
+     },
+     {
+      "date": "2026-03-06",
+      "close": 257.0013427734375
+     },
+     {
+      "date": "2026-03-09",
+      "close": 259.41705322265625
+     },
+     {
+      "date": "2026-03-10",
+      "close": 260.3653564453125
+     },
+     {
+      "date": "2026-03-11",
+      "close": 260.34539794921875
+     },
+     {
+      "date": "2026-03-12",
+      "close": 255.3043975830078
+     },
+     {
+      "date": "2026-03-13",
+      "close": 249.6744384765625
+     },
+     {
+      "date": "2026-03-16",
+      "close": 252.36964416503906
+     },
+     {
+      "date": "2026-03-17",
+      "close": 253.77711486816406
+     },
+     {
+      "date": "2026-03-18",
+      "close": 249.49476623535156
+     },
+     {
+      "date": "2026-03-19",
+      "close": 248.5165252685547
+     },
+     {
+      "date": "2026-03-20",
+      "close": 247.54823303222656
+     },
+     {
+      "date": "2026-03-23",
+      "close": 251.04200744628906
+     },
+     {
+      "date": "2026-03-24",
+      "close": 251.1917266845703
+     },
+     {
+      "date": "2026-03-25",
+      "close": 252.16998291015625
+     },
+     {
+      "date": "2026-03-26",
+      "close": 252.43951416015625
+     },
+     {
+      "date": "2026-03-27",
+      "close": 248.35679626464844
+     },
+     {
+      "date": "2026-03-30",
+      "close": 246.19065856933594
+     },
+     {
+      "date": "2026-03-31",
+      "close": 253.33790588378906
+     },
+     {
+      "date": "2026-04-01",
+      "close": 255.1746368408203
+     },
+     {
+      "date": "2026-04-02",
+      "close": 255.464111328125
+     },
+     {
+      "date": "2026-04-06",
+      "close": 258.39886474609375
+     },
+     {
+      "date": "2026-04-07",
+      "close": 253.0484161376953
+     },
+     {
+      "date": "2026-04-08",
+      "close": 258.4388122558594
+     },
+     {
+      "date": "2026-04-09",
+      "close": 260.0259704589844
+     },
+     {
+      "date": "2026-04-10",
+      "close": 260.0159912109375
+     },
+     {
+      "date": "2026-04-13",
+      "close": 258.73828125
+     },
+     {
+      "date": "2026-04-14",
+      "close": 258.3689270019531
+     },
+     {
+      "date": "2026-04-15",
+      "close": 265.95538330078125
+     },
+     {
+      "date": "2026-04-16",
+      "close": 262.9307861328125
+     },
+     {
+      "date": "2026-04-17",
+      "close": 269.7486267089844
+     },
+     {
+      "date": "2026-04-20",
+      "close": 272.5635681152344
+     },
+     {
+      "date": "2026-04-21",
+      "close": 265.69586181640625
+     },
+     {
+      "date": "2026-04-22",
+      "close": 272.68341064453125
+     },
+     {
+      "date": "2026-04-23",
+      "close": 272.9429016113281
+     },
+     {
+      "date": "2026-04-24",
+      "close": 270.5771179199219
+     },
+     {
+      "date": "2026-04-27",
+      "close": 267.1332702636719
+     },
+     {
+      "date": "2026-04-28",
+      "close": 270.2277526855469
+     },
+     {
+      "date": "2026-04-29",
+      "close": 269.688720703125
+     },
+     {
+      "date": "2026-04-30",
+      "close": 270.86663818359375
+     },
+     {
+      "date": "2026-05-01",
+      "close": 279.6409912109375
+     },
+     {
+      "date": "2026-05-04",
+      "close": 276.3368225097656
+     },
+     {
+      "date": "2026-05-05",
+      "close": 283.67376708984375
+     },
+     {
+      "date": "2026-05-06",
+      "close": 286.99786376953125
+     },
+     {
+      "date": "2026-05-07",
+      "close": 286.927978515625
+     },
+     {
+      "date": "2026-05-08",
+      "close": 292.7974853515625
+     },
+     {
+      "date": "2026-05-11",
+      "close": 292.42779541015625
+     },
+     {
+      "date": "2026-05-12",
+      "close": 294.54595947265625
+     },
+     {
+      "date": "2026-05-13",
+      "close": 298.6124572753906
+     },
+     {
+      "date": "2026-05-14",
+      "close": 297.9530334472656
+     },
+     {
+      "date": "2026-05-15",
+      "close": 299.9713134765625
+     },
+     {
+      "date": "2026-05-18",
+      "close": 297.5833435058594
+     },
+     {
+      "date": "2026-05-19",
+      "close": 298.7123718261719
+     },
+     {
+      "date": "2026-05-20",
+      "close": 301.98956298828125
+     },
+     {
+      "date": "2026-05-21",
+      "close": 304.7271728515625
+     },
+     {
+      "date": "2026-05-22",
+      "close": 308.55389404296875
+     },
+     {
+      "date": "2026-05-26",
+      "close": 308.0643005371094
+     },
+     {
+      "date": "2026-05-27",
+      "close": 310.5821533203125
+     },
+     {
+      "date": "2026-05-28",
+      "close": 312.24072265625
+     },
+     {
+      "date": "2026-05-29",
+      "close": 311.7911071777344
+     },
+     {
+      "date": "2026-06-01",
+      "close": 306.0460510253906
+     },
+     {
+      "date": "2026-06-02",
+      "close": 314.92840576171875
+     },
+     {
+      "date": "2026-06-03",
+      "close": 309.9926452636719
+     },
+     {
+      "date": "2026-06-04",
+      "close": 310.9618225097656
+     },
+     {
+      "date": "2026-06-05",
+      "close": 307.0751647949219
+     },
+     {
+      "date": "2026-06-08",
+      "close": 301.2801818847656
+     },
+     {
+      "date": "2026-06-09",
+      "close": 290.29962158203125
+     },
+     {
+      "date": "2026-06-10",
+      "close": 291.3287353515625
+     },
+     {
+      "date": "2026-06-11",
+      "close": 295.375244140625
+     },
+     {
+      "date": "2026-06-12",
+      "close": 290.879150390625
+     },
+     {
+      "date": "2026-06-15",
+      "close": 296.1645812988281
+     },
+     {
+      "date": "2026-06-16",
+      "close": 298.9821472167969
+     },
+     {
+      "date": "2026-06-17",
+      "close": 295.6949768066406
+     },
+     {
+      "date": "2026-06-18",
+      "close": 297.7532043457031
+     },
+     {
+      "date": "2026-06-22",
+      "close": 296.75408935546875
+     },
+     {
+      "date": "2026-06-23",
+      "close": 294.04638671875
+     },
+     {
+      "date": "2026-06-24",
+      "close": 292.8274230957031
+     },
+     {
+      "date": "2026-06-25",
+      "close": 274.91290283203125
+     },
+     {
+      "date": "2026-06-26",
+      "close": 283.53546142578125
+     },
+     {
+      "date": "2026-06-29",
+      "close": 281.4972229003906
+     },
+     {
+      "date": "2026-06-30",
+      "close": 289.11065673828125
+     },
+     {
+      "date": "2026-07-01",
+      "close": 294.1263427734375
+     },
+     {
+      "date": "2026-07-02",
+      "close": 308.3640441894531
+     },
+     {
+      "date": "2026-07-06",
+      "close": 312.3905944824219
+     },
+     {
+      "date": "2026-07-07",
+      "close": 310.3923034667969
+     },
+     {
+      "date": "2026-07-08",
+      "close": 313.1199645996094
+     },
+     {
+      "date": "2026-07-09",
+      "close": 315.947509765625
+     },
+     {
+      "date": "2026-07-10",
+      "close": 315.0483093261719
+     },
+     {
+      "date": "2026-07-13",
+      "close": 317.03656005859375
+     },
+     {
+      "date": "2026-07-14",
+      "close": 314.58868408203125
+     },
+     {
+      "date": "2026-07-15",
+      "close": 327.2178039550781
+     },
+     {
+      "date": "2026-07-16",
+      "close": 332.97283935546875
+     },
+     {
+      "date": "2026-07-17",
+      "close": 333.452392578125
+     },
+     {
+      "date": "2026-07-20",
+      "close": 326.3085632324219
+     },
+     {
+      "date": "2026-07-21",
+      "close": 327.45758056640625
+     },
+     {
+      "date": "2026-07-22",
+      "close": 325.60919189453125
+     },
+     {
+      "date": "2026-07-23",
+      "close": 321.3828430175781
+     },
+     {
+      "date": "2026-07-24",
+      "close": 332.7330322265625
+     },
+     {
+      "date": "2026-07-27",
+      "close": 336.61968994140625
+     },
+     {
+      "date": "2026-07-28",
+      "close": 339.78692626953125
+     },
+     {
+      "date": "2026-07-29",
+      "close": 337.8985900878906
+     },
+     {
+      "date": "2026-07-30",
+      "close": 333.1426696777344
+     },
+     {
+      "date": "2026-07-31",
+      "close": 308.6438293457031
+     },
+     {
+      "date": "2026-08-03",
+      "close": 303.1585693359375
+     },
+     {
+      "date": "2026-08-04",
+      "close": 309.1134033203125
+     },
+     {
+      "date": "2026-08-05",
+      "close": 310.7320251464844
+     },
+     {
+      "date": "2026-08-06",
+      "close": 312.14080810546875
+     },
+     {
+      "date": "2026-08-07",
+      "close": 313.05999755859375
+     },
+     {
+      "date": "2026-08-10",
+      "close": 308.260009765625
+     },
+     {
+      "date": "2026-08-11",
+      "close": 304.9100036621094
+     },
+     {
+      "date": "2026-08-12",
+      "close": 302.25
+     },
+     {
+      "date": "2026-08-13",
+      "close": 305.260009765625
+     },
+     {
+      "date": "2026-08-14",
+      "close": 305.92999267578125
+     },
+     {
+      "date": "2026-08-17",
+      "close": 305.5899963378906
+     },
+     {
+      "date": "2026-08-18",
+      "close": 310.0299987792969
+     },
+     {
+      "date": "2026-08-19",
+      "close": 316.8299865722656
+     },
+     {
+      "date": "2026-08-20",
+      "close": 311.29998779296875
+     },
+     {
+      "date": "2026-08-21",
+      "close": 309.3500061035156
+     },
+     {
+      "date": "2026-08-24",
+      "close": 310.3399963378906
+     },
+     {
+      "date": "2026-08-25",
+      "close": 309.8999938964844
+     },
+     {
+      "date": "2026-08-26",
+      "close": 313.45001220703125
+     },
+     {
+      "date": "2026-08-27",
+      "close": 314.5799865722656
+     },
+     {
+      "date": "2026-08-28",
+      "close": 319.70001220703125
+     },
+     {
+      "date": "2026-08-31",
+      "close": 316.8500061035156
+     },
+     {
+      "date": "2026-09-01",
+      "close": 325.1300048828125
+     },
+     {
+      "date": "2026-09-02",
+      "close": 324.9599914550781
+     },
+     {
+      "date": "2026-09-03",
+      "close": 328.2099914550781
+     },
+     {
+      "date": "2026-09-04",
+      "close": 319.9700012207031
+     },
+     {
+      "date": "2026-09-08",
+      "close": 316.2200012207031
+     },
+     {
+      "date": "2026-09-09",
+      "close": 315.3399963378906
+     },
+     {
+      "date": "2026-09-10",
+      "close": 326.57000732421875
+     },
+     {
+      "date": "2026-09-11",
+      "close": 332.2699890136719
+     },
+     {
+      "date": "2026-09-14",
+      "close": 333.0799865722656
+     },
+     {
+      "date": "2026-09-15",
+      "close": 331.3399963378906
+     },
+     {
+      "date": "2026-09-16",
+      "close": 332.4100036621094
+     },
+     {
+      "date": "2026-09-17",
+      "close": 337.0
+     },
+     {
+      "date": "2026-09-18",
+      "close": 336.1300048828125
+     },
+     {
+      "date": "2026-09-21",
+      "close": 338.9800109863281
+     },
+     {
+      "date": "2026-09-22",
+      "close": 339.75
+     },
+     {
+      "date": "2026-09-23",
+      "close": 337.0199890136719
+     },
+     {
+      "date": "2026-09-24",
+      "close": 335.9200134277344
+     },
+     {
+      "date": "2026-09-25",
+      "close": 341.07000732421875
+     },
+     {
+      "date": "2026-09-28",
+      "close": 338.3999938964844
+     },
+     {
+      "date": "2026-09-29",
+      "close": 329.3999938964844
+     },
+     {
+      "date": "2026-09-30",
+      "close": 333.0199890136719
+     },
+     {
+      "date": "2026-10-01",
+      "close": 330.32000732421875
+     },
+     {
+      "date": "2026-10-02",
+      "close": 333.69000244140625
+     }
+    ],
+    "analyst_target_mean": 328.09384,
+    "analyst_recommendation": "buy"
+   },
+   "comps": {
+    "metric_set": "general",
+    "metrics": [
+     "pe_ttm",
+     "pe_fwd",
+     "ev_ebitda",
+     "ev_revenue",
+     "net_margin",
+     "revenue_growth",
+     "debt_to_equity"
+    ],
+    "primary_metric": "pe_fwd",
+    "rows": [
+     {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "market_cap": 4869931925504.0,
+      "multiples": {
+       "pe_ttm": 38.2672,
+       "pe_fwd": 34.821583,
+       "ev_ebitda": 28.833,
+       "ev_revenue": 10.374,
+       "price_to_book": 45.338314,
+       "net_margin": 0.27618998,
+       "roe": 1.4875101,
+       "revenue_growth": 0.164,
+       "debt_to_equity": 0.78445,
+       "dividend_yield": 0.0033
+      },
+      "is_target": true,
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+     },
+     {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "market_cap": 3842942959616.0,
+      "multiples": {
+       "pe_ttm": 28.831755,
+       "pe_fwd": 21.88853,
+       "ev_ebitda": 19.872,
+       "ev_revenue": 11.632,
+       "price_to_book": 8.688492,
+       "net_margin": 0.40305,
+       "roe": 0.34039003,
+       "revenue_growth": 0.177,
+       "debt_to_equity": 0.29118,
+       "dividend_yield": 0.0076
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint,\u2026"
+     },
+     {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market_cap": 4200982642688.0,
+      "multiples": {
+       "pe_ttm": 17.243977,
+       "pe_fwd": 22.791302,
+       "ev_ebitda": 23.29,
+       "ev_revenue": 9.045,
+       "price_to_book": 6.749057,
+       "net_margin": 0.54771,
+       "roe": 0.48676,
+       "revenue_growth": 0.242,
+       "debt_to_equity": 0.18859,
+       "dividend_yield": 0.0026
+      },
+      "is_target": false,
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription\u2026"
+     },
+     {
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "market_cap": 357657378816.0,
+      "multiples": {
+       "pe_ttm": 32.761795,
+       "pe_fwd": 19.319212,
+       "ev_ebitda": 20.769,
+       "ev_revenue": 2.435,
+       "price_to_book": -252.25113,
+       "net_margin": 0.07525,
+       "roe": null,
+       "revenue_growth": 0.577,
+       "debt_to_equity": null,
+       "dividend_yield": 0.004699999999999999
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services\u2026"
+     },
+     {
+      "ticker": "HPQ",
+      "name": "HP Inc.",
+      "market_cap": 28965525504.0,
+      "multiples": {
+       "pe_ttm": 12.259542,
+       "pe_fwd": 10.235916,
+       "ev_ebitda": 7.585,
+       "ev_revenue": 0.594,
+       "price_to_book": -314.90195,
+       "net_margin": 0.04143,
+       "roe": null,
+       "revenue_growth": 0.125,
+       "debt_to_equity": null,
+       "dividend_yield": 0.0373
+      },
+      "is_target": false,
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "business_summary": "HP Inc. provides personal computing, printing, 3D printing, hybrid work, gaming, and other related technologies in the United States and internationally. The company operates through three segments: Personal Systems, Printing, and Corporate Investments. The Personal Systems segment offers commercial and consumer desktops and notebooks, workstations, thin clients, retail point-of-sale systems, displays, software, hybrid systems, and endpoint security and services, as well as lifecycle services, including support and deployment, configurations, and extended warranty services. The Printing\u2026"
+     }
+    ],
+    "median": {
+     "pe_ttm": 23.037866,
+     "pe_fwd": 20.603870999999998,
+     "ev_ebitda": 20.3205,
+     "ev_revenue": 5.74,
+     "price_to_book": 7.7187745,
+     "net_margin": 0.23915,
+     "roe": 0.41357501500000005,
+     "revenue_growth": 0.2095,
+     "debt_to_equity": 0.23988500000000001,
+     "dividend_yield": 0.006149999999999999
+    },
+    "target_vs_median_pct": {
+     "pe_ttm": 0.6610566273803311,
+     "pe_fwd": 0.6900505249717395,
+     "ev_ebitda": 0.4189119362220417,
+     "ev_revenue": 0.8073170731707318,
+     "net_margin": 0.15488178967175403,
+     "revenue_growth": -0.21718377088305485,
+     "debt_to_equity": 2.2701085937011483
+    },
+    "peer_rationales": {
+     "MSFT": "Sells similar products.",
+     "GOOGL": "Sells similar products.",
+     "DELL": "Sells similar products.",
+     "HPQ": "Sells similar products."
+    },
+    "peer_origin": {
+     "MSFT": "agent",
+     "GOOGL": "agent",
+     "DELL": "agent",
+     "HPQ": "agent"
+    },
+    "exclusions": [],
+    "sources": [
+     "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+     "https://www.scribd.com/document/604073816/Apple-Inc",
+     "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple",
+     "https://www.comparably.com/companies/apple/competitors",
+     "https://www.globaldata.com/company-profile/apple-inc/competitors"
+    ],
+    "insufficient": false
+   },
+   "competitor_search": [
+    {
+     "title": "Battle of the Titans: Apple vs. Its Biggest Competitors",
+     "url": "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+     "domain": "franzoom.com",
+     "snippet": "### Introduction Apple Inc., renowned for its innovative products and services, is a dominant force in the technology industry. However, despite its market leadership, Apple faces significant competition from various tech giants across different segments. This article delves into Apple\u2019s primary competitors, examining their strengths and the strategies they employ to challenge Apple\u2019s market position. ### Major Competitors of Apple #### 1. Samsung Electronics [...] Microsoft, Google, and Amazon continuously innovate and strategize to challenge Apple\u2019s market dominance. Understanding these\u2026"
+    },
+    {
+     "title": "Apple Inc.'s Main Competitors Overview | PDF | Apple Inc. | I Phone",
+     "url": "https://www.scribd.com/document/604073816/Apple-Inc",
+     "domain": "scribd.com",
+     "snippet": "finding massive commercial success. Apple faces competition from companies like Microsoft, Samsung, Lenovo, Dell, and HP in both personal computers and smartphones. [...] Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne. It introduced the Apple I and Apple II computers and grew to include computer design and production. In the 1980s, Apple introduced the Macintosh, the first computer with a graphical user interface. While successful initially, it struggled later. Apple restructured and partnered with IBM and Motorola to develop new technologies. In the 2000s, Apple\u2026"
+    },
+    {
+     "title": "Apple Competitors: Who Rivals Apple | Ultima Markets",
+     "url": "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple",
+     "domain": "ultimamarkets.com",
+     "snippet": "Apple\u2019s main competitors in China are Huawei, Xiaomi, vivo, and OPPO, with competition often shifting quickly based on product cycles and pricing. In streaming, Apple TV+ competes most directly with Netflix and Amazon Prime Video. In music, Apple Music competes most directly with Spotify. ### ## Share Now Article Details Article Details Article Details [...] In 2026, Apple\u2019s competitive landscape is still defined by ecosystem strength, but it is increasingly influenced by supply chain costs and regulatory rules that can reshape how competition plays out across devices and services. ## FAQs\u2026"
+    },
+    {
+     "title": "Apple Competitors | Comparably",
+     "url": "https://www.comparably.com/companies/apple/competitors",
+     "domain": "comparably.com",
+     "snippet": "Apple competitors include IBM, Google, Microsoft, Amazon and Samsung. Apple ranks 1st in Product Quality Score on Comparably vs its competitors. See below how Apple compares to its competitors with CEO Rankings, Product & Services, NPS, Pricing, Customer Services, Overall Culture Score, eNPS, Gender and Diversity Scores. ## See Apple Culture vs Competitors: Logo Logo Logo Logo Logo Logo Apple Competitors [...] Apple Competitors | Rank | Company | Score | --- | 1 | IBM | 81 | | 2 | Google | 78 | | 3 | Microsoft | 76 | | 4 | Amazon | 73 | | 5 | Apple | 73 | | 6 | Samsung | 68 | ## Apple\u2026"
+    },
+    {
+     "title": "Apple Inc Peers & Key Competitors - GlobalData",
+     "url": "https://www.globaldata.com/company-profile/apple-inc/competitors",
+     "domain": "globaldata.com",
+     "snippet": "198,933 Revenue $402.8B Entity type Public Microsoft Corp Headquarters United States of America No. of employees 223,000 Revenue $331.8B Entity type Public Samsung Electronics Co Ltd Headquarters South Korea No. of employees 128,271 Revenue $234.8B Entity type Public Huawei Technologies Co Ltd Headquarters China No. of employees 213,000 Revenue $126.0B Entity type Private Benchmark the company against the market with exclusive information on key competitors [...] View more Top 10 IT Software Companies in the World by Market Capitalization Top 10 IT Hardware Companies in the World by Market\u2026"
+    }
+   ],
+   "risks": {
+    "kind": "error",
+    "stage": "risk",
+    "message": "model declined the request"
+   },
+   "news": [
+    {
+     "title": "Apple Inc. $AAPL Stock Bought by GTS Securities LLC",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-bought-by-gts-securities-llc-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:13:11 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Holdings Boosted by Flputnam Investment Management Co.",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-holdings-boosted-by-flputnam-investment-management-co-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:05:19 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Acquired by JNBA Financial Advisors",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-acquired-by-jnba-financial-advisors-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:20:44 GMT"
+    },
+    {
+     "title": "Apple Inc. $AAPL Stock Sold by Cullinan Associates Inc.",
+     "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-sold-by-cullinan-associates-inc-2026-10-02",
+     "domain": "marketbeat.com",
+     "published": "Fri, 02 Oct 2026 07:05:02 GMT"
+    },
+    {
+     "title": "Apple Inc. Stock 12\u2011Month Price Target Cut to $335.75, Implies 2% Upside \u2014 TradingView News",
+     "url": "https://www.tradingview.com/news/tradingview:fd9cf9140fc9d:0-apple-inc-stock-12-month-price-target-cut-to-335-75-implies-2-upside",
+     "domain": "tradingview.com",
+     "published": "Fri, 02 Oct 2026 07:20:06 GMT"
+    }
+   ],
+   "news_error": null,
+   "scorecard": {
+    "factors": [
+     {
+      "name": "valuation",
+      "score": -1,
+      "detail": "Forward P/E 34.8 vs peer median 20.6 (+69%; band \u00b115%)"
+     },
+     {
+      "name": "growth",
+      "score": 0,
+      "detail": "Revenue growth 16.4% vs peer median 20.9% (-4.5 pts; band \u00b15 pts)"
+     },
+     {
+      "name": "profitability",
+      "score": 0,
+      "detail": "Net margin 27.6% vs peer median 23.9% (+3.7 pts; band \u00b15 pts)"
+     },
+     {
+      "name": "analyst_upside",
+      "score": 0,
+      "detail": "mean analyst target 328.09 vs price 333.69 (-1.7%; band \u00b110%)"
+     },
+     {
+      "name": "momentum",
+      "score": 1,
+      "detail": "price 333.69 above its 200-day average 288.80; at 89% of the 52-week range"
+     }
+    ],
+    "total": 0,
+    "preliminary_signal": "HOLD"
+   },
+   "analyst": {
+    "signal": "HOLD",
+    "confidence": 0.6,
+    "changed_from_preliminary": false,
+    "change_reason": null,
+    "valuation_summary": "Valued in line with the scorecard.",
+    "thesis": [
+     "Strong margins.",
+     "Solid balance sheet.",
+     "Market leader."
+    ],
+    "counterpoints": [
+     "Premium valuation.",
+     "Slower growth.",
+     "Regulatory pressure."
+    ],
+    "signal_reasoning": "The scorecard total is 0; nothing justifies a change.",
+    "preliminary_signal": "HOLD",
+    "reviewed": true
+   },
+   "signal": "HOLD",
+   "signal_reviewed": true,
+   "narrative": {
+    "company_overview": "Apple Inc. trades at 333.69.",
+    "financial_commentary": "Revenue is shown by fiscal year in the table.",
+    "comps_commentary": "The target is compared with its peer median.",
+    "risk_commentary": "The main risks come from the annual filing."
+   },
+   "narrative_markdown": "## Company overview\n\nApple Inc. trades at 333.69.\n\n## Financial commentary\n\nRevenue is shown by fiscal year in the table.\n\n## Comps commentary\n\nThe target is compared with its peer median.\n\n## Risk commentary\n\nThe main risks come from the annual filing.\n",
+   "timings_ms": {
+    "validate": 1,
+    "news": 10,
+    "financials": 11,
+    "risk": 12,
+    "comps": 16,
+    "comps_ready": 17,
+    "comps_explain": 0,
+    "scorecard": 0,
+    "analyst": 0,
+    "signal_ready": 19,
+    "writer": 0,
+    "total": 20
+   },
+   "llm_usage": [
+    {
+     "agent": "comps",
+     "model": "claude-opus-5-5",
+     "input_tokens": 1000,
+     "output_tokens": 200,
+     "ms": 0,
+     "cost_usd": 0.008,
+     "request_id": null,
+     "error": null
+    },
+    {
+     "agent": "risk",
+     "model": "claude-opus-5-5",
+     "input_tokens": 1000,
+     "output_tokens": 200,
+     "ms": 0,
+     "cost_usd": 0.008,
+     "request_id": null,
+     "error": "model declined the request"
+    },
+    {
+     "agent": "comps",
+     "model": "claude-opus-5-5",
+     "input_tokens": 1000,
+     "output_tokens": 200,
+     "ms": 0,
+     "cost_usd": 0.008,
+     "request_id": null,
+     "error": null
+    },
+    {
+     "agent": "analyst",
+     "model": "claude-opus-5-5",
+     "input_tokens": 1000,
+     "output_tokens": 200,
+     "ms": 0,
+     "cost_usd": 0.008,
+     "request_id": null,
+     "error": null
+    },
+    {
+     "agent": "writer",
+     "model": "claude-sonnet-5-5",
+     "input_tokens": 1000,
+     "output_tokens": 200,
+     "ms": 0,
+     "cost_usd": 0.004,
+     "request_id": null,
+     "error": null
+    }
+   ],
+   "cache_hits": [],
+   "quality_warnings": [],
+   "disclaimer": "Educational project - not investment advice.",
+   "from_cache": false
+  }
+ }
+]

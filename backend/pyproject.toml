@@ -1,0 +1,50 @@
+[project]
+name = "equity-agent"
+version = "0.1.0"
+description = "Autonomous Equity Research Agent backend: data layer, Claude agents, research pipeline and streaming API"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=1.11.0",
+    "curl-cffi>=0.16.3",
+    "edgartools>=5.59.1",
+    "fastapi>=0.142.2",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+    "tavily-python>=0.8.4",
+    "uvicorn[standard]>=0.54.0",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+research = "equity_agent.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+]
+eval = [
+    "langchain>=0.3,<0.4",
+    "langchain-community>=0.3,<0.4",
+    "langchain-core>=0.3,<0.4",
+    "langchain-openai>=0.3,<0.4",
+    "ragas>=0.4.3",
+    "sentence-transformers>=6.1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not live'"
+markers = ["live: calls real external APIs and may spend credits (opt-in: RUN_LIVE_TESTS=1 uv run pytest -m live)"]
+
+[tool.pyright]
+include = ["src", "tests"]
+typeCheckingMode = "standard"
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"

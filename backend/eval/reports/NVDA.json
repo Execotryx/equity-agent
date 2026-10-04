@@ -1,0 +1,1589 @@
+{
+ "generated_at": "2026-10-03T11:07:48+00:00",
+ "ticker": "NVDA",
+ "financials": {
+  "snapshot": {
+   "ticker": "NVDA",
+   "name": "NVIDIA Corporation",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "currency": "USD",
+   "price": 233.95,
+   "market_cap": 5649190617088.0,
+   "week52_low": 164.27,
+   "week52_high": 237.87,
+   "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's…"
+  },
+  "multiples": {
+   "pe_ttm": 29.17082,
+   "pe_fwd": 14.905945,
+   "ev_ebitda": 27.896,
+   "ev_revenue": 18.532,
+   "price_to_book": 24.670464,
+   "net_margin": 0.63663,
+   "roe": 1.17211,
+   "revenue_growth": 1.059,
+   "debt_to_equity": 0.16971,
+   "dividend_yield": 0.0043
+  },
+  "revenue_history": [
+   {
+    "year": 2023,
+    "value": 26974000000.0
+   },
+   {
+    "year": 2024,
+    "value": 60922000000.0
+   },
+   {
+    "year": 2025,
+    "value": 130497000000.0
+   },
+   {
+    "year": 2026,
+    "value": 215938000000.0
+   }
+  ],
+  "ebitda_history": [
+   {
+    "year": 2023,
+    "value": 5986000000.0
+   },
+   {
+    "year": 2024,
+    "value": 35583000000.0
+   },
+   {
+    "year": 2025,
+    "value": 86137000000.0
+   },
+   {
+    "year": 2026,
+    "value": 144552000000.0
+   }
+  ],
+  "net_income_history": [
+   {
+    "year": 2023,
+    "value": 4368000000.0
+   },
+   {
+    "year": 2024,
+    "value": 29760000000.0
+   },
+   {
+    "year": 2025,
+    "value": 72880000000.0
+   },
+   {
+    "year": 2026,
+    "value": 120067000000.0
+   }
+  ],
+  "price_history": [
+   {
+    "date": "2025-10-03",
+    "close": 187.1715545654297
+   },
+   {
+    "date": "2025-10-06",
+    "close": 185.09654235839844
+   },
+   {
+    "date": "2025-10-07",
+    "close": 184.5977325439453
+   },
+   {
+    "date": "2025-10-08",
+    "close": 188.6580047607422
+   },
+   {
+    "date": "2025-10-09",
+    "close": 192.1097412109375
+   },
+   {
+    "date": "2025-10-10",
+    "close": 182.7222442626953
+   },
+   {
+    "date": "2025-10-13",
+    "close": 187.86990356445312
+   },
+   {
+    "date": "2025-10-14",
+    "close": 179.59971618652344
+   },
+   {
+    "date": "2025-10-15",
+    "close": 179.4001922607422
+   },
+   {
+    "date": "2025-10-16",
+    "close": 181.37545776367188
+   },
+   {
+    "date": "2025-10-17",
+    "close": 182.78208923339844
+   },
+   {
+    "date": "2025-10-20",
+    "close": 182.2034912109375
+   },
+   {
+    "date": "2025-10-21",
+    "close": 180.72702026367188
+   },
+   {
+    "date": "2025-10-22",
+    "close": 179.84910583496094
+   },
+   {
+    "date": "2025-10-23",
+    "close": 181.72462463378906
+   },
+   {
+    "date": "2025-10-24",
+    "close": 185.81480407714844
+   },
+   {
+    "date": "2025-10-27",
+    "close": 191.03231811523438
+   },
+   {
+    "date": "2025-10-28",
+    "close": 200.54953002929688
+   },
+   {
+    "date": "2025-10-29",
+    "close": 206.545166015625
+   },
+   {
+    "date": "2025-10-30",
+    "close": 202.4050750732422
+   },
+   {
+    "date": "2025-10-31",
+    "close": 202.00604248046875
+   },
+   {
+    "date": "2025-11-03",
+    "close": 206.38552856445312
+   },
+   {
+    "date": "2025-11-04",
+    "close": 198.21510314941406
+   },
+   {
+    "date": "2025-11-05",
+    "close": 194.74343872070312
+   },
+   {
+    "date": "2025-11-06",
+    "close": 187.6304931640625
+   },
+   {
+    "date": "2025-11-07",
+    "close": 187.70030212402344
+   },
+   {
+    "date": "2025-11-10",
+    "close": 198.5742645263672
+   },
+   {
+    "date": "2025-11-11",
+    "close": 192.69833374023438
+   },
+   {
+    "date": "2025-11-12",
+    "close": 193.3367919921875
+   },
+   {
+    "date": "2025-11-13",
+    "close": 186.41339111328125
+   },
+   {
+    "date": "2025-11-14",
+    "close": 189.71546936035156
+   },
+   {
+    "date": "2025-11-17",
+    "close": 186.15402221679688
+   },
+   {
+    "date": "2025-11-18",
+    "close": 180.92652893066406
+   },
+   {
+    "date": "2025-11-19",
+    "close": 186.07420349121094
+   },
+   {
+    "date": "2025-11-20",
+    "close": 180.208251953125
+   },
+   {
+    "date": "2025-11-21",
+    "close": 178.45245361328125
+   },
+   {
+    "date": "2025-11-24",
+    "close": 182.11367797851562
+   },
+   {
+    "date": "2025-11-25",
+    "close": 177.39498901367188
+   },
+   {
+    "date": "2025-11-26",
+    "close": 179.8291473388672
+   },
+   {
+    "date": "2025-11-28",
+    "close": 176.5769500732422
+   },
+   {
+    "date": "2025-12-01",
+    "close": 179.489990234375
+   },
+   {
+    "date": "2025-12-02",
+    "close": 181.02630615234375
+   },
+   {
+    "date": "2025-12-03",
+    "close": 179.1607666015625
+   },
+   {
+    "date": "2025-12-04",
+    "close": 182.95188903808594
+   },
+   {
+    "date": "2025-12-05",
+    "close": 181.98416137695312
+   },
+   {
+    "date": "2025-12-08",
+    "close": 185.11683654785156
+   },
+   {
+    "date": "2025-12-09",
+    "close": 184.53817749023438
+   },
+   {
+    "date": "2025-12-10",
+    "close": 183.35096740722656
+   },
+   {
+    "date": "2025-12-11",
+    "close": 180.50759887695312
+   },
+   {
+    "date": "2025-12-12",
+    "close": 174.6114044189453
+   },
+   {
+    "date": "2025-12-15",
+    "close": 175.87841796875
+   },
+   {
+    "date": "2025-12-16",
+    "close": 177.3050994873047
+   },
+   {
+    "date": "2025-12-17",
+    "close": 170.54092407226562
+   },
+   {
+    "date": "2025-12-18",
+    "close": 173.73345947265625
+   },
+   {
+    "date": "2025-12-19",
+    "close": 180.56748962402344
+   },
+   {
+    "date": "2025-12-22",
+    "close": 183.26116943359375
+   },
+   {
+    "date": "2025-12-23",
+    "close": 188.76829528808594
+   },
+   {
+    "date": "2025-12-24",
+    "close": 188.169677734375
+   },
+   {
+    "date": "2025-12-26",
+    "close": 190.085205078125
+   },
+   {
+    "date": "2025-12-29",
+    "close": 187.7805938720703
+   },
+   {
+    "date": "2025-12-30",
+    "close": 187.1021728515625
+   },
+   {
+    "date": "2025-12-31",
+    "close": 186.06460571289062
+   },
+   {
+    "date": "2026-01-02",
+    "close": 188.4091339111328
+   },
+   {
+    "date": "2026-01-05",
+    "close": 187.6808319091797
+   },
+   {
+    "date": "2026-01-06",
+    "close": 186.80288696289062
+   },
+   {
+    "date": "2026-01-07",
+    "close": 188.66851806640625
+   },
+   {
+    "date": "2026-01-08",
+    "close": 184.60800170898438
+   },
+   {
+    "date": "2026-01-09",
+    "close": 184.42843627929688
+   },
+   {
+    "date": "2026-01-12",
+    "close": 184.5082550048828
+   },
+   {
+    "date": "2026-01-13",
+    "close": 185.376220703125
+   },
+   {
+    "date": "2026-01-14",
+    "close": 182.7124481201172
+   },
+   {
+    "date": "2026-01-15",
+    "close": 186.61331176757812
+   },
+   {
+    "date": "2026-01-16",
+    "close": 185.79522705078125
+   },
+   {
+    "date": "2026-01-20",
+    "close": 177.654296875
+   },
+   {
+    "date": "2026-01-21",
+    "close": 182.8920440673828
+   },
+   {
+    "date": "2026-01-22",
+    "close": 184.40847778320312
+   },
+   {
+    "date": "2026-01-23",
+    "close": 187.23187255859375
+   },
+   {
+    "date": "2026-01-26",
+    "close": 186.03468322753906
+   },
+   {
+    "date": "2026-01-27",
+    "close": 188.07989501953125
+   },
+   {
+    "date": "2026-01-28",
+    "close": 191.0728759765625
+   },
+   {
+    "date": "2026-01-29",
+    "close": 192.06057739257812
+   },
+   {
+    "date": "2026-01-30",
+    "close": 190.68380737304688
+   },
+   {
+    "date": "2026-02-02",
+    "close": 185.1766815185547
+   },
+   {
+    "date": "2026-02-03",
+    "close": 179.91897583007812
+   },
+   {
+    "date": "2026-02-04",
+    "close": 173.78335571289062
+   },
+   {
+    "date": "2026-02-05",
+    "close": 171.47874450683594
+   },
+   {
+    "date": "2026-02-06",
+    "close": 184.97715759277344
+   },
+   {
+    "date": "2026-02-09",
+    "close": 189.59634399414062
+   },
+   {
+    "date": "2026-02-10",
+    "close": 188.09983825683594
+   },
+   {
+    "date": "2026-02-11",
+    "close": 189.60633850097656
+   },
+   {
+    "date": "2026-02-12",
+    "close": 186.5035858154297
+   },
+   {
+    "date": "2026-02-13",
+    "close": 182.38320922851562
+   },
+   {
+    "date": "2026-02-17",
+    "close": 184.53817749023438
+   },
+   {
+    "date": "2026-02-18",
+    "close": 187.5411376953125
+   },
+   {
+    "date": "2026-02-19",
+    "close": 187.46133422851562
+   },
+   {
+    "date": "2026-02-20",
+    "close": 189.3768768310547
+   },
+   {
+    "date": "2026-02-23",
+    "close": 191.10281372070312
+   },
+   {
+    "date": "2026-02-24",
+    "close": 192.39979553222656
+   },
+   {
+    "date": "2026-02-25",
+    "close": 195.10345458984375
+   },
+   {
+    "date": "2026-02-26",
+    "close": 184.45835876464844
+   },
+   {
+    "date": "2026-02-27",
+    "close": 176.77635192871094
+   },
+   {
+    "date": "2026-03-02",
+    "close": 182.0540008544922
+   },
+   {
+    "date": "2026-03-03",
+    "close": 179.62965393066406
+   },
+   {
+    "date": "2026-03-04",
+    "close": 182.61268615722656
+   },
+   {
+    "date": "2026-03-05",
+    "close": 182.91197204589844
+   },
+   {
+    "date": "2026-03-06",
+    "close": 177.40489196777344
+   },
+   {
+    "date": "2026-03-09",
+    "close": 182.2235870361328
+   },
+   {
+    "date": "2026-03-10",
+    "close": 184.33863830566406
+   },
+   {
+    "date": "2026-03-11",
+    "close": 185.60574340820312
+   },
+   {
+    "date": "2026-03-12",
+    "close": 182.72235107421875
+   },
+   {
+    "date": "2026-03-13",
+    "close": 179.83892822265625
+   },
+   {
+    "date": "2026-03-16",
+    "close": 182.8021697998047
+   },
+   {
+    "date": "2026-03-17",
+    "close": 181.5150909423828
+   },
+   {
+    "date": "2026-03-18",
+    "close": 179.98858642578125
+   },
+   {
+    "date": "2026-03-19",
+    "close": 178.1527862548828
+   },
+   {
+    "date": "2026-03-20",
+    "close": 172.30613708496094
+   },
+   {
+    "date": "2026-03-23",
+    "close": 175.23944091796875
+   },
+   {
+    "date": "2026-03-24",
+    "close": 174.80044555664062
+   },
+   {
+    "date": "2026-03-25",
+    "close": 178.2725067138672
+   },
+   {
+    "date": "2026-03-26",
+    "close": 170.8494873046875
+   },
+   {
+    "date": "2026-03-27",
+    "close": 167.13795471191406
+   },
+   {
+    "date": "2026-03-30",
+    "close": 164.79331970214844
+   },
+   {
+    "date": "2026-03-31",
+    "close": 174.0022735595703
+   },
+   {
+    "date": "2026-04-01",
+    "close": 175.3491973876953
+   },
+   {
+    "date": "2026-04-02",
+    "close": 176.98544311523438
+   },
+   {
+    "date": "2026-04-06",
+    "close": 177.23487854003906
+   },
+   {
+    "date": "2026-04-07",
+    "close": 177.69383239746094
+   },
+   {
+    "date": "2026-04-08",
+    "close": 181.66476440429688
+   },
+   {
+    "date": "2026-04-09",
+    "close": 183.49058532714844
+   },
+   {
+    "date": "2026-04-10",
+    "close": 188.1998291015625
+   },
+   {
+    "date": "2026-04-13",
+    "close": 188.87826538085938
+   },
+   {
+    "date": "2026-04-14",
+    "close": 196.0618438720703
+   },
+   {
+    "date": "2026-04-15",
+    "close": 198.41647338867188
+   },
+   {
+    "date": "2026-04-16",
+    "close": 197.8976593017578
+   },
+   {
+    "date": "2026-04-17",
+    "close": 201.2200469970703
+   },
+   {
+    "date": "2026-04-20",
+    "close": 201.59918212890625
+   },
+   {
+    "date": "2026-04-21",
+    "close": 199.42417907714844
+   },
+   {
+    "date": "2026-04-22",
+    "close": 202.03819274902344
+   },
+   {
+    "date": "2026-04-23",
+    "close": 199.18470764160156
+   },
+   {
+    "date": "2026-04-24",
+    "close": 207.79502868652344
+   },
+   {
+    "date": "2026-04-27",
+    "close": 216.1160125732422
+   },
+   {
+    "date": "2026-04-28",
+    "close": 212.68385314941406
+   },
+   {
+    "date": "2026-04-29",
+    "close": 208.77279663085938
+   },
+   {
+    "date": "2026-04-30",
+    "close": 199.11488342285156
+   },
+   {
+    "date": "2026-05-01",
+    "close": 197.99742126464844
+   },
+   {
+    "date": "2026-05-04",
+    "close": 198.02734375
+   },
+   {
+    "date": "2026-05-05",
+    "close": 196.05186462402344
+   },
+   {
+    "date": "2026-05-06",
+    "close": 207.3560333251953
+   },
+   {
+    "date": "2026-05-07",
+    "close": 211.01766967773438
+   },
+   {
+    "date": "2026-05-08",
+    "close": 214.709228515625
+   },
+   {
+    "date": "2026-05-11",
+    "close": 218.93955993652344
+   },
+   {
+    "date": "2026-05-12",
+    "close": 220.27650451660156
+   },
+   {
+    "date": "2026-05-13",
+    "close": 225.3149871826172
+   },
+   {
+    "date": "2026-05-14",
+    "close": 235.202392578125
+   },
+   {
+    "date": "2026-05-15",
+    "close": 224.80616760253906
+   },
+   {
+    "date": "2026-05-18",
+    "close": 221.81300354003906
+   },
+   {
+    "date": "2026-05-19",
+    "close": 220.1068878173828
+   },
+   {
+    "date": "2026-05-20",
+    "close": 222.9603729248047
+   },
+   {
+    "date": "2026-05-21",
+    "close": 219.0093994140625
+   },
+   {
+    "date": "2026-05-22",
+    "close": 214.83892822265625
+   },
+   {
+    "date": "2026-05-26",
+    "close": 214.37001037597656
+   },
+   {
+    "date": "2026-05-27",
+    "close": 212.1151580810547
+   },
+   {
+    "date": "2026-05-28",
+    "close": 213.76138305664062
+   },
+   {
+    "date": "2026-05-29",
+    "close": 210.6584930419922
+   },
+   {
+    "date": "2026-06-01",
+    "close": 223.8483428955078
+   },
+   {
+    "date": "2026-06-02",
+    "close": 222.3118438720703
+   },
+   {
+    "date": "2026-06-03",
+    "close": 214.26025390625
+   },
+   {
+    "date": "2026-06-04",
+    "close": 218.4156036376953
+   },
+   {
+    "date": "2026-06-05",
+    "close": 204.87075805664062
+   },
+   {
+    "date": "2026-06-08",
+    "close": 208.40679931640625
+   },
+   {
+    "date": "2026-06-09",
+    "close": 207.95730590820312
+   },
+   {
+    "date": "2026-06-10",
+    "close": 200.19598388671875
+   },
+   {
+    "date": "2026-06-11",
+    "close": 204.64100646972656
+   },
+   {
+    "date": "2026-06-12",
+    "close": 204.96066284179688
+   },
+   {
+    "date": "2026-06-15",
+    "close": 212.21253967285156
+   },
+   {
+    "date": "2026-06-16",
+    "close": 207.1781768798828
+   },
+   {
+    "date": "2026-06-17",
+    "close": 204.42124938964844
+   },
+   {
+    "date": "2026-06-18",
+    "close": 210.4545135498047
+   },
+   {
+    "date": "2026-06-22",
+    "close": 208.41677856445312
+   },
+   {
+    "date": "2026-06-23",
+    "close": 199.81640625
+   },
+   {
+    "date": "2026-06-24",
+    "close": 198.77757263183594
+   },
+   {
+    "date": "2026-06-25",
+    "close": 195.52122497558594
+   },
+   {
+    "date": "2026-06-26",
+    "close": 192.31480407714844
+   },
+   {
+    "date": "2026-06-29",
+    "close": 194.7520751953125
+   },
+   {
+    "date": "2026-06-30",
+    "close": 199.86634826660156
+   },
+   {
+    "date": "2026-07-01",
+    "close": 197.35916137695312
+   },
+   {
+    "date": "2026-07-02",
+    "close": 194.61224365234375
+   },
+   {
+    "date": "2026-07-06",
+    "close": 195.33143615722656
+   },
+   {
+    "date": "2026-07-07",
+    "close": 196.7098846435547
+   },
+   {
+    "date": "2026-07-08",
+    "close": 203.891845703125
+   },
+   {
+    "date": "2026-07-09",
+    "close": 202.5533447265625
+   },
+   {
+    "date": "2026-07-10",
+    "close": 210.72421264648438
+   },
+   {
+    "date": "2026-07-13",
+    "close": 203.30250549316406
+   },
+   {
+    "date": "2026-07-14",
+    "close": 211.5632781982422
+   },
+   {
+    "date": "2026-07-15",
+    "close": 212.26248168945312
+   },
+   {
+    "date": "2026-07-16",
+    "close": 207.16818237304688
+   },
+   {
+    "date": "2026-07-17",
+    "close": 202.58331298828125
+   },
+   {
+    "date": "2026-07-20",
+    "close": 203.05279541015625
+   },
+   {
+    "date": "2026-07-21",
+    "close": 207.0583038330078
+   },
+   {
+    "date": "2026-07-22",
+    "close": 211.82298278808594
+   },
+   {
+    "date": "2026-07-23",
+    "close": 208.5266571044922
+   },
+   {
+    "date": "2026-07-24",
+    "close": 206.6088104248047
+   },
+   {
+    "date": "2026-07-27",
+    "close": 196.2903594970703
+   },
+   {
+    "date": "2026-07-28",
+    "close": 196.789794921875
+   },
+   {
+    "date": "2026-07-29",
+    "close": 189.79762268066406
+   },
+   {
+    "date": "2026-07-30",
+    "close": 194.82199096679688
+   },
+   {
+    "date": "2026-07-31",
+    "close": 200.52561950683594
+   },
+   {
+    "date": "2026-08-03",
+    "close": 206.40904235839844
+   },
+   {
+    "date": "2026-08-04",
+    "close": 211.70310974121094
+   },
+   {
+    "date": "2026-08-05",
+    "close": 218.9749755859375
+   },
+   {
+    "date": "2026-08-06",
+    "close": 218.7452392578125
+   },
+   {
+    "date": "2026-08-07",
+    "close": 223.70968627929688
+   },
+   {
+    "date": "2026-08-10",
+    "close": 217.3068389892578
+   },
+   {
+    "date": "2026-08-11",
+    "close": 217.25689697265625
+   },
+   {
+    "date": "2026-08-12",
+    "close": 223.8395233154297
+   },
+   {
+    "date": "2026-08-13",
+    "close": 225.04818725585938
+   },
+   {
+    "date": "2026-08-14",
+    "close": 224.90834045410156
+   },
+   {
+    "date": "2026-08-17",
+    "close": 224.7584991455078
+   },
+   {
+    "date": "2026-08-18",
+    "close": 219.49440002441406
+   },
+   {
+    "date": "2026-08-19",
+    "close": 217.31683349609375
+   },
+   {
+    "date": "2026-08-20",
+    "close": 216.60763549804688
+   },
+   {
+    "date": "2026-08-21",
+    "close": 214.48001098632812
+   },
+   {
+    "date": "2026-08-24",
+    "close": 208.24697875976562
+   },
+   {
+    "date": "2026-08-25",
+    "close": 212.81187438964844
+   },
+   {
+    "date": "2026-08-26",
+    "close": 209.4256591796875
+   },
+   {
+    "date": "2026-08-27",
+    "close": 227.7251739501953
+   },
+   {
+    "date": "2026-08-28",
+    "close": 217.3068389892578
+   },
+   {
+    "date": "2026-08-31",
+    "close": 220.53323364257812
+   },
+   {
+    "date": "2026-09-01",
+    "close": 217.1969757080078
+   },
+   {
+    "date": "2026-09-02",
+    "close": 224.1591796875
+   },
+   {
+    "date": "2026-09-03",
+    "close": 228.1946563720703
+   },
+   {
+    "date": "2026-09-04",
+    "close": 230.10252380371094
+   },
+   {
+    "date": "2026-09-08",
+    "close": 225.47769165039062
+   },
+   {
+    "date": "2026-09-09",
+    "close": 223.4199981689453
+   },
+   {
+    "date": "2026-09-10",
+    "close": 218.36000061035156
+   },
+   {
+    "date": "2026-09-11",
+    "close": 218.2899932861328
+   },
+   {
+    "date": "2026-09-14",
+    "close": 210.9600067138672
+   },
+   {
+    "date": "2026-09-15",
+    "close": 212.1699981689453
+   },
+   {
+    "date": "2026-09-16",
+    "close": 213.89999389648438
+   },
+   {
+    "date": "2026-09-17",
+    "close": 219.33999633789062
+   },
+   {
+    "date": "2026-09-18",
+    "close": 222.27000427246094
+   },
+   {
+    "date": "2026-09-21",
+    "close": 227.3800048828125
+   },
+   {
+    "date": "2026-09-22",
+    "close": 228.8699951171875
+   },
+   {
+    "date": "2026-09-23",
+    "close": 225.50999450683594
+   },
+   {
+    "date": "2026-09-24",
+    "close": 224.5800018310547
+   },
+   {
+    "date": "2026-09-25",
+    "close": 225.07000732421875
+   },
+   {
+    "date": "2026-09-28",
+    "close": 228.86000061035156
+   },
+   {
+    "date": "2026-09-29",
+    "close": 227.2100067138672
+   },
+   {
+    "date": "2026-09-30",
+    "close": 228.3800048828125
+   },
+   {
+    "date": "2026-10-01",
+    "close": 230.86000061035156
+   },
+   {
+    "date": "2026-10-02",
+    "close": 233.9499969482422
+   }
+  ],
+  "analyst_target_mean": 327.7,
+  "analyst_recommendation": "strong_buy"
+ },
+ "comps": {
+  "metric_set": "general",
+  "metrics": [
+   "pe_ttm",
+   "pe_fwd",
+   "ev_ebitda",
+   "ev_revenue",
+   "net_margin",
+   "revenue_growth",
+   "debt_to_equity"
+  ],
+  "primary_metric": "pe_fwd",
+  "rows": [
+   {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "market_cap": 5649190617088.0,
+    "multiples": {
+     "pe_ttm": 29.17082,
+     "pe_fwd": 14.905945,
+     "ev_ebitda": 27.896,
+     "ev_revenue": 18.532,
+     "price_to_book": 24.670464,
+     "net_margin": 0.63663,
+     "roe": 1.17211,
+     "revenue_growth": 1.059,
+     "debt_to_equity": 0.16971,
+     "dividend_yield": 0.0043
+    },
+    "is_target": true,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's…"
+   },
+   {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "market_cap": 1034842210304.0,
+    "multiples": {
+     "pe_ttm": 156.13547,
+     "pe_fwd": 40.67883,
+     "ev_ebitda": 107.3,
+     "ev_revenue": 24.84,
+     "price_to_book": 15.389525,
+     "net_margin": 0.15577,
+     "roe": 0.10196,
+     "revenue_growth": 0.501,
+     "debt_to_equity": 0.06361,
+     "dividend_yield": null
+    },
+    "is_target": false,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and Embedded. The company offers artificial intelligence (AI) accelerators, microprocessors, and graphics processing units (GPUs) as standalone devices or as incorporated into accelerated processing units, chipsets, and data center and professional GPUs; and embedded processors and semi-custom system-on-chip (SoC) products, microprocessor and SoC development services and technology, data processing units, field programmable gate arrays (FPGA),…"
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom Inc.",
+    "market_cap": 1695307005952.0,
+    "multiples": {
+     "pe_ttm": 45.24077,
+     "pe_fwd": 18.323803,
+     "ev_ebitda": 33.118,
+     "ev_revenue": 19.424,
+     "price_to_book": 17.006992,
+     "net_margin": 0.42944,
+     "roe": 0.44245,
+     "revenue_growth": 0.855,
+     "debt_to_equity": 0.59604,
+     "dividend_yield": 0.0073
+    },
+    "is_target": false,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "Broadcom Inc. designs, develops, and supplies various semiconductor devices and infrastructure software solutions internationally. The company operates in two segments: Semiconductor Solutions and Infrastructure Software. The company offers networking connectivity, such as custom silicon solutions, ethernet switching & routing, ethernet NIC controllers, physical layer devices, and fiber optic components; wireless device connectivity, including RF semiconductor devices, connectivity solutions, custom touch controllers, and inductive charging ASICS; servers and storage system solutions, such…"
+   },
+   {
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "market_cap": 630790946816.0,
+    "multiples": {
+     "pe_ttm": null,
+     "pe_fwd": 57.86876,
+     "ev_ebitda": 37.904,
+     "ev_revenue": 11.192,
+     "price_to_book": 6.874244,
+     "net_margin": -0.19794,
+     "roe": -0.10715,
+     "revenue_growth": 0.254,
+     "debt_to_equity": 0.48997,
+     "dividend_yield": null
+    },
+    "is_target": false,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "Intel Corporation designs, develops, manufactures, markets, sells, and services computing and related end products and services in the United States, Ireland, Israel, and internationally. It operates through three segments: CCG, DCAI, and Intel Foundry. The company offers client computing group products, including client and commercial CPUs, discrete client GPUs, edge computing, and connectivity products; data center and AI products, such as server CPUs, discrete GPUs, and networking products; and semiconductors comprising wafer fabrication, substrates, and other related products and…"
+   },
+   {
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "market_cap": 244708294656.0,
+    "multiples": {
+     "pe_ttm": 88.405846,
+     "pe_fwd": 40.343086,
+     "ev_ebitda": 84.245,
+     "ev_revenue": 25.409,
+     "price_to_book": 12.883369,
+     "net_margin": 0.27934998,
+     "roe": 0.16523,
+     "revenue_growth": 0.365,
+     "debt_to_equity": 0.28525,
+     "dividend_yield": 0.0009
+    },
+    "is_target": false,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan, Vietnam, and internationally. The company develops and scales system-on-a-chip architectures, integrating analog, mixed-signal, and digital signal processing functionality. It offers a portfolio of ethernet solutions, including spanning controllers, network adapters, physical transceivers, and switches; single or multiple core processors;…"
+   },
+   {
+    "ticker": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "market_cap": 197452333056.0,
+    "multiples": {
+     "pe_ttm": 21.152174,
+     "pe_fwd": 18.117386,
+     "ev_ebitda": 16.762,
+     "ev_revenue": 4.564,
+     "price_to_book": 7.0650053,
+     "net_margin": 0.21013,
+     "roe": 0.33754003,
+     "revenue_growth": -0.04,
+     "debt_to_equity": 0.5521,
+     "dividend_yield": 0.0199
+    },
+    "is_target": false,
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "business_summary": "QUALCOMM Incorporated engages in the development and commercialization of foundational technologies for the wireless industry worldwide. It operates through three segments: Qualcomm CDMA Technologies (QCT); Qualcomm Technology Licensing (QTL); and Qualcomm Strategic Initiatives (QSI). The QCT segment develops and supplies integrated circuits and system software with connectivity and computing technologies for use in mobile devices; automotive systems for connectivity, digital cockpit, and ADAS/AD; and IoT, including consumer electronic devices, industrial devices, and edge networking…"
+   }
+  ],
+  "median": {
+   "pe_ttm": 66.823308,
+   "pe_fwd": 40.343086,
+   "ev_ebitda": 37.904,
+   "ev_revenue": 19.424,
+   "price_to_book": 12.883369,
+   "net_margin": 0.21013,
+   "roe": 0.16523,
+   "revenue_growth": 0.365,
+   "debt_to_equity": 0.48997,
+   "dividend_yield": 0.0073
+  },
+  "target_vs_median_pct": {
+   "pe_ttm": -0.563463395137517,
+   "pe_fwd": -0.6305204564668156,
+   "ev_ebitda": -0.26403545799915584,
+   "ev_revenue": -0.045922570016474484,
+   "net_margin": 2.029695902536525,
+   "revenue_growth": 1.9013698630136986,
+   "debt_to_equity": -0.6536318550115313
+  },
+  "peer_rationales": {
+   "AMD": "Offers AI accelerators, gaming GPUs and data center GPUs, directly overlapping NVIDIA's core products.",
+   "AVGO": "Supplies networking connectivity, ethernet switching and custom silicon overlapping NVIDIA's data center networking platforms.",
+   "INTC": "Sells discrete GPUs, data center AI products and networking, overlapping NVIDIA's compute and graphics offerings.",
+   "MRVL": "Provides data center semiconductors and ethernet switches, overlapping NVIDIA's data center networking platforms.",
+   "QCOM": "Supplies automotive ADAS/AD and digital cockpit chips, overlapping NVIDIA's automotive and autonomous vehicle platforms."
+  },
+  "peer_origin": {
+   "AMD": "agent",
+   "AVGO": "agent",
+   "INTC": "agent",
+   "MRVL": "agent",
+   "QCOM": "agent"
+  },
+  "exclusions": [],
+  "sources": [
+   "https://www.hudson-labs.com/research/nvidias-top-competitors-peers",
+   "https://www.ultimamarkets.com/academy/nvidia-competitors-you-should-watch-out-for",
+   "https://www.fool.com/investing/how-to-invest/stocks/nvidia-competitors",
+   "https://drrobertcastellano.substack.com/p/nvidia-tsmc-and-asml-three-companies",
+   "https://aimultiple.com/ai-chip-makers"
+  ],
+  "insufficient": false
+ },
+ "competitor_search": [
+  {
+   "title": "Nvidia's Top Competitors & Peers | Hudson Labs",
+   "url": "https://www.hudson-labs.com/research/nvidias-top-competitors-peers",
+   "domain": "hudson-labs.com",
+   "snippet": "Nvidia's competitive landscape is defined by its leadership in AI/accelerated computing, proprietary software ecosystem, and full-stack platform approach. Its primary hardware competitors are AMD and Intel, both of whom are intensifying efforts in AI and data center markets. Marvell and Broadcom are significant peers in networking and custom silicon, while Micron is a critical memory supplier. Qualcomm is a peer in mobile/edge AI, and both Microsoft and Amazon are major customers and ecosystem [...] | MU | Micron Technology Inc. | $470.47B | Semiconductors | DRAM (HBM, DDR, GDDR), NAND,…"
+  },
+  {
+   "title": "Nvidia Competitors You Should Watch Out For | Ultima Markets",
+   "url": "https://www.ultimamarkets.com/academy/nvidia-competitors-you-should-watch-out-for",
+   "domain": "ultimamarkets.com",
+   "snippet": "Competitors are not only trying to match Nvidia’s latest chip. They are also trying to convince developers to leave this familiar ecosystem. That is the real challenge. With that in mind, here is how the main groups of Nvidia competitors line up. ## Traditional Chipmakers: AMD And Intel Among traditional chipmakers, AMD and Intel are the best known Nvidia competitors, although they play very different roles. [...] Among traditional chip vendors, AMD and Intel are the main Nvidia competitors for this sector. - Ultima Markets ### AMD: the main direct competitor AMD competes with Nvidia on two…"
+  },
+  {
+   "title": "Nvidia Competitors: How NVDA Stacks Up Against AI Chipmakers | The Motley Fool",
+   "url": "https://www.fool.com/investing/how-to-invest/stocks/nvidia-competitors",
+   "domain": "fool.com",
+   "snippet": "Here's a closer look at Nvidia's top five competitors in the AI chip market. The company is experiencing robust demand for its AI semiconductor solutions. In its fiscal 2026 first quarter, Broadcom's AI revenue rocketed 106% year over year to $8.4 billion, driven by strong demand for its custom AI accelerators and AI networking products. Broadcom expects its growth to continue accelerating, as it sees its AI semiconductor revenue rising to $10.7 billion in its fiscal second quarter. [...] Accelerating demand for Broadcom's AI semiconductor solutions shows that it's emerging as a major Nvidia…"
+  },
+  {
+   "title": "Nvidia, TSMC and ASML – Three Companies That Won’t Have Significant Competition For the Next 5 Years",
+   "url": "https://drrobertcastellano.substack.com/p/nvidia-tsmc-and-asml-three-companies",
+   "domain": "drrobertcastellano.substack.com",
+   "snippet": "∙ Paid In the competitive landscape of the semiconductor industry, conducting thorough company analysis is essential for investors and industry experts. This article will provide an in-depth industry comparison, focusing on NVIDIA, TSMC, and ASML alongside their major competitors. By examining key financial metrics, market positions, and growth potential, we aim to deliver valuable insights for investors and offer a deeper understanding of each company's performance within the industry. [...] The semiconductor foundry market is undergoing significant changes as leading players TSMC, Samsung,…"
+  },
+  {
+   "title": "Top 30+ AI Chip Makers: NVIDIA & Its Competitors",
+   "url": "https://aimultiple.com/ai-chip-makers",
+   "domain": "aimultiple.com",
+   "snippet": "## Foundry partners and TSMC’s role TSMC is a pure-play foundry. It manufactures semiconductors based on customer designs rather than creating its own chips, distinguishing it from companies like NVIDIA and AMD. Samsung Foundry and Intel Foundry Services compete in the same market. [...] ### 14. Rebellions Rebellions is a Korea-based startup focused on LLM inference. It merged with another Korean semiconductor design firm, SAPEON.89 Total funding is about $850 million.90 The IPO has not happened. Rebellions said on July 8, 2026 that it targets the first or second quarter of 2027, leaning…"
+  }
+ ],
+ "risks": {
+  "filing": {
+   "ticker": "NVDA",
+   "form": "10-K",
+   "filing_date": "2026-02-25",
+   "accession_no": "0001045810-26-000021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+  },
+  "headings": [
+   "Risks Related to Our Industry and Markets",
+   "Failure to meet the evolving needs of our industry and markets may adversely impact our financial results.",
+   "Competition could adversely impact our market share and financial results.",
+   "Risks Related to Demand, Supply, and Manufacturing",
+   "Long manufacturing lead times and uncertain supply and capacity availability, combined with a failure to estimate customer demand accurately has led and could lead to mismatches between supply and demand.",
+   "Dependency on third-party suppliers and their technology to manufacture, assemble, test, or package our products reduces our control over product quantity and quality, manufacturing yields, and product delivery schedules and could harm our business.",
+   "Defects in our products have caused and could cause us to incur significant expenses to remediate and could damage our business.",
+   "Risks Related to Our Global Operating Business",
+   "Adverse economic conditions may harm our business.",
+   "International sales and operations are a significant part of our business, which exposes us to risks that could harm our business.",
+   "Product, system security and data protection incidents or breaches, as well as cyber-attacks could disrupt our operations and adversely affect our financial condition, stock price and reputation.",
+   "Business disruptions could harm our operations and financial results.",
+   "Climate change may have a long-term impact on our business.",
+   "We may not be able to realize the potential benefits of business investments or acquisitions, nor successfully integrate acquisition targets.",
+   "Commercial arrangements expose us to counterparty risks, which may negatively impact our business, financial condition, or results of operations.",
+   "We may be unable to attract, retain, and motivate our executives and key employees.",
+   "Modification or interruption of our business processes and information systems may disrupt our business and internal controls.",
+   "Our operating results have in the past fluctuated and may in the future fluctuate, and if our operating results are below the expectations of securities analysts or investors, our stock price could decline.",
+   "Risks Related to Regulatory, Legal, Our Stock, and Other Matters",
+   "We are subject to complex laws, rules, regulations, and political and other actions, including restrictions on the export of our products, which may adversely impact our business.",
+   "Scrutiny regarding our corporate sustainability practices could result in financial, reputational, or operational harm and liability.",
+   "Issues relating to the responsible use of our technologies, including AI, may result in reputational or financial harm and liability.",
+   "Adequately protecting our IP rights could be costly, and our ability to compete could be harmed if we are unsuccessful or if we are prohibited from making or selling our products.",
+   "We are subject to stringent and changing data privacy and security laws, rules, regulations, and other obligations. These areas could damage our reputation, deter customers, affect product design, or result in legal or regulatory proceedings and liability.",
+   "Our operating results may be adversely impacted by additional tax liabilities, higher than expected tax rates, changes in tax laws, and other tax-related factors.",
+   "Our business is exposed to the burden and risks associated with litigation, investigations, and regulatory proceedings.",
+   "Delaware law, provisions in our governing documents and our agreement with Microsoft could delay or prevent a change in control.",
+   "Our accelerated computing platforms experience rapid changes in technology, customer requirements, competitive products, and industry standards.",
+   "Our success depends on our ability to:",
+   "Long manufacturing lead times and uncertain supply and capacity availability, combined with a failure to estimate customer demand accurately, has led and could lead to mismatches between supply and demand.",
+   "Factors that have caused and/or could in the future cause us to underestimate or overestimate demand, and impact the timing and volume of our revenue, include:",
+   "Defects in our products have caused and could cause us to incur significant expenses to remediate, which can damage our reputation and cause us to lose market share.",
+   "Product, system security, and data protection incidents or breaches, as well as cyber-attacks, could disrupt our operations, reduce our expected revenue, increase our expenses, and significantly harm our business and reputation.",
+   "Business disruptions could harm our operations, lead to a decline in revenue and increase our costs.",
+   "We may not be able to realize the potential benefits of business investments or acquisitions, and we may not be able to successfully integrate acquired companies, which could hurt our ability to grow our business, develop new products or sell our products.",
+   "We are finalizing an investment and partnership agreement with OpenAI. There is no assurance that we will enter into an investment and partnership agreement with OpenAI or that a transaction will be completed.",
+   "Our investment portfolio contains industry sector concentration risks, and a decline in any one or multiple industry sectors could increase our impairment losses.",
+   "Additional risks relating to acquisitions include, but are not limited to:",
+   "Commercial arrangements expose us to counterparty risks.",
+   "If we are unable to attract, retain and motivate our executives and key employees, our business may be harmed.",
+   "Our business is dependent upon the proper functioning of our business processes and information systems and modification or interruption of such systems may disrupt our business and internal controls.",
+   "Risks Related to Regulatory, Legal, Our Stock and Other Matters",
+   "Over the past three years, we have been subject to a series of shifting and expanding export control restrictions, impacting our ability to serve customers outside the United States.",
+   "In July 2023, the USG also informed us of an additional licensing requirement for a subset of A100 and H100 products destined to certain customers and other regions, including some countries in the Middle East.",
+   "In the event that we are able to sell licensed products into the China market, we may not be able to pass along all or any of the tariff to our customers, and may be subject to litigation, increased costs, and a harmed competitive position.",
+   "In addition to controls targeting D:1, D:4 and D:5 countries, the USG has also imposed worldwide export controls impacting our products, and may impose additional controls in the future.",
+   "The USG already imposed export controls restricting certain gaming GPUs, and if the USG expands such controls to restrict additional gaming products, it may disrupt a significant portion of our supply and distribution chain and",
+   "Scrutiny from shareholders, regulators and others regarding our corporate sustainability practices could result in additional costs or risks and adversely impact our reputation and willingness of customers and suppliers to do business with us.",
+   "Issues relating to the responsible use of our technologies, including AI in our offerings, may result in reputational or financial harm and liability.",
+   "Actions to adequately protect our IP rights could result in substantial costs to us and our ability to compete could be harmed if we are unsuccessful or if we are prohibited from making or selling our products.",
+   "We may have exposure to additional tax liabilities and our operating results may be adversely impacted by changes in tax laws, higher than expected tax rates and other tax-related factors.",
+   "Our business is exposed to the burden and risks associated with litigation, investigations and regulatory proceedings.",
+   "Delaware law and our certificate of incorporation, bylaws and agreement with Microsoft could delay or prevent a change in control."
+  ],
+  "headings_truncated": false,
+  "risks": [
+   {
+    "title": "Export controls restricting sales outside US",
+    "category": "regulatory",
+    "severity": 3,
+    "explanation": "Shifting and expanding US export control restrictions over three years have affected the company's ability to serve customers outside the United States.",
+    "source_heading": "Over the past three years, we have been subject to a series of shifting and expanding export control restrictions, impacting our ability to serve customers outside the United States."
+   },
+   {
+    "title": "Competition threatening market share",
+    "category": "competition",
+    "severity": 3,
+    "explanation": "Competitors could take market share from the company and hurt its financial results.",
+    "source_heading": "Competition could adversely impact our market share and financial results."
+   },
+   {
+    "title": "Supply-demand mismatches from long lead times",
+    "category": "supply_chain",
+    "severity": 3,
+    "explanation": "Long manufacturing lead times, uncertain supply and capacity, and inaccurate demand forecasts have caused and could cause supply and demand mismatches.",
+    "source_heading": "Long manufacturing lead times and uncertain supply and capacity availability, combined with a failure to estimate customer demand accurately has led and could lead to mismatches between supply and demand."
+   },
+   {
+    "title": "Reliance on third-party manufacturers",
+    "category": "supply_chain",
+    "severity": 2,
+    "explanation": "Depending on outside suppliers to make, assemble, test and package products reduces control over quantity, quality, yields and delivery schedules.",
+    "source_heading": "Dependency on third-party suppliers and their technology to manufacture, assemble, test, or package our products reduces our control over product quantity and quality, manufacturing yields, and product delivery schedules and could harm our business."
+   },
+   {
+    "title": "Failing to meet evolving market needs",
+    "category": "technology",
+    "severity": 2,
+    "explanation": "If the company fails to meet the changing needs of its industry and markets, its financial results may be hurt.",
+    "source_heading": "Failure to meet the evolving needs of our industry and markets may adversely impact our financial results."
+   },
+   {
+    "title": "Product defects causing costly remediation",
+    "category": "operational",
+    "severity": 2,
+    "explanation": "Product defects have caused and could cause significant remediation expenses and could damage the business.",
+    "source_heading": "Defects in our products have caused and could cause us to incur significant expenses to remediate and could damage our business."
+   }
+  ]
+ },
+ "news": [
+  {
+   "title": "NVIDIA Corporation $NVDA Stock Bought by Quent Capital LLC",
+   "url": "https://www.marketbeat.com/instant-alerts/filing-nvidia-corporation-nvda-stock-bought-by-quent-capital-llc-2026-10-01",
+   "domain": "marketbeat.com",
+   "published": "Thu, 01 Oct 2026 07:28:31 GMT"
+  },
+  {
+   "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase | NVIDIA Newsroom",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase",
+   "domain": "nvidianews.nvidia.com",
+   "published": "Mon, 28 Sep 2026 20:00:00 GMT"
+  },
+  {
+   "title": "NVIDIA Corporation (NVDA) stock price, news, quote and history - Yahoo Finance",
+   "url": "https://uk.finance.yahoo.com/quote/NVDA",
+   "domain": "uk.finance.yahoo.com",
+   "published": "Wed, 30 Sep 2026 14:00:00 GMT"
+  },
+  {
+   "title": "Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+   "url": "https://www.benzinga.com/markets/buybacks/26/09/62018971/nvidia-flexes-its-cash-muscle-with-record-150-billion-buyback-increase",
+   "domain": "benzinga.com",
+   "published": "Mon, 28 Sep 2026 12:25:33 GMT"
+  },
+  {
+   "title": "NVIDIA Corporation (NVDA) Stock Price, News, Quote & History - Yahoo Finance",
+   "url": "https://ca.finance.yahoo.com/quote/NVDA",
+   "domain": "ca.finance.yahoo.com",
+   "published": "Thu, 01 Oct 2026 08:00:00 GMT"
+  }
+ ],
+ "news_error": null,
+ "scorecard": {
+  "factors": [
+   {
+    "name": "valuation",
+    "score": 1,
+    "detail": "Forward P/E 14.9 vs peer median 40.3 (-63%; band ±15%)"
+   },
+   {
+    "name": "growth",
+    "score": 1,
+    "detail": "Revenue growth 105.9% vs peer median 36.5% (+69.4 pts; band ±5 pts)"
+   },
+   {
+    "name": "profitability",
+    "score": 1,
+    "detail": "Net margin 63.7% vs peer median 21.0% (+42.6 pts; band ±5 pts)"
+   },
+   {
+    "name": "analyst_upside",
+    "score": 1,
+    "detail": "mean analyst target 327.70 vs price 233.95 (+40.1%; band ±10%)"
+   },
+   {
+    "name": "momentum",
+    "score": 1,
+    "detail": "price 233.95 above its 200-day average 200.38; at 95% of the 52-week range"
+   }
+  ],
+  "total": 5,
+  "preliminary_signal": "BUY"
+ },
+ "analyst": {
+  "signal": "BUY",
+  "confidence": 0.72,
+  "changed_from_preliminary": false,
+  "change_reason": null,
+  "valuation_summary": "NVDA trades at a Forward P/E of 14.9 versus a peer median of 40.3 (-63%), with P/E (ttm) 29.2 vs 66.8 and EV/EBITDA 27.9 vs 37.9. EV/Revenue of 18.5 is near the 19.4 median, and P/B of 24.7 is high.",
+  "thesis": [
+   "Revenue growth of 105.9% far exceeds the 36.5% peer median, with revenue reaching $215.94B in fiscal 2026.",
+   "Net margin of 63.7% and ROE of 117.2% indicate exceptional profitability versus peers.",
+   "A $150 Billion share repurchase authorization increase and Debt/Equity of 0.17 signal financial strength."
+  ],
+  "counterpoints": [
+   "Shifting US export controls have affected the ability to serve customers outside the United States (severity 3).",
+   "Competitors such as AMD and Broadcom could take market share and hurt financial results (severity 3).",
+   "Long lead times and supply uncertainty risk supply-demand mismatches; price sits at 95% of the 52-week range."
+  ],
+  "signal_reasoning": "All five factors score +1 for a total of 5: valuation (Forward P/E -63% vs peers), growth, profitability, analyst upside (+40.1% to mean target) and momentum. Three severity-3 risks exist, but they are longstanding filing disclosures rather than new events, and recent news (buyback increase) is supportive. No evidence justifies overriding the preliminary BUY, though risks temper confidence.",
+  "preliminary_signal": "BUY",
+  "reviewed": true
+ },
+ "signal": "BUY",
+ "signal_reviewed": true,
+ "narrative": {
+  "company_overview": "NVIDIA Corporation (NVDA) is a Technology-sector company in the Semiconductors industry, with a market capitalization of $5.65T. It describes itself as a data center scale AI infrastructure company, selling in the United States, Taiwan, China, Hong Kong, Europe and internationally. It reports through two segments: Compute & Networking, and Graphics.\n\nCompute & Networking covers data center accelerated computing and networking platforms, AI solutions and software, and automotive platforms including autonomous and electric vehicle solutions. Graphics offers GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The shares trade at $233.95, within a 52-week range of 164.27-237.87.",
+  "financial_commentary": "Revenue has grown in each year shown, from $26.97B in fiscal 2023 to $60.92B in fiscal 2024, $130.50B in fiscal 2025 and $215.94B in fiscal 2026. Net income rose even faster, from $4.37B to $29.76B, then $72.88B, and $120.07B in fiscal 2026.\n\nProfitability is very high. Net margin is 63.7% and return on equity is 117.2%. Revenue growth is reported at 105.9%. Leverage is modest, with debt/equity of 0.17, and the dividend yield is 0.4%. A recent news item notes an increase of $150 Billion to the share repurchase authorization.",
+  "comps_commentary": "The comparison uses forward P/E as the primary multiple. NVIDIA's forward P/E of 14.9 sits 63% below the peer median of 40.3. Its trailing P/E of 29.2 is 56% below the peer median of 66.8. On enterprise-value measures the discount is smaller: EV/EBITDA of 27.9 is 26% below the median of 37.9, and EV/Revenue of 18.5 is 5% below the median of 19.4.\n\nThe fundamentals differ sharply from the peer group. Net margin of 63.7% is 203% above the peer median of 21.0%, and revenue growth of 105.9% is 190% above the median of 36.5%. Debt/equity of 0.17 is 65% below the median of 0.49. The peers are AMD, Broadcom, Intel, Marvell and Qualcomm, and their results vary widely, which makes the median a rough yardstick.",
+  "risk_commentary": "Three risks are rated most severe. First, shifting and expanding US export controls over three years have affected the company's ability to serve customers outside the United States. Second, competitors could take market share and hurt financial results. Third, long manufacturing lead times, uncertain supply and capacity, and inaccurate demand forecasts have caused and could cause supply and demand mismatches.\n\nThree further risks are rated a notch lower. Reliance on third-party manufacturers to make, assemble, test and package products reduces control over quantity, quality, yields and delivery schedules. Failing to meet the changing needs of its industry and markets could hurt results. Product defects have caused and could cause significant remediation expenses and damage the business. The recent news headlines do not bear directly on these risks."
+ },
+ "narrative_markdown": "## Company overview\n\nNVIDIA Corporation (NVDA) is a Technology-sector company in the Semiconductors industry, with a market capitalization of $5.65T. It describes itself as a data center scale AI infrastructure company, selling in the United States, Taiwan, China, Hong Kong, Europe and internationally. It reports through two segments: Compute & Networking, and Graphics.\n\nCompute & Networking covers data center accelerated computing and networking platforms, AI solutions and software, and automotive platforms including autonomous and electric vehicle solutions. Graphics offers GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The shares trade at $233.95, within a 52-week range of 164.27-237.87.\n\n## Financial commentary\n\nRevenue has grown in each year shown, from $26.97B in fiscal 2023 to $60.92B in fiscal 2024, $130.50B in fiscal 2025 and $215.94B in fiscal 2026. Net income rose even faster, from $4.37B to $29.76B, then $72.88B, and $120.07B in fiscal 2026.\n\nProfitability is very high. Net margin is 63.7% and return on equity is 117.2%. Revenue growth is reported at 105.9%. Leverage is modest, with debt/equity of 0.17, and the dividend yield is 0.4%. A recent news item notes an increase of $150 Billion to the share repurchase authorization.\n\n## Comps commentary\n\nThe comparison uses forward P/E as the primary multiple. NVIDIA's forward P/E of 14.9 sits 63% below the peer median of 40.3. Its trailing P/E of 29.2 is 56% below the peer median of 66.8. On enterprise-value measures the discount is smaller: EV/EBITDA of 27.9 is 26% below the median of 37.9, and EV/Revenue of 18.5 is 5% below the median of 19.4.\n\nThe fundamentals differ sharply from the peer group. Net margin of 63.7% is 203% above the peer median of 21.0%, and revenue growth of 105.9% is 190% above the median of 36.5%. Debt/equity of 0.17 is 65% below the median of 0.49. The peers are AMD, Broadcom, Intel, Marvell and Qualcomm, and their results vary widely, which makes the median a rough yardstick.\n\n## Risk commentary\n\nThree risks are rated most severe. First, shifting and expanding US export controls over three years have affected the company's ability to serve customers outside the United States. Second, competitors could take market share and hurt financial results. Third, long manufacturing lead times, uncertain supply and capacity, and inaccurate demand forecasts have caused and could cause supply and demand mismatches.\n\nThree further risks are rated a notch lower. Reliance on third-party manufacturers to make, assemble, test and package products reduces control over quantity, quality, yields and delivery schedules. Failing to meet the changing needs of its industry and markets could hurt results. Product defects have caused and could cause significant remediation expenses and damage the business. The recent news headlines do not bear directly on these risks.",
+ "timings_ms": {
+  "validate": 0,
+  "financials": 1,
+  "news": 2,
+  "comps": 4440,
+  "comps_ready": 4440,
+  "risk": 7999,
+  "scorecard": 0,
+  "comps_explain": 4228,
+  "writer": 7090,
+  "analyst": 7267,
+  "signal_ready": 15268,
+  "total": 15268
+ },
+ "llm_usage": [
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 2313,
+   "output_tokens": 145,
+   "ms": 3347,
+   "cost_usd": 0.012152,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "risk",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3244,
+   "output_tokens": 738,
+   "ms": 7994,
+   "cost_usd": 0.027736,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3467,
+   "output_tokens": 311,
+   "ms": 4228,
+   "cost_usd": 0.020088,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "writer",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 2827,
+   "output_tokens": 1064,
+   "ms": 7090,
+   "cost_usd": 0.016294,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "analyst",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3905,
+   "output_tokens": 555,
+   "ms": 7267,
+   "cost_usd": 0.02672,
+   "request_id": null,
+   "error": null
+  }
+ ],
+ "cache_hits": [
+  "quote:NVDA",
+  "fin:NVDA",
+  "filing:NVDA",
+  "risk:0001045810-26-000021",
+  "tavily:news:nvidia corporation stock news",
+  "tavily:competitors:nvidia corporation main competitors semiconductors"
+ ],
+ "quality_warnings": [
+  "narrative: narrative is 456 words (limit 450)"
+ ],
+ "disclaimer": "Educational project - not investment advice."
+}

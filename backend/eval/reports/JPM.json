@@ -1,0 +1,1571 @@
+{
+ "generated_at": "2026-10-03T11:08:03+00:00",
+ "ticker": "JPM",
+ "financials": {
+  "snapshot": {
+   "ticker": "JPM",
+   "name": "JPMorgan Chase & Co.",
+   "sector": "Financial Services",
+   "industry": "Banks - Diversified",
+   "currency": "USD",
+   "price": 332.38,
+   "market_cap": 883527974912.0,
+   "week52_low": 279.1,
+   "week52_high": 366.5,
+   "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,…"
+  },
+  "multiples": {
+   "pe_ttm": 14.246893,
+   "pe_fwd": 13.301591,
+   "ev_ebitda": null,
+   "ev_revenue": 3.872,
+   "price_to_book": 2.4989662,
+   "net_margin": 0.34921002,
+   "roe": 0.17789,
+   "revenue_growth": 0.304,
+   "debt_to_equity": null,
+   "dividend_yield": 0.0199
+  },
+  "revenue_history": [
+   {
+    "year": 2022,
+    "value": 127727000000.0
+   },
+   {
+    "year": 2023,
+    "value": 154952000000.0
+   },
+   {
+    "year": 2024,
+    "value": 169439000000.0
+   },
+   {
+    "year": 2025,
+    "value": 181847000000.0
+   }
+  ],
+  "ebitda_history": [],
+  "net_income_history": [
+   {
+    "year": 2022,
+    "value": 37676000000.0
+   },
+   {
+    "year": 2023,
+    "value": 49552000000.0
+   },
+   {
+    "year": 2024,
+    "value": 58471000000.0
+   },
+   {
+    "year": 2025,
+    "value": 57048000000.0
+   }
+  ],
+  "price_history": [
+   {
+    "date": "2025-10-03",
+    "close": 304.2102355957031
+   },
+   {
+    "date": "2025-10-06",
+    "close": 304.85113525390625
+   },
+   {
+    "date": "2025-10-07",
+    "close": 303.3819885253906
+   },
+   {
+    "date": "2025-10-08",
+    "close": 299.7732238769531
+   },
+   {
+    "date": "2025-10-09",
+    "close": 301.2522277832031
+   },
+   {
+    "date": "2025-10-10",
+    "close": 296.6772155761719
+   },
+   {
+    "date": "2025-10-13",
+    "close": 303.6580810546875
+   },
+   {
+    "date": "2025-10-14",
+    "close": 297.85052490234375
+   },
+   {
+    "date": "2025-10-15",
+    "close": 301.4100036621094
+   },
+   {
+    "date": "2025-10-16",
+    "close": 294.3600769042969
+   },
+   {
+    "date": "2025-10-17",
+    "close": 293.3938293457031
+   },
+   {
+    "date": "2025-10-20",
+    "close": 298.1265869140625
+   },
+   {
+    "date": "2025-10-21",
+    "close": 292.9303894042969
+   },
+   {
+    "date": "2025-10-22",
+    "close": 289.9920959472656
+   },
+   {
+    "date": "2025-10-23",
+    "close": 290.4161376953125
+   },
+   {
+    "date": "2025-10-24",
+    "close": 296.2335205078125
+   },
+   {
+    "date": "2025-10-27",
+    "close": 299.89154052734375
+   },
+   {
+    "date": "2025-10-28",
+    "close": 301.0845947265625
+   },
+   {
+    "date": "2025-10-29",
+    "close": 301.2325134277344
+   },
+   {
+    "date": "2025-10-30",
+    "close": 305.1075134277344
+   },
+   {
+    "date": "2025-10-31",
+    "close": 306.7639465332031
+   },
+   {
+    "date": "2025-11-03",
+    "close": 305.0187683105469
+   },
+   {
+    "date": "2025-11-04",
+    "close": 304.920166015625
+   },
+   {
+    "date": "2025-11-05",
+    "close": 307.3161315917969
+   },
+   {
+    "date": "2025-11-06",
+    "close": 309.03179931640625
+   },
+   {
+    "date": "2025-11-07",
+    "close": 309.8106994628906
+   },
+   {
+    "date": "2025-11-10",
+    "close": 312.45318603515625
+   },
+   {
+    "date": "2025-11-11",
+    "close": 311.200927734375
+   },
+   {
+    "date": "2025-11-12",
+    "close": 315.92388916015625
+   },
+   {
+    "date": "2025-11-13",
+    "close": 305.1469421386719
+   },
+   {
+    "date": "2025-11-14",
+    "close": 299.35906982421875
+   },
+   {
+    "date": "2025-11-17",
+    "close": 296.1644592285156
+   },
+   {
+    "date": "2025-11-18",
+    "close": 295.2179260253906
+   },
+   {
+    "date": "2025-11-19",
+    "close": 299.02386474609375
+   },
+   {
+    "date": "2025-11-20",
+    "close": 294.2023620605469
+   },
+   {
+    "date": "2025-11-21",
+    "close": 293.8473815917969
+   },
+   {
+    "date": "2025-11-24",
+    "close": 293.8276672363281
+   },
+   {
+    "date": "2025-11-25",
+    "close": 298.75762939453125
+   },
+   {
+    "date": "2025-11-26",
+    "close": 303.33270263671875
+   },
+   {
+    "date": "2025-11-28",
+    "close": 308.6965026855469
+   },
+   {
+    "date": "2025-12-01",
+    "close": 304.59478759765625
+   },
+   {
+    "date": "2025-12-02",
+    "close": 303.5693359375
+   },
+   {
+    "date": "2025-12-03",
+    "close": 307.75982666015625
+   },
+   {
+    "date": "2025-12-04",
+    "close": 311.6742858886719
+   },
+   {
+    "date": "2025-12-05",
+    "close": 310.6291198730469
+   },
+   {
+    "date": "2025-12-08",
+    "close": 310.79669189453125
+   },
+   {
+    "date": "2025-12-09",
+    "close": 296.30255126953125
+   },
+   {
+    "date": "2025-12-10",
+    "close": 305.76806640625
+   },
+   {
+    "date": "2025-12-11",
+    "close": 312.9363098144531
+   },
+   {
+    "date": "2025-12-12",
+    "close": 314.06036376953125
+   },
+   {
+    "date": "2025-12-15",
+    "close": 315.5393371582031
+   },
+   {
+    "date": "2025-12-16",
+    "close": 311.1319580078125
+   },
+   {
+    "date": "2025-12-17",
+    "close": 310.5699462890625
+   },
+   {
+    "date": "2025-12-18",
+    "close": 308.6176452636719
+   },
+   {
+    "date": "2025-12-19",
+    "close": 312.7686767578125
+   },
+   {
+    "date": "2025-12-22",
+    "close": 318.5663757324219
+   },
+   {
+    "date": "2025-12-23",
+    "close": 321.3666076660156
+   },
+   {
+    "date": "2025-12-24",
+    "close": 324.5612487792969
+   },
+   {
+    "date": "2025-12-26",
+    "close": 323.31890869140625
+   },
+   {
+    "date": "2025-12-29",
+    "close": 319.2171325683594
+   },
+   {
+    "date": "2025-12-30",
+    "close": 318.89178466796875
+   },
+   {
+    "date": "2025-12-31",
+    "close": 317.70855712890625
+   },
+   {
+    "date": "2026-01-02",
+    "close": 320.92291259765625
+   },
+   {
+    "date": "2026-01-05",
+    "close": 329.3630676269531
+   },
+   {
+    "date": "2026-01-06",
+    "close": 331.41326904296875
+   },
+   {
+    "date": "2026-01-07",
+    "close": 323.8660888671875
+   },
+   {
+    "date": "2026-01-08",
+    "close": 326.63934326171875
+   },
+   {
+    "date": "2026-01-09",
+    "close": 326.0450744628906
+   },
+   {
+    "date": "2026-01-12",
+    "close": 321.38995361328125
+   },
+   {
+    "date": "2026-01-13",
+    "close": 307.9297790527344
+   },
+   {
+    "date": "2026-01-14",
+    "close": 304.9287414550781
+   },
+   {
+    "date": "2026-01-15",
+    "close": 306.30548095703125
+   },
+   {
+    "date": "2026-01-16",
+    "close": 309.48480224609375
+   },
+   {
+    "date": "2026-01-20",
+    "close": 299.8477478027344
+   },
+   {
+    "date": "2026-01-21",
+    "close": 299.15447998046875
+   },
+   {
+    "date": "2026-01-22",
+    "close": 300.729248046875
+   },
+   {
+    "date": "2026-01-23",
+    "close": 294.8757019042969
+   },
+   {
+    "date": "2026-01-26",
+    "close": 298.16400146484375
+   },
+   {
+    "date": "2026-01-27",
+    "close": 297.44097900390625
+   },
+   {
+    "date": "2026-01-28",
+    "close": 297.89654541015625
+   },
+   {
+    "date": "2026-01-29",
+    "close": 303.49261474609375
+   },
+   {
+    "date": "2026-01-30",
+    "close": 302.9676818847656
+   },
+   {
+    "date": "2026-02-02",
+    "close": 305.1961975097656
+   },
+   {
+    "date": "2026-02-03",
+    "close": 311.8420715332031
+   },
+   {
+    "date": "2026-02-04",
+    "close": 314.2389221191406
+   },
+   {
+    "date": "2026-02-05",
+    "close": 307.1968688964844
+   },
+   {
+    "date": "2026-02-06",
+    "close": 319.3199462890625
+   },
+   {
+    "date": "2026-02-09",
+    "close": 319.0228271484375
+   },
+   {
+    "date": "2026-02-10",
+    "close": 315.2392883300781
+   },
+   {
+    "date": "2026-02-11",
+    "close": 307.8505859375
+   },
+   {
+    "date": "2026-02-12",
+    "close": 299.74871826171875
+   },
+   {
+    "date": "2026-02-13",
+    "close": 299.6595458984375
+   },
+   {
+    "date": "2026-02-17",
+    "close": 304.19580078125
+   },
+   {
+    "date": "2026-02-18",
+    "close": 305.8300476074219
+   },
+   {
+    "date": "2026-02-19",
+    "close": 305.1070251464844
+   },
+   {
+    "date": "2026-02-20",
+    "close": 307.82086181640625
+   },
+   {
+    "date": "2026-02-23",
+    "close": 294.82623291015625
+   },
+   {
+    "date": "2026-02-24",
+    "close": 294.459716796875
+   },
+   {
+    "date": "2026-02-25",
+    "close": 300.4023742675781
+   },
+   {
+    "date": "2026-02-26",
+    "close": 303.20538330078125
+   },
+   {
+    "date": "2026-02-27",
+    "close": 297.4310607910156
+   },
+   {
+    "date": "2026-03-02",
+    "close": 294.7172546386719
+   },
+   {
+    "date": "2026-03-03",
+    "close": 297.3914489746094
+   },
+   {
+    "date": "2026-03-04",
+    "close": 296.52978515625
+   },
+   {
+    "date": "2026-03-05",
+    "close": 290.74554443359375
+   },
+   {
+    "date": "2026-03-06",
+    "close": 286.7144470214844
+   },
+   {
+    "date": "2026-03-09",
+    "close": 287.1502685546875
+   },
+   {
+    "date": "2026-03-10",
+    "close": 285.97161865234375
+   },
+   {
+    "date": "2026-03-11",
+    "close": 284.7731628417969
+   },
+   {
+    "date": "2026-03-12",
+    "close": 280.18743896484375
+   },
+   {
+    "date": "2026-03-13",
+    "close": 280.7321472167969
+   },
+   {
+    "date": "2026-03-16",
+    "close": 283.4261474609375
+   },
+   {
+    "date": "2026-03-17",
+    "close": 284.1492004394531
+   },
+   {
+    "date": "2026-03-18",
+    "close": 284.99102783203125
+   },
+   {
+    "date": "2026-03-19",
+    "close": 285.2188720703125
+   },
+   {
+    "date": "2026-03-20",
+    "close": 283.82232666015625
+   },
+   {
+    "date": "2026-03-23",
+    "close": 287.14031982421875
+   },
+   {
+    "date": "2026-03-24",
+    "close": 289.6065368652344
+   },
+   {
+    "date": "2026-03-25",
+    "close": 292.59771728515625
+   },
+   {
+    "date": "2026-03-26",
+    "close": 288.87359619140625
+   },
+   {
+    "date": "2026-03-27",
+    "close": 280.13787841796875
+   },
+   {
+    "date": "2026-03-30",
+    "close": 281.0589904785156
+   },
+   {
+    "date": "2026-03-31",
+    "close": 291.3497314453125
+   },
+   {
+    "date": "2026-04-01",
+    "close": 292.5580749511719
+   },
+   {
+    "date": "2026-04-02",
+    "close": 291.7855224609375
+   },
+   {
+    "date": "2026-04-06",
+    "close": 294.125
+   },
+   {
+    "date": "2026-04-07",
+    "close": 296.0662536621094
+   },
+   {
+    "date": "2026-04-08",
+    "close": 306.5888366699219
+   },
+   {
+    "date": "2026-04-09",
+    "close": 308.938232421875
+   },
+   {
+    "date": "2026-04-10",
+    "close": 308.4803161621094
+   },
+   {
+    "date": "2026-04-13",
+    "close": 312.2732238769531
+   },
+   {
+    "date": "2026-04-14",
+    "close": 309.7247009277344
+   },
+   {
+    "date": "2026-04-15",
+    "close": 304.5579833984375
+   },
+   {
+    "date": "2026-04-16",
+    "close": 308.5599670410156
+   },
+   {
+    "date": "2026-04-17",
+    "close": 308.8984375
+   },
+   {
+    "date": "2026-04-20",
+    "close": 315.5683898925781
+   },
+   {
+    "date": "2026-04-21",
+    "close": 311.5962829589844
+   },
+   {
+    "date": "2026-04-22",
+    "close": 311.6161804199219
+   },
+   {
+    "date": "2026-04-23",
+    "close": 310.29217529296875
+   },
+   {
+    "date": "2026-04-24",
+    "close": 306.8974609375
+   },
+   {
+    "date": "2026-04-27",
+    "close": 310.232421875
+   },
+   {
+    "date": "2026-04-28",
+    "close": 310.0532531738281
+   },
+   {
+    "date": "2026-04-29",
+    "close": 307.86309814453125
+   },
+   {
+    "date": "2026-04-30",
+    "close": 311.82525634765625
+   },
+   {
+    "date": "2026-05-01",
+    "close": 311.06866455078125
+   },
+   {
+    "date": "2026-05-04",
+    "close": 306.270263671875
+   },
+   {
+    "date": "2026-05-05",
+    "close": 308.0124206542969
+   },
+   {
+    "date": "2026-05-06",
+    "close": 313.4877624511719
+   },
+   {
+    "date": "2026-05-07",
+    "close": 304.8964538574219
+   },
+   {
+    "date": "2026-05-08",
+    "close": 300.74517822265625
+   },
+   {
+    "date": "2026-05-11",
+    "close": 298.6545715332031
+   },
+   {
+    "date": "2026-05-12",
+    "close": 303.5126953125
+   },
+   {
+    "date": "2026-05-13",
+    "close": 298.9034729003906
+   },
+   {
+    "date": "2026-05-14",
+    "close": 298.56500244140625
+   },
+   {
+    "date": "2026-05-15",
+    "close": 296.4743957519531
+   },
+   {
+    "date": "2026-05-18",
+    "close": 299.3813171386719
+   },
+   {
+    "date": "2026-05-19",
+    "close": 294.3738708496094
+   },
+   {
+    "date": "2026-05-20",
+    "close": 300.625732421875
+   },
+   {
+    "date": "2026-05-21",
+    "close": 301.6411437988281
+   },
+   {
+    "date": "2026-05-22",
+    "close": 305.0059814453125
+   },
+   {
+    "date": "2026-05-26",
+    "close": 305.3643493652344
+   },
+   {
+    "date": "2026-05-27",
+    "close": 297.93780517578125
+   },
+   {
+    "date": "2026-05-28",
+    "close": 295.3992614746094
+   },
+   {
+    "date": "2026-05-29",
+    "close": 297.9676818847656
+   },
+   {
+    "date": "2026-06-01",
+    "close": 295.2499084472656
+   },
+   {
+    "date": "2026-06-02",
+    "close": 299.6102600097656
+   },
+   {
+    "date": "2026-06-03",
+    "close": 299.50079345703125
+   },
+   {
+    "date": "2026-06-04",
+    "close": 309.4957580566406
+   },
+   {
+    "date": "2026-06-05",
+    "close": 310.9691162109375
+   },
+   {
+    "date": "2026-06-08",
+    "close": 309.7147521972656
+   },
+   {
+    "date": "2026-06-09",
+    "close": 311.2976379394531
+   },
+   {
+    "date": "2026-06-10",
+    "close": 307.75360107421875
+   },
+   {
+    "date": "2026-06-11",
+    "close": 312.0840759277344
+   },
+   {
+    "date": "2026-06-12",
+    "close": 319.28167724609375
+   },
+   {
+    "date": "2026-06-15",
+    "close": 317.96759033203125
+   },
+   {
+    "date": "2026-06-16",
+    "close": 329.6549377441406
+   },
+   {
+    "date": "2026-06-17",
+    "close": 331.9645080566406
+   },
+   {
+    "date": "2026-06-18",
+    "close": 323.761474609375
+   },
+   {
+    "date": "2026-06-22",
+    "close": 329.993408203125
+   },
+   {
+    "date": "2026-06-23",
+    "close": 332.6414794921875
+   },
+   {
+    "date": "2026-06-24",
+    "close": 331.95458984375
+   },
+   {
+    "date": "2026-06-25",
+    "close": 333.6170654296875
+   },
+   {
+    "date": "2026-06-26",
+    "close": 327.57427978515625
+   },
+   {
+    "date": "2026-06-29",
+    "close": 327.91278076171875
+   },
+   {
+    "date": "2026-06-30",
+    "close": 325.86199951171875
+   },
+   {
+    "date": "2026-07-01",
+    "close": 332.5718078613281
+   },
+   {
+    "date": "2026-07-02",
+    "close": 332.9700012207031
+   },
+   {
+    "date": "2026-07-06",
+    "close": 337.7200012207031
+   },
+   {
+    "date": "2026-07-07",
+    "close": 339.2200012207031
+   },
+   {
+    "date": "2026-07-08",
+    "close": 330.6199951171875
+   },
+   {
+    "date": "2026-07-09",
+    "close": 335.4700012207031
+   },
+   {
+    "date": "2026-07-10",
+    "close": 336.4700012207031
+   },
+   {
+    "date": "2026-07-13",
+    "close": 334.5299987792969
+   },
+   {
+    "date": "2026-07-14",
+    "close": 342.8900146484375
+   },
+   {
+    "date": "2026-07-15",
+    "close": 346.9100036621094
+   },
+   {
+    "date": "2026-07-16",
+    "close": 343.1499938964844
+   },
+   {
+    "date": "2026-07-17",
+    "close": 341.1000061035156
+   },
+   {
+    "date": "2026-07-20",
+    "close": 338.8699951171875
+   },
+   {
+    "date": "2026-07-21",
+    "close": 345.2300109863281
+   },
+   {
+    "date": "2026-07-22",
+    "close": 348.2099914550781
+   },
+   {
+    "date": "2026-07-23",
+    "close": 349.8999938964844
+   },
+   {
+    "date": "2026-07-24",
+    "close": 353.2099914550781
+   },
+   {
+    "date": "2026-07-27",
+    "close": 356.20001220703125
+   },
+   {
+    "date": "2026-07-28",
+    "close": 357.30999755859375
+   },
+   {
+    "date": "2026-07-29",
+    "close": 344.7099914550781
+   },
+   {
+    "date": "2026-07-30",
+    "close": 350.8500061035156
+   },
+   {
+    "date": "2026-07-31",
+    "close": 351.7900085449219
+   },
+   {
+    "date": "2026-08-03",
+    "close": 352.6400146484375
+   },
+   {
+    "date": "2026-08-04",
+    "close": 357.5199890136719
+   },
+   {
+    "date": "2026-08-05",
+    "close": 359.239990234375
+   },
+   {
+    "date": "2026-08-06",
+    "close": 356.29998779296875
+   },
+   {
+    "date": "2026-08-07",
+    "close": 357.5199890136719
+   },
+   {
+    "date": "2026-08-10",
+    "close": 359.7900085449219
+   },
+   {
+    "date": "2026-08-11",
+    "close": 362.0400085449219
+   },
+   {
+    "date": "2026-08-12",
+    "close": 365.17999267578125
+   },
+   {
+    "date": "2026-08-13",
+    "close": 363.1099853515625
+   },
+   {
+    "date": "2026-08-14",
+    "close": 362.8399963378906
+   },
+   {
+    "date": "2026-08-17",
+    "close": 360.9599914550781
+   },
+   {
+    "date": "2026-08-18",
+    "close": 363.25
+   },
+   {
+    "date": "2026-08-19",
+    "close": 357.260009765625
+   },
+   {
+    "date": "2026-08-20",
+    "close": 351.54998779296875
+   },
+   {
+    "date": "2026-08-21",
+    "close": 351.5799865722656
+   },
+   {
+    "date": "2026-08-24",
+    "close": 356.3900146484375
+   },
+   {
+    "date": "2026-08-25",
+    "close": 356.69000244140625
+   },
+   {
+    "date": "2026-08-26",
+    "close": 356.5
+   },
+   {
+    "date": "2026-08-27",
+    "close": 354.2200012207031
+   },
+   {
+    "date": "2026-08-28",
+    "close": 357.6199951171875
+   },
+   {
+    "date": "2026-08-31",
+    "close": 356.0199890136719
+   },
+   {
+    "date": "2026-09-01",
+    "close": 354.95001220703125
+   },
+   {
+    "date": "2026-09-02",
+    "close": 356.2200012207031
+   },
+   {
+    "date": "2026-09-03",
+    "close": 362.05999755859375
+   },
+   {
+    "date": "2026-09-04",
+    "close": 358.6400146484375
+   },
+   {
+    "date": "2026-09-08",
+    "close": 353.510009765625
+   },
+   {
+    "date": "2026-09-09",
+    "close": 354.7099914550781
+   },
+   {
+    "date": "2026-09-10",
+    "close": 353.55999755859375
+   },
+   {
+    "date": "2026-09-11",
+    "close": 356.2300109863281
+   },
+   {
+    "date": "2026-09-14",
+    "close": 350.1300048828125
+   },
+   {
+    "date": "2026-09-15",
+    "close": 352.489990234375
+   },
+   {
+    "date": "2026-09-16",
+    "close": 348.9200134277344
+   },
+   {
+    "date": "2026-09-17",
+    "close": 349.30999755859375
+   },
+   {
+    "date": "2026-09-18",
+    "close": 349.6700134277344
+   },
+   {
+    "date": "2026-09-21",
+    "close": 352.0400085449219
+   },
+   {
+    "date": "2026-09-22",
+    "close": 340.0
+   },
+   {
+    "date": "2026-09-23",
+    "close": 337.5299987792969
+   },
+   {
+    "date": "2026-09-24",
+    "close": 338.55999755859375
+   },
+   {
+    "date": "2026-09-25",
+    "close": 343.05999755859375
+   },
+   {
+    "date": "2026-09-28",
+    "close": 336.5899963378906
+   },
+   {
+    "date": "2026-09-29",
+    "close": 334.9800109863281
+   },
+   {
+    "date": "2026-09-30",
+    "close": 330.8299865722656
+   },
+   {
+    "date": "2026-10-01",
+    "close": 333.17999267578125
+   },
+   {
+    "date": "2026-10-02",
+    "close": 332.3800048828125
+   }
+  ],
+  "analyst_target_mean": 375.8095,
+  "analyst_recommendation": "buy"
+ },
+ "comps": {
+  "metric_set": "financials",
+  "metrics": [
+   "pe_ttm",
+   "pe_fwd",
+   "price_to_book",
+   "roe",
+   "dividend_yield",
+   "revenue_growth"
+  ],
+  "primary_metric": "price_to_book",
+  "rows": [
+   {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "market_cap": 883527974912.0,
+    "multiples": {
+     "pe_ttm": 14.246893,
+     "pe_fwd": 13.301591,
+     "ev_ebitda": null,
+     "ev_revenue": 3.872,
+     "price_to_book": 2.4989662,
+     "net_margin": 0.34921002,
+     "roe": 0.17789,
+     "revenue_growth": 0.304,
+     "debt_to_equity": null,
+     "dividend_yield": 0.0199
+    },
+    "is_target": true,
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,…"
+   },
+   {
+    "ticker": "BAC",
+    "name": "Bank of America Corporation",
+    "market_cap": 375860232192.0,
+    "multiples": {
+     "pe_ttm": 12.413395,
+     "pe_fwd": 10.222246,
+     "ev_ebitda": null,
+     "ev_revenue": 2.824,
+     "price_to_book": 1.3662244,
+     "net_margin": 0.29524,
+     "roe": 0.111990005,
+     "revenue_growth": 0.168,
+     "debt_to_equity": null,
+     "dividend_yield": 0.023799999999999998
+    },
+    "is_target": false,
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "business_summary": "Bank of America Corporation, through its subsidiaries, provides various financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates through four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets. The Consumer Banking segment offers traditional and money market savings accounts, certificates of deposit and IRAs, checking accounts, and investment accounts and products; credit and debit cards; residential mortgages and…"
+   },
+   {
+    "ticker": "C",
+    "name": "Citigroup Inc.",
+    "market_cap": 215550623744.0,
+    "multiples": {
+     "pe_ttm": 13.846983,
+     "pe_fwd": 9.962792,
+     "ev_ebitda": null,
+     "ev_revenue": 0.287,
+     "price_to_book": 1.1199428,
+     "net_margin": 0.21832001,
+     "roe": 0.08529,
+     "revenue_growth": 0.155,
+     "debt_to_equity": null,
+     "dividend_yield": 0.0209
+    },
+    "is_target": false,
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "business_summary": "Citigroup Inc., a diversified financial service holding company, provides various financial products and services to consumers, corporations, governments, and institutions. It operates through five segments: Services, Markets, Banking, U.S. Personal Banking, and Wealth. The Services segment includes treasury and trade solutions, which provides cash management, trade, and working capital solutions to multinational corporations, financial institutions, and public sector organizations; and securities services, such as cross-border support for clients, local market expertise, post-trade…"
+   },
+   {
+    "ticker": "WFC",
+    "name": "Wells Fargo & Company",
+    "market_cap": 243280723968.0,
+    "multiples": {
+     "pe_ttm": 11.693314,
+     "pe_fwd": 10.104258,
+     "ev_ebitda": null,
+     "ev_revenue": 2.925,
+     "price_to_book": 1.5123886,
+     "net_margin": 0.27232,
+     "roe": 0.12575,
+     "revenue_growth": 0.095,
+     "debt_to_equity": null,
+     "dividend_yield": 0.024900000000000002
+    },
+    "is_target": false,
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "business_summary": "Wells Fargo & Company, a financial services company, provides diversified banking, investment, mortgage, and consumer and commercial finance products and services in the United States and internationally. It operates through four segments: Consumer Banking and Lending; Commercial Banking; Corporate and Investment Banking; and Wealth and Investment Management. The company's financial products and services includes checking and savings accounts, and credit and debit cards, as well as home, auto, personal, and small business lending services. It also provides personalized wealth management,…"
+   },
+   {
+    "ticker": "GS",
+    "name": "The Goldman Sachs Group, Inc.",
+    "market_cap": 262799654912.0,
+    "multiples": {
+     "pe_ttm": 13.932695,
+     "pe_fwd": 12.35921,
+     "ev_ebitda": null,
+     "ev_revenue": 0.413,
+     "price_to_book": 2.492922,
+     "net_margin": 0.31039,
+     "roe": 0.16902,
+     "revenue_growth": 0.425,
+     "debt_to_equity": 7.25381,
+     "dividend_yield": 0.0222
+    },
+    "is_target": false,
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "business_summary": "The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals in the Americas, Europe, the Middle East, Africa, and Asia. It operates through three segments: Global Banking & Markets, Asset & Wealth Management, and Platform Solutions. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; equity and debt underwriting of…"
+   },
+   {
+    "ticker": "MS",
+    "name": "Morgan Stanley",
+    "market_cap": 298894458880.0,
+    "multiples": {
+     "pe_ttm": 15.200479,
+     "pe_fwd": 13.976374,
+     "ev_ebitda": null,
+     "ev_revenue": 2.289,
+     "price_to_book": 2.8068907,
+     "net_margin": 0.25897,
+     "roe": 0.17969999,
+     "revenue_growth": 0.28,
+     "debt_to_equity": 5.172820000000001,
+     "dividend_yield": 0.0242
+    },
+    "is_target": false,
+    "sector": "Financial Services",
+    "industry": "Capital Markets",
+    "business_summary": "Morgan Stanley, a financial holding company, provides various financial products and services to corporations, governments, financial institutions, and individuals in the Americas, Asia, Europe, the Middle East, and Africa. It operates through Institutional Securities, Wealth Management, and Investment Management segments. The company offers capital raising and financial advisory services, including services related to the underwriting of debt, equity securities, and other products, as well as advice on mergers and acquisitions, restructurings, and project finance. It also provides equity…"
+   }
+  ],
+  "median": {
+   "pe_ttm": 13.846983,
+   "pe_fwd": 10.222246,
+   "ev_ebitda": null,
+   "ev_revenue": 2.289,
+   "price_to_book": 1.5123886,
+   "net_margin": 0.27232,
+   "roe": 0.12575,
+   "revenue_growth": 0.168,
+   "debt_to_equity": 6.213315,
+   "dividend_yield": 0.023799999999999998
+  },
+  "target_vs_median_pct": {
+   "pe_ttm": 0.028880659418734078,
+   "pe_fwd": 0.30123957102969356,
+   "price_to_book": 0.6523307567909464,
+   "roe": 0.41463220675944323,
+   "dividend_yield": -0.16386554621848726,
+   "revenue_growth": 0.8095238095238093
+  },
+  "peer_rationales": {
+   "BAC": "Offers deposits, credit cards, residential mortgages, investment products and wealth management like JPM.",
+   "C": "Provides cash management, markets, banking and U.S. personal banking services overlapping JPM's segments.",
+   "WFC": "Offers checking, savings, credit cards, mortgages, auto loans, commercial and investment banking like JPM.",
+   "GS": "Overlaps JPM's investment banking and Asset & Wealth Management for corporations and individuals.",
+   "MS": "Provides underwriting, M&A advisory and wealth management, overlapping JPM's investment bank and AWM."
+  },
+  "peer_origin": {
+   "BAC": "agent",
+   "C": "agent",
+   "WFC": "agent",
+   "GS": "agent",
+   "MS": "agent"
+  },
+  "exclusions": [],
+  "sources": [
+   "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+   "https://thebrandhopper.com/brand/jpmorgan-chase-competitors",
+   "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+   "https://finance.yahoo.com/news/jpmorgan-jpm-competitive-edge-continues-035350215.html",
+   "https://en.wikipedia.org/wiki/JPMorgan_Chase"
+  ],
+  "insufficient": false
+ },
+ "competitor_search": [
+  {
+   "title": "JPMorgan Chase Competitors: JPM Top Peers 2026 | Hudson Labs",
+   "url": "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+   "domain": "hudson-labs.com",
+   "snippet": "| Ticker | Company Name | Market Cap ($B) | Subsector | --- --- | | JPM | JPMorgan Chase & Co. | 780.74 | Banks - Diversified | | BAC | Bank of America Corp. | 349.07 | Banks - Diversified | | $C | Citigroup Inc. | 186.35 | Banks - Diversified | | GS | Goldman Sachs Group Inc. | 253.28 | Capital Markets | | MS | Morgan Stanley | 254.49 | Capital Markets | | PNC | PNC Financial Services Group Inc. | 83.14 | Banks - Regional | | TFC | Truist Financial Corp | 58.07 | Banks - Regional | [...] | SCHW | Charles Schwab Corp. | 166.86 | Capital Markets | | $BK | Bank of New York Mellon Corp. | 79.30…"
+  },
+  {
+   "title": "JPMorgan Chase Competitors: Top 18 Banks & Rivals Analyzed",
+   "url": "https://thebrandhopper.com/brand/jpmorgan-chase-competitors",
+   "domain": "thebrandhopper.com",
+   "snippet": "A: JPMorgan Chase’s main competitive advantages include its diversified business model across four major segments, its #1 global investment banking market share (8.4% wallet share), the scale of its AWM franchise ($4.8 trillion AUM), its annual technology investment of approximately $17 billion, and the strength of its balance sheet — $4.4 trillion in assets and $362 billion in stockholders’ equity. Its ROTCE of 20% significantly outperforms most global peers. [...] A: Bank of America is JPMorgan Chase’s biggest competitor in the US by total assets ($3.41 trillion) and by the breadth of its…"
+  },
+  {
+   "title": "JPMorgan Chase vs Bank of America",
+   "url": "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+   "domain": "explore.nemo.money",
+   "snippet": "JPMorgan Chase runs the most profitable bank in U.S. history, generating returns across consumer, commercial, and investment banking that competitors struggle to match, while RBC has quietly built one of North America's most diversified financial institutions with a dominant Canadian retail bank and a growing U.S. capital markets and wealth business. Both institutions operate at enormous scale and generate returns that compound favorably over long periods. JPMorgan Chase vs RBC digs into how [...] JPMorgan Chase & Co. (JPM) is one of the world’s largest and most diversified financial…"
+  },
+  {
+   "title": "JPMorgan’s (JPM) Competitive Edge Continues to be Driven by Scale and Diversification",
+   "url": "https://finance.yahoo.com/news/jpmorgan-jpm-competitive-edge-continues-035350215.html",
+   "domain": "finance.yahoo.com",
+   "snippet": "+0.13% JPMorgan Chase & Co. (NYSE:JPM) is one of the topstocks to buy and hold forever. Over the years, JPMorgan has gone from strength to strength with its significant scale advantage and entrenched position in U.S. banking. With $4.6 trillion in assets, it is the largest bank in the United States and the world's largest bank by market capitalization, as per Forbes (as of July 17, 2025). [...] JPMorgan Chase & Co. (NYSE:JPM) is a financial services firm that provides banking, investment, and asset management services to individuals, businesses, governments, and institutions worldwide. [...]…"
+  },
+  {
+   "title": "JPMorgan Chase - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/JPMorgan_Chase",
+   "domain": "en.wikipedia.org",
+   "snippet": "| Independents | | | | --- | | Bulge bracket | Goldman Sachs Morgan Stanley | | Americas | Allen & Company B.C. Ziegler B. Riley Financial + FBR Capital Markets Baird \"Baird (investment bank)\") BDT & MSD Partners Brown Brothers Harriman Brown Gibbons Lang & Company BTG Pactual Canaccord Genuity Cantor Fitzgerald Centerview Partners Drexel Hamilton Ducera Partners Evercore Financial Technology Partners Greenhill & Co. Guggenheim Partners Harris Williams & Co. Houlihan [...] | Divisions | Beacon Rail Chase Bank Chase UK Chase Paymentech Chase Card Services Canada EMC Mortgage Company…"
+  }
+ ],
+ "risks": {
+  "filing": {
+   "ticker": "JPM",
+   "form": "10-K",
+   "filing_date": "2026-02-13",
+   "accession_no": "0001628280-26-008131",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm"
+  },
+  "headings": [
+   "The principal risk factors include:",
+   "Political risks, including the potential negative effects on JPMorganChase’s businesses due to economic uncertainty resulting from political developments.",
+   "Capital risks, including the risk that JPMorganChase’s ability to distribute capital to shareholders or to support its business activities could be limited if it does not satisfy applicable regulatory capital requirements.",
+   "Conduct risks, including the negative impact that could result from misconduct of JPMorganChase’s employees.",
+   "Country risks, including potential impacts on JPMorganChase’s businesses from an outbreak or escalation of hostilities between countries or within a country or region; and the potential adverse effects",
+   "Part I of local economic, political, regulatory and social factors on JPMorganChase’s business in certain countries in which it operates.",
+   "People risks, including the criticality of attracting and retaining qualified employees.",
+   "The above summary is subject in its entirety to the discussion of the risk factors set forth below.",
+   "The following terms which are used in the risk factors set forth below have these meanings:",
+   "JPMorganChase’s businesses are highly regulated and are significantly affected by applicable law and supervisory expectations.",
+   "JPMorganChase has in the past and could in the future be required to modify its business and operations in response to changes in applicable law, regulatory decisions or supervisory expectations, such as:",
+   "These types of changes could increase JPMorganChase’s costs or reduce its revenues. In addition, any failure by JPMorganChase to comply with applicable law or meet supervisory expectations could result in:",
+   "Differences in the supervision and regulation of financial services firms could require JPMorganChase to modify its operations and incur higher operational and compliance costs.",
+   "Various factors could influence the scope of applicable law and supervision for a firm that provides financial services, such as the size of the firm, the businesses in which it engages and its jurisdiction of organization. For example:",
+   "Regulatory initiatives outside the U.S. have required and could in the future require JPMorganChase to significantly modify its operations or legal entity structure in the places in which those initiatives are implemented, such as requirements for:",
+   "Differences, inconsistencies and conflicts in applicable law related to financial services have required and could in the future require JPMorganChase to:",
+   "JPMorganChase faces significant legal risks from civil and governmental proceedings, including litigation, investigations and enforcement actions.",
+   "Resolving an investigation by a governmental authority could subject JPMorganChase to significant penalties and other repercussions.",
+   "Part I collateral consequences for the subject financial institution, including:",
+   "JPMorganChase expects that the following trends will continue:",
+   "JPMorganChase’s compliance risk and operating costs could be higher in jurisdictions with less predictable legal, regulatory and judicial frameworks.",
+   "JPMorganChase conducts business in certain jurisdictions in which the application of the rule of law is inconsistent, extralegal or less predictable, including with respect to:",
+   "JPMorganChase's business and operations could be negatively affected by governmental policies that discourage or penalize doing business with certain industries or that require specific business practices.",
+   "JPMorganChase’s businesses and results of operations could be adversely affected by actions or initiatives by governmental authorities or officials that:",
+   "Governmental policies may differ or conflict across jurisdictions, which could lead to negative consequences for JPMorganChase regardless of the course of action that it takes or elects not to take, including:",
+   "Changes in the requirements for the regulatory evaluation of JPMorganChase’s resolution plan could increase its funding or operational costs or require restructuring or curtailment of its businesses.",
+   "Any such changes could result in JPMorganChase making changes to its legal entity structure or to certain of its internal or external activities, which could increase its funding or operational costs, or hamper its ability to serve clients and customers.",
+   "Holders of JPMorgan Chase & Co.’s debt and equity securities will absorb losses if it were to enter into a resolution.",
+   "Part I greater than they might have been under JPMorganChase’s preferred strategy.",
+   "JPMorganChase’s businesses could be negatively affected by economic uncertainty resulting from political and geopolitical developments.",
+   "These types of political developments, as well as heightened geopolitical tensions, could:",
+   "These factors could lead to:",
+   "These risks could become highly correlated or combine in unexpected ways under certain circumstances, including geopolitically challenging situations in regions such as Russia, the Middle East and China.",
+   "Any of the foregoing potential outcomes could cause JPMorganChase to:",
+   "Adverse economic and market events and conditions could negatively affect JPMorganChase’s results of operations and investment and market-making positions.",
+   "JPMorganChase’s results of operations could be negatively affected by the occurrence or persistence of adverse changes in any of the following:",
+   "The above factors could be affected by global economic, market and political events and conditions, including the regulatory environment, monetary policies, trade policies, and actions taken by central banks or governmental authorities.",
+   "In addition, JPMorganChase’s investment portfolio and market-making businesses could suffer losses due to unanticipated market events and conditions, including:",
+   "Any significant losses in JPMorganChase’s investment portfolio or from market-making activities could reduce its profitability and its liquidity and capital levels, and thereby constrain the growth of its businesses.",
+   "JPMorganChase’s consumer businesses could be negatively affected by adverse economic conditions and adverse impacts of governmental policies.",
+   "JPMorganChase’s consumer businesses are particularly affected by U.S. and global economic conditions, including:",
+   "Unfavorable market and economic conditions could adversely affect JPMorganChase’s wholesale businesses.",
+   "Part I prices, and could lead to further withdrawals based on the weaker investment performance.",
+   "Changes in interest rates and credit spreads could adversely affect JPMorganChase’s earnings or its liquidity and capital levels.",
+   "JPMorganChase may generally be expected to earn higher net interest income when interest rates are high or increasing. However, higher interest rates could also result in:",
+   "All of these outcomes could adversely affect JPMorganChase’s earnings or its liquidity and capital levels, with more severe impacts in a prolonged period of high interest rates.",
+   "When credit spreads widen, it becomes more expensive for JPMorganChase to borrow.",
+   "JPMorganChase’s results could be materially affected by market fluctuations and significant changes in the valuation of financial instruments.",
+   "JPMorganChase could be negatively affected by adverse changes in the financial condition of clients, counterparties, CCPs and other market participants.",
+   "All of the foregoing events could increase JPMorganChase’s operational and litigation costs, and JPMorganChase could suffer losses to the extent that the realized value of any collateral that it has received is insufficient to cover those losses.",
+   "JPMorganChase could suffer losses if the value of collateral declines.",
+   "During periods of market stress or illiquidity, JPMorganChase’s credit risk could increase when:",
+   "JPMorganChase fails to realize the estimated value of the collateral it holds collateral is liquidated at prices that are insufficient to recover the full amount owed to it, or",
+   "Part I counterparties are unable to post collateral for operational or other reasons."
+  ],
+  "headings_truncated": true,
+  "risks": [
+   {
+    "title": "Heavy regulation and supervisory expectations",
+    "category": "regulatory",
+    "severity": 3,
+    "explanation": "The businesses are highly regulated and significantly affected by applicable law and supervisory expectations.",
+    "source_heading": "JPMorganChase’s businesses are highly regulated and are significantly affected by applicable law and supervisory expectations."
+   },
+   {
+    "title": "Significant litigation and enforcement exposure",
+    "category": "legal",
+    "severity": 3,
+    "explanation": "The firm faces significant legal risks from civil and governmental proceedings, including litigation, investigations and enforcement actions.",
+    "source_heading": "JPMorganChase faces significant legal risks from civil and governmental proceedings, including litigation, investigations and enforcement actions."
+   },
+   {
+    "title": "Adverse economic and market conditions",
+    "category": "macro",
+    "severity": 3,
+    "explanation": "Adverse economic and market events and conditions could hurt results of operations and investment and market-making positions.",
+    "source_heading": "Adverse economic and market events and conditions could negatively affect JPMorganChase’s results of operations and investment and market-making positions."
+   },
+   {
+    "title": "Interest rate and credit spread changes",
+    "category": "financial",
+    "severity": 3,
+    "explanation": "Changes in interest rates and credit spreads could adversely affect earnings or liquidity and capital levels.",
+    "source_heading": "Changes in interest rates and credit spreads could adversely affect JPMorganChase’s earnings or its liquidity and capital levels."
+   },
+   {
+    "title": "Client and counterparty financial deterioration",
+    "category": "financial",
+    "severity": 2,
+    "explanation": "Adverse changes in the financial condition of clients, counterparties, CCPs and other market participants could negatively affect the firm.",
+    "source_heading": "JPMorganChase could be negatively affected by adverse changes in the financial condition of clients, counterparties, CCPs and other market participants."
+   },
+   {
+    "title": "Consumer business sensitivity to economy",
+    "category": "macro",
+    "severity": 2,
+    "explanation": "Consumer businesses could be negatively affected by adverse economic conditions and adverse impacts of governmental policies.",
+    "source_heading": "JPMorganChase’s consumer businesses could be negatively affected by adverse economic conditions and adverse impacts of governmental policies."
+   }
+  ]
+ },
+ "news": [
+  {
+   "title": "JPMorgan Chase & Co. $JPM Stock Holdings Boosted by Saudi Central Bank",
+   "url": "https://www.marketbeat.com/instant-alerts/filing-jpmorgan-chase-co-jpm-stock-holdings-boosted-by-saudi-central-bank-2026-09-30",
+   "domain": "marketbeat.com",
+   "published": "Wed, 30 Sep 2026 07:28:51 GMT"
+  },
+  {
+   "title": "JPMorgan Chase & Co. $JPM Stock Bought by RFG Advisory LLC",
+   "url": "https://www.marketbeat.com/instant-alerts/filing-jpmorgan-chase-co-jpm-stock-bought-by-rfg-advisory-llc-2026-10-02",
+   "domain": "marketbeat.com",
+   "published": "Fri, 02 Oct 2026 07:28:33 GMT"
+  },
+  {
+   "title": "JPMorgan Chase & Co. $JPM Stock Bought by West Family Investments Inc.",
+   "url": "https://www.marketbeat.com/instant-alerts/filing-jpmorgan-chase-co-jpm-stock-bought-by-west-family-investments-inc-2026-10-02",
+   "domain": "marketbeat.com",
+   "published": "Fri, 02 Oct 2026 07:28:33 GMT"
+  },
+  {
+   "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Has Average Price Target of $363.29",
+   "url": "https://www.marketbeat.com/instant-alerts/consensus-jpmorgan-chase-co-nyse-jpm-stock-has-average-price-target-of-36329-2026-10-02",
+   "domain": "marketbeat.com",
+   "published": "Fri, 02 Oct 2026 06:29:30 GMT"
+  },
+  {
+   "title": "JPMorgan Chase & Co. (JPM) Stock Moves -3.34%: What You Should Know",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-co-jpm-stock-214503311.html",
+   "domain": "finance.yahoo.com",
+   "published": "Tue, 22 Sep 2026 00:00:00 GMT"
+  }
+ ],
+ "news_error": null,
+ "scorecard": {
+  "factors": [
+   {
+    "name": "valuation",
+    "score": -1,
+    "detail": "P/B 2.5 vs peer median 1.5 (+65%; band ±15%)"
+   },
+   {
+    "name": "growth",
+    "score": 1,
+    "detail": "Revenue growth 30.4% vs peer median 16.8% (+13.6 pts; band ±5 pts)"
+   },
+   {
+    "name": "profitability",
+    "score": 1,
+    "detail": "ROE 17.8% vs peer median 12.6% (+5.2 pts; band ±5 pts)"
+   },
+   {
+    "name": "analyst_upside",
+    "score": 1,
+    "detail": "mean analyst target 375.81 vs price 332.38 (+13.1%; band ±10%)"
+   },
+   {
+    "name": "momentum",
+    "score": 1,
+    "detail": "price 332.38 above its 200-day average 320.16; at 61% of the 52-week range"
+   }
+  ],
+  "total": 3,
+  "preliminary_signal": "BUY"
+ },
+ "analyst": {
+  "signal": "BUY",
+  "confidence": 0.65,
+  "changed_from_preliminary": false,
+  "change_reason": null,
+  "valuation_summary": "JPM trades at a premium: P/B 2.5 vs peer median 1.5 (+65%), Forward P/E 13.3 vs 10.2 (+30%), while P/E (ttm) 14.2 is only +3% above the 13.8 median. Dividend yield 2.0% trails the 2.4% median.",
+  "thesis": [
+   "ROE of 17.8% exceeds the peer median of 12.6%, supporting a premium book multiple.",
+   "Revenue growth of 30.4% versus a 16.8% peer median signals strong top-line momentum.",
+   "Mean analyst target 375.81 sits above price 332.38, and the consensus recommendation is buy."
+  ],
+  "counterpoints": [
+   "P/B of 2.5 is 65% above the peer median, leaving less room for multiple expansion.",
+   "Net income dipped from $58.47B in 2024 to $57.05B in 2025 despite revenue growth.",
+   "Severity-3 regulatory, litigation, macro and interest-rate risks could pressure earnings and capital."
+  ],
+  "signal_reasoning": "The scorecard totals +3: growth, profitability, analyst upside and momentum each score +1, offset only by a -1 on valuation given the P/B premium. The severity-3 risks are standard, long-standing disclosures for a large diversified bank rather than new events, and recent news is routine institutional buying and a -3.34% daily move. No clear evidence justifies departing from the preliminary BUY.",
+  "preliminary_signal": "BUY",
+  "reviewed": true
+ },
+ "signal": "BUY",
+ "signal_reviewed": true,
+ "narrative": {
+  "company_overview": "JPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classified under Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. The business is organized into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management.\n\nIts offerings include deposit, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalization of $883.53B, it is the largest company in its peer group shown here.",
+  "financial_commentary": "Revenue rose each year over the four fiscal years given, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income moved from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly even as revenue kept climbing.\n\nThe input reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The dividend yield is 2.0%. The shares trade at $332.38, within a 52-week range of 279.10 to 366.50.",
+  "comps_commentary": "The primary multiple for this comparison is price-to-book. JPMorgan trades at 2.5 times book, which is 65% above the peer median of 1.5. Only Goldman Sachs at 2.5 and Morgan Stanley at 2.8 sit at similar levels among the peers.\n\nOn earnings, the trailing P/E of 14.2 is just 3% above the peer median of 13.8, while the forward P/E of 13.3 is 30% above the median of 10.2. The premium is supported by stronger fundamentals: return on equity is 41% above the median (17.8% against 12.6%) and revenue growth is 81% above it (30.4% against 16.8%). The dividend yield of 2.0% is 16% below the peer median of 2.4%, which fits a higher-valued stock. The analyst mean target in the data is 375.81, and the consensus label is \"buy\"; these are third-party views, not conclusions of this report.",
+  "risk_commentary": "The four most severe risks carry a severity of 3. They are heavy regulation and supervisory expectations, significant litigation and enforcement exposure, adverse economic and market conditions, and changes in interest rates and credit spreads. The last of these could affect earnings, liquidity and capital levels, and the macro risk could hurt results as well as investment and market-making positions.\n\nTwo risks carry a severity of 2: deterioration in the financial condition of clients, counterparties and central counterparties, and the sensitivity of the consumer businesses to economic conditions and government policies. The recent headlines concern institutional holdings, analyst price targets and a share price move of -3.34%. None relates directly to these filing risks."
+ },
+ "narrative_markdown": "## Company overview\n\nJPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classified under Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. The business is organized into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management.\n\nIts offerings include deposit, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalization of $883.53B, it is the largest company in its peer group shown here.\n\n## Financial commentary\n\nRevenue rose each year over the four fiscal years given, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income moved from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly even as revenue kept climbing.\n\nThe input reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The dividend yield is 2.0%. The shares trade at $332.38, within a 52-week range of 279.10 to 366.50.\n\n## Comps commentary\n\nThe primary multiple for this comparison is price-to-book. JPMorgan trades at 2.5 times book, which is 65% above the peer median of 1.5. Only Goldman Sachs at 2.5 and Morgan Stanley at 2.8 sit at similar levels among the peers.\n\nOn earnings, the trailing P/E of 14.2 is just 3% above the peer median of 13.8, while the forward P/E of 13.3 is 30% above the median of 10.2. The premium is supported by stronger fundamentals: return on equity is 41% above the median (17.8% against 12.6%) and revenue growth is 81% above it (30.4% against 16.8%). The dividend yield of 2.0% is 16% below the peer median of 2.4%, which fits a higher-valued stock. The analyst mean target in the data is 375.81, and the consensus label is \"buy\"; these are third-party views, not conclusions of this report.\n\n## Risk commentary\n\nThe four most severe risks carry a severity of 3. They are heavy regulation and supervisory expectations, significant litigation and enforcement exposure, adverse economic and market conditions, and changes in interest rates and credit spreads. The last of these could affect earnings, liquidity and capital levels, and the macro risk could hurt results as well as investment and market-making positions.\n\nTwo risks carry a severity of 2: deterioration in the financial condition of clients, counterparties and central counterparties, and the sensitivity of the consumer businesses to economic conditions and government policies. The recent headlines concern institutional holdings, analyst price targets and a share price move of -3.34%. None relates directly to these filing risks.",
+ "timings_ms": {
+  "validate": 1,
+  "news": 3,
+  "financials": 4,
+  "comps": 4297,
+  "comps_ready": 4299,
+  "risk": 7354,
+  "scorecard": 0,
+  "comps_explain": 4072,
+  "analyst": 6347,
+  "signal_ready": 13704,
+  "writer": 7268,
+  "total": 14628
+ },
+ "llm_usage": [
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 2437,
+   "output_tokens": 136,
+   "ms": 2991,
+   "cost_usd": 0.012468,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "risk",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3358,
+   "output_tokens": 745,
+   "ms": 7344,
+   "cost_usd": 0.028332,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "comps",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3510,
+   "output_tokens": 264,
+   "ms": 4072,
+   "cost_usd": 0.01932,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "analyst",
+   "model": "claude-opus-5-5",
+   "input_tokens": 3689,
+   "output_tokens": 522,
+   "ms": 6347,
+   "cost_usd": 0.025196,
+   "request_id": null,
+   "error": null
+  },
+  {
+   "agent": "writer",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 2614,
+   "output_tokens": 1005,
+   "ms": 7268,
+   "cost_usd": 0.015278,
+   "request_id": null,
+   "error": null
+  }
+ ],
+ "cache_hits": [
+  "quote:JPM",
+  "tavily:competitors:jpmorgan chase & co. main competitors banks - diversified",
+  "tavily:news:jpmorgan chase & co. stock news",
+  "fin:JPM",
+  "filing:JPM",
+  "risk:0001628280-26-008131"
+ ],
+ "quality_warnings": [
+  "narrative: narrative is 463 words (limit 450)"
+ ],
+ "disclaimer": "Educational project - not investment advice."
+}

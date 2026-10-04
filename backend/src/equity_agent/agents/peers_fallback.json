@@ -1,0 +1,13 @@
+{
+  "Basic Materials": ["LIN", "SHW", "APD", "ECL", "NEM", "FCX"],
+  "Communication Services": ["GOOGL", "META", "NFLX", "DIS", "T", "VZ"],
+  "Consumer Cyclical": ["AMZN", "TSLA", "HD", "MCD", "NKE", "GM"],
+  "Consumer Defensive": ["WMT", "COST", "PG", "KO", "PEP", "TGT"],
+  "Energy": ["XOM", "CVX", "COP", "SLB", "EOG", "OXY"],
+  "Financial Services": ["JPM", "BAC", "WFC", "C", "GS", "MS"],
+  "Healthcare": ["JNJ", "UNH", "PFE", "MRK", "ABBV", "LLY"],
+  "Industrials": ["GE", "HON", "CAT", "UPS", "RTX", "DE"],
+  "Real Estate": ["PLD", "AMT", "EQIX", "SPG", "O", "PSA"],
+  "Technology": ["MSFT", "AAPL", "GOOGL", "ORCL", "CSCO", "IBM"],
+  "Utilities": ["NEE", "DUK", "SO", "D", "AEP", "EXC"]
+}

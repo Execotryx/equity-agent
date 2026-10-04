@@ -1,0 +1,391 @@
+{
+ "title": "Acceptance run 2026-10-04 12:13 UTC (cold, recorded for offline)",
+ "rows": [
+  {
+   "ticker": "AAPL",
+   "kind": "standard",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "price and key financials present",
+     "passed": true,
+     "detail": "price 333.69, 4 years of revenue, 10 multiples"
+    },
+    {
+     "criterion": "at least 3 peers with 2+ valuation multiples",
+     "passed": true,
+     "detail": "5 of 5 peers"
+    },
+    {
+     "criterion": "signal with reasoning",
+     "passed": true,
+     "detail": "HOLD"
+    },
+    {
+     "criterion": "risk section present or unavailable with a reason",
+     "passed": true,
+     "detail": "6 risks from the 10-K"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "HOLD",
+   "peers": 5,
+   "comps_ready_ms": 8793,
+   "total_ms": 29016,
+   "llm_calls": 5,
+   "cost_usd": 0.0997,
+   "within_budget": true,
+   "timings_ms": {
+    "validate": 1458,
+    "financials": 956,
+    "news": 1693,
+    "comps": 7334,
+    "comps_ready": 8793,
+    "comps_explain": 4021,
+    "risk": 19909,
+    "scorecard": 0,
+    "writer": 6264,
+    "analyst": 7642,
+    "signal_ready": 29016,
+    "total": 29016
+   }
+  },
+  {
+   "ticker": "NVDA",
+   "kind": "standard",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "price and key financials present",
+     "passed": true,
+     "detail": "price 233.95, 4 years of revenue, 10 multiples"
+    },
+    {
+     "criterion": "at least 3 peers with 2+ valuation multiples",
+     "passed": true,
+     "detail": "5 of 5 peers"
+    },
+    {
+     "criterion": "signal with reasoning",
+     "passed": true,
+     "detail": "BUY"
+    },
+    {
+     "criterion": "risk section present or unavailable with a reason",
+     "passed": true,
+     "detail": "6 risks from the 10-K"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "BUY",
+   "peers": 5,
+   "comps_ready_ms": 5333,
+   "total_ms": 19402,
+   "llm_calls": 5,
+   "cost_usd": 0.1011,
+   "within_budget": true,
+   "timings_ms": {
+    "validate": 807,
+    "news": 183,
+    "financials": 493,
+    "comps": 4525,
+    "comps_ready": 5333,
+    "comps_explain": 3406,
+    "risk": 11377,
+    "scorecard": 0,
+    "analyst": 6313,
+    "signal_ready": 18500,
+    "writer": 7209,
+    "total": 19402
+   }
+  },
+  {
+   "ticker": "JPM",
+   "kind": "bank",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "price and key financials present",
+     "passed": true,
+     "detail": "price 332.38, 4 years of revenue, 8 multiples"
+    },
+    {
+     "criterion": "at least 3 peers with 2+ valuation multiples",
+     "passed": true,
+     "detail": "5 of 5 peers"
+    },
+    {
+     "criterion": "signal with reasoning",
+     "passed": true,
+     "detail": "BUY"
+    },
+    {
+     "criterion": "risk section present or unavailable with a reason",
+     "passed": true,
+     "detail": "6 risks from the 10-K"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    },
+    {
+     "criterion": "financials metric set",
+     "passed": true,
+     "detail": "financials"
+    },
+    {
+     "criterion": "no EV/EBITDA",
+     "passed": true,
+     "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+    }
+   ],
+   "signal": "BUY",
+   "peers": 5,
+   "comps_ready_ms": 5682,
+   "total_ms": 30013,
+   "llm_calls": 5,
+   "cost_usd": 0.0998,
+   "within_budget": false,
+   "timings_ms": {
+    "validate": 375,
+    "news": 211,
+    "financials": 591,
+    "comps": 5306,
+    "comps_ready": 5682,
+    "comps_explain": 4457,
+    "risk": 21983,
+    "scorecard": 0,
+    "analyst": 6079,
+    "signal_ready": 28439,
+    "writer": 7648,
+    "total": 30013
+   }
+  },
+  {
+   "ticker": "COST",
+   "kind": "standard",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "price and key financials present",
+     "passed": true,
+     "detail": "price 920.65, 4 years of revenue, 10 multiples"
+    },
+    {
+     "criterion": "at least 3 peers with 2+ valuation multiples",
+     "passed": true,
+     "detail": "5 of 5 peers"
+    },
+    {
+     "criterion": "signal with reasoning",
+     "passed": true,
+     "detail": "HOLD"
+    },
+    {
+     "criterion": "risk section present or unavailable with a reason",
+     "passed": true,
+     "detail": "6 risks from the 10-K"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "HOLD",
+   "peers": 5,
+   "comps_ready_ms": 6788,
+   "total_ms": 20928,
+   "llm_calls": 5,
+   "cost_usd": 0.101,
+   "within_budget": true,
+   "timings_ms": {
+    "validate": 435,
+    "news": 188,
+    "financials": 1224,
+    "comps": 6352,
+    "comps_ready": 6788,
+    "comps_explain": 4604,
+    "risk": 12893,
+    "scorecard": 0,
+    "analyst": 7104,
+    "signal_ready": 20433,
+    "writer": 7592,
+    "total": 20928
+   }
+  },
+  {
+   "ticker": "TSLA",
+   "kind": "standard",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "price and key financials present",
+     "passed": true,
+     "detail": "price 370.59, 4 years of revenue, 9 multiples"
+    },
+    {
+     "criterion": "at least 3 peers with 2+ valuation multiples",
+     "passed": true,
+     "detail": "4 of 5 peers"
+    },
+    {
+     "criterion": "signal with reasoning",
+     "passed": true,
+     "detail": "HOLD"
+    },
+    {
+     "criterion": "risk section present or unavailable with a reason",
+     "passed": true,
+     "detail": "6 risks from the 10-K"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "HOLD",
+   "peers": 5,
+   "comps_ready_ms": 7412,
+   "total_ms": 22804,
+   "llm_calls": 5,
+   "cost_usd": 0.1015,
+   "within_budget": true,
+   "timings_ms": {
+    "validate": 447,
+    "news": 185,
+    "financials": 804,
+    "comps": 6965,
+    "comps_ready": 7412,
+    "comps_explain": 4482,
+    "risk": 14620,
+    "scorecard": 0,
+    "analyst": 6135,
+    "signal_ready": 21204,
+    "writer": 7730,
+    "total": 22804
+   }
+  },
+  {
+   "ticker": "ZZZZQX",
+   "kind": "not_found",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "clear not-found error",
+     "passed": true,
+     "detail": "ticker not found"
+    }
+   ],
+   "signal": null,
+   "peers": null,
+   "comps_ready_ms": null,
+   "total_ms": null,
+   "llm_calls": 0,
+   "cost_usd": 0.0,
+   "within_budget": null,
+   "timings_ms": {}
+  },
+  {
+   "ticker": "BRK.B",
+   "kind": "class_share",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "class share resolves",
+     "passed": true,
+     "detail": "BRK-B"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "HOLD",
+   "peers": 5,
+   "comps_ready_ms": 4762,
+   "total_ms": 44001,
+   "llm_calls": 5,
+   "cost_usd": 0.0905,
+   "within_budget": false,
+   "timings_ms": {
+    "validate": 566,
+    "news": 198,
+    "financials": 540,
+    "comps": 4195,
+    "comps_ready": 4762,
+    "comps_explain": 3852,
+    "risk": 35979,
+    "scorecard": 0,
+    "analyst": 6114,
+    "signal_ready": 42662,
+    "writer": 7447,
+    "total": 44001
+   }
+  },
+  {
+   "ticker": "TSM",
+   "kind": "foreign_filer",
+   "passed": true,
+   "failed": [],
+   "checks": [
+    {
+     "criterion": "risks from the 20-F or a reasoned unavailability",
+     "passed": true,
+     "detail": "6 risks from the 20-F"
+    },
+    {
+     "criterion": "disclaimer present",
+     "passed": true,
+     "detail": ""
+    }
+   ],
+   "signal": "BUY",
+   "peers": 5,
+   "comps_ready_ms": 6592,
+   "total_ms": 36837,
+   "llm_calls": 5,
+   "cost_usd": 0.1064,
+   "within_budget": false,
+   "timings_ms": {
+    "validate": 704,
+    "news": 189,
+    "financials": 614,
+    "comps": 5887,
+    "comps_ready": 6592,
+    "comps_explain": 4141,
+    "risk": 28095,
+    "scorecard": 0,
+    "analyst": 6294,
+    "signal_ready": 35094,
+    "writer": 8032,
+    "total": 36837
+   }
+  }
+ ],
+ "totals": {
+  "passed": 8,
+  "cases": 8,
+  "llm_calls": 35,
+  "cost_usd": 0.7,
+  "over_budget": 3
+ }
+}

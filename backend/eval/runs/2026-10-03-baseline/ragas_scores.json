@@ -1,0 +1,1121 @@
+{
+ "judge_model": "claude-haiku-4-5",
+ "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "rows": [
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.5039,
+   "statements": 31,
+   "unsupported": [],
+   "error": null,
+   "response_words": 74,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3687,
+   "statements": 15,
+   "unsupported": [],
+   "error": null,
+   "response_words": 73,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.875,
+   "answer_relevancy": 0.342,
+   "statements": 16,
+   "unsupported": [
+    {
+     "statement": "The peer median EV/Revenue is pulled down by lower-multiple hardware peers such as HP and Dell.",
+     "reason": "While the context shows HP and Dell have lower EV/Revenue multiples (0.6 and 2.4 respectively) compared to the peer median of 3.6, the statement that the median is \"pulled down\" by these peers is an inference about the composition of the median calculation, not explicitly stated in the context."
+    },
+    {
+     "statement": "Apple Inc.'s net margin premium provides context for Apple Inc.'s valuation premium.",
+     "reason": "While the context shows both a net margin premium and a valuation premium, the causal relationship or explanatory connection between them is not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 108,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3703,
+   "statements": 29,
+   "unsupported": [],
+   "error": null,
+   "response_words": 108,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.75,
+   "answer_relevancy": 0.589,
+   "statements": 44,
+   "unsupported": [
+    {
+     "statement": "The final signal for Apple Inc. (AAPL) is HOLD (preliminary HOLD).",
+     "reason": "The context shows the preliminary_signal is \"HOLD\", but does not explicitly state this is the final signal. The word \"preliminary\" suggests this may not be final."
+    },
+    {
+     "statement": "Apple's superior net margin partly explains the premium valuation.",
+     "reason": "The context shows Apple has a net margin of 27.6% vs peer median 17.4% (+10.2 pts), and the scorecard gives profitability a +1 score. However, the context does not explicitly state that the margin explains the premium valuation."
+    },
+    {
+     "statement": "Apple's ROE reflects highly efficient use of shareholder equity.",
+     "reason": "A ROE of 148.8% is exceptionally high and directly indicates highly efficient use of shareholder equity, though the context does not explicitly make this interpretation."
+    },
+    {
+     "statement": "Apple's forward P/E represents a steep valuation premium.",
+     "reason": "A 59% premium is substantial, and the valuation factor receives a -1 score indicating expensive valuation. This supports the characterization as steep, though not explicitly stated."
+    },
+    {
+     "statement": "The mean analyst target implies limited upside for Apple.",
+     "reason": "The context states the analyst target implies -1.7% upside (within ±10% band), which is limited. The analyst_upside factor receives a 0 score, indicating neutral upside, not explicitly limited."
+    },
+    {
+     "statement": "Apple's severity-3 risks are longstanding.",
+     "reason": "The context does not provide information about whether these risks are longstanding or new. This cannot be directly inferred."
+    },
+    {
+     "statement": "Apple's severity-3 risks are largely reflected in the premium valuation.",
+     "reason": "The context does not explicitly state that the risks are reflected in the valuation. This is an inference not directly supported by the context."
+    },
+    {
+     "statement": "Apple's severity-3 risks are not new events.",
+     "reason": "The context does not provide information about whether these risks are new or longstanding. This cannot be directly inferred."
+    },
+    {
+     "statement": "Apple's news consists of routine fund holdings changes.",
+     "reason": "The news section shows multiple headlines about fund holdings changes (GTS Securities, Putnam, JNBA, Cullinan), which are routine. However, there is also a price target revision headline, so the news is not exclusively routine holdings changes."
+    },
+    {
+     "statement": "Apple's news consists of a modest target revision.",
+     "reason": "The news includes a headline about a 12-month price target cut to $335.75, implying 2% upside. This is a target revision, though the context does not explicitly characterize it as modest."
+    },
+    {
+     "statement": "No clear evidence justifies moving away from the preliminary HOLD signal for Apple.",
+     "reason": "The context provides the preliminary HOLD signal and supporting scorecard analysis, but does not explicitly state whether there is clear evidence to move away from it. This is an inference not directly stated."
+    }
+   ],
+   "error": null,
+   "response_words": 175,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 0.7273,
+   "answer_relevancy": null,
+   "statements": 44,
+   "unsupported": [
+    {
+     "statement": "Outsourcing partners are concentrated outside the U.S., concentrating production risk beyond Apple Inc.'s direct control.",
+     "reason": "The context states that many outsourcing partners are located outside the U.S., but does not explicitly state that they are concentrated or that this concentrates production risk. The inference about risk concentration is not directly stated."
+    },
+    {
+     "statement": "Media scrutiny raises Apple Inc.'s exposure to penalties affecting Apple Inc.'s business model.",
+     "reason": "The context states that intense media scrutiny exposes the Company to penalties, but does not specifically state that these penalties affect the business model. The connection to business model is not directly stated."
+    },
+    {
+     "statement": "Political scrutiny raises Apple Inc.'s exposure to penalties affecting Apple Inc.'s business model.",
+     "reason": "The context states that intense political scrutiny exposes the Company to penalties, but does not specifically state that these penalties affect the business model. The connection to business model is not directly stated."
+    },
+    {
+     "statement": "Regulatory scrutiny raises Apple Inc.'s exposure to penalties affecting Apple Inc.'s business model.",
+     "reason": "The context states that intense regulatory scrutiny exposes the Company to penalties, but does not specifically state that these penalties affect the business model. The connection to business model is not directly stated."
+    },
+    {
+     "statement": "Rapid technological change could pressure Apple Inc.'s market share.",
+     "reason": "The context mentions rapid technological change and competition affecting the Company's ability to compete, which can imply pressure on market share, but does not explicitly state this."
+    },
+    {
+     "statement": "Strong competition could pressure Apple Inc.'s market share.",
+     "reason": "The context mentions strong competition affecting the Company's ability to compete, which can imply pressure on market share, but does not explicitly state this."
+    },
+    {
+     "statement": "Rapid technological change could pressure Apple Inc.'s pricing.",
+     "reason": "The context does not explicitly mention that rapid technological change pressures pricing. While it mentions competition and technological change, the specific impact on pricing is not stated."
+    },
+    {
+     "statement": "Strong competition could pressure Apple Inc.'s pricing.",
+     "reason": "The context does not explicitly mention that strong competition pressures pricing. While it mentions competition, the specific impact on pricing is not stated."
+    },
+    {
+     "statement": "Volatility in Apple Inc.'s net sales directly affects Apple Inc.'s earnings.",
+     "reason": "The context states that net sales are subject to volatility, but does not explicitly state that this directly affects earnings. The causal connection is not directly stated in the context."
+    },
+    {
+     "statement": "Downward pressure on Apple Inc.'s net sales directly affects Apple Inc.'s earnings.",
+     "reason": "The context states that net sales are subject to downward pressure, but does not explicitly state that this directly affects earnings. The causal connection is not directly stated in the context."
+    },
+    {
+     "statement": "Volatility in Apple Inc.'s gross margins directly affects Apple Inc.'s earnings.",
+     "reason": "The context states that gross margins are subject to volatility, but does not explicitly state that this directly affects earnings. The causal connection is not directly stated in the context."
+    },
+    {
+     "statement": "Downward pressure on Apple Inc.'s gross margins directly affects Apple Inc.'s earnings.",
+     "reason": "The context states that gross margins are subject to downward pressure, but does not explicitly state that this directly affects earnings. The causal connection is not directly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 140,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "AAPL",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.2143,
+   "answer_relevancy": null,
+   "statements": 14,
+   "unsupported": [
+    {
+     "statement": "MSFT (Microsoft Corporation) competes with Apple Inc. in Surface devices.",
+     "reason": "While Microsoft is mentioned as a competitor in personal computers, the context does not specifically mention Surface devices as a competitive product."
+    },
+    {
+     "statement": "MSFT (Microsoft Corporation) competes with Apple Inc. in operating systems.",
+     "reason": "The context mentions Microsoft as a competitor but does not specifically state that they compete in operating systems."
+    },
+    {
+     "statement": "MSFT (Microsoft Corporation) competes with Apple Inc. in cloud services.",
+     "reason": "The context mentions that Apple provides cloud services, and Microsoft is listed as a competitor, but the context does not explicitly state they compete in cloud services."
+    },
+    {
+     "statement": "GOOGL (Alphabet Inc.) offers Android as a rival to Apple's ecosystem.",
+     "reason": "The context mentions Google as a competitor that 'continuously innovate and strategize to challenge Apple's market dominance,' but does not specifically mention Android."
+    },
+    {
+     "statement": "GOOGL (Alphabet Inc.) offers Pixel phones as a rival to Apple's ecosystem.",
+     "reason": "The context mentions Google as a competitor but does not specifically mention Pixel phones."
+    },
+    {
+     "statement": "GOOGL (Alphabet Inc.) operates an app store as a rival to Apple's ecosystem.",
+     "reason": "The context mentions Google as a competitor but does not specifically mention an app store as a competitive offering."
+    },
+    {
+     "statement": "GOOGL (Alphabet Inc.) provides consumer services as a rival to Apple's ecosystem.",
+     "reason": "The context mentions Google as a competitor that 'continuously innovate and strategize to challenge Apple's market dominance,' which implies they provide competing services, but does not explicitly detail consumer services."
+    },
+    {
+     "statement": "DELL (Dell Technologies Inc.) is a major personal computer manufacturer competing with Apple's Mac in consumer markets.",
+     "reason": "The context states that 'Apple faces competition from companies like Microsoft, Samsung, Lenovo, Dell, and HP in both personal computers,' but does not specifically distinguish between consumer and commercial markets."
+    },
+    {
+     "statement": "DELL (Dell Technologies Inc.) is a major personal computer manufacturer competing with Apple's Mac in commercial markets.",
+     "reason": "The context states that 'Apple faces competition from companies like Microsoft, Samsung, Lenovo, Dell, and HP in both personal computers,' but does not specifically distinguish between consumer and commercial markets."
+    },
+    {
+     "statement": "AMZN (Amazon.com, Inc.) offers consumer devices that compete with Apple offerings.",
+     "reason": "The context mentions Amazon as a competitor that 'continuously innovate and strategize to challenge Apple's market dominance,' but does not specifically mention consumer devices."
+    },
+    {
+     "statement": "AMZN (Amazon.com, Inc.) offers music services that compete with Apple offerings.",
+     "reason": "The context states that 'In music, Apple Music competes most directly with Spotify,' but does not mention Amazon as a competitor in music services."
+    }
+   ],
+   "error": null,
+   "response_words": 67,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.5625,
+   "statements": 13,
+   "unsupported": [],
+   "error": null,
+   "response_words": 82,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4107,
+   "statements": 17,
+   "unsupported": [],
+   "error": null,
+   "response_words": 88,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.375,
+   "statements": 24,
+   "unsupported": [],
+   "error": null,
+   "response_words": 125,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4795,
+   "statements": 20,
+   "unsupported": [],
+   "error": null,
+   "response_words": 109,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.9024,
+   "answer_relevancy": 0.6738,
+   "statements": 41,
+   "unsupported": [
+    {
+     "statement": "NVDA's P/B of 24.7 remains elevated.",
+     "reason": "While P/B of 24.7 is stated in the data, the context does not explicitly characterize it as \"elevated\" or provide a benchmark for comparison."
+    },
+    {
+     "statement": "The three severity-3 risks are ongoing, disclosed risks rather than new events.",
+     "reason": "The context does not explicitly state whether these are ongoing disclosed risks or new events. The risk explanations use language like \"have caused and could cause\" suggesting ongoing nature, but this is not explicitly confirmed."
+    },
+    {
+     "statement": "Recent news for NVIDIA Corporation is supportive.",
+     "reason": "The news section includes headlines about stock purchases and a $150 Billion share repurchase authorization increase, which are generally supportive, but the context does not explicitly characterize the news as \"supportive.\""
+    },
+    {
+     "statement": "The BUY signal for NVIDIA Corporation is kept.",
+     "reason": "The scorecard shows a preliminary_signal of \"BUY\", but the context does not explicitly state whether this signal is \"kept\" or newly established."
+    }
+   ],
+   "error": null,
+   "response_words": 190,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 0.7143,
+   "answer_relevancy": null,
+   "statements": 28,
+   "unsupported": [
+    {
+     "statement": "Export restrictions constrain NVIDIA Corporation's revenue opportunities.",
+     "reason": "While the context discusses export restrictions and their impact on serving customers, it does not explicitly state that they constrain revenue opportunities. This is an inference beyond what is directly stated."
+    },
+    {
+     "statement": "Supply-demand mismatches risk inventory charges at NVIDIA Corporation.",
+     "reason": "The context discusses supply-demand mismatches but does not specifically mention inventory charges as a consequence."
+    },
+    {
+     "statement": "Supply-demand mismatches risk missed revenue at NVIDIA Corporation.",
+     "reason": "The context discusses supply-demand mismatches but does not explicitly state that they risk missed revenue. This is an inference."
+    },
+    {
+     "statement": "Intensifying competition threatens NVIDIA Corporation's market share.",
+     "reason": "The context states 'Competition could adversely impact our market share and financial results.' The word 'intensifying' is not explicitly mentioned in the context."
+    },
+    {
+     "statement": "Fast-changing technology requires NVIDIA Corporation to continually adapt to sustain leadership.",
+     "reason": "The context mentions rapid technology changes but does not explicitly state that NVIDIA must continually adapt to sustain leadership. This is an inference."
+    },
+    {
+     "statement": "Changing customer requirements require NVIDIA Corporation to continually adapt to sustain leadership.",
+     "reason": "The context mentions changing customer requirements but does not explicitly state that NVIDIA must continually adapt to sustain leadership. This is an inference."
+    },
+    {
+     "statement": "Competing products require NVIDIA Corporation to continually adapt to sustain leadership.",
+     "reason": "The context mentions competitive products but does not explicitly state that NVIDIA must continually adapt to sustain leadership. This is an inference."
+    },
+    {
+     "statement": "Competing standards require NVIDIA Corporation to continually adapt to sustain leadership.",
+     "reason": "The context mentions industry standards but does not explicitly state that competing standards require NVIDIA to continually adapt to sustain leadership. This is an inference."
+    }
+   ],
+   "error": null,
+   "response_words": 127,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "NVDA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.3846,
+   "answer_relevancy": null,
+   "statements": 13,
+   "unsupported": [
+    {
+     "statement": "AMD (Advanced Micro Devices, Inc.) is a direct rival of NVIDIA Corporation in gaming graphics cards.",
+     "reason": "While the context mentions AMD as a competitor to NVIDIA, it does not specifically state that AMD competes with NVIDIA in gaming graphics cards. The context focuses on data center and AI markets."
+    },
+    {
+     "statement": "AVGO (Broadcom Inc.) competes with NVIDIA Corporation for hyperscaler spending.",
+     "reason": "While the context identifies Broadcom as a competitor and mentions it is 'emerging as a major Nvidia competitor,' it does not explicitly state that Broadcom competes specifically for hyperscaler spending."
+    },
+    {
+     "statement": "INTC (Intel Corporation) competes with NVIDIA Corporation in AI accelerators.",
+     "reason": "The context identifies Intel as a primary hardware competitor and mentions that competitors are 'intensifying efforts in AI and data center markets,' but does not explicitly confirm Intel competes in AI accelerators specifically."
+    },
+    {
+     "statement": "INTC (Intel Corporation) competes with NVIDIA Corporation in discrete GPUs.",
+     "reason": "The context does not mention Intel competing with NVIDIA in discrete GPUs. The focus is on data center and AI markets."
+    },
+    {
+     "statement": "MRVL (Marvell Technology, Inc.) manufactures custom AI silicon.",
+     "reason": "The search results mention Marvell as 'significant peers in networking and custom silicon,' but do not explicitly state that Marvell manufactures custom AI silicon specifically."
+    },
+    {
+     "statement": "MRVL (Marvell Technology, Inc.) manufactures data center networking solutions for hyperscale customers.",
+     "reason": "The search results identify Marvell as 'significant peers in networking and custom silicon,' indicating involvement in networking, but do not explicitly confirm manufacturing data center networking solutions for hyperscale customers."
+    },
+    {
+     "statement": "QCOM (QUALCOMM Incorporated) operates in automotive platforms.",
+     "reason": "The context does not mention QUALCOMM operating in automotive platforms. The company information mentions NVIDIA's automotive platforms, but not QUALCOMM's."
+    },
+    {
+     "statement": "QCOM (QUALCOMM Incorporated) manufactures emerging data center AI inference chips.",
+     "reason": "The search results identify Qualcomm as a peer in mobile/edge AI, but do not explicitly state that it manufactures data center AI inference chips."
+    }
+   ],
+   "error": null,
+   "response_words": 71,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 0.9545,
+   "answer_relevancy": 0.5797,
+   "statements": 22,
+   "unsupported": [
+    {
+     "statement": "JPMorgan Chase & Co. sits at the top of the large-bank group used as peers in the report.",
+     "reason": "While JPMorgan Chase & Co. has the largest market cap ($883.53B) among the peers listed (Bank of America at $375.86B, Citigroup at $215.55B, Wells Fargo at $243.28B, Goldman Sachs at $262.80B, and Morgan Stanley at $298.89B), the context does not explicitly state that it sits at the top of the peer group or characterize the peer group as a large-bank group."
+    }
+   ],
+   "error": null,
+   "response_words": 103,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3295,
+   "statements": 19,
+   "unsupported": [],
+   "error": null,
+   "response_words": 81,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9167,
+   "answer_relevancy": 0.4158,
+   "statements": 24,
+   "unsupported": [
+    {
+     "statement": "The lower dividend yield is consistent with JPMorgan Chase & Co.'s richer valuation.",
+     "reason": "While the context shows JPMorgan Chase & Co. has a lower dividend yield and richer valuation multiples, the context does not explicitly state a causal relationship or consistency between these two facts."
+    },
+    {
+     "statement": "JPMorgan Chase & Co.'s price-to-book premium is relative to the entire peer group rather than to every individual peer.",
+     "reason": "While the context shows JPMorgan Chase & Co. has a 65% premium to the peer median and some peers have equal or higher P/B ratios (Goldman Sachs at 2.5, Morgan Stanley at 2.8), the context does not explicitly state that the premium is relative to the entire peer group rather than individual peers."
+    }
+   ],
+   "error": null,
+   "response_words": 125,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.6,
+   "answer_relevancy": 0.239,
+   "statements": 30,
+   "unsupported": [
+    {
+     "statement": "Interest rate changes are rated 2 as a risk for JPMorgan Chase & Co.",
+     "reason": "The context lists \"Interest rate and credit spread changes\" as a single risk with severity 2, not interest rate changes alone."
+    },
+    {
+     "statement": "Credit spread changes are rated 2 as a risk for JPMorgan Chase & Co.",
+     "reason": "The context lists \"Interest rate and credit spread changes\" as a single risk with severity 2, not credit spread changes alone."
+    },
+    {
+     "statement": "Interest rate and credit spread changes could affect credit quality at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that interest rate and credit spread changes could affect credit quality."
+    },
+    {
+     "statement": "Counterparty and client financial deterioration could affect earnings at JPMorgan Chase & Co.",
+     "reason": "The context states that weakening financial condition of clients, counterparties and CCPs could cause losses, but does not explicitly mention earnings."
+    },
+    {
+     "statement": "Counterparty and client financial deterioration could affect liquidity at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that counterparty and client financial deterioration could affect liquidity."
+    },
+    {
+     "statement": "Counterparty and client financial deterioration could affect capital at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that counterparty and client financial deterioration could affect capital."
+    },
+    {
+     "statement": "Counterparty and client financial deterioration could affect credit quality at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that counterparty and client financial deterioration could affect credit quality."
+    },
+    {
+     "statement": "The sensitivity of consumer businesses to the economy could affect earnings at JPMorgan Chase & Co.",
+     "reason": "The context states that consumer businesses are particularly exposed to adverse economic conditions and governmental policies, potentially weakening credit quality and revenue, but does not explicitly mention earnings."
+    },
+    {
+     "statement": "The sensitivity of consumer businesses to the economy could affect liquidity at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that consumer business sensitivity to the economy could affect liquidity."
+    },
+    {
+     "statement": "The sensitivity of consumer businesses to the economy could affect capital at JPMorgan Chase & Co.",
+     "reason": "The context does not explicitly state that consumer business sensitivity to the economy could affect capital."
+    },
+    {
+     "statement": "Recent headlines mostly contain institutional holding disclosures.",
+     "reason": "The context shows 5 recent headlines: 2 about institutional holdings (Saudi Central Bank, RFG Advisory LLC, West Family Investments Inc.), 1 about price target, and 2 about stock movement. This is not mostly institutional holding disclosures."
+    },
+    {
+     "statement": "Recent headlines mostly contain a price-target summary.",
+     "reason": "The context shows 5 recent headlines: 2 about institutional holdings, 1 about price target, and 2 about stock movement. This is not mostly price-target summaries."
+    }
+   ],
+   "error": null,
+   "response_words": 106,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.913,
+   "answer_relevancy": 0.5485,
+   "statements": 46,
+   "unsupported": [
+    {
+     "statement": "The 65% price-to-book premium leaves less room for multiple expansion for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the 65% premium is confirmed, the inference about \"less room for multiple expansion\" is an analytical interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "The severity-3 risks are standard, long-standing disclosures for large banks.",
+     "reason": "The context does not provide information about whether these are standard or long-standing disclosures; this is an inference not supported by the provided data."
+    },
+    {
+     "statement": "The severity-3 risks are not new events for JPMorgan Chase & Co. (JPM).",
+     "reason": "The context does not indicate whether these risks are new or long-standing; this cannot be directly inferred from the provided data."
+    },
+    {
+     "statement": "No clear evidence justifies departing from the preliminary BUY signal for JPMorgan Chase & Co. (JPM).",
+     "reason": "While the context provides data supporting the BUY signal, the statement about \"no clear evidence justifying departure\" is an analytical conclusion not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 191,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 1.0,
+   "answer_relevancy": null,
+   "statements": 36,
+   "unsupported": [],
+   "error": null,
+   "response_words": 135,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "JPM",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.35,
+   "answer_relevancy": null,
+   "statements": 20,
+   "unsupported": [
+    {
+     "statement": "Bank of America Corporation (BAC) is the largest US diversified bank rival to JPMorgan Chase & Co.",
+     "reason": "The context states that Bank of America is JPMorgan Chase's biggest competitor in the US by total assets ($3.41 trillion), but JPMorgan Chase has $4.4 trillion in assets, making it larger. The statement claims BAC is the largest rival, which is not supported."
+    },
+    {
+     "statement": "Citigroup Inc. (C) is a global money-center bank.",
+     "reason": "The context lists Citigroup as a Banks - Diversified competitor with $186.35B market cap, but does not explicitly describe it as a global money-center bank."
+    },
+    {
+     "statement": "Citigroup Inc. (C) competes with JPMorgan Chase & Co. in credit cards.",
+     "reason": "JPMorgan Chase offers credit cards as part of its services. Citigroup is listed as a competitor in the Banks - Diversified subsector, but the context does not explicitly state that Citigroup competes in credit cards."
+    },
+    {
+     "statement": "Citigroup Inc. (C) competes with JPMorgan Chase & Co. in treasury services.",
+     "reason": "JPMorgan Chase offers cash management services. Citigroup is listed as a competitor, but the context does not explicitly state that Citigroup competes in treasury services."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) is a major US universal bank.",
+     "reason": "Wells Fargo is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) competes with JPMorgan Chase & Co. in deposits.",
+     "reason": "Wells Fargo is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) competes with JPMorgan Chase & Co. in mortgages.",
+     "reason": "Wells Fargo is not mentioned in the provided context."
+    },
+    {
+     "statement": "Wells Fargo & Company (WFC) competes with JPMorgan Chase & Co. in commercial lending.",
+     "reason": "Wells Fargo is not mentioned in the provided context."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) competes with JPMorgan Chase & Co. in markets trading.",
+     "reason": "Goldman Sachs is listed in the Capital Markets subsector. While trading is implied as part of capital markets operations, the context does not explicitly state Goldman Sachs competes with JPMorgan Chase in trading."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) competes with JPMorgan Chase & Co. in asset management.",
+     "reason": "JPMorgan Chase operates in Asset & Wealth Management with $4.8 trillion AUM. Goldman Sachs is listed as a Capital Markets competitor, but the context does not explicitly state it competes in asset management."
+    },
+    {
+     "statement": "The Goldman Sachs Group, Inc. (GS) competes with JPMorgan Chase & Co. in wealth management.",
+     "reason": "JPMorgan Chase operates in Asset & Wealth Management. Goldman Sachs is listed in Capital Markets subsector, but the context does not explicitly state it competes in wealth management."
+    },
+    {
+     "statement": "Morgan Stanley (MS) competes with JPMorgan Chase & Co. in trading.",
+     "reason": "Morgan Stanley is listed in the Capital Markets subsector. While trading is implied as part of capital markets operations, the context does not explicitly state Morgan Stanley competes with JPMorgan Chase in trading."
+    },
+    {
+     "statement": "Morgan Stanley (MS) competes with JPMorgan Chase & Co. in wealth management franchises.",
+     "reason": "JPMorgan Chase operates in Asset & Wealth Management with $4.8 trillion AUM. Morgan Stanley is listed in Capital Markets subsector, but the context does not explicitly state it competes in wealth management franchises."
+    }
+   ],
+   "error": null,
+   "response_words": 73,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3656,
+   "statements": 27,
+   "unsupported": [],
+   "error": null,
+   "response_words": 79,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4018,
+   "statements": 19,
+   "unsupported": [],
+   "error": null,
+   "response_words": 90,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.3994,
+   "statements": 23,
+   "unsupported": [],
+   "error": null,
+   "response_words": 118,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.8947,
+   "answer_relevancy": 0.3484,
+   "statements": 19,
+   "unsupported": [
+    {
+     "statement": "The most severe risks are tied to the core model.",
+     "reason": "The severity 3 risks include membership growth/loyalty erosion which is explicitly tied to the fee-driven model. However, the other severity 3 risks (geographic reliance and competition) are not explicitly stated as tied to the core model in the context."
+    },
+    {
+     "statement": "Premium multiples matter given the risk of missing market expectations.",
+     "reason": "While the context shows premium multiples (Forward P/E of 36.8 vs peer median of 18.9) and a risk of missing market expectations, it does not explicitly connect these two concepts or state that the premium multiples matter because of this risk."
+    }
+   ],
+   "error": null,
+   "response_words": 121,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.8824,
+   "answer_relevancy": 0.7428,
+   "statements": 34,
+   "unsupported": [
+    {
+     "statement": "The high Forward P/E leaves little room for error.",
+     "reason": "While the context shows a high Forward P/E of 36.8 (95% above peer median), the statement about leaving \"little room for error\" is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "The Severity-3 risks are longstanding filing disclosures rather than new events.",
+     "reason": "The context provides risk information but does not explicitly state whether these are longstanding filing disclosures or new events."
+    },
+    {
+     "statement": "The 11.2% Q4 sales rise is consistent with the growth score already captured.",
+     "reason": "While the context shows both the 11.2% Q4 sales rise and a growth score of +1, the statement about consistency is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "No clear evidence justifies moving away from HOLD.",
+     "reason": "While the context shows a HOLD signal and balanced scorecard (total 0), the statement about \"no clear evidence\" is an interpretation not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 182,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 0.96,
+   "answer_relevancy": null,
+   "statements": 25,
+   "unsupported": [
+    {
+     "statement": "Failure to sustain membership growth, loyalty, and brand recognition would undermine the fee-driven model central to Costco Wholesale Corporation's earnings.",
+     "reason": "While the context mentions failure to maintain membership growth, loyalty and brand recognition would adversely affect results, it does not explicitly mention a fee-driven model or explain the mechanism of how this affects earnings."
+    }
+   ],
+   "error": null,
+   "response_words": 131,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "COST",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.5,
+   "answer_relevancy": null,
+   "statements": 8,
+   "unsupported": [
+    {
+     "statement": "Walmart Inc. (WMT) is the largest discount grocery and general merchandise rival to Costco Wholesale Corporation.",
+     "reason": "While the context identifies Walmart as a competitor with a market cap of $500B+, it does not explicitly state that Walmart is the largest rival or compare it as the primary competitor to Costco."
+    },
+    {
+     "statement": "PriceSmart, Inc. (PSMT) is a membership warehouse club operator in Central America and the Caribbean.",
+     "reason": "The context lists PriceSmart as a competitor but does not provide information about its geographic operations or specific regions served."
+    },
+    {
+     "statement": "PriceSmart, Inc. (PSMT) operates using the same business model as Costco Wholesale Corporation.",
+     "reason": "The context does not provide information about PriceSmart's business model or whether it operates similarly to Costco."
+    },
+    {
+     "statement": "The Kroger Co. (KR) is the largest US grocer.",
+     "reason": "The context lists Kroger as a competitor but does not state that it is the largest US grocer."
+    }
+   ],
+   "error": null,
+   "response_words": 72,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "company_overview",
+   "faithfulness": 1.0,
+   "answer_relevancy": 0.4271,
+   "statements": 22,
+   "unsupported": [],
+   "error": null,
+   "response_words": 76,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "financial_commentary",
+   "faithfulness": 0.9231,
+   "answer_relevancy": 0.3844,
+   "statements": 13,
+   "unsupported": [
+    {
+     "statement": "The 25.5% revenue growth figure likely reflects a more recent quarterly comparison.",
+     "reason": "While the context provides a 25.5% revenue growth figure, it does not specify whether this is based on quarterly or annual comparison. The statement makes an inference about the time period that cannot be directly confirmed from the context."
+    }
+   ],
+   "error": null,
+   "response_words": 94,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "comps_commentary",
+   "faithfulness": 0.9167,
+   "answer_relevancy": 0.2897,
+   "statements": 24,
+   "unsupported": [
+    {
+     "statement": "Tesla's revenue growth provides some context for the premium valuation.",
+     "reason": "While Tesla's revenue growth of 25.5% is significantly higher than the peer median of 1.9%, the context does not explicitly state that this provides context for the premium valuation. This is an inference rather than a direct statement from the context."
+    },
+    {
+     "statement": "Tesla's multiples remain far apart from peer medians.",
+     "reason": "While the context shows large percentage differences in multiples, the word \"far\" is subjective and not explicitly stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 128,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "writer",
+   "section": "risk_commentary",
+   "faithfulness": 0.913,
+   "answer_relevancy": 0.2458,
+   "statements": 23,
+   "unsupported": [
+    {
+     "statement": "Tesla trades at premium multiples, making the dependence on EV demand and autonomy adoption a notable risk point.",
+     "reason": "While the context shows Tesla has high multiples (e.g., Forward P/E of 171.4 vs peer median of 8.8), it does not explicitly connect these premium multiples to making the EV demand risk a notable risk point."
+    },
+    {
+     "statement": "The European demand news relates to Tesla's demand risk.",
+     "reason": "While the news mentions European demand and Q3 deliveries, the context does not explicitly connect this news to Tesla's demand risk (dependence on EV demand and autonomy adoption)."
+    }
+   ],
+   "error": null,
+   "response_words": 111,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "analyst",
+   "section": "view",
+   "faithfulness": 0.725,
+   "answer_relevancy": 0.7042,
+   "statements": 40,
+   "unsupported": [
+    {
+     "statement": "The market prices Tesla far beyond traditional automakers.",
+     "reason": "While the multiples show Tesla trades at significantly higher valuations than peers, the context does not explicitly state this interpretation."
+    },
+    {
+     "statement": "Tesla's revenue growth far exceeds the peer median revenue growth.",
+     "reason": "While the data shows Tesla at 25.5% vs peer median 1.9%, the word \"far\" is subjective and not explicitly stated in the context."
+    },
+    {
+     "statement": "Tesla's net margin beats the peer median net margin.",
+     "reason": "While the data shows Tesla at 3.7% vs peer median -3.9%, the word \"beats\" is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "Tesla's Debt/Equity ratio is low.",
+     "reason": "While 0.18 is relatively low compared to peers (median 1.15), the term \"low\" is subjective and not explicitly stated in the context."
+    },
+    {
+     "statement": "The news suggests improving sales momentum for Tesla.",
+     "reason": "While news about European demand and Q3 deliveries is present, the interpretation of \"improving sales momentum\" is not explicitly stated."
+    },
+    {
+     "statement": "Tesla's Forward P/E leaves little room for disappointment.",
+     "reason": "While the high Forward P/E is stated, the interpretation that it \"leaves little room for disappointment\" is not explicitly stated in the context."
+    },
+    {
+     "statement": "Severity-3 risks are partly reflected in Tesla's valuation score.",
+     "reason": "While Severity-3 risks exist and valuation is negative, the context does not explicitly state that risks are reflected in the valuation score."
+    },
+    {
+     "statement": "Positive delivery news is mildly supportive for Tesla.",
+     "reason": "While positive delivery news exists, the characterization as \"mildly supportive\" is an interpretation not explicitly stated in the context."
+    },
+    {
+     "statement": "Positive delivery news is not decisive for Tesla's signal.",
+     "reason": "While positive delivery news exists, the context does not explicitly state whether it is or is not decisive for the signal."
+    },
+    {
+     "statement": "The evidence for Tesla is balanced.",
+     "reason": "While the scorecard total is 0 (suggesting balance), the explicit characterization of evidence as \"balanced\" is not stated in the context."
+    },
+    {
+     "statement": "The preliminary HOLD signal for Tesla is kept based on balanced evidence.",
+     "reason": "While the preliminary signal is HOLD and the scorecard total is 0, the explicit reasoning that the signal is \"kept based on balanced evidence\" is not stated in the context."
+    }
+   ],
+   "error": null,
+   "response_words": 177,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "risk",
+   "section": "risks",
+   "faithfulness": 0.2195,
+   "answer_relevancy": null,
+   "statements": 41,
+   "unsupported": [
+    {
+     "statement": "Weak adoption of electric vehicles would directly hurt Tesla, Inc.'s revenue.",
+     "reason": "While the context indicates that growth depends on demand for electric vehicles, it does not explicitly state that weak adoption would directly hurt revenue. The connection is implied but not directly stated."
+    },
+    {
+     "statement": "Weak adoption of electric vehicles would directly hurt Tesla, Inc.'s valuation.",
+     "reason": "The context does not explicitly state that weak adoption of electric vehicles would directly hurt valuation. This is an inference beyond what is directly stated."
+    },
+    {
+     "statement": "Weak adoption of autonomous driving would directly hurt Tesla, Inc.'s revenue.",
+     "reason": "While the context indicates that growth depends on adoption of autonomous driving, it does not explicitly state that weak adoption would directly hurt revenue."
+    },
+    {
+     "statement": "Weak adoption of autonomous driving would directly hurt Tesla, Inc.'s valuation.",
+     "reason": "The context does not explicitly state that weak adoption of autonomous driving would directly hurt valuation."
+    },
+    {
+     "statement": "A growing list of established competitors could pressure Tesla, Inc.'s market share.",
+     "reason": "The context states 'We face strong competition for our products and services from a growing list of established and new competitors.' However, it does not explicitly state that this would pressure market share, pricing, or margins."
+    },
+    {
+     "statement": "A growing list of established competitors could pressure Tesla, Inc.'s pricing.",
+     "reason": "The context mentions competition from established competitors but does not explicitly state that this would pressure pricing."
+    },
+    {
+     "statement": "A growing list of established competitors could pressure Tesla, Inc.'s margins across products and services.",
+     "reason": "The context mentions competition from established competitors but does not explicitly state that this would pressure margins."
+    },
+    {
+     "statement": "A growing list of new competitors could pressure Tesla, Inc.'s market share.",
+     "reason": "The context states 'We face strong competition for our products and services from a growing list of established and new competitors.' However, it does not explicitly state that this would pressure market share."
+    },
+    {
+     "statement": "A growing list of new competitors could pressure Tesla, Inc.'s pricing.",
+     "reason": "The context mentions competition from new competitors but does not explicitly state that this would pressure pricing."
+    },
+    {
+     "statement": "A growing list of new competitors could pressure Tesla, Inc.'s margins across products and services.",
+     "reason": "The context mentions competition from new competitors but does not explicitly state that this would pressure margins."
+    },
+    {
+     "statement": "Issues developing products could delay Tesla, Inc.'s revenue.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would delay revenue."
+    },
+    {
+     "statement": "Issues launching products could delay Tesla, Inc.'s revenue.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would delay revenue."
+    },
+    {
+     "statement": "Issues ramping products could delay Tesla, Inc.'s revenue.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would delay revenue."
+    },
+    {
+     "statement": "Failure to control manufacturing costs could delay Tesla, Inc.'s revenue.",
+     "reason": "The context mentions 'we may be unable to control our manufacturing costs' but does not explicitly state that this would delay revenue."
+    },
+    {
+     "statement": "Issues developing products could compress Tesla, Inc.'s margins.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would compress margins."
+    },
+    {
+     "statement": "Issues launching products could compress Tesla, Inc.'s margins.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would compress margins."
+    },
+    {
+     "statement": "Issues ramping products could compress Tesla, Inc.'s margins.",
+     "reason": "The context states 'We may experience issues or delays in developing, launching and ramping the production of our products' but does not explicitly state that this would compress margins."
+    },
+    {
+     "statement": "Failure to control manufacturing costs could compress Tesla, Inc.'s margins.",
+     "reason": "The context mentions 'we may be unable to control our manufacturing costs' but does not explicitly state that this would compress margins."
+    },
+    {
+     "statement": "Losing Elon Musk's services could disrupt Tesla, Inc.'s strategy.",
+     "reason": "The context states Tesla is highly dependent on Elon Musk's services, but does not explicitly state that losing his services would disrupt strategy."
+    },
+    {
+     "statement": "Losing Elon Musk's services could disrupt Tesla, Inc.'s execution.",
+     "reason": "The context states Tesla is highly dependent on Elon Musk's services, but does not explicitly state that losing his services would disrupt execution."
+    },
+    {
+     "statement": "Losing Elon Musk's services could disrupt investor confidence in Tesla, Inc.",
+     "reason": "The context states Tesla is highly dependent on Elon Musk's services, but does not explicitly state that losing his services would disrupt investor confidence."
+    },
+    {
+     "statement": "Losing Elon Musk's attention could disrupt Tesla, Inc.'s strategy.",
+     "reason": "The context does not mention Elon Musk's attention specifically, only his services."
+    },
+    {
+     "statement": "Losing Elon Musk's attention could disrupt Tesla, Inc.'s execution.",
+     "reason": "The context does not mention Elon Musk's attention specifically, only his services."
+    },
+    {
+     "statement": "Losing Elon Musk's attention could disrupt investor confidence in Tesla, Inc.",
+     "reason": "The context does not mention Elon Musk's attention specifically, only his services."
+    },
+    {
+     "statement": "Suppliers missing schedules could interrupt Tesla, Inc.'s production.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes that are acceptable to us' but does not explicitly state that this would interrupt production."
+    },
+    {
+     "statement": "Suppliers missing prices could raise Tesla, Inc.'s costs.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes' but does not explicitly state that missing prices would raise costs."
+    },
+    {
+     "statement": "Suppliers missing quality could interrupt Tesla, Inc.'s production.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes' but does not explicitly state that quality issues would interrupt production."
+    },
+    {
+     "statement": "Suppliers missing volumes could interrupt Tesla, Inc.'s production.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes' but does not explicitly state that missing volumes would interrupt production."
+    },
+    {
+     "statement": "Suppliers missing quality could raise Tesla, Inc.'s costs.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes' but does not explicitly state that quality issues would raise costs."
+    },
+    {
+     "statement": "Suppliers missing volumes could raise Tesla, Inc.'s costs.",
+     "reason": "The context states 'Our suppliers may fail to deliver components according to schedules, prices, quality and volumes' but does not explicitly state that missing volumes would raise costs."
+    },
+    {
+     "statement": "Governmental investigations could lead to restrictive sanctions affecting Tesla, Inc.'s reputation.",
+     "reason": "The context states that governmental investigations could lead to restrictive sanctions and adverse consequences, but does not explicitly mention reputation."
+    },
+    {
+     "statement": "Governmental proceedings could lead to restrictive sanctions affecting Tesla, Inc.'s reputation.",
+     "reason": "The context states that governmental proceedings could lead to restrictive sanctions and adverse consequences, but does not explicitly mention reputation."
+    }
+   ],
+   "error": null,
+   "response_words": 142,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  },
+  {
+   "ticker": "TSLA",
+   "agent": "comps",
+   "section": "peers",
+   "faithfulness": 0.25,
+   "answer_relevancy": null,
+   "statements": 16,
+   "unsupported": [
+    {
+     "statement": "GM (General Motors Company) sells electric vehicles (EVs) and internal combustion engine (ICE) vehicles.",
+     "reason": "The context lists GM as an indirect competitor to Tesla and mentions it as a legacy automaker, but does not explicitly state that GM sells both EVs and ICE vehicles."
+    },
+    {
+     "statement": "GM (General Motors Company) sells vehicles to the same consumers as Tesla, Inc.",
+     "reason": "While the context indicates GM is a competitor to Tesla, it does not explicitly state that they sell to the same consumers. The context notes Tesla competes with luxury brands and ICE cars, but does not confirm identical consumer overlap."
+    },
+    {
+     "statement": "F (Ford Motor Company) competes in the electric vehicle (EV) market.",
+     "reason": "The context lists Ford as an indirect competitor to Tesla and a legacy automaker, but does not explicitly state that Ford competes in the EV market."
+    },
+    {
+     "statement": "F (Ford Motor Company) competes in the truck market.",
+     "reason": "The context does not provide information about Ford competing in the truck market."
+    },
+    {
+     "statement": "F (Ford Motor Company) competes in the sport utility vehicle (SUV) market.",
+     "reason": "The context does not provide information about Ford competing in the SUV market."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) is a US pure-play electric vehicle (EV) maker.",
+     "reason": "The context lists Rivian Automotive, Inc. as a direct EV competitor to Tesla and identifies it as an Auto Manufacturers company, but does not explicitly confirm it is a pure-play EV maker or its US headquarters."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) manufactures sport utility vehicles (SUVs).",
+     "reason": "The context does not provide information about Rivian manufacturing SUVs."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) manufactures trucks.",
+     "reason": "The context does not provide information about Rivian manufacturing trucks."
+    },
+    {
+     "statement": "RIVN (Rivian Automotive, Inc.) operates using a direct-sales model.",
+     "reason": "The context does not provide information about Rivian's sales model."
+    },
+    {
+     "statement": "TM (Toyota Motor Corporation) competes in the passenger vehicle market.",
+     "reason": "The context lists Toyota as an indirect competitor to Tesla and a legacy automaker, but does not explicitly state it competes in the passenger vehicle market."
+    },
+    {
+     "statement": "TM (Toyota Motor Corporation) competes in the electrified powertrain market.",
+     "reason": "The context does not provide information about Toyota competing in the electrified powertrain market."
+    },
+    {
+     "statement": "LI (Li Auto Inc.) competes with Tesla, Inc. for China sport utility vehicle (SUV) buyers.",
+     "reason": "The context identifies Li Auto as a direct EV competitor to Tesla in China, but does not explicitly state it competes specifically for SUV buyers."
+    }
+   ],
+   "error": null,
+   "response_words": 68,
+   "judge_model": "claude-haiku-4-5",
+   "scored_at": "2026-10-02T21:20:22+00:00"
+  }
+ ],
+ "skipped": [],
+ "failed": {}
+}

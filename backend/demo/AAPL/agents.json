@@ -1,0 +1,155 @@
+{
+ "answers": [
+  {
+   "agent": "comps",
+   "input_tokens": 2302,
+   "model": "claude-opus-5-5",
+   "ms": 3954,
+   "output": {
+    "peers": [
+     {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT"
+     },
+     {
+      "name": "Alphabet Inc.",
+      "ticker": "GOOGL"
+     },
+     {
+      "name": "Dell Technologies Inc.",
+      "ticker": "DELL"
+     },
+     {
+      "name": "HP Inc.",
+      "ticker": "HPQ"
+     },
+     {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN"
+     }
+    ]
+   },
+   "output_tokens": 137,
+   "type": "PeerPicks"
+  },
+  {
+   "agent": "comps",
+   "input_tokens": 3438,
+   "model": "claude-opus-5-5",
+   "ms": 4020,
+   "output": {
+    "rationales": [
+     {
+      "rationale": "Sells PCs, tablets and accessories alongside software, overlapping Apple's Mac and iPad lines.",
+      "ticker": "MSFT"
+     },
+     {
+      "rationale": "Offers devices and app store Google Play, overlapping Apple's devices and App Store.",
+      "ticker": "GOOGL"
+     },
+     {
+      "rationale": "Client Solutions Group sells personal computers, competing with Apple's Mac line.",
+      "ticker": "DELL"
+     },
+     {
+      "rationale": "Sells consumer desktops, notebooks and displays, overlapping Apple's Mac personal computers.",
+      "ticker": "HPQ"
+     },
+     {
+      "rationale": "Manufactures consumer devices like Fire tablets and Fire TV, overlapping iPad and Apple TV.",
+      "ticker": "AMZN"
+     }
+    ]
+   },
+   "output_tokens": 265,
+   "type": "PeerRationales"
+  },
+  {
+   "agent": "risk",
+   "input_tokens": 2470,
+   "model": "claude-opus-5-5",
+   "ms": 9423,
+   "output": {
+    "risks": [
+     {
+      "category": "supply_chain",
+      "explanation": "The Company depends on outsourcing partners, many outside the U.S., for component and product manufacturing and logistical services.",
+      "severity": 3,
+      "source_heading": "The Company depends on component and product manufacturing and logistical services provided by outsourcing partners, many of which are located outside of the U.S.",
+      "title": "Heavy reliance on overseas outsourcing partners"
+     },
+     {
+      "category": "macro",
+      "explanation": "Political events, trade disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues and other interruptions can impact the business.",
+      "severity": 3,
+      "source_heading": "The Company’s business can be impacted by political events, trade and other international disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+      "title": "Geopolitical, trade and disruption exposure"
+     },
+     {
+      "category": "regulatory",
+      "explanation": "The technology industry, including the Company, faces intense media, political and regulatory scrutiny, exposing it to more regulation, investigations, legal actions and penalties.",
+      "severity": 3,
+      "source_heading": "The technology industry, including, in some instances, the Company, is subject to intense media, political and regulatory scrutiny, which exposes the Company to increasing regulation, government investigations, legal actions and penalties.",
+      "title": "Intense scrutiny brings regulation and penalties"
+     },
+     {
+      "category": "competition",
+      "explanation": "Markets for the Company's products and services are highly competitive and change rapidly technologically, and it may be unable to compete effectively.",
+      "severity": 3,
+      "source_heading": "Global markets for the Company’s products and services are highly competitive and subject to rapid technological change, and the Company may be unable to compete effectively in these markets.",
+      "title": "Highly competitive, fast-changing markets"
+     },
+     {
+      "category": "macro",
+      "explanation": "Operations and performance depend significantly on global and regional economic conditions, and adverse conditions can materially harm the business and stock price.",
+      "severity": 2,
+      "source_heading": "The Company’s operations and performance depend significantly on global and regional economic conditions and adverse economic conditions can materially adversely affect the Company’s business, results of operations, financial condition and stock price.",
+      "title": "Adverse global economic conditions"
+     },
+     {
+      "category": "legal",
+      "explanation": "Unfavorable outcomes of legal proceedings or government investigations could adversely impact the business, results of operations and financial condition.",
+      "severity": 2,
+      "source_heading": "The Company’s business, results of operations and financial condition could be adversely impacted by unfavorable results of legal proceedings or government investigations.",
+      "title": "Unfavorable legal proceedings or investigations"
+     }
+    ]
+   },
+   "output_tokens": 885,
+   "type": "RiskSelection"
+  },
+  {
+   "agent": "analyst",
+   "input_tokens": 3906,
+   "model": "claude-opus-5-5",
+   "ms": 7641,
+   "output": {
+    "change_reason": null,
+    "changed_from_preliminary": false,
+    "confidence": 0.65,
+    "counterpoints": [
+     "Forward P/E 34.8 is +59% above the peer median, leaving limited valuation cushion.",
+     "Mean analyst target 328.09 sits below price 333.69, implying -1.7% upside.",
+     "Multiple severity-3 risks: overseas outsourcing, geopolitical/trade exposure, regulation, and intense competition."
+    ],
+    "signal": "HOLD",
+    "signal_reasoning": "The scorecard totals +1: valuation scores -1 on a +59% Forward P/E premium, growth 0, profitability +1, analyst upside 0, and momentum +1. Severity-3 risks are longstanding filing disclosures rather than new events, and news is routine fund flows plus a target cut implying 2% upside. No material evidence justifies a move, so the preliminary HOLD is kept.",
+    "thesis": [
+     "Net margin of 27.6% exceeds the peer median of 17.4%, showing strong profitability.",
+     "Revenue rebounded to $416.16B in 2025 with net income of $112.01B, up from 2024.",
+     "Strong momentum: price 333.69 sits above its 200-day average of 288.80."
+    ],
+    "valuation_summary": "Apple trades at a premium to peers: Forward P/E 34.8 vs peer median 21.9 (+59%), EV/EBITDA 29.1 vs 20.1 (+45%), and P/E (ttm) 38.3 vs 20.2 (+89%). Superior net margin partly offsets this, but revenue growth trails the median by -16%."
+   },
+   "output_tokens": 534,
+   "type": "AnalystOutput"
+  }
+ ],
+ "writer": {
+  "input_tokens": 2826,
+  "markdown": "## Company overview\n\nApple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories worldwide. Its lineup includes the iPhone, Mac and iPad, along with wearables, home and accessories products such as AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products and HomePod. It also provides AppleCare support, cloud services and platforms such as the App Store.\n\nApple sits in the Consumer Electronics industry within the Technology sector. With a market capitalisation of $4.87T, it is among the largest listed companies. The shares trade at $333.69, within a 52-week range of 243.42 to 345.34.\n\n## Financial commentary\n\nRevenue slipped from $394.33B in fiscal 2022 to $383.29B in 2023, then recovered to $391.04B in 2024 and $416.16B in 2025. Net income followed a similar path, easing from $99.80B in 2022 to $97.00B in 2023 and $93.74B in 2024 before rising to $112.01B in 2025.\n\nProfitability is high, with a net margin of 27.6% and a return on equity of 148.8%. Revenue growth is 16.4%. The debt-to-equity ratio is 0.78 and the dividend yield is 0.3%.\n\n## Comps commentary\n\nOn the primary measure, forward P/E, Apple trades at 34.8, which is 59% above the peer median. Its trailing P/E of 38.3 is 89% above the median. On enterprise value, EV/EBITDA of 29.1 is 45% above the median and EV/Revenue of 10.5 is 186% above it.\n\nApple's net margin is 58% above the peer median, which partly supports a premium. Its revenue growth is 16% below the median, and its debt-to-equity ratio is 169% higher. The peer set mixes mega-cap software and internet names with hardware makers such as Dell and HP, so the median should be read with care. The analyst mean target of 328.09 sits below the current price.\n\n## Risk commentary\n\nFour risks carry the highest severity rating of 3. The first is heavy reliance on overseas outsourcing partners for components, manufacturing and logistics. The second is exposure to geopolitical tensions, trade disputes, natural disasters, public health issues and other disruptions. The third is intense media, political and regulatory scrutiny, which could bring more regulation, investigations and penalties. The fourth is highly competitive markets that change quickly in technology terms.\n\nTwo further risks are rated 2. These are adverse global and regional economic conditions, and unfavorable outcomes in legal proceedings or government investigations. The recent news headlines concern investor holdings and a price target change, and they do not bear directly on these risks.",
+  "model": "claude-sonnet-5-5",
+  "ms": 6264,
+  "output_tokens": 912
+ }
+}

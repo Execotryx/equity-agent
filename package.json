@@ -1,0 +1,19 @@
+{
+  "name": "equity-research-agent",
+  "private": true,
+  "description": "Autonomous Equity Research Agent: FastAPI backend (backend/) + Next.js frontend (frontend/), run locally",
+  "scripts": {
+    "dev:backend": "cross-env PYTHONUTF8=1 uv run --directory backend uvicorn equity_agent.api:create_app --factory --host 127.0.0.1 --port 8000 --reload --reload-dir src",
+    "dev:frontend": "npm --prefix frontend run dev -- --port 3000",
+    "dev:all": "concurrently --kill-others-on-fail --names api,web --prefix-colors blue,magenta \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "start:backend": "cross-env PYTHONUTF8=1 uv run --directory backend uvicorn equity_agent.api:create_app --factory --host 127.0.0.1 --port 8000",
+    "start:frontend": "npm --prefix frontend run start -- --port 3000",
+    "start:all": "npm --prefix frontend run build && concurrently --kill-others-on-fail --names api,web --prefix-colors blue,magenta \"npm:start:backend\" \"npm:start:frontend\"",
+    "gen:types": "uv run --directory backend python scripts/export_openapi.py .cache/openapi.json && openapi-typescript backend/.cache/openapi.json -o frontend/src/lib/types.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "openapi-typescript": "^7.13.0"
+  }
+}

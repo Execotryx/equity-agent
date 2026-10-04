@@ -1,0 +1,45 @@
+{
+ "query": "NVIDIA Corporation main competitors Semiconductors",
+ "results": [
+  {
+   "content": "Nvidia's competitive landscape is defined by its leadership in AI/accelerated computing, proprietary software ecosystem, and full-stack platform approach. Its primary hardware competitors are AMD and Intel, both of whom are intensifying efforts in AI and data center markets. Marvell and Broadcom are significant peers in networking and custom silicon, while Micron is a critical memory supplier. Qualcomm is a peer in mobile/edge AI, and both Microsoft and Amazon are major customers and ecosystem [...] | MU | Micron Technology Inc. | $470.47B | Semiconductors | DRAM (HBM, DDR, GDDR), NAND, SSDs, embedded memory, automotive/industrial memory |\n| QCOM | Qualcomm Inc. | $154.48B | Semiconductors | Mobile/auto/IoT SoCs, Adreno GPUs, AI engines, RF, software, licensing |\n| MSFT | Microsoft Corp | $2.89T | Software - Infrastructure | Cloud (Azure), AI (Copilot, OpenAI), productivity, devices, gaming, developer tools, security | [...] | INTC | Intel Corp | $230.38B | Semiconductors | Data center CPUs/GPUs, AI accelerators, networking, FPGAs, foundry, client CPUs/GPUs, software |\n| MRVL | Marvell Technology Inc. | $68.27B | Semiconductors | Custom ASICs, Ethernet, DPUs, storage controllers, automotive, advanced packaging |\n| AVGO | Broadcom Inc. | $1.54T | Semiconductors | Custom silicon, Ethernet, storage, wireless, broadband, infrastructure software |",
+   "id": "924a3f-00",
+   "raw_content": null,
+   "score": 0.82994765,
+   "title": "Nvidia's Top Competitors & Peers | Hudson Labs",
+   "url": "https://www.hudson-labs.com/research/nvidias-top-competitors-peers"
+  },
+  {
+   "content": "Competitors are not only trying to match Nvidia’s latest chip. They are also trying to convince developers to leave this familiar ecosystem. That is the real challenge.\n\nWith that in mind, here is how the main groups of Nvidia competitors line up.\n\n## Traditional Chipmakers: AMD And Intel\n\nAmong traditional chipmakers, AMD and Intel are the best known Nvidia competitors, although they play very different roles. [...] Among traditional chip vendors, AMD and Intel are the main Nvidia competitors for this sector. - Ultima Markets\n\n### AMD: the main direct competitor\n\nAMD competes with Nvidia on two fronts:\n\nIn gaming, Radeon cards offer an alternative to Nvidia GeForce, especially in the mid range where value for money matters. At the very high end, Nvidia still tends to lead, but AMD has loyal followers and competitive products. [...] Overall, Intel remains relevant but is currently a secondary competitor compared with AMD.\n\n## Cloud Service Providers With In House Chips\n\nThe second group of Nvidia competitors consists of cloud giants that design custom chips mainly for their own data centers.\n\nA simple way to think about it:\n\nAmong Cloud Service Providers,  Google, AWS, Tesla and Microsoft are the main Nvidia competitors. - Ultima Markets\n\nThe main players here are:\n\nThese chips compete with Nvidia in two main ways:",
+   "id": "10a385-01",
+   "raw_content": null,
+   "score": 0.8124067,
+   "title": "Nvidia Competitors You Should Watch Out For | Ultima Markets",
+   "url": "https://www.ultimamarkets.com/academy/nvidia-competitors-you-should-watch-out-for"
+  },
+  {
+   "content": "Here's a closer look at Nvidia's top five competitors in the AI chip market.\n\nThe company is experiencing robust demand for its AI semiconductor solutions. In its fiscal 2026 first quarter, Broadcom's AI revenue rocketed 106% year over year to $8.4 billion, driven by strong demand for its custom AI accelerators and AI networking products. Broadcom expects its growth to continue accelerating, as it sees its AI semiconductor revenue rising to $10.7 billion in its fiscal second quarter. [...] Accelerating demand for Broadcom's AI semiconductor solutions shows that it's emerging as a major Nvidia competitor. The company will likely continue to take share from Nvidia as more customers opt for its custom AI semiconductor solutions.\n\n### Meta Platforms [...] Nvidia (NVDA +0.22%) is a pioneer in the semiconductor industry, though there are several Nvidia competitors. Nvidia invented GPUs (Graphics Processing Units), which have become the brain of computing. The company's leadership in developing innovative chips has helped launch the AI era, with Nvidia the dominate player in the space.\n\nTicker Information Table",
+   "id": "532fdb-02",
+   "raw_content": null,
+   "score": 0.8025714,
+   "title": "Nvidia Competitors: How NVDA Stacks Up Against AI Chipmakers | The Motley Fool",
+   "url": "https://www.fool.com/investing/how-to-invest/stocks/nvidia-competitors"
+  },
+  {
+   "content": "∙ Paid\n\nIn the competitive landscape of the semiconductor industry, conducting thorough company analysis is essential for investors and industry experts. This article will provide an in-depth industry comparison, focusing on NVIDIA, TSMC, and ASML alongside their major competitors. By examining key financial metrics, market positions, and growth potential, we aim to deliver valuable insights for investors and offer a deeper understanding of each company's performance within the industry. [...] The semiconductor foundry market is undergoing significant changes as leading players TSMC, Samsung, and Intel ramp up their competition to dominate advanced manufacturing processes. Each company brings unique strengths and strategies, shaping the industry's future over the next five years.\n\n### Current Market Position and Technological Leadership",
+   "id": "202585-03",
+   "raw_content": null,
+   "score": 0.7872945,
+   "title": "Nvidia, TSMC and ASML – Three Companies That Won’t Have Significant Competition For the Next 5 Years",
+   "url": "https://drrobertcastellano.substack.com/p/nvidia-tsmc-and-asml-three-companies"
+  },
+  {
+   "content": "## Foundry partners and TSMC’s role\n\nTSMC is a pure-play foundry. It manufactures semiconductors based on customer designs rather than creating its own chips, distinguishing it from companies like NVIDIA and AMD. Samsung Foundry and Intel Foundry Services compete in the same market. [...] ### 14. Rebellions\n\nRebellions is a Korea-based startup focused on LLM inference. It merged with another Korean semiconductor design firm, SAPEON.89 Total funding is about $850 million.90 The IPO has not happened. Rebellions said on July 8, 2026 that it targets the first or second quarter of 2027, leaning toward a KOSPI main-board listing.91\n\nREBEL-Quad is the second-generation accelerator, four chiplets built on Samsung’s 4nm process, and Rebel100 is its productized commercial name. [...] is an announced Qualcomm data center CPU customer, and buys from AMD and Broadcom.",
+   "id": "205582-04",
+   "raw_content": null,
+   "score": 0.7511561,
+   "title": "Top 30+ AI Chip Makers: NVIDIA & Its Competitors",
+   "url": "https://aimultiple.com/ai-chip-makers"
+  }
+ ]
+}

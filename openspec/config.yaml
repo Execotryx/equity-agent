@@ -1,0 +1,46 @@
+schema: spec-driven
+
+# Project context, shown to the AI when creating artifacts and applying changes.
+context: |
+  Product: Autonomous Equity Research Agent (cohort capstone, solo developer). The user enters a stock
+  ticker and receives a research report: company overview, key financials, a peer comps table with
+  valuation multiples (>= 3 peers), 10-K risk factors, and a BUY / HOLD / SELL signal with reasoning.
+  The full rationale, measured benchmarks and architecture are in IMPLEMENTATION_PLAN.md at the repo root.
+
+  Runtime: everything runs locally on a Windows 11 laptop (4-core i7, no GPU); no VPS, no Docker.
+  Only LLM inference (Anthropic API) and web search (Tavily) are remote.
+
+  Tech stack:
+  - backend/: Python 3.13 managed by uv; FastAPI + uvicorn; Server-Sent Events for progress streaming.
+  - LLM: official `anthropic` Python SDK (1.x, built on httpx2), AsyncAnthropic. No OpenAI Agents SDK,
+    no LiteLLM, no OpenAI-compatible shims. Agents are plain Python classes orchestrated in code.
+    Models: claude-opus-5-5 for Comps, Risk and Analyst agents; claude-sonnet-5-5 for the streamed Writer.
+    Opus 5.5 / Sonnet 5.5 rules: never send temperature/top_p; never send thinking {"type":"disabled"};
+    always set output_config.effort explicitly (default "low"); check stop_reason before reading output.
+  - Data: yfinance + curl-cffi (market data), edgartools (SEC 10-K / 20-F), tavily-python (web search).
+  - Cache: SQLite file via stdlib sqlite3.
+  - frontend/: Next.js 16 App Router + TypeScript + Tailwind CSS v4, Recharts, react-markdown.
+  - Tooling: pytest (offline by default, live tests opt-in via RUN_LIVE_TESTS=1), pyright standard mode.
+
+  Conventions:
+  - LLMs never compute numbers; all financial math is deterministic Python.
+  - Secrets (ANTHROPIC_API_KEY, TAVILY_API_KEY) come from backend/.env and are never logged,
+    returned by the API, or sent to the frontend.
+  - Keep the project path short (Windows MAX_PATH breaks curl-cffi in deep venvs); set PYTHONUTF8=1.
+  - Every report states "Educational project - not investment advice."
+
+rules:
+  specs:
+    - Describe observable behaviour only; keep library, class and function names out of specs.
+    - Every requirement uses SHALL/MUST and has at least one WHEN/THEN scenario that can become a test.
+  design:
+    - Reference IMPLEMENTATION_PLAN.md sections instead of repeating measured benchmark data.
+  tasks:
+    - Each task names its verification (a pytest test, a command, or an observable result).
+    - Offline tests must not need network access or API keys.
+
+operations:
+  apply:
+    guidance:
+      - Implement one change at a time in the numbered order of the change proposals.
+      - Run `uv run pytest` and `uv run pyright` in backend/ before marking a backend task group done.
