@@ -12,7 +12,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import time
-from collections.abc import AsyncIterator, Awaitable, Callable, Mapping, Sequence
+from collections.abc import AsyncIterator, Awaitable, Callable, Coroutine, Mapping, Sequence
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from typing import Any, Literal, TypeVar
@@ -68,6 +68,23 @@ logger = logging.getLogger(__name__)
 
 T = TypeVar("T")
 Out = TypeVar("Out", bound=BaseModel)
+
+
+async def _cancel_tasks(tasks: Sequence[asyncio.Task[Any]]) -> None:
+    """Cancel and drain owned tasks before their services are closed."""
+    for task in tasks:
+        if not task.done() and not task.cancelling():
+            task.cancel()
+    await asyncio.gather(*tasks, return_exceptions=True)
+
+
+async def _parallel(*work: Coroutine[Any, Any, Any]) -> list[Any]:
+    """Run sibling branches together, draining all of them on failure or cancellation."""
+    tasks = [asyncio.create_task(call) for call in work]
+    try:
+        return await asyncio.gather(*tasks)
+    finally:
+        await _cancel_tasks(tasks)
 
 
 def _default_models() -> dict[AgentName, AgentConfig]:
@@ -147,7 +164,13 @@ class _Run:
     async def fetch(self, call: Callable[..., Fetched[T]], *args: Any, **kwargs: Any) -> Fetched[T]:
         """Run a blocking data-layer call in a thread, recording its cache hits. The caller reads `.value`, and
         `.hit` for its own stage's cached flag (branches run concurrently, so the shared hit list can't tell)."""
-        fetched = await asyncio.to_thread(call, *args, **kwargs)
+        # Cancelling to_thread cannot stop its thread. Drain the call before shutdown closes the shared cache.
+        pending = asyncio.create_task(asyncio.to_thread(call, *args, **kwargs))
+        try:
+            fetched = await asyncio.shield(pending)
+        except asyncio.CancelledError:
+            await asyncio.gather(pending, return_exceptions=True)
+            raise
         self.use(fetched)
         return fetched
 
@@ -211,9 +234,15 @@ class _Run:
 
         async def work() -> tuple[CompsTable, bool]:
             nonlocal search_results, fresh
-            choice = self.use(self.s.data.cache.lookup(choice_key, PeerChoice, refresh=self.refresh))
+            cached_choice = self.s.data.cache.lookup(choice_key, PeerChoice, refresh=self.refresh)
+            choice = cached_choice.value
             if choice is not None:
-                return await self.comps_table(quote, choice.tickers, **choice.table_kwargs()), True
+                table = await self.comps_table(quote, choice.tickers, **choice.table_kwargs())
+                if not table.insufficient:
+                    self.use(cached_choice)
+                    return table, True
+                self.s.data.cache.delete(choice_key)
+                self.warnings.append("cached peers are no longer eligible; selecting new peers")
             found = (await self.fetch(self.s.data.search.competitors, snap.name, snap.industry, refresh=self.refresh)).value
             if isinstance(found, Unavailable):
                 self.warnings.append(f"competitor search unavailable: {found.reason}")
@@ -286,7 +315,7 @@ class _Run:
         snap = quote.snapshot
 
         async def work() -> tuple[RiskReport | Unavailable, bool]:
-            fetched = await self.fetch(self.s.data.sec.risk_headings, snap.ticker)
+            fetched = await self.fetch(self.s.data.sec.risk_headings, snap.ticker, refresh=self.refresh)
             headings = fetched.value
             if isinstance(headings, Unavailable):
                 return headings, fetched.hit
@@ -296,6 +325,7 @@ class _Run:
                 RiskSelection,
                 FOREVER,
                 lambda: self.agent(self.s.risk_agent, agent_input),
+                accept_cached=lambda selection: not self.s.risk_agent.validate(selection, agent_input),
             )
             report = RiskReport(
                 filing=headings.filing,
@@ -379,10 +409,9 @@ class Pipeline:
                     break
                 yield event
         finally:
-            if not task.done():
-                await task  # let the run finish (and cache its report) even if the consumer stops early
-            elif task.exception() is not None:
-                raise task.exception()  # type: ignore[misc]
+            # API subscribers follow SharedRun, whose independent pump survives their disconnects.
+            # Closing or cancelling this iterator means its owner is stopping the pipeline itself.
+            await _cancel_tasks([task])
 
     async def _execute(self, state: _Run, raw_ticker: str) -> None:
         try:
@@ -391,6 +420,8 @@ class Pipeline:
             logger.exception("pipeline failed")
             state.fail("pipeline", f"unexpected error ({type(error).__name__})", terminal=True)
         finally:
+            if state.comps_explain is not None:
+                await _cancel_tasks([state.comps_explain])
             state.queue.put_nowait(None)
 
     async def _steps(self, state: _Run, raw_ticker: str) -> None:
@@ -399,23 +430,25 @@ class Pipeline:
         state.emit("stage", stage="validate", status="started")
         try:
             ticker = normalize_ticker(raw_ticker)
-            fetched = await asyncio.to_thread(s.data.market.quote, ticker, refresh=state.refresh)
+            if not state.refresh:
+                cached = cached_report(s.data.cache, ticker)
+                if cached is not None:
+                    state.timings["validate"] = state.elapsed_ms()
+                    state.emit("stage", stage="validate", status="done", ms=state.timings["validate"], cached=True)
+                    state.emit("report", **cached.model_dump(mode="json"), from_cache=True)
+                    return
+            fetched = await state.fetch(s.data.market.quote, ticker, refresh=state.refresh)
         except DataError as error:
             state.fail("validate", error.reason, terminal=True)
             return
-        quote = state.use(fetched)
+        quote = fetched.value
         state.timings["validate"] = state.elapsed_ms()
         state.emit("stage", stage="validate", status="done", ms=state.timings["validate"], cached=fetched.hit)
 
-        if not state.refresh:
-            cached = cached_report(s.data.cache, ticker)
-            if cached is not None:
-                state.emit("report", **cached.model_dump(mode="json"), from_cache=True)
-                return
         state.partial("snapshot", quote.snapshot)
 
         # ---- 1. concurrent branches -------------------------------------------------------------------------
-        profile, (comps, search), risks, (news, news_error) = await asyncio.gather(
+        profile, (comps, search), risks, (news, news_error) = await _parallel(
             state.financials(quote), state.comps(quote), state.risk(quote), state.news(quote)
         )
 
@@ -427,7 +460,7 @@ class Pipeline:
 
         # ---- 3. analyst and writer together, then the peers' rationales -------------------------------------
         risk_items = risks.risks if isinstance(risks, RiskReport) else None
-        analyst, (narrative, markdown) = await asyncio.gather(
+        analyst, (narrative, markdown) = await _parallel(
             state.analyst(AnalystInput(profile, table, risk_items, scorecard, news)),
             state.writer(WriterInput(profile, table, risk_items, news)),
         )
@@ -477,13 +510,17 @@ async def warm_ticker(services: Services, raw_ticker: str) -> WarmResult:
     state = _Run(services, refresh=False)
     try:
         ticker = normalize_ticker(raw_ticker)
-        quote = state.use(await asyncio.to_thread(services.data.market.quote, ticker))
+        quote = (await state.fetch(services.data.market.quote, ticker)).value
     except DataError as error:
         return WarmResult(raw_ticker, "failed", state.elapsed_ms(), [error.reason])
     services.data.cache.delete(_report_key(ticker))
-    await asyncio.gather(state.financials(quote), state.comps(quote), state.risk(quote), state.news(quote))
-    if state.comps_explain is not None:
-        await state.comps_explain  # the peer choice is cached only once explained
+    try:
+        await _parallel(state.financials(quote), state.comps(quote), state.risk(quote), state.news(quote))
+        if state.comps_explain is not None:
+            await state.comps_explain  # the peer choice is cached only once explained
+    finally:
+        if state.comps_explain is not None:
+            await _cancel_tasks([state.comps_explain])
     problems = [f"{e.data['stage']}: {e.data['message']}" for e in _drain(state.queue) if e.event == "error"]
     return WarmResult(ticker, "degraded" if problems else "ok", state.elapsed_ms(), problems + state.warnings)
 

@@ -85,9 +85,17 @@ function sectionError(state: ReportState, stage: string, message: string): Repor
 
 function fromReport(state: ReportState, report: ResearchReport, fromCache: boolean): ReportState {
   const stages = { ...state.stages };
+  const failed: Partial<Record<StageName, boolean>> = {
+    comps: isStageError(report.comps),
+    risk: isStageError(report.risks),
+    analyst: isStageError(report.analyst),
+    writer: isStageError(report.narrative),
+    news: report.news_error != null,
+  };
   for (const name of STAGE_NAMES) {
     const current = stages[name];
-    if (fromCache) stages[name] = { status: "done", cached: true };
+    if (failed[name]) stages[name] = { ...current, status: "failed", cached: fromCache || current.cached };
+    else if (fromCache) stages[name] = { status: "done", cached: true };
     else if (current.status === "pending" || current.status === "running") stages[name] = { status: "skipped" };
   }
   return {

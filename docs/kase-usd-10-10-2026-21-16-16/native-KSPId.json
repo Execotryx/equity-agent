@@ -1,0 +1,24 @@
+{
+  "company": "Kaspi.kz",
+  "kase_ticker": "KSPId",
+  "input_ticker": "KSPID",
+  "currency": "USD",
+  "name_fragment": "kaspi",
+  "scope": "native",
+  "kind": "standard",
+  "source_url": null,
+  "instrument_type": "depositary receipt",
+  "id": "native-KSPId",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "quote available",
+      "passed": false,
+      "detail": "ticker not found"
+    }
+  ],
+  "elapsed_seconds": 2.096,
+  "exchange": "",
+  "quote": null
+}

@@ -1,0 +1,22 @@
+{
+  "company": "KEGOC",
+  "kase_ticker": "KEGC",
+  "input_ticker": "KEGC",
+  "currency": "KZT",
+  "name_fragment": "kegoc",
+  "scope": "native",
+  "kind": "standard",
+  "id": "native-KEGC",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "quote available",
+      "passed": false,
+      "detail": "ticker not found"
+    }
+  ],
+  "elapsed_seconds": 1.924,
+  "exchange": "",
+  "quote": null
+}

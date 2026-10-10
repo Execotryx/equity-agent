@@ -1,0 +1,69 @@
+{
+  "company": "Kaspi.kz",
+  "kase_ticker": "KSPI",
+  "input_ticker": "KSPI",
+  "currency": "KZT",
+  "name_fragment": "kaspi",
+  "scope": "native",
+  "kind": "standard",
+  "id": "native-KSPI",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "KSPI"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "Joint Stock Company Kaspi.kz"
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "92.99"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": false,
+      "detail": "expected KZT; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": false,
+      "detail": "NasdaqGS"
+    }
+  ],
+  "elapsed_seconds": 1.369,
+  "exchange": "NasdaqGS",
+  "quote": {
+    "snapshot": {
+      "ticker": "KSPI",
+      "name": "Joint Stock Company Kaspi.kz",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "currency": "USD",
+      "price": 92.99,
+      "market_cap": 17670635520.0,
+      "week52_low": 68.59,
+      "week52_high": 109.94,
+      "business_summary": "Joint Stock Company Kaspi.kz, together with its subsidiaries, provides payments, marketplace, and fintech solutions for consumers and merchants in Kazakhstan, Azerbaijan, and Ukraine. The company operates through three segments: Payments, Marketplace, and Fintech. The Payments segment offers a platform that facilities transactions between and among merchants and consumers. This segment provides ways for consumers to pay for shopping transactions and regular household bills, as well as make peer to peer payments; and enables merchants to accept payment online and in store, issue and settle\u2026"
+    },
+    "multiples": {
+      "pe_ttm": 8.523373,
+      "pe_fwd": 0.013668085,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": 0.007808716,
+      "net_margin": 0.24152,
+      "roe": 0.44781,
+      "revenue_growth": 0.136,
+      "debt_to_equity": 0.22171,
+      "dividend_yield": 0.0617
+    },
+    "analyst_target_mean": 106.442535,
+    "analyst_recommendation": "buy"
+  }
+}

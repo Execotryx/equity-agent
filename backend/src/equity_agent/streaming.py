@@ -73,10 +73,13 @@ class RunRegistry:
         self.services = services
         self._runs: dict[str, SharedRun] = {}
         self._tasks: set[asyncio.Task[None]] = set()
+        self._closed = False
         self.started = 0  # pipeline runs started, for tests and logs
 
     def subscribe(self, raw_ticker: str, *, refresh: bool = False) -> AsyncIterator[PipelineEvent]:
         """Attach to the run in progress for this ticker, or start one. `refresh` only applies to a new run."""
+        if self._closed:
+            raise RuntimeError("research run registry is closed")
         key = try_normalize_ticker(raw_ticker) or raw_ticker  # invalid input still runs, to fail validation
         run = self._runs.get(key)
         if run is None:
@@ -99,10 +102,14 @@ class RunRegistry:
             await asyncio.sleep(0)  # finished tasks leave the set in a done-callback; let it run
 
     async def close(self) -> None:
-        """Cancel runs still in progress (shutdown)."""
-        for task in list(self._tasks):
-            task.cancel()
-        await asyncio.gather(*self._tasks, return_exceptions=True)
+        """Stop accepting runs, cancel active work once, and drain it even when multiple callers close."""
+        if not self._closed:
+            self._closed = True
+            for task in list(self._tasks):
+                if not task.cancelling():
+                    task.cancel()
+        # Cancelling one close caller must not issue a second cancellation to a run draining provider threads.
+        await asyncio.shield(asyncio.gather(*self._tasks, return_exceptions=True))
 
 
 async def sse_stream(events: AsyncIterator[PipelineEvent]) -> AsyncIterator[str]:

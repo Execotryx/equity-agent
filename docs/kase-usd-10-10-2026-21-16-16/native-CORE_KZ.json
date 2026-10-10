@@ -1,0 +1,24 @@
+{
+  "company": "Solidcore Resources",
+  "kase_ticker": "CORE_KZ",
+  "input_ticker": "CORE_KZ",
+  "currency": "USD",
+  "name_fragment": "solidcore",
+  "scope": "native",
+  "kind": "standard",
+  "source_url": null,
+  "instrument_type": "ordinary share",
+  "id": "native-CORE_KZ",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "ticker accepted by application",
+      "passed": false,
+      "detail": "invalid ticker"
+    }
+  ],
+  "elapsed_seconds": 0.0,
+  "exchange": "",
+  "quote": null
+}

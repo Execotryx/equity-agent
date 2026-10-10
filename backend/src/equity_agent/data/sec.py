@@ -15,6 +15,7 @@ from datetime import date
 from typing import Protocol
 
 from edgar import Company, Filing, find, set_identity
+from edgar.exceptions import CompanyNotFoundError
 from edgar.paths import set_cache_directory
 
 from equity_agent.cache import FILING_TTL, FOREVER, Cache
@@ -97,7 +98,7 @@ class EdgarSource:
     def latest_annual(self, ticker: str) -> FilingRef | None:
         try:
             company = Company(ticker)
-        except Exception:  # noqa: BLE001 - edgartools raises various errors for unknown tickers
+        except CompanyNotFoundError:
             return None
         filing = company.get_filings(form=ANNUAL_FORMS, amendments=False, trigger_full_load=False).latest()
         return to_ref(ticker, filing) if isinstance(filing, Filing) else None

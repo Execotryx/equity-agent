@@ -1,0 +1,1614 @@
+{
+  "company": "JPMorgan Chase",
+  "kase_ticker": "JPM_KZ",
+  "input_ticker": "JPM",
+  "currency": "USD",
+  "name_fragment": "jpmorgan",
+  "scope": "us_listing",
+  "kind": "bank",
+  "id": "us_listing-JPM_KZ",
+  "source": "https://kase.kz/en/markets/kase-global",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "JPM"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "JPMorgan Chase & Co."
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "332.99"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "NYSE"
+    },
+    {
+      "criterion": "price and key financials present",
+      "passed": true,
+      "detail": "price 332.99, 4 years of revenue, 8 multiples"
+    },
+    {
+      "criterion": "at least 3 peers with 2+ valuation multiples",
+      "passed": true,
+      "detail": "5 of 5 peers"
+    },
+    {
+      "criterion": "signal with reasoning",
+      "passed": true,
+      "detail": "BUY"
+    },
+    {
+      "criterion": "risk section present or unavailable with a reason",
+      "passed": true,
+      "detail": "SEC filing unavailable (TypeError)"
+    },
+    {
+      "criterion": "disclaimer present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "criterion": "financials metric set",
+      "passed": true,
+      "detail": "financials"
+    },
+    {
+      "criterion": "no EV/EBITDA",
+      "passed": true,
+      "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+    },
+    {
+      "criterion": "writer produced a narrative",
+      "passed": true,
+      "detail": "narrative present"
+    }
+  ],
+  "elapsed_seconds": 17.775,
+  "exchange": "NYSE",
+  "quote": {
+    "snapshot": {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "currency": "USD",
+      "price": 332.99,
+      "market_cap": 885149401088.0,
+      "week52_low": 279.1,
+      "week52_high": 366.5,
+      "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+    },
+    "multiples": {
+      "pe_ttm": 14.266923,
+      "pe_fwd": 13.254667,
+      "ev_ebitda": null,
+      "ev_revenue": 3.881,
+      "price_to_book": 2.5035522,
+      "net_margin": 0.34921002,
+      "roe": 0.17789,
+      "revenue_growth": 0.304,
+      "debt_to_equity": null,
+      "dividend_yield": 0.019799999999999998
+    },
+    "analyst_target_mean": 372.13635,
+    "analyst_recommendation": "buy"
+  },
+  "acceptance": {
+    "ticker": "JPM",
+    "kind": "bank",
+    "passed": true,
+    "failed": [],
+    "checks": [
+      {
+        "criterion": "price and key financials present",
+        "passed": true,
+        "detail": "price 332.99, 4 years of revenue, 8 multiples"
+      },
+      {
+        "criterion": "at least 3 peers with 2+ valuation multiples",
+        "passed": true,
+        "detail": "5 of 5 peers"
+      },
+      {
+        "criterion": "signal with reasoning",
+        "passed": true,
+        "detail": "BUY"
+      },
+      {
+        "criterion": "risk section present or unavailable with a reason",
+        "passed": true,
+        "detail": "SEC filing unavailable (TypeError)"
+      },
+      {
+        "criterion": "disclaimer present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "criterion": "financials metric set",
+        "passed": true,
+        "detail": "financials"
+      },
+      {
+        "criterion": "no EV/EBITDA",
+        "passed": true,
+        "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+      }
+    ],
+    "signal": "BUY",
+    "peers": 5,
+    "comps_ready_ms": 9219,
+    "total_ms": 16383,
+    "llm_calls": 4,
+    "cost_usd": 0.0688,
+    "within_budget": true,
+    "timings_ms": {
+      "validate": 1861,
+      "financials": 1373,
+      "news": 1963,
+      "risk": 6060,
+      "comps": 7357,
+      "comps_ready": 9219,
+      "scorecard": 0,
+      "comps_explain": 3315,
+      "writer": 6689,
+      "analyst": 7160,
+      "signal_ready": 16383,
+      "total": 16383
+    }
+  },
+  "report": {
+    "generated_at": "2026-10-10T16:11:11+00:00",
+    "ticker": "JPM",
+    "financials": {
+      "snapshot": {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified",
+        "currency": "USD",
+        "price": 332.99,
+        "market_cap": 885149401088.0,
+        "week52_low": 279.1,
+        "week52_high": 366.5,
+        "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+      },
+      "multiples": {
+        "pe_ttm": 14.266923,
+        "pe_fwd": 13.254667,
+        "ev_ebitda": null,
+        "ev_revenue": 3.881,
+        "price_to_book": 2.5035522,
+        "net_margin": 0.34921002,
+        "roe": 0.17789,
+        "revenue_growth": 0.304,
+        "debt_to_equity": null,
+        "dividend_yield": 0.019799999999999998
+      },
+      "revenue_history": [
+        {
+          "year": 2022,
+          "value": 127727000000.0
+        },
+        {
+          "year": 2023,
+          "value": 154952000000.0
+        },
+        {
+          "year": 2024,
+          "value": 169439000000.0
+        },
+        {
+          "year": 2025,
+          "value": 181847000000.0
+        }
+      ],
+      "ebitda_history": [],
+      "net_income_history": [
+        {
+          "year": 2022,
+          "value": 37676000000.0
+        },
+        {
+          "year": 2023,
+          "value": 49552000000.0
+        },
+        {
+          "year": 2024,
+          "value": 58471000000.0
+        },
+        {
+          "year": 2025,
+          "value": 57048000000.0
+        }
+      ],
+      "price_history": [
+        {
+          "date": "2025-10-10",
+          "close": 295.2044677734375
+        },
+        {
+          "date": "2025-10-13",
+          "close": 302.150634765625
+        },
+        {
+          "date": "2025-10-14",
+          "close": 296.3719482421875
+        },
+        {
+          "date": "2025-10-15",
+          "close": 299.9137268066406
+        },
+        {
+          "date": "2025-10-16",
+          "close": 292.89886474609375
+        },
+        {
+          "date": "2025-10-17",
+          "close": 291.9373779296875
+        },
+        {
+          "date": "2025-10-20",
+          "close": 296.6466369628906
+        },
+        {
+          "date": "2025-10-21",
+          "close": 291.4762268066406
+        },
+        {
+          "date": "2025-10-22",
+          "close": 288.5525207519531
+        },
+        {
+          "date": "2025-10-23",
+          "close": 288.97442626953125
+        },
+        {
+          "date": "2025-10-24",
+          "close": 294.762939453125
+        },
+        {
+          "date": "2025-10-27",
+          "close": 298.40283203125
+        },
+        {
+          "date": "2025-10-28",
+          "close": 299.5899353027344
+        },
+        {
+          "date": "2025-10-29",
+          "close": 299.7371520996094
+        },
+        {
+          "date": "2025-10-30",
+          "close": 303.5928649902344
+        },
+        {
+          "date": "2025-10-31",
+          "close": 305.24114990234375
+        },
+        {
+          "date": "2025-11-03",
+          "close": 303.5046081542969
+        },
+        {
+          "date": "2025-11-04",
+          "close": 303.4064636230469
+        },
+        {
+          "date": "2025-11-05",
+          "close": 305.7905578613281
+        },
+        {
+          "date": "2025-11-06",
+          "close": 307.4976806640625
+        },
+        {
+          "date": "2025-11-07",
+          "close": 308.2727355957031
+        },
+        {
+          "date": "2025-11-10",
+          "close": 310.902099609375
+        },
+        {
+          "date": "2025-11-11",
+          "close": 309.65606689453125
+        },
+        {
+          "date": "2025-11-12",
+          "close": 314.3555908203125
+        },
+        {
+          "date": "2025-11-13",
+          "close": 303.6321716308594
+        },
+        {
+          "date": "2025-11-14",
+          "close": 297.87298583984375
+        },
+        {
+          "date": "2025-11-17",
+          "close": 294.6942443847656
+        },
+        {
+          "date": "2025-11-18",
+          "close": 293.75238037109375
+        },
+        {
+          "date": "2025-11-19",
+          "close": 297.5394287109375
+        },
+        {
+          "date": "2025-11-20",
+          "close": 292.7418518066406
+        },
+        {
+          "date": "2025-11-21",
+          "close": 292.3886413574219
+        },
+        {
+          "date": "2025-11-24",
+          "close": 292.3690490722656
+        },
+        {
+          "date": "2025-11-25",
+          "close": 297.27459716796875
+        },
+        {
+          "date": "2025-11-26",
+          "close": 301.826904296875
+        },
+        {
+          "date": "2025-11-28",
+          "close": 307.1640930175781
+        },
+        {
+          "date": "2025-12-01",
+          "close": 303.08270263671875
+        },
+        {
+          "date": "2025-12-02",
+          "close": 302.0623779296875
+        },
+        {
+          "date": "2025-12-03",
+          "close": 306.2320861816406
+        },
+        {
+          "date": "2025-12-04",
+          "close": 310.1270446777344
+        },
+        {
+          "date": "2025-12-05",
+          "close": 309.08709716796875
+        },
+        {
+          "date": "2025-12-08",
+          "close": 309.25384521484375
+        },
+        {
+          "date": "2025-12-09",
+          "close": 294.8316345214844
+        },
+        {
+          "date": "2025-12-10",
+          "close": 304.25018310546875
+        },
+        {
+          "date": "2025-12-11",
+          "close": 311.3828430175781
+        },
+        {
+          "date": "2025-12-12",
+          "close": 312.5013122558594
+        },
+        {
+          "date": "2025-12-15",
+          "close": 313.97296142578125
+        },
+        {
+          "date": "2025-12-16",
+          "close": 309.5874328613281
+        },
+        {
+          "date": "2025-12-17",
+          "close": 309.0281982421875
+        },
+        {
+          "date": "2025-12-18",
+          "close": 307.0856018066406
+        },
+        {
+          "date": "2025-12-19",
+          "close": 311.216064453125
+        },
+        {
+          "date": "2025-12-22",
+          "close": 316.98492431640625
+        },
+        {
+          "date": "2025-12-23",
+          "close": 319.7712707519531
+        },
+        {
+          "date": "2025-12-24",
+          "close": 322.9500732421875
+        },
+        {
+          "date": "2025-12-26",
+          "close": 321.7138671875
+        },
+        {
+          "date": "2025-12-29",
+          "close": 317.6324768066406
+        },
+        {
+          "date": "2025-12-30",
+          "close": 317.3087463378906
+        },
+        {
+          "date": "2025-12-31",
+          "close": 316.13140869140625
+        },
+        {
+          "date": "2026-01-02",
+          "close": 319.3298034667969
+        },
+        {
+          "date": "2026-01-05",
+          "close": 327.72808837890625
+        },
+        {
+          "date": "2026-01-06",
+          "close": 329.76806640625
+        },
+        {
+          "date": "2026-01-07",
+          "close": 322.2583312988281
+        },
+        {
+          "date": "2026-01-08",
+          "close": 325.0178527832031
+        },
+        {
+          "date": "2026-01-09",
+          "close": 324.426513671875
+        },
+        {
+          "date": "2026-01-12",
+          "close": 319.7945251464844
+        },
+        {
+          "date": "2026-01-13",
+          "close": 306.40118408203125
+        },
+        {
+          "date": "2026-01-14",
+          "close": 303.4150390625
+        },
+        {
+          "date": "2026-01-15",
+          "close": 304.7849426269531
+        },
+        {
+          "date": "2026-01-16",
+          "close": 307.948486328125
+        },
+        {
+          "date": "2026-01-20",
+          "close": 298.3592529296875
+        },
+        {
+          "date": "2026-01-21",
+          "close": 297.66943359375
+        },
+        {
+          "date": "2026-01-22",
+          "close": 299.23638916015625
+        },
+        {
+          "date": "2026-01-23",
+          "close": 293.41192626953125
+        },
+        {
+          "date": "2026-01-26",
+          "close": 296.68389892578125
+        },
+        {
+          "date": "2026-01-27",
+          "close": 295.96441650390625
+        },
+        {
+          "date": "2026-01-28",
+          "close": 296.417724609375
+        },
+        {
+          "date": "2026-01-29",
+          "close": 301.98602294921875
+        },
+        {
+          "date": "2026-01-30",
+          "close": 301.46368408203125
+        },
+        {
+          "date": "2026-02-02",
+          "close": 303.6811218261719
+        },
+        {
+          "date": "2026-02-03",
+          "close": 310.29400634765625
+        },
+        {
+          "date": "2026-02-04",
+          "close": 312.6789855957031
+        },
+        {
+          "date": "2026-02-05",
+          "close": 305.6719055175781
+        },
+        {
+          "date": "2026-02-06",
+          "close": 317.73480224609375
+        },
+        {
+          "date": "2026-02-09",
+          "close": 317.4391174316406
+        },
+        {
+          "date": "2026-02-10",
+          "close": 313.6744079589844
+        },
+        {
+          "date": "2026-02-11",
+          "close": 306.32232666015625
+        },
+        {
+          "date": "2026-02-12",
+          "close": 298.2607421875
+        },
+        {
+          "date": "2026-02-13",
+          "close": 298.1719970703125
+        },
+        {
+          "date": "2026-02-17",
+          "close": 302.68572998046875
+        },
+        {
+          "date": "2026-02-18",
+          "close": 304.3118591308594
+        },
+        {
+          "date": "2026-02-19",
+          "close": 303.5923767089844
+        },
+        {
+          "date": "2026-02-20",
+          "close": 306.29278564453125
+        },
+        {
+          "date": "2026-02-23",
+          "close": 293.3626403808594
+        },
+        {
+          "date": "2026-02-24",
+          "close": 292.9979553222656
+        },
+        {
+          "date": "2026-02-25",
+          "close": 298.9111633300781
+        },
+        {
+          "date": "2026-02-26",
+          "close": 301.7002258300781
+        },
+        {
+          "date": "2026-02-27",
+          "close": 295.95452880859375
+        },
+        {
+          "date": "2026-03-02",
+          "close": 293.25421142578125
+        },
+        {
+          "date": "2026-03-03",
+          "close": 295.9151611328125
+        },
+        {
+          "date": "2026-03-04",
+          "close": 295.0577697753906
+        },
+        {
+          "date": "2026-03-05",
+          "close": 289.30224609375
+        },
+        {
+          "date": "2026-03-06",
+          "close": 285.2911376953125
+        },
+        {
+          "date": "2026-03-09",
+          "close": 285.72479248046875
+        },
+        {
+          "date": "2026-03-10",
+          "close": 284.552001953125
+        },
+        {
+          "date": "2026-03-11",
+          "close": 283.3594665527344
+        },
+        {
+          "date": "2026-03-12",
+          "close": 278.7965087890625
+        },
+        {
+          "date": "2026-03-13",
+          "close": 279.33856201171875
+        },
+        {
+          "date": "2026-03-16",
+          "close": 282.0191650390625
+        },
+        {
+          "date": "2026-03-17",
+          "close": 282.7386169433594
+        },
+        {
+          "date": "2026-03-18",
+          "close": 283.5762939453125
+        },
+        {
+          "date": "2026-03-19",
+          "close": 283.802978515625
+        },
+        {
+          "date": "2026-03-20",
+          "close": 282.41339111328125
+        },
+        {
+          "date": "2026-03-23",
+          "close": 285.71490478515625
+        },
+        {
+          "date": "2026-03-24",
+          "close": 288.16888427734375
+        },
+        {
+          "date": "2026-03-25",
+          "close": 291.1452331542969
+        },
+        {
+          "date": "2026-03-26",
+          "close": 287.4396057128906
+        },
+        {
+          "date": "2026-03-27",
+          "close": 278.7472229003906
+        },
+        {
+          "date": "2026-03-30",
+          "close": 279.66375732421875
+        },
+        {
+          "date": "2026-03-31",
+          "close": 289.9034423828125
+        },
+        {
+          "date": "2026-04-01",
+          "close": 291.1057434082031
+        },
+        {
+          "date": "2026-04-02",
+          "close": 290.3370666503906
+        },
+        {
+          "date": "2026-04-06",
+          "close": 292.6649169921875
+        },
+        {
+          "date": "2026-04-07",
+          "close": 294.5965270996094
+        },
+        {
+          "date": "2026-04-08",
+          "close": 305.0668640136719
+        },
+        {
+          "date": "2026-04-09",
+          "close": 307.40460205078125
+        },
+        {
+          "date": "2026-04-10",
+          "close": 306.948974609375
+        },
+        {
+          "date": "2026-04-13",
+          "close": 310.7230529785156
+        },
+        {
+          "date": "2026-04-14",
+          "close": 308.1871643066406
+        },
+        {
+          "date": "2026-04-15",
+          "close": 303.0461120605469
+        },
+        {
+          "date": "2026-04-16",
+          "close": 307.0282287597656
+        },
+        {
+          "date": "2026-04-17",
+          "close": 307.3650207519531
+        },
+        {
+          "date": "2026-04-20",
+          "close": 314.0018615722656
+        },
+        {
+          "date": "2026-04-21",
+          "close": 310.0494689941406
+        },
+        {
+          "date": "2026-04-22",
+          "close": 310.06927490234375
+        },
+        {
+          "date": "2026-04-23",
+          "close": 308.7518310546875
+        },
+        {
+          "date": "2026-04-24",
+          "close": 305.37396240234375
+        },
+        {
+          "date": "2026-04-27",
+          "close": 308.6923828125
+        },
+        {
+          "date": "2026-04-28",
+          "close": 308.51409912109375
+        },
+        {
+          "date": "2026-04-29",
+          "close": 306.3348083496094
+        },
+        {
+          "date": "2026-04-30",
+          "close": 310.2773132324219
+        },
+        {
+          "date": "2026-05-01",
+          "close": 309.52447509765625
+        },
+        {
+          "date": "2026-05-04",
+          "close": 304.7498779296875
+        },
+        {
+          "date": "2026-05-05",
+          "close": 306.4833984375
+        },
+        {
+          "date": "2026-05-06",
+          "close": 311.9315490722656
+        },
+        {
+          "date": "2026-05-07",
+          "close": 303.3829040527344
+        },
+        {
+          "date": "2026-05-08",
+          "close": 299.2522277832031
+        },
+        {
+          "date": "2026-05-11",
+          "close": 297.1719970703125
+        },
+        {
+          "date": "2026-05-12",
+          "close": 302.0060119628906
+        },
+        {
+          "date": "2026-05-13",
+          "close": 297.419677734375
+        },
+        {
+          "date": "2026-05-14",
+          "close": 297.0828857421875
+        },
+        {
+          "date": "2026-05-15",
+          "close": 295.0026550292969
+        },
+        {
+          "date": "2026-05-18",
+          "close": 297.8951416015625
+        },
+        {
+          "date": "2026-05-19",
+          "close": 292.91253662109375
+        },
+        {
+          "date": "2026-05-20",
+          "close": 299.13336181640625
+        },
+        {
+          "date": "2026-05-21",
+          "close": 300.14373779296875
+        },
+        {
+          "date": "2026-05-22",
+          "close": 303.49188232421875
+        },
+        {
+          "date": "2026-05-26",
+          "close": 303.8484802246094
+        },
+        {
+          "date": "2026-05-27",
+          "close": 296.45880126953125
+        },
+        {
+          "date": "2026-05-28",
+          "close": 293.932861328125
+        },
+        {
+          "date": "2026-05-29",
+          "close": 296.488525390625
+        },
+        {
+          "date": "2026-06-01",
+          "close": 293.78424072265625
+        },
+        {
+          "date": "2026-06-02",
+          "close": 298.1229553222656
+        },
+        {
+          "date": "2026-06-03",
+          "close": 298.0140075683594
+        },
+        {
+          "date": "2026-06-04",
+          "close": 307.9593811035156
+        },
+        {
+          "date": "2026-06-05",
+          "close": 309.4254150390625
+        },
+        {
+          "date": "2026-06-08",
+          "close": 308.1772766113281
+        },
+        {
+          "date": "2026-06-09",
+          "close": 309.7522888183594
+        },
+        {
+          "date": "2026-06-10",
+          "close": 306.2258605957031
+        },
+        {
+          "date": "2026-06-11",
+          "close": 310.53485107421875
+        },
+        {
+          "date": "2026-06-12",
+          "close": 317.69671630859375
+        },
+        {
+          "date": "2026-06-15",
+          "close": 316.3891296386719
+        },
+        {
+          "date": "2026-06-16",
+          "close": 328.0184631347656
+        },
+        {
+          "date": "2026-06-17",
+          "close": 330.31658935546875
+        },
+        {
+          "date": "2026-06-18",
+          "close": 322.1542663574219
+        },
+        {
+          "date": "2026-06-22",
+          "close": 328.3552551269531
+        },
+        {
+          "date": "2026-06-23",
+          "close": 330.9902038574219
+        },
+        {
+          "date": "2026-06-24",
+          "close": 330.30670166015625
+        },
+        {
+          "date": "2026-06-25",
+          "close": 331.9609375
+        },
+        {
+          "date": "2026-06-26",
+          "close": 325.9481506347656
+        },
+        {
+          "date": "2026-06-29",
+          "close": 326.28497314453125
+        },
+        {
+          "date": "2026-06-30",
+          "close": 324.2443542480469
+        },
+        {
+          "date": "2026-07-01",
+          "close": 330.9208679199219
+        },
+        {
+          "date": "2026-07-02",
+          "close": 331.31707763671875
+        },
+        {
+          "date": "2026-07-06",
+          "close": 336.0434875488281
+        },
+        {
+          "date": "2026-07-07",
+          "close": 337.5360412597656
+        },
+        {
+          "date": "2026-07-08",
+          "close": 328.9787292480469
+        },
+        {
+          "date": "2026-07-09",
+          "close": 333.8046569824219
+        },
+        {
+          "date": "2026-07-10",
+          "close": 334.7997131347656
+        },
+        {
+          "date": "2026-07-13",
+          "close": 332.86932373046875
+        },
+        {
+          "date": "2026-07-14",
+          "close": 341.1878356933594
+        },
+        {
+          "date": "2026-07-15",
+          "close": 345.1878967285156
+        },
+        {
+          "date": "2026-07-16",
+          "close": 341.446533203125
+        },
+        {
+          "date": "2026-07-17",
+          "close": 339.40673828125
+        },
+        {
+          "date": "2026-07-20",
+          "close": 337.1877746582031
+        },
+        {
+          "date": "2026-07-21",
+          "close": 343.5162353515625
+        },
+        {
+          "date": "2026-07-22",
+          "close": 346.4814147949219
+        },
+        {
+          "date": "2026-07-23",
+          "close": 348.16302490234375
+        },
+        {
+          "date": "2026-07-24",
+          "close": 351.45660400390625
+        },
+        {
+          "date": "2026-07-27",
+          "close": 354.4317626953125
+        },
+        {
+          "date": "2026-07-28",
+          "close": 355.5362548828125
+        },
+        {
+          "date": "2026-07-29",
+          "close": 342.998779296875
+        },
+        {
+          "date": "2026-07-30",
+          "close": 349.10833740234375
+        },
+        {
+          "date": "2026-07-31",
+          "close": 350.0436706542969
+        },
+        {
+          "date": "2026-08-03",
+          "close": 350.8894348144531
+        },
+        {
+          "date": "2026-08-04",
+          "close": 355.7452087402344
+        },
+        {
+          "date": "2026-08-05",
+          "close": 357.4566650390625
+        },
+        {
+          "date": "2026-08-06",
+          "close": 354.53125
+        },
+        {
+          "date": "2026-08-07",
+          "close": 355.7452087402344
+        },
+        {
+          "date": "2026-08-10",
+          "close": 358.0039367675781
+        },
+        {
+          "date": "2026-08-11",
+          "close": 360.2427673339844
+        },
+        {
+          "date": "2026-08-12",
+          "close": 363.3671875
+        },
+        {
+          "date": "2026-08-13",
+          "close": 361.30743408203125
+        },
+        {
+          "date": "2026-08-14",
+          "close": 361.0387878417969
+        },
+        {
+          "date": "2026-08-17",
+          "close": 359.1681213378906
+        },
+        {
+          "date": "2026-08-18",
+          "close": 361.44677734375
+        },
+        {
+          "date": "2026-08-19",
+          "close": 355.48651123046875
+        },
+        {
+          "date": "2026-08-20",
+          "close": 349.8048400878906
+        },
+        {
+          "date": "2026-08-21",
+          "close": 349.8346862792969
+        },
+        {
+          "date": "2026-08-24",
+          "close": 354.6208190917969
+        },
+        {
+          "date": "2026-08-25",
+          "close": 354.9193420410156
+        },
+        {
+          "date": "2026-08-26",
+          "close": 354.73028564453125
+        },
+        {
+          "date": "2026-08-27",
+          "close": 352.4615783691406
+        },
+        {
+          "date": "2026-08-28",
+          "close": 355.8446960449219
+        },
+        {
+          "date": "2026-08-31",
+          "close": 354.2526550292969
+        },
+        {
+          "date": "2026-09-01",
+          "close": 353.18798828125
+        },
+        {
+          "date": "2026-09-02",
+          "close": 354.45166015625
+        },
+        {
+          "date": "2026-09-03",
+          "close": 360.2626647949219
+        },
+        {
+          "date": "2026-09-04",
+          "close": 356.8596496582031
+        },
+        {
+          "date": "2026-09-08",
+          "close": 351.755126953125
+        },
+        {
+          "date": "2026-09-09",
+          "close": 352.94915771484375
+        },
+        {
+          "date": "2026-09-10",
+          "close": 351.80487060546875
+        },
+        {
+          "date": "2026-09-11",
+          "close": 354.46160888671875
+        },
+        {
+          "date": "2026-09-14",
+          "close": 348.39190673828125
+        },
+        {
+          "date": "2026-09-15",
+          "close": 350.74017333984375
+        },
+        {
+          "date": "2026-09-16",
+          "close": 347.18792724609375
+        },
+        {
+          "date": "2026-09-17",
+          "close": 347.5759582519531
+        },
+        {
+          "date": "2026-09-18",
+          "close": 347.9342041015625
+        },
+        {
+          "date": "2026-09-21",
+          "close": 350.29241943359375
+        },
+        {
+          "date": "2026-09-22",
+          "close": 338.31219482421875
+        },
+        {
+          "date": "2026-09-23",
+          "close": 335.85443115234375
+        },
+        {
+          "date": "2026-09-24",
+          "close": 336.87933349609375
+        },
+        {
+          "date": "2026-09-25",
+          "close": 341.35699462890625
+        },
+        {
+          "date": "2026-09-28",
+          "close": 334.9190979003906
+        },
+        {
+          "date": "2026-09-29",
+          "close": 333.3171081542969
+        },
+        {
+          "date": "2026-09-30",
+          "close": 329.18768310546875
+        },
+        {
+          "date": "2026-10-01",
+          "close": 331.5260314941406
+        },
+        {
+          "date": "2026-10-02",
+          "close": 330.7300109863281
+        },
+        {
+          "date": "2026-10-05",
+          "close": 330.7300109863281
+        },
+        {
+          "date": "2026-10-06",
+          "close": 331.2799987792969
+        },
+        {
+          "date": "2026-10-07",
+          "close": 329.5799865722656
+        },
+        {
+          "date": "2026-10-08",
+          "close": 331.4200134277344
+        },
+        {
+          "date": "2026-10-09",
+          "close": 332.989990234375
+        }
+      ],
+      "analyst_target_mean": 372.13635,
+      "analyst_recommendation": "buy"
+    },
+    "comps": {
+      "metric_set": "financials",
+      "metrics": [
+        "pe_ttm",
+        "pe_fwd",
+        "price_to_book",
+        "roe",
+        "dividend_yield",
+        "revenue_growth"
+      ],
+      "primary_metric": "price_to_book",
+      "rows": [
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "market_cap": 885149401088.0,
+          "multiples": {
+            "pe_ttm": 14.266923,
+            "pe_fwd": 13.254667,
+            "ev_ebitda": null,
+            "ev_revenue": 3.881,
+            "price_to_book": 2.5035522,
+            "net_margin": 0.34921002,
+            "roe": 0.17789,
+            "revenue_growth": 0.304,
+            "debt_to_equity": null,
+            "dividend_yield": 0.019799999999999998
+          },
+          "is_target": true,
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corporation",
+          "market_cap": 379846098944.0,
+          "multiples": {
+            "pe_ttm": 12.545034,
+            "pe_fwd": 10.37239,
+            "ev_ebitda": null,
+            "ev_revenue": 2.859,
+            "price_to_book": 1.3807127,
+            "net_margin": 0.29524,
+            "roe": 0.111990005,
+            "revenue_growth": 0.168,
+            "debt_to_equity": null,
+            "dividend_yield": 0.0236
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "business_summary": "Bank of America Corporation, through its subsidiaries, provides various financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates through four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets. The Consumer Banking segment offers traditional and money market savings accounts, certificates of deposit and IRAs, checking accounts, and investment accounts and products; credit and debit cards; residential mortgages and\u2026"
+        },
+        {
+          "ticker": "WFC",
+          "name": "Wells Fargo & Company",
+          "market_cap": 252655140864.0,
+          "multiples": {
+            "pe_ttm": 11.918688,
+            "pe_fwd": 10.404849,
+            "ev_ebitda": null,
+            "ev_revenue": 3.038,
+            "price_to_book": 1.5349991,
+            "net_margin": 0.27232,
+            "roe": 0.12575,
+            "revenue_growth": 0.095,
+            "debt_to_equity": null,
+            "dividend_yield": 0.0239
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "business_summary": "Wells Fargo & Company, a financial services company, provides diversified banking, investment, mortgage, and consumer and commercial finance products and services in the United States and internationally. It operates through four segments: Consumer Banking and Lending; Commercial Banking; Corporate and Investment Banking; and Wealth and Investment Management. The company's financial products and services includes checking and savings accounts, and credit and debit cards, as well as home, auto, personal, and small business lending services. It also provides personalized wealth management,\u2026"
+        },
+        {
+          "ticker": "C",
+          "name": "Citigroup Inc.",
+          "market_cap": 217462898688.0,
+          "multiples": {
+            "pe_ttm": 14.0,
+            "pe_fwd": 10.0107565,
+            "ev_ebitda": null,
+            "ev_revenue": 0.31,
+            "price_to_book": 1.1298785,
+            "net_margin": 0.21832001,
+            "roe": 0.08529,
+            "revenue_growth": 0.155,
+            "debt_to_equity": null,
+            "dividend_yield": 0.0207
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "business_summary": "Citigroup Inc., a diversified financial service holding company, provides various financial products and services to consumers, corporations, governments, and institutions. It operates through five segments: Services, Markets, Banking, U.S. Personal Banking, and Wealth. The Services segment includes treasury and trade solutions, which provides cash management, trade, and working capital solutions to multinational corporations, financial institutions, and public sector organizations; and securities services, such as cross-border support for clients, local market expertise, post-trade\u2026"
+        },
+        {
+          "ticker": "GS",
+          "name": "The Goldman Sachs Group, Inc.",
+          "market_cap": 260691574784.0,
+          "multiples": {
+            "pe_ttm": 13.827336,
+            "pe_fwd": 12.406834,
+            "ev_ebitda": null,
+            "ev_revenue": 0.381,
+            "price_to_book": 2.472925,
+            "net_margin": 0.31039,
+            "roe": 0.16902,
+            "revenue_growth": 0.425,
+            "debt_to_equity": 7.25381,
+            "dividend_yield": 0.0223
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals in the Americas, Europe, the Middle East, Africa, and Asia. It operates through three segments: Global Banking & Markets, Asset & Wealth Management, and Platform Solutions. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; equity and debt underwriting of\u2026"
+        },
+        {
+          "ticker": "MS",
+          "name": "Morgan Stanley",
+          "market_cap": 298439016448.0,
+          "multiples": {
+            "pe_ttm": 15.34895,
+            "pe_fwd": 14.003433,
+            "ev_ebitda": null,
+            "ev_revenue": 2.283,
+            "price_to_book": 2.8026135,
+            "net_margin": 0.25897,
+            "roe": 0.17969999,
+            "revenue_growth": 0.28,
+            "debt_to_equity": 5.172820000000001,
+            "dividend_yield": 0.0242
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "Morgan Stanley, a financial holding company, provides various financial products and services to corporations, governments, financial institutions, and individuals in the Americas, Asia, Europe, the Middle East, and Africa. It operates through Institutional Securities, Wealth Management, and Investment Management segments. The company offers capital raising and financial advisory services, including services related to the underwriting of debt, equity securities, and other products, as well as advice on mergers and acquisitions, restructurings, and project finance. It also provides equity\u2026"
+        }
+      ],
+      "median": {
+        "pe_ttm": 13.827336,
+        "pe_fwd": 10.404849,
+        "ev_ebitda": null,
+        "ev_revenue": 2.283,
+        "price_to_book": 1.5349991,
+        "net_margin": 0.27232,
+        "roe": 0.12575,
+        "revenue_growth": 0.168,
+        "debt_to_equity": 6.213315,
+        "dividend_yield": 0.0236
+      },
+      "target_vs_median_pct": {
+        "pe_ttm": 0.0317911563008233,
+        "pe_fwd": 0.2738932588065428,
+        "price_to_book": 0.6309795881965012,
+        "roe": 0.41463220675944323,
+        "dividend_yield": -0.1610169491525424,
+        "revenue_growth": 0.8095238095238093
+      },
+      "peer_rationales": {
+        "BAC": "Diversified bank offering deposits, credit cards, residential mortgages, wealth management and investment banking.",
+        "WFC": "Diversified bank with consumer lending, mortgages, credit cards, commercial and investment banking, wealth management.",
+        "C": "Diversified bank providing cash management, markets, banking, U.S. personal banking and wealth services.",
+        "GS": "Overlaps in investment banking, markets, and asset and wealth management for corporations and individuals.",
+        "MS": "Overlaps in capital raising, M&A advisory, wealth management and investment management services."
+      },
+      "peer_origin": {
+        "BAC": "agent",
+        "WFC": "agent",
+        "C": "agent",
+        "GS": "agent",
+        "MS": "agent"
+      },
+      "exclusions": [],
+      "sources": [
+        "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+        "https://rocketreach.co/jpmorgan-chase-co-competitors_b5c61dfef42e0c4b",
+        "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+        "https://ca.finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+        "https://finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html"
+      ],
+      "insufficient": false
+    },
+    "competitor_search": [
+      {
+        "title": "JPMorgan Chase Competitors: JPM Top Peers 2026 | Hudson Labs",
+        "url": "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+        "domain": "hudson-labs.com",
+        "snippet": "| Ticker | Company Name | Market Cap ($B) | Subsector | --- --- | | JPM | JPMorgan Chase & Co. | 780.74 | Banks - Diversified | | BAC | Bank of America Corp. | 349.07 | Banks - Diversified | | $C | Citigroup Inc. | 186.35 | Banks - Diversified | | GS | Goldman Sachs Group Inc. | 253.28 | Capital Markets | | MS | Morgan Stanley | 254.49 | Capital Markets | | PNC | PNC Financial Services Group Inc. | 83.14 | Banks - Regional | | TFC | Truist Financial Corp | 58.07 | Banks - Regional | [...] | SCHW | Charles Schwab Corp. | 166.86 | Capital Markets | | $BK | Bank of New York Mellon Corp. | 79.30\u2026"
+      },
+      {
+        "title": "JPMorgan Chase & Co. Competitors | Companies like JPMorgan Chase & Co.",
+        "url": "https://rocketreach.co/jpmorgan-chase-co-competitors_b5c61dfef42e0c4b",
+        "domain": "rocketreach.co",
+        "snippet": "Wells Fargo & Company (NYSE: WFC) is a diversified, community-based financial services company with approximately $1.9 trillion in assets. Wells Fargo\u2019s vision is to satisfy our customers\u2019 financial needs and help them succeed financially. Founded in 1852 and headquartered in San Francisco, Wells Fargo provides banking, investment and mortgage products and services, as well as consumer and commercial finance, through more than 7,300 locations, 12,000 ATMs, the internet (wellsfargo.com) and [...] Image 1: RocketReach logoToggle navigation Log In Sign Up Image 2: stars 1Image 3: stars 2Image\u2026"
+      },
+      {
+        "title": "JPMorgan Chase vs Bank of America",
+        "url": "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+        "domain": "explore.nemo.money",
+        "snippet": "JPMorgan Chase runs the most profitable bank in U.S. history, generating returns across consumer, commercial, and investment banking that competitors struggle to match, while RBC has quietly built one of North America's most diversified financial institutions with a dominant Canadian retail bank and a growing U.S. capital markets and wealth business. Both institutions operate at enormous scale and generate returns that compound favorably over long periods. JPMorgan Chase vs RBC digs into how [...] JPMorgan Chase & Co. (JPM) is one of the world\u2019s largest and most diversified financial\u2026"
+      },
+      {
+        "title": "Diversified Banks Stocks Q3 In Review: JPMorgan Chase (NYSE:JPM) Vs Peers",
+        "url": "https://ca.finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+        "domain": "ca.finance.yahoo.com",
+        "snippet": "Wells Fargo reported revenues of $21.44 billion, up 5.3% year on year. This print surpassed analysts' expectations by 1.5%. More broadly, it was a satisfactory quarter as it also produced a beat of analysts' EPS estimates but a slight miss of analysts' net interest income estimates. The stock is up 9.9% since reporting and currently trades at $86.75. Read our full, actionable report on Wells Fargo here, it's free for active Edge members. ## PNC Financial Services Group (NYSE:PNC) [...] ## Wells Fargo (NYSE:WFC) Founded during the California Gold Rush in 1852 to provide banking and express\u2026"
+      },
+      {
+        "title": "Diversified Banks Stocks Q3 In Review: JPMorgan Chase (NYSE:JPM) Vs Peers",
+        "url": "https://finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+        "domain": "finance.yahoo.com",
+        "snippet": "Wells Fargo reported revenues of $21.44 billion, up 5.3% year on year. This print surpassed analysts' expectations by 1.5%. More broadly, it was a satisfactory quarter as it also produced a beat of analysts' EPS estimates but a slight miss of analysts' net interest income estimates. The stock is up 9.9% since reporting and currently trades at $86.75. Read our full, actionable report on Wells Fargo here, it's free for active Edge members. ## PNC Financial Services Group (NYSE:PNC) [...] ## Wells Fargo (NYSE:WFC) Founded during the California Gold Rush in 1852 to provide banking and express\u2026"
+      }
+    ],
+    "risks": {
+      "kind": "error",
+      "stage": "risk",
+      "message": "SEC filing unavailable (TypeError)"
+    },
+    "news": [
+      {
+        "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Rating Reaffirmed as \"Hold\" by TD Cowen",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-jpmorgan-chase-co-nyse-jpm-stock-rating-reaffirmed-as-hold-by-td-cowen-2026-10-08",
+        "domain": "marketbeat.com",
+        "published": "Thu, 08 Oct 2026 13:24:45 GMT"
+      },
+      {
+        "title": "JPMorganChase to Present at Boston BancAnalysts Conference | JPM Stock News",
+        "url": "https://www.stocktitan.net/news/JPM/jp-morgan-chase-to-present-at-the-banc-analysts-association-of-j29ooajxpaty.html",
+        "domain": "stocktitan.net",
+        "published": "Fri, 09 Oct 2026 20:50:00 GMT"
+      },
+      {
+        "title": "JPMorgan Chase & Co. $JPM Stock Position Lifted by GAMMA Investing LLC",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-jpmorgan-chase-co-jpm-stock-position-lifted-by-gamma-investing-llc-2026-10-09",
+        "domain": "marketbeat.com",
+        "published": "Fri, 09 Oct 2026 08:17:19 GMT"
+      },
+      {
+        "title": "JPMorgan Chase & Co. (JPM) Is a Trending Stock: Facts to Know Before Betting on It",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-co-jpm-trending-120004129.html",
+        "domain": "finance.yahoo.com",
+        "published": "Fri, 02 Oct 2026 02:00:00 GMT"
+      }
+    ],
+    "news_error": null,
+    "scorecard": {
+      "factors": [
+        {
+          "name": "valuation",
+          "score": -1,
+          "detail": "P/B 2.5 vs peer median 1.5 (+63%; band \u00b115%)"
+        },
+        {
+          "name": "growth",
+          "score": 1,
+          "detail": "Revenue growth 30.4% vs peer median 16.8% (+13.6 pts; band \u00b15 pts)"
+        },
+        {
+          "name": "profitability",
+          "score": 1,
+          "detail": "ROE 17.8% vs peer median 12.6% (+5.2 pts; band \u00b15 pts)"
+        },
+        {
+          "name": "analyst_upside",
+          "score": 1,
+          "detail": "mean analyst target 372.14 vs price 332.99 (+11.8%; band \u00b110%)"
+        },
+        {
+          "name": "momentum",
+          "score": 1,
+          "detail": "price 332.99 above its 200-day average 319.08; at 62% of the 52-week range"
+        }
+      ],
+      "total": 3,
+      "preliminary_signal": "BUY"
+    },
+    "analyst": {
+      "signal": "BUY",
+      "confidence": 0.68,
+      "changed_from_preliminary": false,
+      "change_reason": null,
+      "valuation_summary": "JPM trades at a premium to peers on its primary multiple: P/B 2.5 vs peer median 1.5 (+63%), Forward P/E 13.3 vs 10.4 (+27%). P/E (ttm) 14.3 is only +3% above the 13.8 median, and the dividend yield of 2.0% trails the 2.4% median.",
+      "thesis": [
+        "ROE of 17.8% exceeds the peer median of 12.6%, supporting a premium valuation.",
+        "Revenue growth of 30.4% versus the 16.8% peer median signals strong top-line momentum.",
+        "Price 332.99 sits above its 200-day average 319.08; mean analyst target is 372.14."
+      ],
+      "counterpoints": [
+        "P/B of 2.5 is +63% above the peer median, leaving less room for multiple expansion.",
+        "Net income dipped from $58.47B in 2024 to $57.05B in 2025 despite revenue growth.",
+        "TD Cowen reaffirmed a Hold rating; dividend yield 2.0% trails the 2.4% peer median."
+      ],
+      "signal_reasoning": "The scorecard totals +3: growth, profitability, analyst upside and momentum each score +1, offset only by valuation at -1 given the +63% P/B premium. Risk data is unavailable and recent news (a reaffirmed Hold, a conference presentation, position changes) is not material enough to override the factors. The preliminary BUY is retained, with confidence tempered by the rich valuation and missing risk disclosures.",
+      "preliminary_signal": "BUY",
+      "reviewed": true
+    },
+    "signal": "BUY",
+    "signal_reviewed": true,
+    "narrative": {
+      "company_overview": "JPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classed within Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. Its business is organised into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. Products include deposits, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalisation of $885.15B, it is a very large participant in its industry.",
+      "financial_commentary": "Revenue rose each year over the period shown, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income climbed from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly in the latest year even as revenue grew.\n\nThe company reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The shares trade at $332.99, within a 52-week range of 279.10 to 366.50. The dividend yield is 2.0%.",
+      "comps_commentary": "The comparison uses financial-sector peers: Bank of America, Wells Fargo, Citigroup, Goldman Sachs and Morgan Stanley. The primary multiple is price-to-book, where JPMorgan stands at 2.5 against a peer median of 1.5, a premium of 63%. On forward P/E it trades at 13.3 versus 10.4, a 27% premium, while its trailing P/E of 14.3 is only 3% above the peer median of 13.8.\n\nThe premium is accompanied by stronger operating metrics. Return on equity of 17.8% is 41% above the peer median of 12.6%, and revenue growth of 30.4% is 81% above the median of 16.8%. The dividend yield of 2.0% is 16% below the peer median of 2.4%. Overall, the market is pricing JPMorgan above most of its peers, a valuation that coincides with its higher profitability and growth.",
+      "risk_commentary": "The risk data for this report was unavailable, so no filing-based risks can be ranked here. Readers should consult the company's latest annual filing for its stated risk factors.\n\nRecent news items are routine, covering an analyst rating reaffirmed as Hold by TD Cowen, an upcoming conference presentation and reports of institutional position changes. None is tied to a specific risk. The analyst consensus shown in the data is a buy with a mean target of 372.14, which is context only and not a view expressed in this report."
+    },
+    "narrative_markdown": "## Company overview\n\nJPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classed within Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. Its business is organised into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. Products include deposits, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalisation of $885.15B, it is a very large participant in its industry.\n\n## Financial commentary\n\nRevenue rose each year over the period shown, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income climbed from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly in the latest year even as revenue grew.\n\nThe company reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The shares trade at $332.99, within a 52-week range of 279.10 to 366.50. The dividend yield is 2.0%.\n\n## Comps commentary\n\nThe comparison uses financial-sector peers: Bank of America, Wells Fargo, Citigroup, Goldman Sachs and Morgan Stanley. The primary multiple is price-to-book, where JPMorgan stands at 2.5 against a peer median of 1.5, a premium of 63%. On forward P/E it trades at 13.3 versus 10.4, a 27% premium, while its trailing P/E of 14.3 is only 3% above the peer median of 13.8.\n\nThe premium is accompanied by stronger operating metrics. Return on equity of 17.8% is 41% above the peer median of 12.6%, and revenue growth of 30.4% is 81% above the median of 16.8%. The dividend yield of 2.0% is 16% below the peer median of 2.4%. Overall, the market is pricing JPMorgan above most of its peers, a valuation that coincides with its higher profitability and growth.\n\n## Risk commentary\n\nThe risk data for this report was unavailable, so no filing-based risks can be ranked here. Readers should consult the company's latest annual filing for its stated risk factors.\n\nRecent news items are routine, covering an analyst rating reaffirmed as Hold by TD Cowen, an upcoming conference presentation and reports of institutional position changes. None is tied to a specific risk. The analyst consensus shown in the data is a buy with a mean target of 372.14, which is context only and not a view expressed in this report.",
+    "timings_ms": {
+      "validate": 1861,
+      "financials": 1373,
+      "news": 1963,
+      "risk": 6060,
+      "comps": 7357,
+      "comps_ready": 9219,
+      "scorecard": 0,
+      "comps_explain": 3315,
+      "writer": 6689,
+      "analyst": 7160,
+      "signal_ready": 16383,
+      "total": 16383
+    },
+    "llm_usage": [
+      {
+        "agent": "comps",
+        "model": "claude-opus-5-5",
+        "input_tokens": 2451,
+        "output_tokens": 136,
+        "ms": 2699,
+        "cost_usd": 0.012524,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "comps",
+        "model": "claude-opus-5-5",
+        "input_tokens": 3524,
+        "output_tokens": 254,
+        "ms": 3315,
+        "cost_usd": 0.019176,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "writer",
+        "model": "claude-sonnet-5-5",
+        "input_tokens": 2112,
+        "output_tokens": 932,
+        "ms": 6688,
+        "cost_usd": 0.013544,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "analyst",
+        "model": "claude-opus-5-5",
+        "input_tokens": 3186,
+        "output_tokens": 543,
+        "ms": 7160,
+        "cost_usd": 0.023604,
+        "request_id": null,
+        "error": null
+      }
+    ],
+    "cache_hits": [],
+    "quality_warnings": [],
+    "disclaimer": "Educational project - not investment advice."
+  }
+}

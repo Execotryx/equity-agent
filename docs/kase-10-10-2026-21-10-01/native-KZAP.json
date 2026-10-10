@@ -1,0 +1,22 @@
+{
+  "company": "Kazatomprom",
+  "kase_ticker": "KZAP",
+  "input_ticker": "KZAP",
+  "currency": "KZT",
+  "name_fragment": "kazatomprom",
+  "scope": "native",
+  "kind": "standard",
+  "id": "native-KZAP",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "quote available",
+      "passed": false,
+      "detail": "ticker not found"
+    }
+  ],
+  "elapsed_seconds": 2.126,
+  "exchange": "",
+  "quote": null
+}

@@ -152,6 +152,28 @@ def test_risk_heading_must_be_verbatim(data):
     assert any("verbatim" in p for p in problems)
 
 
+def test_duplicate_risks_with_blank_text_are_rejected(data):
+    agent_input = risk_input(data)
+    repeated = RiskItem(title=" ", category="other", severity=3, explanation="", source_heading=agent_input.headings[0])
+    problems = RiskAgent().validate(RiskSelection(risks=[repeated] * 6), agent_input)
+    assert any("different source_heading" in p for p in problems)
+    assert any("must not be empty" in p for p in problems)
+
+
+def test_risk_rules_match_the_prompt(data):
+    agent_input = risk_input(data)
+    selection = default_output(RiskSelection, json.loads(RiskAgent().build_user(agent_input)))
+    assert isinstance(selection, RiskSelection)
+    selection.risks[0] = selection.risks[0].model_copy(update={
+        "title": "word " * 9, "explanation": "word " * 26,
+        "source_heading": selection.risks[0].source_heading.swapcase(), "severity": 1,
+    })
+    selection.risks[1] = selection.risks[1].model_copy(update={"severity": 3})
+    problems = RiskAgent().validate(selection, agent_input)
+    for rule in ("8 words", "25 words", "verbatim", "most to least severe"):
+        assert any(rule in p for p in problems)
+
+
 # ---- Analyst Agent --------------------------------------------------------------------------------------------
 
 
@@ -192,6 +214,15 @@ def test_counts_and_confidence_checked(data):
     assert any("exactly 3" in p for p in problems) and any("confidence" in p for p in problems)
 
 
+def test_analyst_rules_match_the_prompt(data):
+    problems = AnalystAgent().validate(view(
+        reason="word " * 26, valuation_summary="word " * 51,
+        signal_reasoning="word " * 71, thesis=["", "word " * 21, "valid"],
+    ), analyst_input(data))
+    for rule in ("null", "25 words", "50 words", "70 words", "20 words", "must not be empty"):
+        assert any(rule in p for p in problems)
+
+
 # ---- Writer Agent ---------------------------------------------------------------------------------------------
 
 GOOD = """## Company overview
@@ -227,6 +258,27 @@ def test_invented_number_flagged_rounding_allowed():
     source = '{"revenue":"$416.16B","pe":"34.8","premium":"+59%"}'
     assert ungrounded_numbers(GOOD, source) == []
     assert ungrounded_numbers("Margins hit 31.7% and revenue $416.2B.", source) == ["31.7"]
+
+
+@pytest.mark.parametrize(("prose", "source"), [
+    ("Margin 25%", "Margin -25%"),
+    ("Margin -25%", "Margin 25%"),
+    ("Margin 5%", "Margin -5%"),
+    ("Margin −25%", "Margin 25%"),
+    ("Income $25.00M", "Income -$25.00M"),
+])
+def test_grounding_rejects_sign_reversals(prose, source):
+    assert ungrounded_numbers(prose, source)
+
+
+@pytest.mark.parametrize(("prose", "source"), [
+    ("Margin -25%", "Margin -24.8%"),
+    ("Margin −25%", "Margin -24.8%"),
+    ("Income -$25.00M", "Income -$25.00M"),
+    ("Income $-25.00M", "Income -$25.00M"),
+])
+def test_grounding_preserves_negative_values_and_rounding(prose, source):
+    assert ungrounded_numbers(prose, source) == []
 
 
 def test_model_tickers_use_the_shared_normaliser(data):

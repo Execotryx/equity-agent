@@ -1,0 +1,5038 @@
+[
+  {
+    "company": "Halyk Bank",
+    "kase_ticker": "HSBK",
+    "input_ticker": "HSBK",
+    "currency": "KZT",
+    "name_fragment": "halyk",
+    "scope": "native",
+    "kind": "bank",
+    "id": "native-HSBK",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "quote available",
+        "passed": false,
+        "detail": "ticker not found"
+      }
+    ],
+    "elapsed_seconds": 3.702,
+    "exchange": "",
+    "quote": null
+  },
+  {
+    "company": "Kaspi.kz",
+    "kase_ticker": "KSPI",
+    "input_ticker": "KSPI",
+    "currency": "KZT",
+    "name_fragment": "kaspi",
+    "scope": "native",
+    "kind": "standard",
+    "id": "native-KSPI",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "requested ticker retained",
+        "passed": true,
+        "detail": "KSPI"
+      },
+      {
+        "criterion": "expected company",
+        "passed": true,
+        "detail": "Joint Stock Company Kaspi.kz"
+      },
+      {
+        "criterion": "positive price",
+        "passed": true,
+        "detail": "92.99"
+      },
+      {
+        "criterion": "expected quote currency",
+        "passed": false,
+        "detail": "expected KZT; got USD"
+      },
+      {
+        "criterion": "expected trading venue",
+        "passed": false,
+        "detail": "NasdaqGS"
+      }
+    ],
+    "elapsed_seconds": 1.369,
+    "exchange": "NasdaqGS",
+    "quote": {
+      "snapshot": {
+        "ticker": "KSPI",
+        "name": "Joint Stock Company Kaspi.kz",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "currency": "USD",
+        "price": 92.99,
+        "market_cap": 17670635520.0,
+        "week52_low": 68.59,
+        "week52_high": 109.94,
+        "business_summary": "Joint Stock Company Kaspi.kz, together with its subsidiaries, provides payments, marketplace, and fintech solutions for consumers and merchants in Kazakhstan, Azerbaijan, and Ukraine. The company operates through three segments: Payments, Marketplace, and Fintech. The Payments segment offers a platform that facilities transactions between and among merchants and consumers. This segment provides ways for consumers to pay for shopping transactions and regular household bills, as well as make peer to peer payments; and enables merchants to accept payment online and in store, issue and settle\u2026"
+      },
+      "multiples": {
+        "pe_ttm": 8.523373,
+        "pe_fwd": 0.013668085,
+        "ev_ebitda": null,
+        "ev_revenue": null,
+        "price_to_book": 0.007808716,
+        "net_margin": 0.24152,
+        "roe": 0.44781,
+        "revenue_growth": 0.136,
+        "debt_to_equity": 0.22171,
+        "dividend_yield": 0.0617
+      },
+      "analyst_target_mean": 106.442535,
+      "analyst_recommendation": "buy"
+    }
+  },
+  {
+    "company": "Kazatomprom",
+    "kase_ticker": "KZAP",
+    "input_ticker": "KZAP",
+    "currency": "KZT",
+    "name_fragment": "kazatomprom",
+    "scope": "native",
+    "kind": "standard",
+    "id": "native-KZAP",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "quote available",
+        "passed": false,
+        "detail": "ticker not found"
+      }
+    ],
+    "elapsed_seconds": 2.126,
+    "exchange": "",
+    "quote": null
+  },
+  {
+    "company": "KazMunayGas",
+    "kase_ticker": "KMGZ",
+    "input_ticker": "KMGZ",
+    "currency": "KZT",
+    "name_fragment": "kazmunay",
+    "scope": "native",
+    "kind": "standard",
+    "id": "native-KMGZ",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "quote available",
+        "passed": false,
+        "detail": "ticker not found"
+      }
+    ],
+    "elapsed_seconds": 2.085,
+    "exchange": "",
+    "quote": null
+  },
+  {
+    "company": "KEGOC",
+    "kase_ticker": "KEGC",
+    "input_ticker": "KEGC",
+    "currency": "KZT",
+    "name_fragment": "kegoc",
+    "scope": "native",
+    "kind": "standard",
+    "id": "native-KEGC",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "quote available",
+        "passed": false,
+        "detail": "ticker not found"
+      }
+    ],
+    "elapsed_seconds": 1.924,
+    "exchange": "",
+    "quote": null
+  },
+  {
+    "company": "Kcell",
+    "kase_ticker": "KCEL",
+    "input_ticker": "KCEL",
+    "currency": "KZT",
+    "name_fragment": "kcell",
+    "scope": "native",
+    "kind": "standard",
+    "id": "native-KCEL",
+    "source": "https://kase.kz/en/investors/instruments/shares",
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "quote available",
+        "passed": false,
+        "detail": "ticker not found"
+      }
+    ],
+    "elapsed_seconds": 2.157,
+    "exchange": "",
+    "quote": null
+  },
+  {
+    "company": "Apple",
+    "kase_ticker": "AAPL_KZ",
+    "input_ticker": "AAPL",
+    "currency": "USD",
+    "name_fragment": "apple",
+    "scope": "us_listing",
+    "kind": "standard",
+    "id": "us_listing-AAPL_KZ",
+    "source": "https://kase.kz/en/markets/kase-global",
+    "passed": true,
+    "checks": [
+      {
+        "criterion": "requested ticker retained",
+        "passed": true,
+        "detail": "AAPL"
+      },
+      {
+        "criterion": "expected company",
+        "passed": true,
+        "detail": "Apple Inc."
+      },
+      {
+        "criterion": "positive price",
+        "passed": true,
+        "detail": "336.64"
+      },
+      {
+        "criterion": "expected quote currency",
+        "passed": true,
+        "detail": "expected USD; got USD"
+      },
+      {
+        "criterion": "expected trading venue",
+        "passed": true,
+        "detail": "NasdaqGS"
+      },
+      {
+        "criterion": "price and key financials present",
+        "passed": true,
+        "detail": "price 336.64, 4 years of revenue, 10 multiples"
+      },
+      {
+        "criterion": "at least 3 peers with 2+ valuation multiples",
+        "passed": true,
+        "detail": "5 of 5 peers"
+      },
+      {
+        "criterion": "signal with reasoning",
+        "passed": true,
+        "detail": "HOLD"
+      },
+      {
+        "criterion": "risk section present or unavailable with a reason",
+        "passed": true,
+        "detail": "SEC filing unavailable (TypeError)"
+      },
+      {
+        "criterion": "disclaimer present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "criterion": "writer produced a narrative",
+        "passed": true,
+        "detail": "narrative present"
+      }
+    ],
+    "elapsed_seconds": 19.474,
+    "exchange": "NasdaqGS",
+    "quote": {
+      "snapshot": {
+        "ticker": "AAPL",
+        "name": "Apple Inc.",
+        "sector": "Technology",
+        "industry": "Consumer Electronics",
+        "currency": "USD",
+        "price": 336.64,
+        "market_cap": 4912984883200.0,
+        "week52_low": 243.42,
+        "week52_high": 345.34,
+        "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+      },
+      "multiples": {
+        "pe_ttm": 38.605507,
+        "pe_fwd": 35.11173,
+        "ev_ebitda": 29.382,
+        "ev_revenue": 10.571,
+        "price_to_book": 45.739132,
+        "net_margin": 0.27618998,
+        "roe": 1.4875101,
+        "revenue_growth": 0.164,
+        "debt_to_equity": 0.78445,
+        "dividend_yield": 0.0032
+      },
+      "analyst_target_mean": 328.09384,
+      "analyst_recommendation": "buy"
+    },
+    "acceptance": {
+      "ticker": "AAPL",
+      "kind": "standard",
+      "passed": true,
+      "failed": [],
+      "checks": [
+        {
+          "criterion": "price and key financials present",
+          "passed": true,
+          "detail": "price 336.64, 4 years of revenue, 10 multiples"
+        },
+        {
+          "criterion": "at least 3 peers with 2+ valuation multiples",
+          "passed": true,
+          "detail": "5 of 5 peers"
+        },
+        {
+          "criterion": "signal with reasoning",
+          "passed": true,
+          "detail": "HOLD"
+        },
+        {
+          "criterion": "risk section present or unavailable with a reason",
+          "passed": true,
+          "detail": "SEC filing unavailable (TypeError)"
+        },
+        {
+          "criterion": "disclaimer present",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "signal": "HOLD",
+      "peers": 5,
+      "comps_ready_ms": 10334,
+      "total_ms": 17997,
+      "llm_calls": 4,
+      "cost_usd": 0.0694,
+      "within_budget": true,
+      "timings_ms": {
+        "validate": 1836,
+        "news": 2228,
+        "financials": 4970,
+        "risk": 5787,
+        "comps": 8497,
+        "comps_ready": 10334,
+        "scorecard": 0,
+        "comps_explain": 4121,
+        "analyst": 7216,
+        "signal_ready": 17551,
+        "writer": 7658,
+        "total": 17997
+      }
+    },
+    "report": {
+      "generated_at": "2026-10-10T16:10:34+00:00",
+      "ticker": "AAPL",
+      "financials": {
+        "snapshot": {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "sector": "Technology",
+          "industry": "Consumer Electronics",
+          "currency": "USD",
+          "price": 336.64,
+          "market_cap": 4912984883200.0,
+          "week52_low": 243.42,
+          "week52_high": 345.34,
+          "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+        },
+        "multiples": {
+          "pe_ttm": 38.605507,
+          "pe_fwd": 35.11173,
+          "ev_ebitda": 29.382,
+          "ev_revenue": 10.571,
+          "price_to_book": 45.739132,
+          "net_margin": 0.27618998,
+          "roe": 1.4875101,
+          "revenue_growth": 0.164,
+          "debt_to_equity": 0.78445,
+          "dividend_yield": 0.0032
+        },
+        "revenue_history": [
+          {
+            "year": 2022,
+            "value": 394328000000.0
+          },
+          {
+            "year": 2023,
+            "value": 383285000000.0
+          },
+          {
+            "year": 2024,
+            "value": 391035000000.0
+          },
+          {
+            "year": 2025,
+            "value": 416161000000.0
+          }
+        ],
+        "ebitda_history": [
+          {
+            "year": 2022,
+            "value": 130541000000.0
+          },
+          {
+            "year": 2023,
+            "value": 125820000000.0
+          },
+          {
+            "year": 2024,
+            "value": 134661000000.0
+          },
+          {
+            "year": 2025,
+            "value": 144748000000.0
+          }
+        ],
+        "net_income_history": [
+          {
+            "year": 2022,
+            "value": 99803000000.0
+          },
+          {
+            "year": 2023,
+            "value": 96995000000.0
+          },
+          {
+            "year": 2024,
+            "value": 93736000000.0
+          },
+          {
+            "year": 2025,
+            "value": 112010000000.0
+          }
+        ],
+        "price_history": [
+          {
+            "date": "2025-10-10",
+            "close": 244.3673095703125
+          },
+          {
+            "date": "2025-10-13",
+            "close": 246.74851989746094
+          },
+          {
+            "date": "2025-10-14",
+            "close": 246.85812377929688
+          },
+          {
+            "date": "2025-10-15",
+            "close": 248.4223175048828
+          },
+          {
+            "date": "2025-10-16",
+            "close": 246.53929138183594
+          },
+          {
+            "date": "2025-10-17",
+            "close": 251.36146545410156
+          },
+          {
+            "date": "2025-10-20",
+            "close": 261.27484130859375
+          },
+          {
+            "date": "2025-10-21",
+            "close": 261.8028869628906
+          },
+          {
+            "date": "2025-10-22",
+            "close": 257.4988098144531
+          },
+          {
+            "date": "2025-10-23",
+            "close": 258.6246032714844
+          },
+          {
+            "date": "2025-10-24",
+            "close": 261.8527526855469
+          },
+          {
+            "date": "2025-10-27",
+            "close": 267.8207092285156
+          },
+          {
+            "date": "2025-10-28",
+            "close": 268.010009765625
+          },
+          {
+            "date": "2025-10-29",
+            "close": 268.7074279785156
+          },
+          {
+            "date": "2025-10-30",
+            "close": 270.4011535644531
+          },
+          {
+            "date": "2025-10-31",
+            "close": 269.37493896484375
+          },
+          {
+            "date": "2025-11-03",
+            "close": 268.05975341796875
+          },
+          {
+            "date": "2025-11-04",
+            "close": 269.0461730957031
+          },
+          {
+            "date": "2025-11-05",
+            "close": 269.14581298828125
+          },
+          {
+            "date": "2025-11-06",
+            "close": 268.7771301269531
+          },
+          {
+            "date": "2025-11-07",
+            "close": 267.48193359375
+          },
+          {
+            "date": "2025-11-10",
+            "close": 268.6986083984375
+          },
+          {
+            "date": "2025-11-11",
+            "close": 274.5028076171875
+          },
+          {
+            "date": "2025-11-12",
+            "close": 272.7276306152344
+          },
+          {
+            "date": "2025-11-13",
+            "close": 272.2090759277344
+          },
+          {
+            "date": "2025-11-14",
+            "close": 271.6705017089844
+          },
+          {
+            "date": "2025-11-17",
+            "close": 266.73394775390625
+          },
+          {
+            "date": "2025-11-18",
+            "close": 266.71405029296875
+          },
+          {
+            "date": "2025-11-19",
+            "close": 267.8309631347656
+          },
+          {
+            "date": "2025-11-20",
+            "close": 265.5272521972656
+          },
+          {
+            "date": "2025-11-21",
+            "close": 270.75299072265625
+          },
+          {
+            "date": "2025-11-24",
+            "close": 275.1710205078125
+          },
+          {
+            "date": "2025-11-25",
+            "close": 276.2181701660156
+          },
+          {
+            "date": "2025-11-26",
+            "close": 276.79656982421875
+          },
+          {
+            "date": "2025-11-28",
+            "close": 278.0930480957031
+          },
+          {
+            "date": "2025-12-01",
+            "close": 282.3315124511719
+          },
+          {
+            "date": "2025-12-02",
+            "close": 285.4131164550781
+          },
+          {
+            "date": "2025-12-03",
+            "close": 283.378662109375
+          },
+          {
+            "date": "2025-12-04",
+            "close": 279.9380187988281
+          },
+          {
+            "date": "2025-12-05",
+            "close": 278.02325439453125
+          },
+          {
+            "date": "2025-12-08",
+            "close": 277.1356506347656
+          },
+          {
+            "date": "2025-12-09",
+            "close": 276.4275817871094
+          },
+          {
+            "date": "2025-12-10",
+            "close": 278.02325439453125
+          },
+          {
+            "date": "2025-12-11",
+            "close": 277.2752685546875
+          },
+          {
+            "date": "2025-12-12",
+            "close": 277.5246276855469
+          },
+          {
+            "date": "2025-12-15",
+            "close": 273.3658752441406
+          },
+          {
+            "date": "2025-12-16",
+            "close": 273.8645324707031
+          },
+          {
+            "date": "2025-12-17",
+            "close": 271.10205078125
+          },
+          {
+            "date": "2025-12-18",
+            "close": 271.4511413574219
+          },
+          {
+            "date": "2025-12-19",
+            "close": 272.9271240234375
+          },
+          {
+            "date": "2025-12-22",
+            "close": 270.23443603515625
+          },
+          {
+            "date": "2025-12-23",
+            "close": 271.62066650390625
+          },
+          {
+            "date": "2025-12-24",
+            "close": 273.06671142578125
+          },
+          {
+            "date": "2025-12-26",
+            "close": 272.6578063964844
+          },
+          {
+            "date": "2025-12-29",
+            "close": 273.0168762207031
+          },
+          {
+            "date": "2025-12-30",
+            "close": 272.33868408203125
+          },
+          {
+            "date": "2025-12-31",
+            "close": 271.12200927734375
+          },
+          {
+            "date": "2026-01-02",
+            "close": 270.2743225097656
+          },
+          {
+            "date": "2026-01-05",
+            "close": 266.5345153808594
+          },
+          {
+            "date": "2026-01-06",
+            "close": 261.6477966308594
+          },
+          {
+            "date": "2026-01-07",
+            "close": 259.623291015625
+          },
+          {
+            "date": "2026-01-08",
+            "close": 258.3368225097656
+          },
+          {
+            "date": "2026-01-09",
+            "close": 258.6659240722656
+          },
+          {
+            "date": "2026-01-12",
+            "close": 259.54351806640625
+          },
+          {
+            "date": "2026-01-13",
+            "close": 260.3413391113281
+          },
+          {
+            "date": "2026-01-14",
+            "close": 259.25433349609375
+          },
+          {
+            "date": "2026-01-15",
+            "close": 257.5090637207031
+          },
+          {
+            "date": "2026-01-16",
+            "close": 254.8363494873047
+          },
+          {
+            "date": "2026-01-20",
+            "close": 246.0303192138672
+          },
+          {
+            "date": "2026-01-21",
+            "close": 246.97775268554688
+          },
+          {
+            "date": "2026-01-22",
+            "close": 247.67584228515625
+          },
+          {
+            "date": "2026-01-23",
+            "close": 247.36668395996094
+          },
+          {
+            "date": "2026-01-26",
+            "close": 254.7166748046875
+          },
+          {
+            "date": "2026-01-27",
+            "close": 257.5688781738281
+          },
+          {
+            "date": "2026-01-28",
+            "close": 255.743896484375
+          },
+          {
+            "date": "2026-01-29",
+            "close": 257.5788879394531
+          },
+          {
+            "date": "2026-01-30",
+            "close": 258.775634765625
+          },
+          {
+            "date": "2026-02-02",
+            "close": 269.2770690917969
+          },
+          {
+            "date": "2026-02-03",
+            "close": 268.7485046386719
+          },
+          {
+            "date": "2026-02-04",
+            "close": 275.7394104003906
+          },
+          {
+            "date": "2026-02-05",
+            "close": 275.1610412597656
+          },
+          {
+            "date": "2026-02-06",
+            "close": 277.364990234375
+          },
+          {
+            "date": "2026-02-09",
+            "close": 274.13079833984375
+          },
+          {
+            "date": "2026-02-10",
+            "close": 273.19244384765625
+          },
+          {
+            "date": "2026-02-11",
+            "close": 275.00921630859375
+          },
+          {
+            "date": "2026-02-12",
+            "close": 261.2637634277344
+          },
+          {
+            "date": "2026-02-13",
+            "close": 255.32435607910156
+          },
+          {
+            "date": "2026-02-17",
+            "close": 263.4099426269531
+          },
+          {
+            "date": "2026-02-18",
+            "close": 263.8791198730469
+          },
+          {
+            "date": "2026-02-19",
+            "close": 260.11578369140625
+          },
+          {
+            "date": "2026-02-20",
+            "close": 264.1086730957031
+          },
+          {
+            "date": "2026-02-23",
+            "close": 265.705810546875
+          },
+          {
+            "date": "2026-02-24",
+            "close": 271.6552429199219
+          },
+          {
+            "date": "2026-02-25",
+            "close": 273.74151611328125
+          },
+          {
+            "date": "2026-02-26",
+            "close": 272.4637756347656
+          },
+          {
+            "date": "2026-02-27",
+            "close": 263.70941162109375
+          },
+          {
+            "date": "2026-03-02",
+            "close": 264.2484130859375
+          },
+          {
+            "date": "2026-03-03",
+            "close": 263.2801818847656
+          },
+          {
+            "date": "2026-03-04",
+            "close": 262.0523376464844
+          },
+          {
+            "date": "2026-03-05",
+            "close": 259.8263244628906
+          },
+          {
+            "date": "2026-03-06",
+            "close": 257.0013427734375
+          },
+          {
+            "date": "2026-03-09",
+            "close": 259.41705322265625
+          },
+          {
+            "date": "2026-03-10",
+            "close": 260.3653564453125
+          },
+          {
+            "date": "2026-03-11",
+            "close": 260.34539794921875
+          },
+          {
+            "date": "2026-03-12",
+            "close": 255.3043975830078
+          },
+          {
+            "date": "2026-03-13",
+            "close": 249.6744384765625
+          },
+          {
+            "date": "2026-03-16",
+            "close": 252.36964416503906
+          },
+          {
+            "date": "2026-03-17",
+            "close": 253.77711486816406
+          },
+          {
+            "date": "2026-03-18",
+            "close": 249.49476623535156
+          },
+          {
+            "date": "2026-03-19",
+            "close": 248.5165252685547
+          },
+          {
+            "date": "2026-03-20",
+            "close": 247.54823303222656
+          },
+          {
+            "date": "2026-03-23",
+            "close": 251.04200744628906
+          },
+          {
+            "date": "2026-03-24",
+            "close": 251.1917266845703
+          },
+          {
+            "date": "2026-03-25",
+            "close": 252.16998291015625
+          },
+          {
+            "date": "2026-03-26",
+            "close": 252.43951416015625
+          },
+          {
+            "date": "2026-03-27",
+            "close": 248.35679626464844
+          },
+          {
+            "date": "2026-03-30",
+            "close": 246.19065856933594
+          },
+          {
+            "date": "2026-03-31",
+            "close": 253.33790588378906
+          },
+          {
+            "date": "2026-04-01",
+            "close": 255.1746368408203
+          },
+          {
+            "date": "2026-04-02",
+            "close": 255.464111328125
+          },
+          {
+            "date": "2026-04-06",
+            "close": 258.39886474609375
+          },
+          {
+            "date": "2026-04-07",
+            "close": 253.0484161376953
+          },
+          {
+            "date": "2026-04-08",
+            "close": 258.4388122558594
+          },
+          {
+            "date": "2026-04-09",
+            "close": 260.0259704589844
+          },
+          {
+            "date": "2026-04-10",
+            "close": 260.0159912109375
+          },
+          {
+            "date": "2026-04-13",
+            "close": 258.73828125
+          },
+          {
+            "date": "2026-04-14",
+            "close": 258.3689270019531
+          },
+          {
+            "date": "2026-04-15",
+            "close": 265.95538330078125
+          },
+          {
+            "date": "2026-04-16",
+            "close": 262.9307861328125
+          },
+          {
+            "date": "2026-04-17",
+            "close": 269.7486267089844
+          },
+          {
+            "date": "2026-04-20",
+            "close": 272.5635681152344
+          },
+          {
+            "date": "2026-04-21",
+            "close": 265.69586181640625
+          },
+          {
+            "date": "2026-04-22",
+            "close": 272.68341064453125
+          },
+          {
+            "date": "2026-04-23",
+            "close": 272.9429016113281
+          },
+          {
+            "date": "2026-04-24",
+            "close": 270.5771179199219
+          },
+          {
+            "date": "2026-04-27",
+            "close": 267.1332702636719
+          },
+          {
+            "date": "2026-04-28",
+            "close": 270.2277526855469
+          },
+          {
+            "date": "2026-04-29",
+            "close": 269.688720703125
+          },
+          {
+            "date": "2026-04-30",
+            "close": 270.86663818359375
+          },
+          {
+            "date": "2026-05-01",
+            "close": 279.6409912109375
+          },
+          {
+            "date": "2026-05-04",
+            "close": 276.3368225097656
+          },
+          {
+            "date": "2026-05-05",
+            "close": 283.67376708984375
+          },
+          {
+            "date": "2026-05-06",
+            "close": 286.99786376953125
+          },
+          {
+            "date": "2026-05-07",
+            "close": 286.927978515625
+          },
+          {
+            "date": "2026-05-08",
+            "close": 292.7974853515625
+          },
+          {
+            "date": "2026-05-11",
+            "close": 292.42779541015625
+          },
+          {
+            "date": "2026-05-12",
+            "close": 294.54595947265625
+          },
+          {
+            "date": "2026-05-13",
+            "close": 298.6124572753906
+          },
+          {
+            "date": "2026-05-14",
+            "close": 297.9530334472656
+          },
+          {
+            "date": "2026-05-15",
+            "close": 299.9713134765625
+          },
+          {
+            "date": "2026-05-18",
+            "close": 297.5833435058594
+          },
+          {
+            "date": "2026-05-19",
+            "close": 298.7123718261719
+          },
+          {
+            "date": "2026-05-20",
+            "close": 301.98956298828125
+          },
+          {
+            "date": "2026-05-21",
+            "close": 304.7271728515625
+          },
+          {
+            "date": "2026-05-22",
+            "close": 308.55389404296875
+          },
+          {
+            "date": "2026-05-26",
+            "close": 308.0643005371094
+          },
+          {
+            "date": "2026-05-27",
+            "close": 310.5821533203125
+          },
+          {
+            "date": "2026-05-28",
+            "close": 312.24072265625
+          },
+          {
+            "date": "2026-05-29",
+            "close": 311.7911071777344
+          },
+          {
+            "date": "2026-06-01",
+            "close": 306.0460510253906
+          },
+          {
+            "date": "2026-06-02",
+            "close": 314.92840576171875
+          },
+          {
+            "date": "2026-06-03",
+            "close": 309.9926452636719
+          },
+          {
+            "date": "2026-06-04",
+            "close": 310.9618225097656
+          },
+          {
+            "date": "2026-06-05",
+            "close": 307.0751647949219
+          },
+          {
+            "date": "2026-06-08",
+            "close": 301.2801818847656
+          },
+          {
+            "date": "2026-06-09",
+            "close": 290.29962158203125
+          },
+          {
+            "date": "2026-06-10",
+            "close": 291.3287353515625
+          },
+          {
+            "date": "2026-06-11",
+            "close": 295.375244140625
+          },
+          {
+            "date": "2026-06-12",
+            "close": 290.879150390625
+          },
+          {
+            "date": "2026-06-15",
+            "close": 296.1645812988281
+          },
+          {
+            "date": "2026-06-16",
+            "close": 298.9821472167969
+          },
+          {
+            "date": "2026-06-17",
+            "close": 295.6949768066406
+          },
+          {
+            "date": "2026-06-18",
+            "close": 297.7532043457031
+          },
+          {
+            "date": "2026-06-22",
+            "close": 296.75408935546875
+          },
+          {
+            "date": "2026-06-23",
+            "close": 294.04638671875
+          },
+          {
+            "date": "2026-06-24",
+            "close": 292.8274230957031
+          },
+          {
+            "date": "2026-06-25",
+            "close": 274.91290283203125
+          },
+          {
+            "date": "2026-06-26",
+            "close": 283.53546142578125
+          },
+          {
+            "date": "2026-06-29",
+            "close": 281.4972229003906
+          },
+          {
+            "date": "2026-06-30",
+            "close": 289.11065673828125
+          },
+          {
+            "date": "2026-07-01",
+            "close": 294.1263427734375
+          },
+          {
+            "date": "2026-07-02",
+            "close": 308.3640441894531
+          },
+          {
+            "date": "2026-07-06",
+            "close": 312.3905944824219
+          },
+          {
+            "date": "2026-07-07",
+            "close": 310.3923034667969
+          },
+          {
+            "date": "2026-07-08",
+            "close": 313.1199645996094
+          },
+          {
+            "date": "2026-07-09",
+            "close": 315.947509765625
+          },
+          {
+            "date": "2026-07-10",
+            "close": 315.0483093261719
+          },
+          {
+            "date": "2026-07-13",
+            "close": 317.03656005859375
+          },
+          {
+            "date": "2026-07-14",
+            "close": 314.58868408203125
+          },
+          {
+            "date": "2026-07-15",
+            "close": 327.2178039550781
+          },
+          {
+            "date": "2026-07-16",
+            "close": 332.97283935546875
+          },
+          {
+            "date": "2026-07-17",
+            "close": 333.452392578125
+          },
+          {
+            "date": "2026-07-20",
+            "close": 326.3085632324219
+          },
+          {
+            "date": "2026-07-21",
+            "close": 327.45758056640625
+          },
+          {
+            "date": "2026-07-22",
+            "close": 325.60919189453125
+          },
+          {
+            "date": "2026-07-23",
+            "close": 321.3828430175781
+          },
+          {
+            "date": "2026-07-24",
+            "close": 332.7330322265625
+          },
+          {
+            "date": "2026-07-27",
+            "close": 336.61968994140625
+          },
+          {
+            "date": "2026-07-28",
+            "close": 339.78692626953125
+          },
+          {
+            "date": "2026-07-29",
+            "close": 337.8985900878906
+          },
+          {
+            "date": "2026-07-30",
+            "close": 333.1426696777344
+          },
+          {
+            "date": "2026-07-31",
+            "close": 308.6438293457031
+          },
+          {
+            "date": "2026-08-03",
+            "close": 303.1585693359375
+          },
+          {
+            "date": "2026-08-04",
+            "close": 309.1134033203125
+          },
+          {
+            "date": "2026-08-05",
+            "close": 310.7320251464844
+          },
+          {
+            "date": "2026-08-06",
+            "close": 312.14080810546875
+          },
+          {
+            "date": "2026-08-07",
+            "close": 313.05999755859375
+          },
+          {
+            "date": "2026-08-10",
+            "close": 308.260009765625
+          },
+          {
+            "date": "2026-08-11",
+            "close": 304.9100036621094
+          },
+          {
+            "date": "2026-08-12",
+            "close": 302.25
+          },
+          {
+            "date": "2026-08-13",
+            "close": 305.260009765625
+          },
+          {
+            "date": "2026-08-14",
+            "close": 305.92999267578125
+          },
+          {
+            "date": "2026-08-17",
+            "close": 305.5899963378906
+          },
+          {
+            "date": "2026-08-18",
+            "close": 310.0299987792969
+          },
+          {
+            "date": "2026-08-19",
+            "close": 316.8299865722656
+          },
+          {
+            "date": "2026-08-20",
+            "close": 311.29998779296875
+          },
+          {
+            "date": "2026-08-21",
+            "close": 309.3500061035156
+          },
+          {
+            "date": "2026-08-24",
+            "close": 310.3399963378906
+          },
+          {
+            "date": "2026-08-25",
+            "close": 309.8999938964844
+          },
+          {
+            "date": "2026-08-26",
+            "close": 313.45001220703125
+          },
+          {
+            "date": "2026-08-27",
+            "close": 314.5799865722656
+          },
+          {
+            "date": "2026-08-28",
+            "close": 319.70001220703125
+          },
+          {
+            "date": "2026-08-31",
+            "close": 316.8500061035156
+          },
+          {
+            "date": "2026-09-01",
+            "close": 325.1300048828125
+          },
+          {
+            "date": "2026-09-02",
+            "close": 324.9599914550781
+          },
+          {
+            "date": "2026-09-03",
+            "close": 328.2099914550781
+          },
+          {
+            "date": "2026-09-04",
+            "close": 319.9700012207031
+          },
+          {
+            "date": "2026-09-08",
+            "close": 316.2200012207031
+          },
+          {
+            "date": "2026-09-09",
+            "close": 315.3399963378906
+          },
+          {
+            "date": "2026-09-10",
+            "close": 326.57000732421875
+          },
+          {
+            "date": "2026-09-11",
+            "close": 332.2699890136719
+          },
+          {
+            "date": "2026-09-14",
+            "close": 333.0799865722656
+          },
+          {
+            "date": "2026-09-15",
+            "close": 331.3399963378906
+          },
+          {
+            "date": "2026-09-16",
+            "close": 332.4100036621094
+          },
+          {
+            "date": "2026-09-17",
+            "close": 337.0
+          },
+          {
+            "date": "2026-09-18",
+            "close": 336.1300048828125
+          },
+          {
+            "date": "2026-09-21",
+            "close": 338.9800109863281
+          },
+          {
+            "date": "2026-09-22",
+            "close": 339.75
+          },
+          {
+            "date": "2026-09-23",
+            "close": 337.0199890136719
+          },
+          {
+            "date": "2026-09-24",
+            "close": 335.9200134277344
+          },
+          {
+            "date": "2026-09-25",
+            "close": 341.07000732421875
+          },
+          {
+            "date": "2026-09-28",
+            "close": 338.3999938964844
+          },
+          {
+            "date": "2026-09-29",
+            "close": 329.3999938964844
+          },
+          {
+            "date": "2026-09-30",
+            "close": 333.0199890136719
+          },
+          {
+            "date": "2026-10-01",
+            "close": 330.32000732421875
+          },
+          {
+            "date": "2026-10-02",
+            "close": 333.69000244140625
+          },
+          {
+            "date": "2026-10-05",
+            "close": 332.8900146484375
+          },
+          {
+            "date": "2026-10-06",
+            "close": 333.6300048828125
+          },
+          {
+            "date": "2026-10-07",
+            "close": 336.6700134277344
+          },
+          {
+            "date": "2026-10-08",
+            "close": 340.4200134277344
+          },
+          {
+            "date": "2026-10-09",
+            "close": 336.6400146484375
+          }
+        ],
+        "analyst_target_mean": 328.09384,
+        "analyst_recommendation": "buy"
+      },
+      "comps": {
+        "metric_set": "general",
+        "metrics": [
+          "pe_ttm",
+          "pe_fwd",
+          "ev_ebitda",
+          "ev_revenue",
+          "net_margin",
+          "revenue_growth",
+          "debt_to_equity"
+        ],
+        "primary_metric": "pe_fwd",
+        "rows": [
+          {
+            "ticker": "AAPL",
+            "name": "Apple Inc.",
+            "market_cap": 4912984883200.0,
+            "multiples": {
+              "pe_ttm": 38.605507,
+              "pe_fwd": 35.11173,
+              "ev_ebitda": 29.382,
+              "ev_revenue": 10.571,
+              "price_to_book": 45.739132,
+              "net_margin": 0.27618998,
+              "roe": 1.4875101,
+              "revenue_growth": 0.164,
+              "debt_to_equity": 0.78445,
+              "dividend_yield": 0.0032
+            },
+            "is_target": true,
+            "sector": "Technology",
+            "industry": "Consumer Electronics",
+            "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+          },
+          {
+            "ticker": "MSFT",
+            "name": "Microsoft Corporation",
+            "market_cap": 3973186846720.0,
+            "multiples": {
+              "pe_ttm": 29.111536,
+              "pe_fwd": 22.59842,
+              "ev_ebitda": 20.723,
+              "ev_revenue": 12.13,
+              "price_to_book": 8.98296,
+              "net_margin": 0.40305,
+              "roe": 0.34039003,
+              "revenue_growth": 0.177,
+              "debt_to_equity": 0.29118,
+              "dividend_yield": 0.0073
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Software - Infrastructure",
+            "business_summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint,\u2026"
+          },
+          {
+            "ticker": "GOOGL",
+            "name": "Alphabet Inc.",
+            "market_cap": 4300779028480.0,
+            "multiples": {
+              "pe_ttm": 17.644756,
+              "pe_fwd": 23.33272,
+              "ev_ebitda": 24.238,
+              "ev_revenue": 9.413,
+              "price_to_book": 6.909384,
+              "net_margin": 0.54771,
+              "roe": 0.48676,
+              "revenue_growth": 0.242,
+              "debt_to_equity": 0.18859,
+              "dividend_yield": 0.0025
+            },
+            "is_target": false,
+            "sector": "Communication Services",
+            "industry": "Internet Content & Information",
+            "business_summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription\u2026"
+          },
+          {
+            "ticker": "DELL",
+            "name": "Dell Technologies Inc.",
+            "market_cap": 372624424960.0,
+            "multiples": {
+              "pe_ttm": 34.073254,
+              "pe_fwd": 20.12767,
+              "ev_ebitda": 22.359,
+              "ev_revenue": 2.621,
+              "price_to_book": -262.80716,
+              "net_margin": 0.07525,
+              "roe": null,
+              "revenue_growth": 0.577,
+              "debt_to_equity": null,
+              "dividend_yield": 0.0043
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Computer Hardware",
+            "business_summary": "Dell Technologies Inc. designs, develops, manufactures, markets, sells, and supports various comprehensive and integrated solutions, products, and services in the Americas, Europe, the Middle East, Asia, and internationally. The company operates through Infrastructure Solutions Group (ISG) and Client Solutions Group (CSG) segments. The ISG segment provides modern and traditional storage solutions, including all-flash, purpose-built, hyper-converged infrastructure, software-defined storage, and general-purpose and AI-optimized servers. This segment also offers networking products and services\u2026"
+          },
+          {
+            "ticker": "HPQ",
+            "name": "HP Inc.",
+            "market_cap": 27234088960.0,
+            "multiples": {
+              "pe_ttm": 11.526718,
+              "pe_fwd": 9.624057,
+              "ev_ebitda": 7.205,
+              "ev_revenue": 0.565,
+              "price_to_book": -296.07843,
+              "net_margin": 0.04143,
+              "roe": null,
+              "revenue_growth": 0.125,
+              "debt_to_equity": null,
+              "dividend_yield": 0.0397
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Computer Hardware",
+            "business_summary": "HP Inc. provides personal computing, printing, 3D printing, hybrid work, gaming, and other related technologies in the United States and internationally. The company operates through three segments: Personal Systems, Printing, and Corporate Investments. The Personal Systems segment offers commercial and consumer desktops and notebooks, workstations, thin clients, retail point-of-sale systems, displays, software, hybrid systems, and endpoint security and services, as well as lifecycle services, including support and deployment, configurations, and extended warranty services. The Printing\u2026"
+          },
+          {
+            "ticker": "SONY",
+            "name": "Sony Group Corporation",
+            "market_cap": 140823199744.0,
+            "multiples": {
+              "pe_ttm": 19.933884,
+              "pe_fwd": 20.268908,
+              "ev_ebitda": 0.119,
+              "ev_revenue": 0.02,
+              "price_to_book": 2.6753554,
+              "net_margin": -0.01746,
+              "roe": 0.13159999,
+              "revenue_growth": 0.082,
+              "debt_to_equity": 0.21318,
+              "dividend_yield": 0.0066
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Consumer Electronics",
+            "business_summary": "Sony Group Corporation develops, designs, produces, manufactures, supplies, and sells electronic equipment, instruments, and devices for consumer, professional, and industrial use in Japan, the United States, Europe, China, the Asia-Pacific, and internationally. The company operates through Game & Network Services, Music, Pictures, Entertainment Technology & Services, and Imaging & Sensing Solutions. It develops, designs, produces, manufactures, provides, and sells smartphones and image sensors; plans, produces, manufactures, and sells music software, performances and merchandise, song\u2026"
+          }
+        ],
+        "median": {
+          "pe_ttm": 19.933884,
+          "pe_fwd": 20.268908,
+          "ev_ebitda": 20.723,
+          "ev_revenue": 2.621,
+          "price_to_book": 6.909384,
+          "net_margin": 0.07525,
+          "roe": 0.34039003,
+          "revenue_growth": 0.177,
+          "debt_to_equity": 0.21318,
+          "dividend_yield": 0.0066
+        },
+        "target_vs_median_pct": {
+          "pe_ttm": 0.9366776188724688,
+          "pe_fwd": 0.7322950994695916,
+          "ev_ebitda": 0.4178449066254888,
+          "ev_revenue": 3.0331934376192295,
+          "net_margin": 2.6702987375415286,
+          "revenue_growth": -0.0734463276836157,
+          "debt_to_equity": 2.6797541983300497
+        },
+        "peer_rationales": {
+          "MSFT": "Sells PCs, tablets and accessories, plus operating systems and cloud services, like Apple.",
+          "GOOGL": "Offers devices, Android, and an app store (Google Play), overlapping Apple's devices and App Store.",
+          "DELL": "Its Client Solutions Group sells personal computers, competing with Apple's Mac line.",
+          "HPQ": "Sells consumer desktops, notebooks and displays, overlapping Apple's Mac personal computers.",
+          "SONY": "Consumer electronics maker selling smartphones, overlapping Apple's iPhone business."
+        },
+        "peer_origin": {
+          "MSFT": "agent",
+          "GOOGL": "agent",
+          "DELL": "agent",
+          "HPQ": "agent",
+          "SONY": "agent"
+        },
+        "exclusions": [],
+        "sources": [
+          "https://www.consainsights.com/company-profile/apple/competitors",
+          "https://www.hudson-labs.com/research/apple-competitors",
+          "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+          "https://www.scribd.com/document/604073816/Apple-Inc",
+          "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple"
+        ],
+        "insufficient": false
+      },
+      "competitor_search": [
+        {
+          "title": "Top 15 Apple Competitors and Alternatives in 2025",
+          "url": "https://www.consainsights.com/company-profile/apple/competitors",
+          "domain": "consainsights.com",
+          "snippet": "## FAQs ### Who are the main competitors of apple? The main competitors of Apple include Samsung, Google, Microsoft, and Huawei. These companies compete across various sectors, including smartphones, tablets, laptops, and services. Notably, Samsung is a major rival in the smartphone and consumer electronics markets. ### Which company is the largest competitor of apple in terms of revenue? [...] In terms of revenue, Samsung Electronics stands as Apple's largest competitor, generating approximately $211 billion in 2022. This places Samsung just ahead of Apple in the consumer electronics\u2026"
+        },
+        {
+          "title": "Apple's Top Competitors & Peers | Hudson Labs",
+          "url": "https://www.hudson-labs.com/research/apple-competitors",
+          "domain": "hudson-labs.com",
+          "snippet": "| Ticker | Company Name | Market Cap | Subsector | --- --- | | AAPL | Apple Inc. | $3.88T | Consumer Electronics | | HPQ | HP Inc. | $17.07B | Computer Hardware | | MSFT | Microsoft Corp. | $2.95T | Software - Infrastructure | | DELL | Dell Technologies Inc. | $81.03B | Computer Hardware | | META | Meta Platforms Inc. | $1.66T | Internet Content & Information | | GOOGL | Alphabet Inc. | $3.81T | Internet Content & Information | | NVDA | NVIDIA Corp. | $4.61T | Semiconductors | [...] Apple Inc. (AAPL) is a global leader in consumer electronics, software, and digital services, renowned for its\u2026"
+        },
+        {
+          "title": "Battle of the Titans: Apple vs. Its Biggest Competitors",
+          "url": "https://www.franzoom.com/business-strategies/apple-vs-its-biggest-competitors",
+          "domain": "franzoom.com",
+          "snippet": "### Introduction Apple Inc., renowned for its innovative products and services, is a dominant force in the technology industry. However, despite its market leadership, Apple faces significant competition from various tech giants across different segments. This article delves into Apple\u2019s primary competitors, examining their strengths and the strategies they employ to challenge Apple\u2019s market position. ### Major Competitors of Apple #### 1. Samsung Electronics [...] Microsoft, Google, and Amazon continuously innovate and strategize to challenge Apple\u2019s market dominance. Understanding these\u2026"
+        },
+        {
+          "title": "Apple Inc.'s Main Competitors Overview | PDF | Apple Inc. | I Phone",
+          "url": "https://www.scribd.com/document/604073816/Apple-Inc",
+          "domain": "scribd.com",
+          "snippet": "finding massive commercial success. Apple faces competition from companies like Microsoft, Samsung, Lenovo, Dell, and HP in both personal computers and smartphones. [...] Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne. It introduced the Apple I and Apple II computers and grew to include computer design and production. In the 1980s, Apple introduced the Macintosh, the first computer with a graphical user interface. While successful initially, it struggled later. Apple restructured and partnered with IBM and Motorola to develop new technologies. In the 2000s, Apple\u2026"
+        },
+        {
+          "title": "Apple Competitors: Who Rivals Apple | Ultima Markets",
+          "url": "https://www.ultimamarkets.com/academy/apple-competitors-who-rivals-apple",
+          "domain": "ultimamarkets.com",
+          "snippet": "Apple\u2019s main competitors in China are Huawei, Xiaomi, vivo, and OPPO, with competition often shifting quickly based on product cycles and pricing. In streaming, Apple TV+ competes most directly with Netflix and Amazon Prime Video. In music, Apple Music competes most directly with Spotify. ### ## Share Now Article Details Article Details Article Details [...] In 2026, Apple\u2019s competitive landscape is still defined by ecosystem strength, but it is increasingly influenced by supply chain costs and regulatory rules that can reshape how competition plays out across devices and services. ## FAQs\u2026"
+        }
+      ],
+      "risks": {
+        "kind": "error",
+        "stage": "risk",
+        "message": "SEC filing unavailable (TypeError)"
+      },
+      "news": [
+        {
+          "title": "Apple Inc. $AAPL Stock Sold by Agate Pass Investment Management LLC",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-sold-by-agate-pass-investment-management-llc-2026-10-09",
+          "domain": "marketbeat.com",
+          "published": "Fri, 09 Oct 2026 07:04:36 GMT"
+        },
+        {
+          "title": "Apple Inc. $AAPL Stock Bought by Endeavor Private Wealth Inc.",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-bought-by-endeavor-private-wealth-inc-2026-10-09",
+          "domain": "marketbeat.com",
+          "published": "Fri, 09 Oct 2026 07:21:12 GMT"
+        },
+        {
+          "title": "Apple Inc. $AAPL Stock Sold by Tanager Wealth Management LLP",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-sold-by-tanager-wealth-management-llp-2026-10-09",
+          "domain": "marketbeat.com",
+          "published": "Fri, 09 Oct 2026 07:36:36 GMT"
+        },
+        {
+          "title": "Apple Inc. $AAPL Stock Purchased by Angeles Wealth Management LLC",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-purchased-by-angeles-wealth-management-llc-2026-10-08",
+          "domain": "marketbeat.com",
+          "published": "Thu, 08 Oct 2026 07:04:41 GMT"
+        },
+        {
+          "title": "Apple Rises 24% YTD: Should You Buy, Sell or Hold the AAPL Stock? \u2014 TradingView News",
+          "url": "https://www.tradingview.com/news/zacks:2fb37ef87094b:0-apple-rises-24-ytd-should-you-buy-sell-or-hold-the-aapl-stock",
+          "domain": "tradingview.com",
+          "published": "Thu, 08 Oct 2026 16:29:00 GMT"
+        }
+      ],
+      "news_error": null,
+      "scorecard": {
+        "factors": [
+          {
+            "name": "valuation",
+            "score": -1,
+            "detail": "Forward P/E 35.1 vs peer median 20.3 (+73%; band \u00b115%)"
+          },
+          {
+            "name": "growth",
+            "score": 0,
+            "detail": "Revenue growth 16.4% vs peer median 17.7% (-1.3 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "profitability",
+            "score": 1,
+            "detail": "Net margin 27.6% vs peer median 7.5% (+20.1 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "analyst_upside",
+            "score": 0,
+            "detail": "mean analyst target 328.09 vs price 336.64 (-2.5%; band \u00b110%)"
+          },
+          {
+            "name": "momentum",
+            "score": 1,
+            "detail": "price 336.64 above its 200-day average 290.40; at 91% of the 52-week range"
+          }
+        ],
+        "total": 1,
+        "preliminary_signal": "HOLD"
+      },
+      "analyst": {
+        "signal": "HOLD",
+        "confidence": 0.65,
+        "changed_from_preliminary": false,
+        "change_reason": null,
+        "valuation_summary": "Apple trades at a Forward P/E of 35.1 versus a peer median of 20.3 (+73%), with EV/EBITDA of 29.4 versus 20.7 (+42%) and P/E (ttm) of 38.6 versus 19.9 (+94%). This is a clear premium to peers, partly offset by superior margins.",
+        "thesis": [
+          "Net margin of 27.6% far exceeds the peer median of 7.5%, showing strong profitability.",
+          "Revenue rose from $391.04B in 2024 to $416.16B in 2025, with net income reaching $112.01B.",
+          "Strong momentum: price 336.64 sits above its 200-day average of 290.40, near 52-week highs."
+        ],
+        "counterpoints": [
+          "Forward P/E of 35.1 is +73% above the peer median of 20.3, a steep premium.",
+          "Price of 336.64 already exceeds the mean analyst target of 328.09.",
+          "Revenue growth of 16.4% trails the peer median of 17.7%, not justifying the premium on growth."
+        ],
+        "signal_reasoning": "The scorecard totals +1: valuation scores -1 on a +73% Forward P/E premium, profitability +1 on a 27.6% net margin, and momentum +1 with price near 52-week highs. Growth and analyst upside are neutral at 0. Risk data is unavailable and news headlines are routine institutional trades, so no material evidence justifies moving from the preliminary HOLD.'",
+        "preliminary_signal": "HOLD",
+        "reviewed": true
+      },
+      "signal": "HOLD",
+      "signal_reviewed": true,
+      "narrative": {
+        "company_overview": "Apple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories worldwide. Its product lines include iPhone, Mac, iPad, and a wearables, home and accessories group that covers AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products and HomePod. It also provides AppleCare support, cloud services and platforms such as the App Store. Apple sits in the Consumer Electronics industry within the Technology sector, with a market capitalization of $4.91T, and its shares trade at $336.64 against a 52-week range of 243.42-345.34.",
+        "financial_commentary": "Revenue was $394.33B in fiscal 2022, slipped to $383.29B in 2023, recovered to $391.04B in 2024 and reached $416.16B in 2025. Net income followed a different path: $99.80B in 2022, $97.00B in 2023 and $93.74B in 2024, before rising to $112.01B in 2025. The latest year therefore marks a high point for both lines over the period shown.\n\nProfitability is strong, with a net margin of 27.6% and a return on equity of 148.8%. Revenue growth is given as 16.4%. Debt/Equity stands at 0.78 and the dividend yield is 0.3%, which indicates that shareholder returns come mainly through the share price rather than the payout.",
+        "comps_commentary": "Compared with the peer median, Apple trades at a premium on every valuation multiple supplied. Its forward P/E of 35.1 is 73% above the peer median of 20.3, and its trailing P/E of 38.6 is 94% above the median of 19.9. EV/EBITDA of 29.4 is 42% above the median of 20.7, while EV/Revenue of 10.6 is 303% above the median of 2.6.\n\nOn operating measures, Apple's net margin of 27.6% is 267% above the peer median of 7.5%, and its Debt/Equity of 0.78 is 268% above the median of 0.21. Revenue growth of 16.4% is 7% below the peer median of 17.7%. The peer set is mixed, spanning large software and internet platforms as well as hardware makers, so the median should be read with caution. In short, the market is paying a higher multiple for Apple's margins and scale, not for faster growth.",
+        "risk_commentary": "The filing risk data is unavailable for this report, so no ranked list of company-specific risks can be presented. Readers should consult the latest annual report directly for the risk factors management has identified.\n\nFrom the figures provided, the valuation premium is a point worth watching, since multiples well above peers leave less room if growth or margins disappoint. Leverage is higher than the peer median, and growth trails it slightly. The recent headlines are mostly routine reports of institutional holders buying and selling shares, plus a note that the stock has risen 24% year to date; none of them relates to a specific operating risk."
+      },
+      "narrative_markdown": "## Company overview\n\nApple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories worldwide. Its product lines include iPhone, Mac, iPad, and a wearables, home and accessories group that covers AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products and HomePod. It also provides AppleCare support, cloud services and platforms such as the App Store. Apple sits in the Consumer Electronics industry within the Technology sector, with a market capitalization of $4.91T, and its shares trade at $336.64 against a 52-week range of 243.42-345.34.\n\n## Financial commentary\n\nRevenue was $394.33B in fiscal 2022, slipped to $383.29B in 2023, recovered to $391.04B in 2024 and reached $416.16B in 2025. Net income followed a different path: $99.80B in 2022, $97.00B in 2023 and $93.74B in 2024, before rising to $112.01B in 2025. The latest year therefore marks a high point for both lines over the period shown.\n\nProfitability is strong, with a net margin of 27.6% and a return on equity of 148.8%. Revenue growth is given as 16.4%. Debt/Equity stands at 0.78 and the dividend yield is 0.3%, which indicates that shareholder returns come mainly through the share price rather than the payout.\n\n## Comps commentary\n\nCompared with the peer median, Apple trades at a premium on every valuation multiple supplied. Its forward P/E of 35.1 is 73% above the peer median of 20.3, and its trailing P/E of 38.6 is 94% above the median of 19.9. EV/EBITDA of 29.4 is 42% above the median of 20.7, while EV/Revenue of 10.6 is 303% above the median of 2.6.\n\nOn operating measures, Apple's net margin of 27.6% is 267% above the peer median of 7.5%, and its Debt/Equity of 0.78 is 268% above the median of 0.21. Revenue growth of 16.4% is 7% below the peer median of 17.7%. The peer set is mixed, spanning large software and internet platforms as well as hardware makers, so the median should be read with caution. In short, the market is paying a higher multiple for Apple's margins and scale, not for faster growth.\n\n## Risk commentary\n\nThe filing risk data is unavailable for this report, so no ranked list of company-specific risks can be presented. Readers should consult the latest annual report directly for the risk factors management has identified.\n\nFrom the figures provided, the valuation premium is a point worth watching, since multiples well above peers leave less room if growth or margins disappoint. Leverage is higher than the peer median, and growth trails it slightly. The recent headlines are mostly routine reports of institutional holders buying and selling shares, plus a note that the stock has risen 24% year to date; none of them relates to a specific operating risk.",
+      "timings_ms": {
+        "validate": 1836,
+        "news": 2228,
+        "financials": 4970,
+        "risk": 5787,
+        "comps": 8497,
+        "comps_ready": 10334,
+        "scorecard": 0,
+        "comps_explain": 4121,
+        "analyst": 7216,
+        "signal_ready": 17551,
+        "writer": 7658,
+        "total": 17997
+      },
+      "llm_usage": [
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 2291,
+          "output_tokens": 134,
+          "ms": 3803,
+          "cost_usd": 0.011844,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3441,
+          "output_tokens": 259,
+          "ms": 4120,
+          "cost_usd": 0.018944,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "analyst",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3421,
+          "output_tokens": 528,
+          "ms": 7215,
+          "cost_usd": 0.024244,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "writer",
+          "model": "claude-sonnet-5-5",
+          "input_tokens": 2342,
+          "output_tokens": 971,
+          "ms": 7658,
+          "cost_usd": 0.014394,
+          "request_id": null,
+          "error": null
+        }
+      ],
+      "cache_hits": [],
+      "quality_warnings": [
+        "narrative: narrative is 452 words (limit 450)"
+      ],
+      "disclaimer": "Educational project - not investment advice."
+    }
+  },
+  {
+    "company": "NVIDIA",
+    "kase_ticker": "NVDA_KZ",
+    "input_ticker": "NVDA",
+    "currency": "USD",
+    "name_fragment": "nvidia",
+    "scope": "us_listing",
+    "kind": "standard",
+    "id": "us_listing-NVDA_KZ",
+    "source": "https://kase.kz/en/markets/kase-global",
+    "passed": true,
+    "checks": [
+      {
+        "criterion": "requested ticker retained",
+        "passed": true,
+        "detail": "NVDA"
+      },
+      {
+        "criterion": "expected company",
+        "passed": true,
+        "detail": "NVIDIA Corporation"
+      },
+      {
+        "criterion": "positive price",
+        "passed": true,
+        "detail": "229.28"
+      },
+      {
+        "criterion": "expected quote currency",
+        "passed": true,
+        "detail": "expected USD; got USD"
+      },
+      {
+        "criterion": "expected trading venue",
+        "passed": true,
+        "detail": "NasdaqGS"
+      },
+      {
+        "criterion": "price and key financials present",
+        "passed": true,
+        "detail": "price 229.28, 4 years of revenue, 10 multiples"
+      },
+      {
+        "criterion": "at least 3 peers with 2+ valuation multiples",
+        "passed": true,
+        "detail": "5 of 5 peers"
+      },
+      {
+        "criterion": "signal with reasoning",
+        "passed": true,
+        "detail": "BUY"
+      },
+      {
+        "criterion": "risk section present or unavailable with a reason",
+        "passed": true,
+        "detail": "SEC filing unavailable (TypeError)"
+      },
+      {
+        "criterion": "disclaimer present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "criterion": "writer produced a narrative",
+        "passed": true,
+        "detail": "narrative present"
+      }
+    ],
+    "elapsed_seconds": 18.635,
+    "exchange": "NasdaqGS",
+    "quote": {
+      "snapshot": {
+        "ticker": "NVDA",
+        "name": "NVIDIA Corporation",
+        "sector": "Technology",
+        "industry": "Semiconductors",
+        "currency": "USD",
+        "price": 229.28,
+        "market_cap": 5536424132608.0,
+        "week52_low": 164.27,
+        "week52_high": 243.37,
+        "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's\u2026"
+      },
+      "multiples": {
+        "pe_ttm": 28.986094,
+        "pe_fwd": 14.406897,
+        "ev_ebitda": 27.337,
+        "ev_revenue": 18.16,
+        "price_to_book": 24.178003,
+        "net_margin": 0.63663,
+        "roe": 1.17211,
+        "revenue_growth": 1.059,
+        "debt_to_equity": 0.16971,
+        "dividend_yield": 0.0044
+      },
+      "analyst_target_mean": 328.71695,
+      "analyst_recommendation": "strong_buy"
+    },
+    "acceptance": {
+      "ticker": "NVDA",
+      "kind": "standard",
+      "passed": true,
+      "failed": [],
+      "checks": [
+        {
+          "criterion": "price and key financials present",
+          "passed": true,
+          "detail": "price 229.28, 4 years of revenue, 10 multiples"
+        },
+        {
+          "criterion": "at least 3 peers with 2+ valuation multiples",
+          "passed": true,
+          "detail": "5 of 5 peers"
+        },
+        {
+          "criterion": "signal with reasoning",
+          "passed": true,
+          "detail": "BUY"
+        },
+        {
+          "criterion": "risk section present or unavailable with a reason",
+          "passed": true,
+          "detail": "SEC filing unavailable (TypeError)"
+        },
+        {
+          "criterion": "disclaimer present",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "signal": "BUY",
+      "peers": 5,
+      "comps_ready_ms": 9090,
+      "total_ms": 17462,
+      "llm_calls": 4,
+      "cost_usd": 0.0721,
+      "within_budget": true,
+      "timings_ms": {
+        "validate": 1862,
+        "financials": 1518,
+        "risk": 2630,
+        "news": 3418,
+        "comps": 7228,
+        "comps_ready": 9090,
+        "scorecard": 0,
+        "comps_explain": 3431,
+        "analyst": 5914,
+        "signal_ready": 15006,
+        "writer": 8367,
+        "total": 17462
+      }
+    },
+    "report": {
+      "generated_at": "2026-10-10T16:10:53+00:00",
+      "ticker": "NVDA",
+      "financials": {
+        "snapshot": {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "sector": "Technology",
+          "industry": "Semiconductors",
+          "currency": "USD",
+          "price": 229.28,
+          "market_cap": 5536424132608.0,
+          "week52_low": 164.27,
+          "week52_high": 243.37,
+          "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's\u2026"
+        },
+        "multiples": {
+          "pe_ttm": 28.986094,
+          "pe_fwd": 14.406897,
+          "ev_ebitda": 27.337,
+          "ev_revenue": 18.16,
+          "price_to_book": 24.178003,
+          "net_margin": 0.63663,
+          "roe": 1.17211,
+          "revenue_growth": 1.059,
+          "debt_to_equity": 0.16971,
+          "dividend_yield": 0.0044
+        },
+        "revenue_history": [
+          {
+            "year": 2023,
+            "value": 26974000000.0
+          },
+          {
+            "year": 2024,
+            "value": 60922000000.0
+          },
+          {
+            "year": 2025,
+            "value": 130497000000.0
+          },
+          {
+            "year": 2026,
+            "value": 215938000000.0
+          }
+        ],
+        "ebitda_history": [
+          {
+            "year": 2023,
+            "value": 5986000000.0
+          },
+          {
+            "year": 2024,
+            "value": 35583000000.0
+          },
+          {
+            "year": 2025,
+            "value": 86137000000.0
+          },
+          {
+            "year": 2026,
+            "value": 144552000000.0
+          }
+        ],
+        "net_income_history": [
+          {
+            "year": 2023,
+            "value": 4368000000.0
+          },
+          {
+            "year": 2024,
+            "value": 29760000000.0
+          },
+          {
+            "year": 2025,
+            "value": 72880000000.0
+          },
+          {
+            "year": 2026,
+            "value": 120067000000.0
+          }
+        ],
+        "price_history": [
+          {
+            "date": "2025-10-10",
+            "close": 182.7222442626953
+          },
+          {
+            "date": "2025-10-13",
+            "close": 187.8699188232422
+          },
+          {
+            "date": "2025-10-14",
+            "close": 179.59971618652344
+          },
+          {
+            "date": "2025-10-15",
+            "close": 179.4001922607422
+          },
+          {
+            "date": "2025-10-16",
+            "close": 181.3754425048828
+          },
+          {
+            "date": "2025-10-17",
+            "close": 182.78208923339844
+          },
+          {
+            "date": "2025-10-20",
+            "close": 182.20347595214844
+          },
+          {
+            "date": "2025-10-21",
+            "close": 180.72702026367188
+          },
+          {
+            "date": "2025-10-22",
+            "close": 179.84910583496094
+          },
+          {
+            "date": "2025-10-23",
+            "close": 181.72462463378906
+          },
+          {
+            "date": "2025-10-24",
+            "close": 185.81480407714844
+          },
+          {
+            "date": "2025-10-27",
+            "close": 191.03231811523438
+          },
+          {
+            "date": "2025-10-28",
+            "close": 200.54953002929688
+          },
+          {
+            "date": "2025-10-29",
+            "close": 206.54513549804688
+          },
+          {
+            "date": "2025-10-30",
+            "close": 202.4050750732422
+          },
+          {
+            "date": "2025-10-31",
+            "close": 202.00604248046875
+          },
+          {
+            "date": "2025-11-03",
+            "close": 206.3855438232422
+          },
+          {
+            "date": "2025-11-04",
+            "close": 198.21511840820312
+          },
+          {
+            "date": "2025-11-05",
+            "close": 194.74343872070312
+          },
+          {
+            "date": "2025-11-06",
+            "close": 187.63047790527344
+          },
+          {
+            "date": "2025-11-07",
+            "close": 187.70028686523438
+          },
+          {
+            "date": "2025-11-10",
+            "close": 198.57427978515625
+          },
+          {
+            "date": "2025-11-11",
+            "close": 192.69833374023438
+          },
+          {
+            "date": "2025-11-12",
+            "close": 193.33680725097656
+          },
+          {
+            "date": "2025-11-13",
+            "close": 186.4134063720703
+          },
+          {
+            "date": "2025-11-14",
+            "close": 189.71546936035156
+          },
+          {
+            "date": "2025-11-17",
+            "close": 186.15402221679688
+          },
+          {
+            "date": "2025-11-18",
+            "close": 180.92652893066406
+          },
+          {
+            "date": "2025-11-19",
+            "close": 186.07420349121094
+          },
+          {
+            "date": "2025-11-20",
+            "close": 180.20826721191406
+          },
+          {
+            "date": "2025-11-21",
+            "close": 178.4524688720703
+          },
+          {
+            "date": "2025-11-24",
+            "close": 182.1136932373047
+          },
+          {
+            "date": "2025-11-25",
+            "close": 177.39501953125
+          },
+          {
+            "date": "2025-11-26",
+            "close": 179.82916259765625
+          },
+          {
+            "date": "2025-11-28",
+            "close": 176.57696533203125
+          },
+          {
+            "date": "2025-12-01",
+            "close": 179.48995971679688
+          },
+          {
+            "date": "2025-12-02",
+            "close": 181.02630615234375
+          },
+          {
+            "date": "2025-12-03",
+            "close": 179.16078186035156
+          },
+          {
+            "date": "2025-12-04",
+            "close": 182.95188903808594
+          },
+          {
+            "date": "2025-12-05",
+            "close": 181.98414611816406
+          },
+          {
+            "date": "2025-12-08",
+            "close": 185.1168212890625
+          },
+          {
+            "date": "2025-12-09",
+            "close": 184.53817749023438
+          },
+          {
+            "date": "2025-12-10",
+            "close": 183.35096740722656
+          },
+          {
+            "date": "2025-12-11",
+            "close": 180.5076141357422
+          },
+          {
+            "date": "2025-12-12",
+            "close": 174.61141967773438
+          },
+          {
+            "date": "2025-12-15",
+            "close": 175.87843322753906
+          },
+          {
+            "date": "2025-12-16",
+            "close": 177.3050994873047
+          },
+          {
+            "date": "2025-12-17",
+            "close": 170.5409393310547
+          },
+          {
+            "date": "2025-12-18",
+            "close": 173.73345947265625
+          },
+          {
+            "date": "2025-12-19",
+            "close": 180.56747436523438
+          },
+          {
+            "date": "2025-12-22",
+            "close": 183.26116943359375
+          },
+          {
+            "date": "2025-12-23",
+            "close": 188.76828002929688
+          },
+          {
+            "date": "2025-12-24",
+            "close": 188.169677734375
+          },
+          {
+            "date": "2025-12-26",
+            "close": 190.085205078125
+          },
+          {
+            "date": "2025-12-29",
+            "close": 187.7805938720703
+          },
+          {
+            "date": "2025-12-30",
+            "close": 187.1021728515625
+          },
+          {
+            "date": "2025-12-31",
+            "close": 186.06460571289062
+          },
+          {
+            "date": "2026-01-02",
+            "close": 188.4091339111328
+          },
+          {
+            "date": "2026-01-05",
+            "close": 187.68081665039062
+          },
+          {
+            "date": "2026-01-06",
+            "close": 186.80288696289062
+          },
+          {
+            "date": "2026-01-07",
+            "close": 188.66851806640625
+          },
+          {
+            "date": "2026-01-08",
+            "close": 184.60801696777344
+          },
+          {
+            "date": "2026-01-09",
+            "close": 184.42843627929688
+          },
+          {
+            "date": "2026-01-12",
+            "close": 184.5082550048828
+          },
+          {
+            "date": "2026-01-13",
+            "close": 185.37620544433594
+          },
+          {
+            "date": "2026-01-14",
+            "close": 182.7124481201172
+          },
+          {
+            "date": "2026-01-15",
+            "close": 186.6133270263672
+          },
+          {
+            "date": "2026-01-16",
+            "close": 185.7952423095703
+          },
+          {
+            "date": "2026-01-20",
+            "close": 177.654296875
+          },
+          {
+            "date": "2026-01-21",
+            "close": 182.8920440673828
+          },
+          {
+            "date": "2026-01-22",
+            "close": 184.40847778320312
+          },
+          {
+            "date": "2026-01-23",
+            "close": 187.23187255859375
+          },
+          {
+            "date": "2026-01-26",
+            "close": 186.03468322753906
+          },
+          {
+            "date": "2026-01-27",
+            "close": 188.07989501953125
+          },
+          {
+            "date": "2026-01-28",
+            "close": 191.07289123535156
+          },
+          {
+            "date": "2026-01-29",
+            "close": 192.06057739257812
+          },
+          {
+            "date": "2026-01-30",
+            "close": 190.68380737304688
+          },
+          {
+            "date": "2026-02-02",
+            "close": 185.1766815185547
+          },
+          {
+            "date": "2026-02-03",
+            "close": 179.9189910888672
+          },
+          {
+            "date": "2026-02-04",
+            "close": 173.78335571289062
+          },
+          {
+            "date": "2026-02-05",
+            "close": 171.47874450683594
+          },
+          {
+            "date": "2026-02-06",
+            "close": 184.97715759277344
+          },
+          {
+            "date": "2026-02-09",
+            "close": 189.59632873535156
+          },
+          {
+            "date": "2026-02-10",
+            "close": 188.09983825683594
+          },
+          {
+            "date": "2026-02-11",
+            "close": 189.6063232421875
+          },
+          {
+            "date": "2026-02-12",
+            "close": 186.5035858154297
+          },
+          {
+            "date": "2026-02-13",
+            "close": 182.38320922851562
+          },
+          {
+            "date": "2026-02-17",
+            "close": 184.53817749023438
+          },
+          {
+            "date": "2026-02-18",
+            "close": 187.5411376953125
+          },
+          {
+            "date": "2026-02-19",
+            "close": 187.46133422851562
+          },
+          {
+            "date": "2026-02-20",
+            "close": 189.37686157226562
+          },
+          {
+            "date": "2026-02-23",
+            "close": 191.10281372070312
+          },
+          {
+            "date": "2026-02-24",
+            "close": 192.39979553222656
+          },
+          {
+            "date": "2026-02-25",
+            "close": 195.10345458984375
+          },
+          {
+            "date": "2026-02-26",
+            "close": 184.4583740234375
+          },
+          {
+            "date": "2026-02-27",
+            "close": 176.77635192871094
+          },
+          {
+            "date": "2026-03-02",
+            "close": 182.05398559570312
+          },
+          {
+            "date": "2026-03-03",
+            "close": 179.62966918945312
+          },
+          {
+            "date": "2026-03-04",
+            "close": 182.6126708984375
+          },
+          {
+            "date": "2026-03-05",
+            "close": 182.91197204589844
+          },
+          {
+            "date": "2026-03-06",
+            "close": 177.40489196777344
+          },
+          {
+            "date": "2026-03-09",
+            "close": 182.22360229492188
+          },
+          {
+            "date": "2026-03-10",
+            "close": 184.33865356445312
+          },
+          {
+            "date": "2026-03-11",
+            "close": 185.60574340820312
+          },
+          {
+            "date": "2026-03-12",
+            "close": 182.7223358154297
+          },
+          {
+            "date": "2026-03-13",
+            "close": 179.8389434814453
+          },
+          {
+            "date": "2026-03-16",
+            "close": 182.80215454101562
+          },
+          {
+            "date": "2026-03-17",
+            "close": 181.51510620117188
+          },
+          {
+            "date": "2026-03-18",
+            "close": 179.98858642578125
+          },
+          {
+            "date": "2026-03-19",
+            "close": 178.15277099609375
+          },
+          {
+            "date": "2026-03-20",
+            "close": 172.30615234375
+          },
+          {
+            "date": "2026-03-23",
+            "close": 175.23944091796875
+          },
+          {
+            "date": "2026-03-24",
+            "close": 174.80044555664062
+          },
+          {
+            "date": "2026-03-25",
+            "close": 178.2725067138672
+          },
+          {
+            "date": "2026-03-26",
+            "close": 170.8494873046875
+          },
+          {
+            "date": "2026-03-27",
+            "close": 167.13796997070312
+          },
+          {
+            "date": "2026-03-30",
+            "close": 164.79331970214844
+          },
+          {
+            "date": "2026-03-31",
+            "close": 174.00225830078125
+          },
+          {
+            "date": "2026-04-01",
+            "close": 175.34918212890625
+          },
+          {
+            "date": "2026-04-02",
+            "close": 176.98545837402344
+          },
+          {
+            "date": "2026-04-06",
+            "close": 177.23487854003906
+          },
+          {
+            "date": "2026-04-07",
+            "close": 177.69383239746094
+          },
+          {
+            "date": "2026-04-08",
+            "close": 181.66476440429688
+          },
+          {
+            "date": "2026-04-09",
+            "close": 183.4906005859375
+          },
+          {
+            "date": "2026-04-10",
+            "close": 188.1998291015625
+          },
+          {
+            "date": "2026-04-13",
+            "close": 188.87826538085938
+          },
+          {
+            "date": "2026-04-14",
+            "close": 196.0618438720703
+          },
+          {
+            "date": "2026-04-15",
+            "close": 198.41647338867188
+          },
+          {
+            "date": "2026-04-16",
+            "close": 197.8976593017578
+          },
+          {
+            "date": "2026-04-17",
+            "close": 201.2200469970703
+          },
+          {
+            "date": "2026-04-20",
+            "close": 201.59918212890625
+          },
+          {
+            "date": "2026-04-21",
+            "close": 199.42417907714844
+          },
+          {
+            "date": "2026-04-22",
+            "close": 202.03819274902344
+          },
+          {
+            "date": "2026-04-23",
+            "close": 199.18470764160156
+          },
+          {
+            "date": "2026-04-24",
+            "close": 207.79502868652344
+          },
+          {
+            "date": "2026-04-27",
+            "close": 216.1160125732422
+          },
+          {
+            "date": "2026-04-28",
+            "close": 212.68385314941406
+          },
+          {
+            "date": "2026-04-29",
+            "close": 208.77279663085938
+          },
+          {
+            "date": "2026-04-30",
+            "close": 199.1148681640625
+          },
+          {
+            "date": "2026-05-01",
+            "close": 197.9974365234375
+          },
+          {
+            "date": "2026-05-04",
+            "close": 198.02734375
+          },
+          {
+            "date": "2026-05-05",
+            "close": 196.05186462402344
+          },
+          {
+            "date": "2026-05-06",
+            "close": 207.3560333251953
+          },
+          {
+            "date": "2026-05-07",
+            "close": 211.01766967773438
+          },
+          {
+            "date": "2026-05-08",
+            "close": 214.709228515625
+          },
+          {
+            "date": "2026-05-11",
+            "close": 218.93955993652344
+          },
+          {
+            "date": "2026-05-12",
+            "close": 220.27650451660156
+          },
+          {
+            "date": "2026-05-13",
+            "close": 225.3149871826172
+          },
+          {
+            "date": "2026-05-14",
+            "close": 235.202392578125
+          },
+          {
+            "date": "2026-05-15",
+            "close": 224.80615234375
+          },
+          {
+            "date": "2026-05-18",
+            "close": 221.81300354003906
+          },
+          {
+            "date": "2026-05-19",
+            "close": 220.1068878173828
+          },
+          {
+            "date": "2026-05-20",
+            "close": 222.9603729248047
+          },
+          {
+            "date": "2026-05-21",
+            "close": 219.0093994140625
+          },
+          {
+            "date": "2026-05-22",
+            "close": 214.83892822265625
+          },
+          {
+            "date": "2026-05-26",
+            "close": 214.37001037597656
+          },
+          {
+            "date": "2026-05-27",
+            "close": 212.1151580810547
+          },
+          {
+            "date": "2026-05-28",
+            "close": 213.7613983154297
+          },
+          {
+            "date": "2026-05-29",
+            "close": 210.6584930419922
+          },
+          {
+            "date": "2026-06-01",
+            "close": 223.8483428955078
+          },
+          {
+            "date": "2026-06-02",
+            "close": 222.3118438720703
+          },
+          {
+            "date": "2026-06-03",
+            "close": 214.26025390625
+          },
+          {
+            "date": "2026-06-04",
+            "close": 218.4156036376953
+          },
+          {
+            "date": "2026-06-05",
+            "close": 204.87075805664062
+          },
+          {
+            "date": "2026-06-08",
+            "close": 208.40679931640625
+          },
+          {
+            "date": "2026-06-09",
+            "close": 207.95730590820312
+          },
+          {
+            "date": "2026-06-10",
+            "close": 200.19598388671875
+          },
+          {
+            "date": "2026-06-11",
+            "close": 204.64100646972656
+          },
+          {
+            "date": "2026-06-12",
+            "close": 204.96066284179688
+          },
+          {
+            "date": "2026-06-15",
+            "close": 212.21253967285156
+          },
+          {
+            "date": "2026-06-16",
+            "close": 207.1781768798828
+          },
+          {
+            "date": "2026-06-17",
+            "close": 204.42124938964844
+          },
+          {
+            "date": "2026-06-18",
+            "close": 210.4545135498047
+          },
+          {
+            "date": "2026-06-22",
+            "close": 208.41677856445312
+          },
+          {
+            "date": "2026-06-23",
+            "close": 199.81640625
+          },
+          {
+            "date": "2026-06-24",
+            "close": 198.77757263183594
+          },
+          {
+            "date": "2026-06-25",
+            "close": 195.52122497558594
+          },
+          {
+            "date": "2026-06-26",
+            "close": 192.31480407714844
+          },
+          {
+            "date": "2026-06-29",
+            "close": 194.7520751953125
+          },
+          {
+            "date": "2026-06-30",
+            "close": 199.86634826660156
+          },
+          {
+            "date": "2026-07-01",
+            "close": 197.35916137695312
+          },
+          {
+            "date": "2026-07-02",
+            "close": 194.61224365234375
+          },
+          {
+            "date": "2026-07-06",
+            "close": 195.33143615722656
+          },
+          {
+            "date": "2026-07-07",
+            "close": 196.7098846435547
+          },
+          {
+            "date": "2026-07-08",
+            "close": 203.891845703125
+          },
+          {
+            "date": "2026-07-09",
+            "close": 202.5533447265625
+          },
+          {
+            "date": "2026-07-10",
+            "close": 210.72421264648438
+          },
+          {
+            "date": "2026-07-13",
+            "close": 203.30250549316406
+          },
+          {
+            "date": "2026-07-14",
+            "close": 211.5632781982422
+          },
+          {
+            "date": "2026-07-15",
+            "close": 212.26248168945312
+          },
+          {
+            "date": "2026-07-16",
+            "close": 207.16818237304688
+          },
+          {
+            "date": "2026-07-17",
+            "close": 202.58331298828125
+          },
+          {
+            "date": "2026-07-20",
+            "close": 203.05279541015625
+          },
+          {
+            "date": "2026-07-21",
+            "close": 207.0583038330078
+          },
+          {
+            "date": "2026-07-22",
+            "close": 211.82298278808594
+          },
+          {
+            "date": "2026-07-23",
+            "close": 208.5266571044922
+          },
+          {
+            "date": "2026-07-24",
+            "close": 206.6088104248047
+          },
+          {
+            "date": "2026-07-27",
+            "close": 196.2903594970703
+          },
+          {
+            "date": "2026-07-28",
+            "close": 196.789794921875
+          },
+          {
+            "date": "2026-07-29",
+            "close": 189.79762268066406
+          },
+          {
+            "date": "2026-07-30",
+            "close": 194.82199096679688
+          },
+          {
+            "date": "2026-07-31",
+            "close": 200.52561950683594
+          },
+          {
+            "date": "2026-08-03",
+            "close": 206.40904235839844
+          },
+          {
+            "date": "2026-08-04",
+            "close": 211.70310974121094
+          },
+          {
+            "date": "2026-08-05",
+            "close": 218.9749755859375
+          },
+          {
+            "date": "2026-08-06",
+            "close": 218.7452392578125
+          },
+          {
+            "date": "2026-08-07",
+            "close": 223.70968627929688
+          },
+          {
+            "date": "2026-08-10",
+            "close": 217.3068389892578
+          },
+          {
+            "date": "2026-08-11",
+            "close": 217.25689697265625
+          },
+          {
+            "date": "2026-08-12",
+            "close": 223.8395233154297
+          },
+          {
+            "date": "2026-08-13",
+            "close": 225.04818725585938
+          },
+          {
+            "date": "2026-08-14",
+            "close": 224.90834045410156
+          },
+          {
+            "date": "2026-08-17",
+            "close": 224.7584991455078
+          },
+          {
+            "date": "2026-08-18",
+            "close": 219.49440002441406
+          },
+          {
+            "date": "2026-08-19",
+            "close": 217.31683349609375
+          },
+          {
+            "date": "2026-08-20",
+            "close": 216.60763549804688
+          },
+          {
+            "date": "2026-08-21",
+            "close": 214.48001098632812
+          },
+          {
+            "date": "2026-08-24",
+            "close": 208.24697875976562
+          },
+          {
+            "date": "2026-08-25",
+            "close": 212.81187438964844
+          },
+          {
+            "date": "2026-08-26",
+            "close": 209.4256591796875
+          },
+          {
+            "date": "2026-08-27",
+            "close": 227.7251739501953
+          },
+          {
+            "date": "2026-08-28",
+            "close": 217.3068389892578
+          },
+          {
+            "date": "2026-08-31",
+            "close": 220.53323364257812
+          },
+          {
+            "date": "2026-09-01",
+            "close": 217.1969757080078
+          },
+          {
+            "date": "2026-09-02",
+            "close": 224.1591796875
+          },
+          {
+            "date": "2026-09-03",
+            "close": 228.1946563720703
+          },
+          {
+            "date": "2026-09-04",
+            "close": 230.10252380371094
+          },
+          {
+            "date": "2026-09-08",
+            "close": 225.47769165039062
+          },
+          {
+            "date": "2026-09-09",
+            "close": 223.4199981689453
+          },
+          {
+            "date": "2026-09-10",
+            "close": 218.36000061035156
+          },
+          {
+            "date": "2026-09-11",
+            "close": 218.2899932861328
+          },
+          {
+            "date": "2026-09-14",
+            "close": 210.9600067138672
+          },
+          {
+            "date": "2026-09-15",
+            "close": 212.1699981689453
+          },
+          {
+            "date": "2026-09-16",
+            "close": 213.89999389648438
+          },
+          {
+            "date": "2026-09-17",
+            "close": 219.33999633789062
+          },
+          {
+            "date": "2026-09-18",
+            "close": 222.27000427246094
+          },
+          {
+            "date": "2026-09-21",
+            "close": 227.3800048828125
+          },
+          {
+            "date": "2026-09-22",
+            "close": 228.8699951171875
+          },
+          {
+            "date": "2026-09-23",
+            "close": 225.50999450683594
+          },
+          {
+            "date": "2026-09-24",
+            "close": 224.5800018310547
+          },
+          {
+            "date": "2026-09-25",
+            "close": 225.07000732421875
+          },
+          {
+            "date": "2026-09-28",
+            "close": 228.86000061035156
+          },
+          {
+            "date": "2026-09-29",
+            "close": 227.2100067138672
+          },
+          {
+            "date": "2026-09-30",
+            "close": 228.3800048828125
+          },
+          {
+            "date": "2026-10-01",
+            "close": 230.86000061035156
+          },
+          {
+            "date": "2026-10-02",
+            "close": 233.9499969482422
+          },
+          {
+            "date": "2026-10-05",
+            "close": 238.89999389648438
+          },
+          {
+            "date": "2026-10-06",
+            "close": 239.24000549316406
+          },
+          {
+            "date": "2026-10-07",
+            "close": 237.47000122070312
+          },
+          {
+            "date": "2026-10-08",
+            "close": 230.47999572753906
+          },
+          {
+            "date": "2026-10-09",
+            "close": 229.27999877929688
+          }
+        ],
+        "analyst_target_mean": 328.71695,
+        "analyst_recommendation": "strong_buy"
+      },
+      "comps": {
+        "metric_set": "general",
+        "metrics": [
+          "pe_ttm",
+          "pe_fwd",
+          "ev_ebitda",
+          "ev_revenue",
+          "net_margin",
+          "revenue_growth",
+          "debt_to_equity"
+        ],
+        "primary_metric": "pe_fwd",
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "name": "NVIDIA Corporation",
+            "market_cap": 5536424132608.0,
+            "multiples": {
+              "pe_ttm": 28.986094,
+              "pe_fwd": 14.406897,
+              "ev_ebitda": 27.337,
+              "ev_revenue": 18.16,
+              "price_to_book": 24.178003,
+              "net_margin": 0.63663,
+              "roe": 1.17211,
+              "revenue_growth": 1.059,
+              "debt_to_equity": 0.16971,
+              "dividend_yield": 0.0044
+            },
+            "is_target": true,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's\u2026"
+          },
+          {
+            "ticker": "AMD",
+            "name": "Advanced Micro Devices, Inc.",
+            "market_cap": 992708001792.0,
+            "multiples": {
+              "pe_ttm": 155.12755,
+              "pe_fwd": 38.678555,
+              "ev_ebitda": 102.894,
+              "ev_revenue": 23.82,
+              "price_to_book": 14.762933,
+              "net_margin": 0.15577,
+              "roe": 0.10196,
+              "revenue_growth": 0.501,
+              "debt_to_equity": 0.06361,
+              "dividend_yield": 0.0
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "Advanced Micro Devices, Inc. operates as a semiconductor company internationally. It operates in three segments: Data Center, Client and Gaming, and Embedded. The company offers artificial intelligence (AI) accelerators, microprocessors, and graphics processing units (GPUs) as standalone devices or as incorporated into accelerated processing units, chipsets, and data center and professional GPUs; and embedded processors and semi-custom system-on-chip (SoC) products, microprocessor and SoC development services and technology, data processing units, field programmable gate arrays (FPGA),\u2026"
+          },
+          {
+            "ticker": "AVGO",
+            "name": "Broadcom Inc.",
+            "market_cap": 1725858185216.0,
+            "multiples": {
+              "pe_ttm": 46.17369,
+              "pe_fwd": 18.642021,
+              "ev_ebitda": 33.703,
+              "ev_revenue": 19.767,
+              "price_to_book": 17.313477,
+              "net_margin": 0.42944,
+              "roe": 0.44245,
+              "revenue_growth": 0.855,
+              "debt_to_equity": 0.59604,
+              "dividend_yield": 0.0072
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "Broadcom Inc. designs, develops, and supplies various semiconductor devices and infrastructure software solutions internationally. The company operates in two segments: Semiconductor Solutions and Infrastructure Software. The company offers networking connectivity, such as custom silicon solutions, ethernet switching & routing, ethernet NIC controllers, physical layer devices, and fiber optic components; wireless device connectivity, including RF semiconductor devices, connectivity solutions, custom touch controllers, and inductive charging ASICS; servers and storage system solutions, such\u2026"
+          },
+          {
+            "ticker": "INTC",
+            "name": "Intel Corporation",
+            "market_cap": 553455190016.0,
+            "multiples": {
+              "pe_ttm": null,
+              "pe_fwd": 50.272007,
+              "ev_ebitda": 33.522,
+              "ev_revenue": 9.898,
+              "price_to_book": 6.0314536,
+              "net_margin": -0.19794,
+              "roe": -0.10715,
+              "revenue_growth": 0.254,
+              "debt_to_equity": 0.48997,
+              "dividend_yield": 0.0
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "Intel Corporation designs, develops, manufactures, markets, sells, and services computing and related end products and services in the United States, Ireland, Israel, and internationally. It operates through three segments: CCG, DCAI, and Intel Foundry. The company offers client computing group products, including client and commercial CPUs, discrete client GPUs, edge computing, and connectivity products; data center and AI products, such as server CPUs, discrete GPUs, and networking products; and semiconductors comprising wafer fabrication, substrates, and other related products and\u2026"
+          },
+          {
+            "ticker": "MRVL",
+            "name": "Marvell Technology, Inc.",
+            "market_cap": 247395418112.0,
+            "multiples": {
+              "pe_ttm": 90.25574,
+              "pe_fwd": 37.798805,
+              "ev_ebitda": 85.165,
+              "ev_revenue": 25.687,
+              "price_to_book": 13.23207,
+              "net_margin": 0.27934998,
+              "roe": 0.16523,
+              "revenue_growth": 0.365,
+              "debt_to_equity": 0.28525,
+              "dividend_yield": 0.0009
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "Marvell Technology, Inc., together with its subsidiaries, provides data infrastructure semiconductor solutions and spanning the data center core to network edge in the United States, Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan, Vietnam, and internationally. The company develops and scales system-on-a-chip architectures, integrating analog, mixed-signal, and digital signal processing functionality. It offers a portfolio of ethernet solutions, including spanning controllers, network adapters, physical transceivers, and switches; single or multiple core processors;\u2026"
+          },
+          {
+            "ticker": "QCOM",
+            "name": "QUALCOMM Incorporated",
+            "market_cap": 187405828096.0,
+            "multiples": {
+              "pe_ttm": 20.3125,
+              "pe_fwd": 17.211536,
+              "ev_ebitda": 15.941,
+              "ev_revenue": 4.341,
+              "price_to_book": 6.706921,
+              "net_margin": 0.21013,
+              "roe": 0.33754003,
+              "revenue_growth": -0.04,
+              "debt_to_equity": 0.5521,
+              "dividend_yield": 0.021
+            },
+            "is_target": false,
+            "sector": "Technology",
+            "industry": "Semiconductors",
+            "business_summary": "QUALCOMM Incorporated engages in the development and commercialization of foundational technologies for the wireless industry worldwide. It operates through three segments: Qualcomm CDMA Technologies (QCT); Qualcomm Technology Licensing (QTL); and Qualcomm Strategic Initiatives (QSI). The QCT segment develops and supplies integrated circuits and system software with connectivity and computing technologies for use in mobile devices; automotive systems for connectivity, digital cockpit, and ADAS/AD; and IoT, including consumer electronic devices, industrial devices, and edge networking\u2026"
+          }
+        ],
+        "median": {
+          "pe_ttm": 68.214715,
+          "pe_fwd": 37.798805,
+          "ev_ebitda": 33.703,
+          "ev_revenue": 19.767,
+          "price_to_book": 13.23207,
+          "net_margin": 0.21013,
+          "roe": 0.16523,
+          "revenue_growth": 0.365,
+          "debt_to_equity": 0.48997,
+          "dividend_yield": 0.0009
+        },
+        "target_vs_median_pct": {
+          "pe_ttm": -0.5750756416705691,
+          "pe_fwd": -0.6188531092451204,
+          "ev_ebitda": -0.1888852624395455,
+          "ev_revenue": -0.08129711134719475,
+          "net_margin": 2.029695902536525,
+          "revenue_growth": 1.9013698630136986,
+          "debt_to_equity": -0.6536318550115313
+        },
+        "peer_rationales": {
+          "AMD": "Sells AI accelerators, data center GPUs and gaming GPUs, overlapping NVIDIA's core products.",
+          "AVGO": "Supplies networking connectivity and custom silicon, overlapping NVIDIA's data center networking platforms.",
+          "INTC": "Offers discrete GPUs, data center AI products and networking, overlapping NVIDIA's offerings.",
+          "MRVL": "Provides data center semiconductor and ethernet networking solutions, overlapping NVIDIA's networking platforms.",
+          "QCOM": "Supplies automotive ADAS/AD and computing chips, overlapping NVIDIA's automotive platforms."
+        },
+        "peer_origin": {
+          "AMD": "agent",
+          "AVGO": "agent",
+          "INTC": "agent",
+          "MRVL": "agent",
+          "QCOM": "agent"
+        },
+        "exclusions": [],
+        "sources": [
+          "https://www.hudson-labs.com/research/nvidias-top-competitors-peers",
+          "https://uk.investing.com/news/stock-market-news/indepth-analysis-nvidia-versus-competitors-in-semiconductors--semiconductor-equipment-industry-3385717",
+          "https://www.fool.com/investing/how-to-invest/stocks/nvidia-competitors",
+          "https://www.youtube.com/watch?v=KS_cIBPbE_o&vl=en-US",
+          "https://uk.investing.com/news/stock-market-news/industry-comparison-evaluating-nvidia-against-competitors-in-semiconductors--semiconductor-equipment-industry-3283638"
+        ],
+        "insufficient": false
+      },
+      "competitor_search": [
+        {
+          "title": "Nvidia's Top Competitors & Peers | Hudson Labs",
+          "url": "https://www.hudson-labs.com/research/nvidias-top-competitors-peers",
+          "domain": "hudson-labs.com",
+          "snippet": "Nvidia's competitive landscape is defined by its leadership in AI/accelerated computing, proprietary software ecosystem, and full-stack platform approach. Its primary hardware competitors are AMD and Intel, both of whom are intensifying efforts in AI and data center markets. Marvell and Broadcom are significant peers in networking and custom silicon, while Micron is a critical memory supplier. Qualcomm is a peer in mobile/edge AI, and both Microsoft and Amazon are major customers and ecosystem [...] | MU | Micron Technology Inc. | $470.47B | Semiconductors | DRAM (HBM, DDR, GDDR), NAND,\u2026"
+        },
+        {
+          "title": "In-Depth Analysis: NVIDIA Versus Competitors In Semiconductors & Semiconductor Equipment Industry By Benzinga",
+          "url": "https://uk.investing.com/news/stock-market-news/indepth-analysis-nvidia-versus-competitors-in-semiconductors--semiconductor-equipment-industry-3385717",
+          "domain": "uk.investing.com",
+          "snippet": "| Universal Display Corp | 37.71 | 5.23 | 13.21 | 4.36% | $0.08 | $0.12 | -6.34% | | Rambus Inc | 20.26 | 6.38 | 14.67 | 5.87% | $0.07 | $0.1 | -0.12% | | MACOM Technology Solutions Holdings Inc | 86.55 | 6.33 | 10.32 | 1.27% | $0.03 | $0.09 | -12.75% | | Allegro Microsystems Inc | 24.94 | 4.84 | 5.14 | 2.99% | $0.06 | $0.13 | 2.49% | | Average | 130.04 | 7.0 | 10.11 | 4.87% | $3.95 | $3.91 | -1.29% | [...] Among its top 4 peers, NVIDIA has a stronger financial position with a lower debt-to-equity ratio of 0.26. This indicates that the company relies less on debt financing and maintains a\u2026"
+        },
+        {
+          "title": "Nvidia Competitors: How NVDA Stacks Up Against AI Chipmakers | The Motley Fool",
+          "url": "https://www.fool.com/investing/how-to-invest/stocks/nvidia-competitors",
+          "domain": "fool.com",
+          "snippet": "Accelerating demand for Broadcom's AI semiconductor solutions shows that it's emerging as a major Nvidia competitor. The company will likely continue to take share from Nvidia as more customers opt for its custom AI semiconductor solutions. ### Meta Platforms [...] -1.6% -$5.93 Nvidia (NVDA -1.54%) is a pioneer in the semiconductor industry, though there are several Nvidia competitors. Nvidia invented GPUs (Graphics Processing Units), which have become the brain of computing. The company's leadership in developing innovative chips has helped launch the AI era, with Nvidia the dominate player\u2026"
+        },
+        {
+          "title": "NVIDIA's Competition Is Here (Most Investors Missed It)",
+          "url": "https://www.youtube.com/watch?v=KS_cIBPbE_o&vl=en-US",
+          "domain": "youtube.com",
+          "snippet": "[7:36] 8.4 came from AI. Like I said earlier, that's up 106% year-over-year. But it's also worth noting that AI now accounts [7:44] for roughly 44% of Broadcom's total revenue. For context, AI is now a bigger share of Broadcom's business than AMD's. [7:53] Even though most investors still think of AMD as Nvidia's main competitor in AI, Broadcom's AI business is growing [8:00] faster as well. If we break things down by segment, Semiconductor Solutions did about 12.5 billion in revenue, up 52%"
+        },
+        {
+          "title": "Industry Comparison: Evaluating NVIDIA Against Competitors In Semiconductors & Semiconductor Equipment Industry By Benzinga",
+          "url": "https://uk.investing.com/news/stock-market-news/industry-comparison-evaluating-nvidia-against-competitors-in-semiconductors--semiconductor-equipment-industry-3283638",
+          "domain": "uk.investing.com",
+          "snippet": "Amidst the fast-paced and highly competitive business environment of today, conducting comprehensive company analysis is essential for investors and industry enthusiasts. In this article, we will delve into an extensive industry comparison, evaluating NVIDIA (NASDAQ:NVDA) in comparison to its major competitors within the Semiconductors & Semiconductor Equipment industry. By analyzing critical financial metrics, market position, and growth potential, our objective is to provide valuable insights [...] NVIDIA demonstrates a stronger financial position compared to its top 4 peers in the sector.\u2026"
+        }
+      ],
+      "risks": {
+        "kind": "error",
+        "stage": "risk",
+        "message": "SEC filing unavailable (TypeError)"
+      },
+      "news": [
+        {
+          "title": "NVIDIA Corporation $NVDA Stock Sold by Matters Capital LLC",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-nvidia-corporation-nvda-stock-sold-by-matters-capital-llc-2026-10-08",
+          "domain": "marketbeat.com",
+          "published": "Thu, 08 Oct 2026 07:29:13 GMT"
+        },
+        {
+          "title": "NVIDIA Corporation (NASDAQ:NVDA) Stock Has Average Price Target of $321.89",
+          "url": "https://www.marketbeat.com/instant-alerts/consensus-nvidia-corporation-nasdaq-nvda-stock-has-average-price-target-of-32189-2026-10-10",
+          "domain": "marketbeat.com",
+          "published": "Sat, 10 Oct 2026 06:14:25 GMT"
+        },
+        {
+          "title": "Robust AI Demand Reinforces NVIDIA\u2019s (NVDA) Market Leadership",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/robust-ai-demand-reinforces-nvidia-150002828.html",
+          "domain": "finance.yahoo.com",
+          "published": "Fri, 09 Oct 2026 16:00:00 GMT"
+        },
+        {
+          "title": "NVIDIA Corporation $NVDA Stock: L2 Asset Management LLC Raises Stake",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-nvidia-corporation-nvda-stock-l2-asset-management-llc-raises-stake-2026-10-10",
+          "domain": "marketbeat.com",
+          "published": "Sat, 10 Oct 2026 07:29:32 GMT"
+        },
+        {
+          "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase",
+          "domain": "nvidianews.nvidia.com",
+          "published": "Mon, 28 Sep 2026 11:13:01 GMT"
+        }
+      ],
+      "news_error": null,
+      "scorecard": {
+        "factors": [
+          {
+            "name": "valuation",
+            "score": 1,
+            "detail": "Forward P/E 14.4 vs peer median 37.8 (-62%; band \u00b115%)"
+          },
+          {
+            "name": "growth",
+            "score": 1,
+            "detail": "Revenue growth 105.9% vs peer median 36.5% (+69.4 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "profitability",
+            "score": 1,
+            "detail": "Net margin 63.7% vs peer median 21.0% (+42.6 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "analyst_upside",
+            "score": 1,
+            "detail": "mean analyst target 328.72 vs price 229.28 (+43.4%; band \u00b110%)"
+          },
+          {
+            "name": "momentum",
+            "score": 1,
+            "detail": "price 229.28 above its 200-day average 201.83; at 82% of the 52-week range"
+          }
+        ],
+        "total": 5,
+        "preliminary_signal": "BUY"
+      },
+      "analyst": {
+        "signal": "BUY",
+        "confidence": 0.8,
+        "changed_from_preliminary": false,
+        "change_reason": null,
+        "valuation_summary": "NVDA trades at a Forward P/E of 14.4 versus a peer median of 37.8 (-62%), and P/E (ttm) of 29.0 versus 68.2 (-58%). EV/EBITDA of 27.3 and EV/Revenue of 18.2 are also below peer medians, despite far stronger growth and margins.",
+        "thesis": [
+          "Revenue growth of 105.9% far exceeds the peer median of 36.5%.",
+          "Net margin of 63.7% versus peer median 21.0% shows exceptional profitability.",
+          "$150 Billion share repurchase authorization increase signals strong capital return capacity."
+        ],
+        "counterpoints": [
+          "P/B of 24.2 reflects a premium on book value, leaving little room for disappointment.",
+          "Filing risk data unavailable, so severe regulatory or export risks could not be assessed.",
+          "At $5.54T market cap, sustaining 105.9% revenue growth becomes progressively harder."
+        ],
+        "signal_reasoning": "All five factors score +1 for a total of 5: valuation (Forward P/E 14.4 vs 37.8), growth (105.9% vs 36.5%), profitability (63.7% vs 21.0%), analyst upside (+43.4% to 328.72) and momentum (above 200-day average 201.83). News is supportive, including a $150 Billion buyback increase. Risk data is unavailable, which tempers confidence slightly but provides no evidence to move the BUY signal.",
+        "preliminary_signal": "BUY",
+        "reviewed": true
+      },
+      "signal": "BUY",
+      "signal_reviewed": true,
+      "narrative": {
+        "company_overview": "NVIDIA Corporation is a US-listed technology company in the semiconductors industry, with a market capitalization of $5.54T. It describes itself as a data center scale AI infrastructure company, serving customers in the United States, Taiwan, China, Hong Kong, Europe and other markets. It reports through two segments. Compute & Networking covers data center accelerated computing, networking platforms, AI solutions and software, and automotive platforms including autonomous and electric vehicle solutions. Graphics offers GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics.",
+        "financial_commentary": "Revenue has risen sharply across the four fiscal years provided: $26.97B in 2023, $60.92B in 2024, $130.50B in 2025 and $215.94B in 2026. Net income followed the same path, from $4.37B in 2023 to $29.76B in 2024, $72.88B in 2025 and $120.07B in 2026. The input gives current revenue growth of 105.9% and a net margin of 63.7%, which shows profitability that is very high for a hardware business.\n\nReturns and leverage also look strong. Return on equity is 117.2% and debt/equity is 0.17. The shares trade at $229.28, within a 52-week range of 164.27 to 243.37, close to the top of that range. The company recently announced a $150 billion increase to its share repurchase authorization, and the dividend yield is 0.4%.",
+        "comps_commentary": "The comparison uses forward P/E as the primary multiple, against a peer group of AMD, Broadcom, Intel, Marvell and Qualcomm. NVIDIA's forward P/E of 14.4 sits 62% below the peer median of 37.8. Its trailing P/E of 29.0 is 58% below the peer median of 68.2. On enterprise-value measures the discount is smaller: EV/EBITDA of 27.3 is 19% below the median of 33.7, and EV/Revenue of 18.2 is 8% below 19.8.\n\nThe operating comparisons run the other way. Net margin of 63.7% is 203% above the peer median of 21.0%, and revenue growth of 105.9% is 190% above the median of 36.5%. Debt/equity of 0.17 is 65% below the median of 0.49. In short, the company screens as cheaper than peers on earnings multiples while posting much stronger growth and profitability. Analyst sentiment in the data is a \"strong_buy\" consensus with a mean target of 328.72, but this report does not adopt it.",
+        "risk_commentary": "The risk section of the filing was unavailable in the input, so no specific filing risks can be ranked or described here. Readers should consult the company's latest annual report for its stated risk factors.\n\nThe recent news flow is mostly routine, covering institutional holding changes, analyst price target averages and commentary on AI demand. None of it substitutes for the missing risk disclosures. The very rapid growth rates shown above also suggest that results may be sensitive to any change in demand, though the input does not state this as a filing risk."
+      },
+      "narrative_markdown": "## Company overview\n\nNVIDIA Corporation is a US-listed technology company in the semiconductors industry, with a market capitalization of $5.54T. It describes itself as a data center scale AI infrastructure company, serving customers in the United States, Taiwan, China, Hong Kong, Europe and other markets. It reports through two segments. Compute & Networking covers data center accelerated computing, networking platforms, AI solutions and software, and automotive platforms including autonomous and electric vehicle solutions. Graphics offers GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics.\n\n## Financial commentary\n\nRevenue has risen sharply across the four fiscal years provided: $26.97B in 2023, $60.92B in 2024, $130.50B in 2025 and $215.94B in 2026. Net income followed the same path, from $4.37B in 2023 to $29.76B in 2024, $72.88B in 2025 and $120.07B in 2026. The input gives current revenue growth of 105.9% and a net margin of 63.7%, which shows profitability that is very high for a hardware business.\n\nReturns and leverage also look strong. Return on equity is 117.2% and debt/equity is 0.17. The shares trade at $229.28, within a 52-week range of 164.27 to 243.37, close to the top of that range. The company recently announced a $150 billion increase to its share repurchase authorization, and the dividend yield is 0.4%.\n\n## Comps commentary\n\nThe comparison uses forward P/E as the primary multiple, against a peer group of AMD, Broadcom, Intel, Marvell and Qualcomm. NVIDIA's forward P/E of 14.4 sits 62% below the peer median of 37.8. Its trailing P/E of 29.0 is 58% below the peer median of 68.2. On enterprise-value measures the discount is smaller: EV/EBITDA of 27.3 is 19% below the median of 33.7, and EV/Revenue of 18.2 is 8% below 19.8.\n\nThe operating comparisons run the other way. Net margin of 63.7% is 203% above the peer median of 21.0%, and revenue growth of 105.9% is 190% above the median of 36.5%. Debt/equity of 0.17 is 65% below the median of 0.49. In short, the company screens as cheaper than peers on earnings multiples while posting much stronger growth and profitability. Analyst sentiment in the data is a \"strong_buy\" consensus with a mean target of 328.72, but this report does not adopt it.\n\n## Risk commentary\n\nThe risk section of the filing was unavailable in the input, so no specific filing risks can be ranked or described here. Readers should consult the company's latest annual report for its stated risk factors.\n\nThe recent news flow is mostly routine, covering institutional holding changes, analyst price target averages and commentary on AI demand. None of it substitutes for the missing risk disclosures. The very rapid growth rates shown above also suggest that results may be sensitive to any change in demand, though the input does not state this as a filing risk.",
+      "timings_ms": {
+        "validate": 1862,
+        "financials": 1518,
+        "risk": 2630,
+        "news": 3418,
+        "comps": 7228,
+        "comps_ready": 9090,
+        "scorecard": 0,
+        "comps_explain": 3431,
+        "analyst": 5914,
+        "signal_ready": 15006,
+        "writer": 8367,
+        "total": 17462
+      },
+      "llm_usage": [
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 2441,
+          "output_tokens": 145,
+          "ms": 2853,
+          "cost_usd": 0.012664,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3595,
+          "output_tokens": 285,
+          "ms": 3431,
+          "cost_usd": 0.02008,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "analyst",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3440,
+          "output_tokens": 527,
+          "ms": 5913,
+          "cost_usd": 0.0243,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "writer",
+          "model": "claude-sonnet-5-5",
+          "input_tokens": 2363,
+          "output_tokens": 1032,
+          "ms": 8367,
+          "cost_usd": 0.015046,
+          "request_id": null,
+          "error": null
+        }
+      ],
+      "cache_hits": [],
+      "quality_warnings": [
+        "narrative: narrative is 468 words (limit 450)",
+        "narrative numbers not found in the input: 62, 58, 65"
+      ],
+      "disclaimer": "Educational project - not investment advice."
+    }
+  },
+  {
+    "company": "JPMorgan Chase",
+    "kase_ticker": "JPM_KZ",
+    "input_ticker": "JPM",
+    "currency": "USD",
+    "name_fragment": "jpmorgan",
+    "scope": "us_listing",
+    "kind": "bank",
+    "id": "us_listing-JPM_KZ",
+    "source": "https://kase.kz/en/markets/kase-global",
+    "passed": true,
+    "checks": [
+      {
+        "criterion": "requested ticker retained",
+        "passed": true,
+        "detail": "JPM"
+      },
+      {
+        "criterion": "expected company",
+        "passed": true,
+        "detail": "JPMorgan Chase & Co."
+      },
+      {
+        "criterion": "positive price",
+        "passed": true,
+        "detail": "332.99"
+      },
+      {
+        "criterion": "expected quote currency",
+        "passed": true,
+        "detail": "expected USD; got USD"
+      },
+      {
+        "criterion": "expected trading venue",
+        "passed": true,
+        "detail": "NYSE"
+      },
+      {
+        "criterion": "price and key financials present",
+        "passed": true,
+        "detail": "price 332.99, 4 years of revenue, 8 multiples"
+      },
+      {
+        "criterion": "at least 3 peers with 2+ valuation multiples",
+        "passed": true,
+        "detail": "5 of 5 peers"
+      },
+      {
+        "criterion": "signal with reasoning",
+        "passed": true,
+        "detail": "BUY"
+      },
+      {
+        "criterion": "risk section present or unavailable with a reason",
+        "passed": true,
+        "detail": "SEC filing unavailable (TypeError)"
+      },
+      {
+        "criterion": "disclaimer present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "criterion": "financials metric set",
+        "passed": true,
+        "detail": "financials"
+      },
+      {
+        "criterion": "no EV/EBITDA",
+        "passed": true,
+        "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+      },
+      {
+        "criterion": "writer produced a narrative",
+        "passed": true,
+        "detail": "narrative present"
+      }
+    ],
+    "elapsed_seconds": 17.775,
+    "exchange": "NYSE",
+    "quote": {
+      "snapshot": {
+        "ticker": "JPM",
+        "name": "JPMorgan Chase & Co.",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified",
+        "currency": "USD",
+        "price": 332.99,
+        "market_cap": 885149401088.0,
+        "week52_low": 279.1,
+        "week52_high": 366.5,
+        "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+      },
+      "multiples": {
+        "pe_ttm": 14.266923,
+        "pe_fwd": 13.254667,
+        "ev_ebitda": null,
+        "ev_revenue": 3.881,
+        "price_to_book": 2.5035522,
+        "net_margin": 0.34921002,
+        "roe": 0.17789,
+        "revenue_growth": 0.304,
+        "debt_to_equity": null,
+        "dividend_yield": 0.019799999999999998
+      },
+      "analyst_target_mean": 372.13635,
+      "analyst_recommendation": "buy"
+    },
+    "acceptance": {
+      "ticker": "JPM",
+      "kind": "bank",
+      "passed": true,
+      "failed": [],
+      "checks": [
+        {
+          "criterion": "price and key financials present",
+          "passed": true,
+          "detail": "price 332.99, 4 years of revenue, 8 multiples"
+        },
+        {
+          "criterion": "at least 3 peers with 2+ valuation multiples",
+          "passed": true,
+          "detail": "5 of 5 peers"
+        },
+        {
+          "criterion": "signal with reasoning",
+          "passed": true,
+          "detail": "BUY"
+        },
+        {
+          "criterion": "risk section present or unavailable with a reason",
+          "passed": true,
+          "detail": "SEC filing unavailable (TypeError)"
+        },
+        {
+          "criterion": "disclaimer present",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "criterion": "financials metric set",
+          "passed": true,
+          "detail": "financials"
+        },
+        {
+          "criterion": "no EV/EBITDA",
+          "passed": true,
+          "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+        }
+      ],
+      "signal": "BUY",
+      "peers": 5,
+      "comps_ready_ms": 9219,
+      "total_ms": 16383,
+      "llm_calls": 4,
+      "cost_usd": 0.0688,
+      "within_budget": true,
+      "timings_ms": {
+        "validate": 1861,
+        "financials": 1373,
+        "news": 1963,
+        "risk": 6060,
+        "comps": 7357,
+        "comps_ready": 9219,
+        "scorecard": 0,
+        "comps_explain": 3315,
+        "writer": 6689,
+        "analyst": 7160,
+        "signal_ready": 16383,
+        "total": 16383
+      }
+    },
+    "report": {
+      "generated_at": "2026-10-10T16:11:11+00:00",
+      "ticker": "JPM",
+      "financials": {
+        "snapshot": {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "currency": "USD",
+          "price": 332.99,
+          "market_cap": 885149401088.0,
+          "week52_low": 279.1,
+          "week52_high": 366.5,
+          "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+        },
+        "multiples": {
+          "pe_ttm": 14.266923,
+          "pe_fwd": 13.254667,
+          "ev_ebitda": null,
+          "ev_revenue": 3.881,
+          "price_to_book": 2.5035522,
+          "net_margin": 0.34921002,
+          "roe": 0.17789,
+          "revenue_growth": 0.304,
+          "debt_to_equity": null,
+          "dividend_yield": 0.019799999999999998
+        },
+        "revenue_history": [
+          {
+            "year": 2022,
+            "value": 127727000000.0
+          },
+          {
+            "year": 2023,
+            "value": 154952000000.0
+          },
+          {
+            "year": 2024,
+            "value": 169439000000.0
+          },
+          {
+            "year": 2025,
+            "value": 181847000000.0
+          }
+        ],
+        "ebitda_history": [],
+        "net_income_history": [
+          {
+            "year": 2022,
+            "value": 37676000000.0
+          },
+          {
+            "year": 2023,
+            "value": 49552000000.0
+          },
+          {
+            "year": 2024,
+            "value": 58471000000.0
+          },
+          {
+            "year": 2025,
+            "value": 57048000000.0
+          }
+        ],
+        "price_history": [
+          {
+            "date": "2025-10-10",
+            "close": 295.2044677734375
+          },
+          {
+            "date": "2025-10-13",
+            "close": 302.150634765625
+          },
+          {
+            "date": "2025-10-14",
+            "close": 296.3719482421875
+          },
+          {
+            "date": "2025-10-15",
+            "close": 299.9137268066406
+          },
+          {
+            "date": "2025-10-16",
+            "close": 292.89886474609375
+          },
+          {
+            "date": "2025-10-17",
+            "close": 291.9373779296875
+          },
+          {
+            "date": "2025-10-20",
+            "close": 296.6466369628906
+          },
+          {
+            "date": "2025-10-21",
+            "close": 291.4762268066406
+          },
+          {
+            "date": "2025-10-22",
+            "close": 288.5525207519531
+          },
+          {
+            "date": "2025-10-23",
+            "close": 288.97442626953125
+          },
+          {
+            "date": "2025-10-24",
+            "close": 294.762939453125
+          },
+          {
+            "date": "2025-10-27",
+            "close": 298.40283203125
+          },
+          {
+            "date": "2025-10-28",
+            "close": 299.5899353027344
+          },
+          {
+            "date": "2025-10-29",
+            "close": 299.7371520996094
+          },
+          {
+            "date": "2025-10-30",
+            "close": 303.5928649902344
+          },
+          {
+            "date": "2025-10-31",
+            "close": 305.24114990234375
+          },
+          {
+            "date": "2025-11-03",
+            "close": 303.5046081542969
+          },
+          {
+            "date": "2025-11-04",
+            "close": 303.4064636230469
+          },
+          {
+            "date": "2025-11-05",
+            "close": 305.7905578613281
+          },
+          {
+            "date": "2025-11-06",
+            "close": 307.4976806640625
+          },
+          {
+            "date": "2025-11-07",
+            "close": 308.2727355957031
+          },
+          {
+            "date": "2025-11-10",
+            "close": 310.902099609375
+          },
+          {
+            "date": "2025-11-11",
+            "close": 309.65606689453125
+          },
+          {
+            "date": "2025-11-12",
+            "close": 314.3555908203125
+          },
+          {
+            "date": "2025-11-13",
+            "close": 303.6321716308594
+          },
+          {
+            "date": "2025-11-14",
+            "close": 297.87298583984375
+          },
+          {
+            "date": "2025-11-17",
+            "close": 294.6942443847656
+          },
+          {
+            "date": "2025-11-18",
+            "close": 293.75238037109375
+          },
+          {
+            "date": "2025-11-19",
+            "close": 297.5394287109375
+          },
+          {
+            "date": "2025-11-20",
+            "close": 292.7418518066406
+          },
+          {
+            "date": "2025-11-21",
+            "close": 292.3886413574219
+          },
+          {
+            "date": "2025-11-24",
+            "close": 292.3690490722656
+          },
+          {
+            "date": "2025-11-25",
+            "close": 297.27459716796875
+          },
+          {
+            "date": "2025-11-26",
+            "close": 301.826904296875
+          },
+          {
+            "date": "2025-11-28",
+            "close": 307.1640930175781
+          },
+          {
+            "date": "2025-12-01",
+            "close": 303.08270263671875
+          },
+          {
+            "date": "2025-12-02",
+            "close": 302.0623779296875
+          },
+          {
+            "date": "2025-12-03",
+            "close": 306.2320861816406
+          },
+          {
+            "date": "2025-12-04",
+            "close": 310.1270446777344
+          },
+          {
+            "date": "2025-12-05",
+            "close": 309.08709716796875
+          },
+          {
+            "date": "2025-12-08",
+            "close": 309.25384521484375
+          },
+          {
+            "date": "2025-12-09",
+            "close": 294.8316345214844
+          },
+          {
+            "date": "2025-12-10",
+            "close": 304.25018310546875
+          },
+          {
+            "date": "2025-12-11",
+            "close": 311.3828430175781
+          },
+          {
+            "date": "2025-12-12",
+            "close": 312.5013122558594
+          },
+          {
+            "date": "2025-12-15",
+            "close": 313.97296142578125
+          },
+          {
+            "date": "2025-12-16",
+            "close": 309.5874328613281
+          },
+          {
+            "date": "2025-12-17",
+            "close": 309.0281982421875
+          },
+          {
+            "date": "2025-12-18",
+            "close": 307.0856018066406
+          },
+          {
+            "date": "2025-12-19",
+            "close": 311.216064453125
+          },
+          {
+            "date": "2025-12-22",
+            "close": 316.98492431640625
+          },
+          {
+            "date": "2025-12-23",
+            "close": 319.7712707519531
+          },
+          {
+            "date": "2025-12-24",
+            "close": 322.9500732421875
+          },
+          {
+            "date": "2025-12-26",
+            "close": 321.7138671875
+          },
+          {
+            "date": "2025-12-29",
+            "close": 317.6324768066406
+          },
+          {
+            "date": "2025-12-30",
+            "close": 317.3087463378906
+          },
+          {
+            "date": "2025-12-31",
+            "close": 316.13140869140625
+          },
+          {
+            "date": "2026-01-02",
+            "close": 319.3298034667969
+          },
+          {
+            "date": "2026-01-05",
+            "close": 327.72808837890625
+          },
+          {
+            "date": "2026-01-06",
+            "close": 329.76806640625
+          },
+          {
+            "date": "2026-01-07",
+            "close": 322.2583312988281
+          },
+          {
+            "date": "2026-01-08",
+            "close": 325.0178527832031
+          },
+          {
+            "date": "2026-01-09",
+            "close": 324.426513671875
+          },
+          {
+            "date": "2026-01-12",
+            "close": 319.7945251464844
+          },
+          {
+            "date": "2026-01-13",
+            "close": 306.40118408203125
+          },
+          {
+            "date": "2026-01-14",
+            "close": 303.4150390625
+          },
+          {
+            "date": "2026-01-15",
+            "close": 304.7849426269531
+          },
+          {
+            "date": "2026-01-16",
+            "close": 307.948486328125
+          },
+          {
+            "date": "2026-01-20",
+            "close": 298.3592529296875
+          },
+          {
+            "date": "2026-01-21",
+            "close": 297.66943359375
+          },
+          {
+            "date": "2026-01-22",
+            "close": 299.23638916015625
+          },
+          {
+            "date": "2026-01-23",
+            "close": 293.41192626953125
+          },
+          {
+            "date": "2026-01-26",
+            "close": 296.68389892578125
+          },
+          {
+            "date": "2026-01-27",
+            "close": 295.96441650390625
+          },
+          {
+            "date": "2026-01-28",
+            "close": 296.417724609375
+          },
+          {
+            "date": "2026-01-29",
+            "close": 301.98602294921875
+          },
+          {
+            "date": "2026-01-30",
+            "close": 301.46368408203125
+          },
+          {
+            "date": "2026-02-02",
+            "close": 303.6811218261719
+          },
+          {
+            "date": "2026-02-03",
+            "close": 310.29400634765625
+          },
+          {
+            "date": "2026-02-04",
+            "close": 312.6789855957031
+          },
+          {
+            "date": "2026-02-05",
+            "close": 305.6719055175781
+          },
+          {
+            "date": "2026-02-06",
+            "close": 317.73480224609375
+          },
+          {
+            "date": "2026-02-09",
+            "close": 317.4391174316406
+          },
+          {
+            "date": "2026-02-10",
+            "close": 313.6744079589844
+          },
+          {
+            "date": "2026-02-11",
+            "close": 306.32232666015625
+          },
+          {
+            "date": "2026-02-12",
+            "close": 298.2607421875
+          },
+          {
+            "date": "2026-02-13",
+            "close": 298.1719970703125
+          },
+          {
+            "date": "2026-02-17",
+            "close": 302.68572998046875
+          },
+          {
+            "date": "2026-02-18",
+            "close": 304.3118591308594
+          },
+          {
+            "date": "2026-02-19",
+            "close": 303.5923767089844
+          },
+          {
+            "date": "2026-02-20",
+            "close": 306.29278564453125
+          },
+          {
+            "date": "2026-02-23",
+            "close": 293.3626403808594
+          },
+          {
+            "date": "2026-02-24",
+            "close": 292.9979553222656
+          },
+          {
+            "date": "2026-02-25",
+            "close": 298.9111633300781
+          },
+          {
+            "date": "2026-02-26",
+            "close": 301.7002258300781
+          },
+          {
+            "date": "2026-02-27",
+            "close": 295.95452880859375
+          },
+          {
+            "date": "2026-03-02",
+            "close": 293.25421142578125
+          },
+          {
+            "date": "2026-03-03",
+            "close": 295.9151611328125
+          },
+          {
+            "date": "2026-03-04",
+            "close": 295.0577697753906
+          },
+          {
+            "date": "2026-03-05",
+            "close": 289.30224609375
+          },
+          {
+            "date": "2026-03-06",
+            "close": 285.2911376953125
+          },
+          {
+            "date": "2026-03-09",
+            "close": 285.72479248046875
+          },
+          {
+            "date": "2026-03-10",
+            "close": 284.552001953125
+          },
+          {
+            "date": "2026-03-11",
+            "close": 283.3594665527344
+          },
+          {
+            "date": "2026-03-12",
+            "close": 278.7965087890625
+          },
+          {
+            "date": "2026-03-13",
+            "close": 279.33856201171875
+          },
+          {
+            "date": "2026-03-16",
+            "close": 282.0191650390625
+          },
+          {
+            "date": "2026-03-17",
+            "close": 282.7386169433594
+          },
+          {
+            "date": "2026-03-18",
+            "close": 283.5762939453125
+          },
+          {
+            "date": "2026-03-19",
+            "close": 283.802978515625
+          },
+          {
+            "date": "2026-03-20",
+            "close": 282.41339111328125
+          },
+          {
+            "date": "2026-03-23",
+            "close": 285.71490478515625
+          },
+          {
+            "date": "2026-03-24",
+            "close": 288.16888427734375
+          },
+          {
+            "date": "2026-03-25",
+            "close": 291.1452331542969
+          },
+          {
+            "date": "2026-03-26",
+            "close": 287.4396057128906
+          },
+          {
+            "date": "2026-03-27",
+            "close": 278.7472229003906
+          },
+          {
+            "date": "2026-03-30",
+            "close": 279.66375732421875
+          },
+          {
+            "date": "2026-03-31",
+            "close": 289.9034423828125
+          },
+          {
+            "date": "2026-04-01",
+            "close": 291.1057434082031
+          },
+          {
+            "date": "2026-04-02",
+            "close": 290.3370666503906
+          },
+          {
+            "date": "2026-04-06",
+            "close": 292.6649169921875
+          },
+          {
+            "date": "2026-04-07",
+            "close": 294.5965270996094
+          },
+          {
+            "date": "2026-04-08",
+            "close": 305.0668640136719
+          },
+          {
+            "date": "2026-04-09",
+            "close": 307.40460205078125
+          },
+          {
+            "date": "2026-04-10",
+            "close": 306.948974609375
+          },
+          {
+            "date": "2026-04-13",
+            "close": 310.7230529785156
+          },
+          {
+            "date": "2026-04-14",
+            "close": 308.1871643066406
+          },
+          {
+            "date": "2026-04-15",
+            "close": 303.0461120605469
+          },
+          {
+            "date": "2026-04-16",
+            "close": 307.0282287597656
+          },
+          {
+            "date": "2026-04-17",
+            "close": 307.3650207519531
+          },
+          {
+            "date": "2026-04-20",
+            "close": 314.0018615722656
+          },
+          {
+            "date": "2026-04-21",
+            "close": 310.0494689941406
+          },
+          {
+            "date": "2026-04-22",
+            "close": 310.06927490234375
+          },
+          {
+            "date": "2026-04-23",
+            "close": 308.7518310546875
+          },
+          {
+            "date": "2026-04-24",
+            "close": 305.37396240234375
+          },
+          {
+            "date": "2026-04-27",
+            "close": 308.6923828125
+          },
+          {
+            "date": "2026-04-28",
+            "close": 308.51409912109375
+          },
+          {
+            "date": "2026-04-29",
+            "close": 306.3348083496094
+          },
+          {
+            "date": "2026-04-30",
+            "close": 310.2773132324219
+          },
+          {
+            "date": "2026-05-01",
+            "close": 309.52447509765625
+          },
+          {
+            "date": "2026-05-04",
+            "close": 304.7498779296875
+          },
+          {
+            "date": "2026-05-05",
+            "close": 306.4833984375
+          },
+          {
+            "date": "2026-05-06",
+            "close": 311.9315490722656
+          },
+          {
+            "date": "2026-05-07",
+            "close": 303.3829040527344
+          },
+          {
+            "date": "2026-05-08",
+            "close": 299.2522277832031
+          },
+          {
+            "date": "2026-05-11",
+            "close": 297.1719970703125
+          },
+          {
+            "date": "2026-05-12",
+            "close": 302.0060119628906
+          },
+          {
+            "date": "2026-05-13",
+            "close": 297.419677734375
+          },
+          {
+            "date": "2026-05-14",
+            "close": 297.0828857421875
+          },
+          {
+            "date": "2026-05-15",
+            "close": 295.0026550292969
+          },
+          {
+            "date": "2026-05-18",
+            "close": 297.8951416015625
+          },
+          {
+            "date": "2026-05-19",
+            "close": 292.91253662109375
+          },
+          {
+            "date": "2026-05-20",
+            "close": 299.13336181640625
+          },
+          {
+            "date": "2026-05-21",
+            "close": 300.14373779296875
+          },
+          {
+            "date": "2026-05-22",
+            "close": 303.49188232421875
+          },
+          {
+            "date": "2026-05-26",
+            "close": 303.8484802246094
+          },
+          {
+            "date": "2026-05-27",
+            "close": 296.45880126953125
+          },
+          {
+            "date": "2026-05-28",
+            "close": 293.932861328125
+          },
+          {
+            "date": "2026-05-29",
+            "close": 296.488525390625
+          },
+          {
+            "date": "2026-06-01",
+            "close": 293.78424072265625
+          },
+          {
+            "date": "2026-06-02",
+            "close": 298.1229553222656
+          },
+          {
+            "date": "2026-06-03",
+            "close": 298.0140075683594
+          },
+          {
+            "date": "2026-06-04",
+            "close": 307.9593811035156
+          },
+          {
+            "date": "2026-06-05",
+            "close": 309.4254150390625
+          },
+          {
+            "date": "2026-06-08",
+            "close": 308.1772766113281
+          },
+          {
+            "date": "2026-06-09",
+            "close": 309.7522888183594
+          },
+          {
+            "date": "2026-06-10",
+            "close": 306.2258605957031
+          },
+          {
+            "date": "2026-06-11",
+            "close": 310.53485107421875
+          },
+          {
+            "date": "2026-06-12",
+            "close": 317.69671630859375
+          },
+          {
+            "date": "2026-06-15",
+            "close": 316.3891296386719
+          },
+          {
+            "date": "2026-06-16",
+            "close": 328.0184631347656
+          },
+          {
+            "date": "2026-06-17",
+            "close": 330.31658935546875
+          },
+          {
+            "date": "2026-06-18",
+            "close": 322.1542663574219
+          },
+          {
+            "date": "2026-06-22",
+            "close": 328.3552551269531
+          },
+          {
+            "date": "2026-06-23",
+            "close": 330.9902038574219
+          },
+          {
+            "date": "2026-06-24",
+            "close": 330.30670166015625
+          },
+          {
+            "date": "2026-06-25",
+            "close": 331.9609375
+          },
+          {
+            "date": "2026-06-26",
+            "close": 325.9481506347656
+          },
+          {
+            "date": "2026-06-29",
+            "close": 326.28497314453125
+          },
+          {
+            "date": "2026-06-30",
+            "close": 324.2443542480469
+          },
+          {
+            "date": "2026-07-01",
+            "close": 330.9208679199219
+          },
+          {
+            "date": "2026-07-02",
+            "close": 331.31707763671875
+          },
+          {
+            "date": "2026-07-06",
+            "close": 336.0434875488281
+          },
+          {
+            "date": "2026-07-07",
+            "close": 337.5360412597656
+          },
+          {
+            "date": "2026-07-08",
+            "close": 328.9787292480469
+          },
+          {
+            "date": "2026-07-09",
+            "close": 333.8046569824219
+          },
+          {
+            "date": "2026-07-10",
+            "close": 334.7997131347656
+          },
+          {
+            "date": "2026-07-13",
+            "close": 332.86932373046875
+          },
+          {
+            "date": "2026-07-14",
+            "close": 341.1878356933594
+          },
+          {
+            "date": "2026-07-15",
+            "close": 345.1878967285156
+          },
+          {
+            "date": "2026-07-16",
+            "close": 341.446533203125
+          },
+          {
+            "date": "2026-07-17",
+            "close": 339.40673828125
+          },
+          {
+            "date": "2026-07-20",
+            "close": 337.1877746582031
+          },
+          {
+            "date": "2026-07-21",
+            "close": 343.5162353515625
+          },
+          {
+            "date": "2026-07-22",
+            "close": 346.4814147949219
+          },
+          {
+            "date": "2026-07-23",
+            "close": 348.16302490234375
+          },
+          {
+            "date": "2026-07-24",
+            "close": 351.45660400390625
+          },
+          {
+            "date": "2026-07-27",
+            "close": 354.4317626953125
+          },
+          {
+            "date": "2026-07-28",
+            "close": 355.5362548828125
+          },
+          {
+            "date": "2026-07-29",
+            "close": 342.998779296875
+          },
+          {
+            "date": "2026-07-30",
+            "close": 349.10833740234375
+          },
+          {
+            "date": "2026-07-31",
+            "close": 350.0436706542969
+          },
+          {
+            "date": "2026-08-03",
+            "close": 350.8894348144531
+          },
+          {
+            "date": "2026-08-04",
+            "close": 355.7452087402344
+          },
+          {
+            "date": "2026-08-05",
+            "close": 357.4566650390625
+          },
+          {
+            "date": "2026-08-06",
+            "close": 354.53125
+          },
+          {
+            "date": "2026-08-07",
+            "close": 355.7452087402344
+          },
+          {
+            "date": "2026-08-10",
+            "close": 358.0039367675781
+          },
+          {
+            "date": "2026-08-11",
+            "close": 360.2427673339844
+          },
+          {
+            "date": "2026-08-12",
+            "close": 363.3671875
+          },
+          {
+            "date": "2026-08-13",
+            "close": 361.30743408203125
+          },
+          {
+            "date": "2026-08-14",
+            "close": 361.0387878417969
+          },
+          {
+            "date": "2026-08-17",
+            "close": 359.1681213378906
+          },
+          {
+            "date": "2026-08-18",
+            "close": 361.44677734375
+          },
+          {
+            "date": "2026-08-19",
+            "close": 355.48651123046875
+          },
+          {
+            "date": "2026-08-20",
+            "close": 349.8048400878906
+          },
+          {
+            "date": "2026-08-21",
+            "close": 349.8346862792969
+          },
+          {
+            "date": "2026-08-24",
+            "close": 354.6208190917969
+          },
+          {
+            "date": "2026-08-25",
+            "close": 354.9193420410156
+          },
+          {
+            "date": "2026-08-26",
+            "close": 354.73028564453125
+          },
+          {
+            "date": "2026-08-27",
+            "close": 352.4615783691406
+          },
+          {
+            "date": "2026-08-28",
+            "close": 355.8446960449219
+          },
+          {
+            "date": "2026-08-31",
+            "close": 354.2526550292969
+          },
+          {
+            "date": "2026-09-01",
+            "close": 353.18798828125
+          },
+          {
+            "date": "2026-09-02",
+            "close": 354.45166015625
+          },
+          {
+            "date": "2026-09-03",
+            "close": 360.2626647949219
+          },
+          {
+            "date": "2026-09-04",
+            "close": 356.8596496582031
+          },
+          {
+            "date": "2026-09-08",
+            "close": 351.755126953125
+          },
+          {
+            "date": "2026-09-09",
+            "close": 352.94915771484375
+          },
+          {
+            "date": "2026-09-10",
+            "close": 351.80487060546875
+          },
+          {
+            "date": "2026-09-11",
+            "close": 354.46160888671875
+          },
+          {
+            "date": "2026-09-14",
+            "close": 348.39190673828125
+          },
+          {
+            "date": "2026-09-15",
+            "close": 350.74017333984375
+          },
+          {
+            "date": "2026-09-16",
+            "close": 347.18792724609375
+          },
+          {
+            "date": "2026-09-17",
+            "close": 347.5759582519531
+          },
+          {
+            "date": "2026-09-18",
+            "close": 347.9342041015625
+          },
+          {
+            "date": "2026-09-21",
+            "close": 350.29241943359375
+          },
+          {
+            "date": "2026-09-22",
+            "close": 338.31219482421875
+          },
+          {
+            "date": "2026-09-23",
+            "close": 335.85443115234375
+          },
+          {
+            "date": "2026-09-24",
+            "close": 336.87933349609375
+          },
+          {
+            "date": "2026-09-25",
+            "close": 341.35699462890625
+          },
+          {
+            "date": "2026-09-28",
+            "close": 334.9190979003906
+          },
+          {
+            "date": "2026-09-29",
+            "close": 333.3171081542969
+          },
+          {
+            "date": "2026-09-30",
+            "close": 329.18768310546875
+          },
+          {
+            "date": "2026-10-01",
+            "close": 331.5260314941406
+          },
+          {
+            "date": "2026-10-02",
+            "close": 330.7300109863281
+          },
+          {
+            "date": "2026-10-05",
+            "close": 330.7300109863281
+          },
+          {
+            "date": "2026-10-06",
+            "close": 331.2799987792969
+          },
+          {
+            "date": "2026-10-07",
+            "close": 329.5799865722656
+          },
+          {
+            "date": "2026-10-08",
+            "close": 331.4200134277344
+          },
+          {
+            "date": "2026-10-09",
+            "close": 332.989990234375
+          }
+        ],
+        "analyst_target_mean": 372.13635,
+        "analyst_recommendation": "buy"
+      },
+      "comps": {
+        "metric_set": "financials",
+        "metrics": [
+          "pe_ttm",
+          "pe_fwd",
+          "price_to_book",
+          "roe",
+          "dividend_yield",
+          "revenue_growth"
+        ],
+        "primary_metric": "price_to_book",
+        "rows": [
+          {
+            "ticker": "JPM",
+            "name": "JPMorgan Chase & Co.",
+            "market_cap": 885149401088.0,
+            "multiples": {
+              "pe_ttm": 14.266923,
+              "pe_fwd": 13.254667,
+              "ev_ebitda": null,
+              "ev_revenue": 3.881,
+              "price_to_book": 2.5035522,
+              "net_margin": 0.34921002,
+              "roe": 0.17789,
+              "revenue_growth": 0.304,
+              "debt_to_equity": null,
+              "dividend_yield": 0.019799999999999998
+            },
+            "is_target": true,
+            "sector": "Financial Services",
+            "industry": "Banks - Diversified",
+            "business_summary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans,\u2026"
+          },
+          {
+            "ticker": "BAC",
+            "name": "Bank of America Corporation",
+            "market_cap": 379846098944.0,
+            "multiples": {
+              "pe_ttm": 12.545034,
+              "pe_fwd": 10.37239,
+              "ev_ebitda": null,
+              "ev_revenue": 2.859,
+              "price_to_book": 1.3807127,
+              "net_margin": 0.29524,
+              "roe": 0.111990005,
+              "revenue_growth": 0.168,
+              "debt_to_equity": null,
+              "dividend_yield": 0.0236
+            },
+            "is_target": false,
+            "sector": "Financial Services",
+            "industry": "Banks - Diversified",
+            "business_summary": "Bank of America Corporation, through its subsidiaries, provides various financial products and services for individual consumers, small and middle-market businesses, institutional investors, large corporations, and governments worldwide. It operates through four segments: Consumer Banking, Global Wealth & Investment Management (GWIM), Global Banking, and Global Markets. The Consumer Banking segment offers traditional and money market savings accounts, certificates of deposit and IRAs, checking accounts, and investment accounts and products; credit and debit cards; residential mortgages and\u2026"
+          },
+          {
+            "ticker": "WFC",
+            "name": "Wells Fargo & Company",
+            "market_cap": 252655140864.0,
+            "multiples": {
+              "pe_ttm": 11.918688,
+              "pe_fwd": 10.404849,
+              "ev_ebitda": null,
+              "ev_revenue": 3.038,
+              "price_to_book": 1.5349991,
+              "net_margin": 0.27232,
+              "roe": 0.12575,
+              "revenue_growth": 0.095,
+              "debt_to_equity": null,
+              "dividend_yield": 0.0239
+            },
+            "is_target": false,
+            "sector": "Financial Services",
+            "industry": "Banks - Diversified",
+            "business_summary": "Wells Fargo & Company, a financial services company, provides diversified banking, investment, mortgage, and consumer and commercial finance products and services in the United States and internationally. It operates through four segments: Consumer Banking and Lending; Commercial Banking; Corporate and Investment Banking; and Wealth and Investment Management. The company's financial products and services includes checking and savings accounts, and credit and debit cards, as well as home, auto, personal, and small business lending services. It also provides personalized wealth management,\u2026"
+          },
+          {
+            "ticker": "C",
+            "name": "Citigroup Inc.",
+            "market_cap": 217462898688.0,
+            "multiples": {
+              "pe_ttm": 14.0,
+              "pe_fwd": 10.0107565,
+              "ev_ebitda": null,
+              "ev_revenue": 0.31,
+              "price_to_book": 1.1298785,
+              "net_margin": 0.21832001,
+              "roe": 0.08529,
+              "revenue_growth": 0.155,
+              "debt_to_equity": null,
+              "dividend_yield": 0.0207
+            },
+            "is_target": false,
+            "sector": "Financial Services",
+            "industry": "Banks - Diversified",
+            "business_summary": "Citigroup Inc., a diversified financial service holding company, provides various financial products and services to consumers, corporations, governments, and institutions. It operates through five segments: Services, Markets, Banking, U.S. Personal Banking, and Wealth. The Services segment includes treasury and trade solutions, which provides cash management, trade, and working capital solutions to multinational corporations, financial institutions, and public sector organizations; and securities services, such as cross-border support for clients, local market expertise, post-trade\u2026"
+          },
+          {
+            "ticker": "GS",
+            "name": "The Goldman Sachs Group, Inc.",
+            "market_cap": 260691574784.0,
+            "multiples": {
+              "pe_ttm": 13.827336,
+              "pe_fwd": 12.406834,
+              "ev_ebitda": null,
+              "ev_revenue": 0.381,
+              "price_to_book": 2.472925,
+              "net_margin": 0.31039,
+              "roe": 0.16902,
+              "revenue_growth": 0.425,
+              "debt_to_equity": 7.25381,
+              "dividend_yield": 0.0223
+            },
+            "is_target": false,
+            "sector": "Financial Services",
+            "industry": "Capital Markets",
+            "business_summary": "The Goldman Sachs Group, Inc., a financial institution, provides a range of financial services for corporations, financial institutions, governments, and individuals in the Americas, Europe, the Middle East, Africa, and Asia. It operates through three segments: Global Banking & Markets, Asset & Wealth Management, and Platform Solutions. The Global Banking & Markets segment provides financial advisory services, including strategic advisory assignments related to mergers and acquisitions, divestitures, corporate defense activities, restructurings, and spin-offs; equity and debt underwriting of\u2026"
+          },
+          {
+            "ticker": "MS",
+            "name": "Morgan Stanley",
+            "market_cap": 298439016448.0,
+            "multiples": {
+              "pe_ttm": 15.34895,
+              "pe_fwd": 14.003433,
+              "ev_ebitda": null,
+              "ev_revenue": 2.283,
+              "price_to_book": 2.8026135,
+              "net_margin": 0.25897,
+              "roe": 0.17969999,
+              "revenue_growth": 0.28,
+              "debt_to_equity": 5.172820000000001,
+              "dividend_yield": 0.0242
+            },
+            "is_target": false,
+            "sector": "Financial Services",
+            "industry": "Capital Markets",
+            "business_summary": "Morgan Stanley, a financial holding company, provides various financial products and services to corporations, governments, financial institutions, and individuals in the Americas, Asia, Europe, the Middle East, and Africa. It operates through Institutional Securities, Wealth Management, and Investment Management segments. The company offers capital raising and financial advisory services, including services related to the underwriting of debt, equity securities, and other products, as well as advice on mergers and acquisitions, restructurings, and project finance. It also provides equity\u2026"
+          }
+        ],
+        "median": {
+          "pe_ttm": 13.827336,
+          "pe_fwd": 10.404849,
+          "ev_ebitda": null,
+          "ev_revenue": 2.283,
+          "price_to_book": 1.5349991,
+          "net_margin": 0.27232,
+          "roe": 0.12575,
+          "revenue_growth": 0.168,
+          "debt_to_equity": 6.213315,
+          "dividend_yield": 0.0236
+        },
+        "target_vs_median_pct": {
+          "pe_ttm": 0.0317911563008233,
+          "pe_fwd": 0.2738932588065428,
+          "price_to_book": 0.6309795881965012,
+          "roe": 0.41463220675944323,
+          "dividend_yield": -0.1610169491525424,
+          "revenue_growth": 0.8095238095238093
+        },
+        "peer_rationales": {
+          "BAC": "Diversified bank offering deposits, credit cards, residential mortgages, wealth management and investment banking.",
+          "WFC": "Diversified bank with consumer lending, mortgages, credit cards, commercial and investment banking, wealth management.",
+          "C": "Diversified bank providing cash management, markets, banking, U.S. personal banking and wealth services.",
+          "GS": "Overlaps in investment banking, markets, and asset and wealth management for corporations and individuals.",
+          "MS": "Overlaps in capital raising, M&A advisory, wealth management and investment management services."
+        },
+        "peer_origin": {
+          "BAC": "agent",
+          "WFC": "agent",
+          "C": "agent",
+          "GS": "agent",
+          "MS": "agent"
+        },
+        "exclusions": [],
+        "sources": [
+          "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+          "https://rocketreach.co/jpmorgan-chase-co-competitors_b5c61dfef42e0c4b",
+          "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+          "https://ca.finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+          "https://finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html"
+        ],
+        "insufficient": false
+      },
+      "competitor_search": [
+        {
+          "title": "JPMorgan Chase Competitors: JPM Top Peers 2026 | Hudson Labs",
+          "url": "https://www.hudson-labs.com/research/jpmorgan-chase-competitors-jpm-top-peers-2026",
+          "domain": "hudson-labs.com",
+          "snippet": "| Ticker | Company Name | Market Cap ($B) | Subsector | --- --- | | JPM | JPMorgan Chase & Co. | 780.74 | Banks - Diversified | | BAC | Bank of America Corp. | 349.07 | Banks - Diversified | | $C | Citigroup Inc. | 186.35 | Banks - Diversified | | GS | Goldman Sachs Group Inc. | 253.28 | Capital Markets | | MS | Morgan Stanley | 254.49 | Capital Markets | | PNC | PNC Financial Services Group Inc. | 83.14 | Banks - Regional | | TFC | Truist Financial Corp | 58.07 | Banks - Regional | [...] | SCHW | Charles Schwab Corp. | 166.86 | Capital Markets | | $BK | Bank of New York Mellon Corp. | 79.30\u2026"
+        },
+        {
+          "title": "JPMorgan Chase & Co. Competitors | Companies like JPMorgan Chase & Co.",
+          "url": "https://rocketreach.co/jpmorgan-chase-co-competitors_b5c61dfef42e0c4b",
+          "domain": "rocketreach.co",
+          "snippet": "Wells Fargo & Company (NYSE: WFC) is a diversified, community-based financial services company with approximately $1.9 trillion in assets. Wells Fargo\u2019s vision is to satisfy our customers\u2019 financial needs and help them succeed financially. Founded in 1852 and headquartered in San Francisco, Wells Fargo provides banking, investment and mortgage products and services, as well as consumer and commercial finance, through more than 7,300 locations, 12,000 ATMs, the internet (wellsfargo.com) and [...] Image 1: RocketReach logoToggle navigation Log In Sign Up Image 2: stars 1Image 3: stars 2Image\u2026"
+        },
+        {
+          "title": "JPMorgan Chase vs Bank of America",
+          "url": "https://explore.nemo.money/en/stocks/compare/jpmorgan%20chase-vs-bank%20of%20america",
+          "domain": "explore.nemo.money",
+          "snippet": "JPMorgan Chase runs the most profitable bank in U.S. history, generating returns across consumer, commercial, and investment banking that competitors struggle to match, while RBC has quietly built one of North America's most diversified financial institutions with a dominant Canadian retail bank and a growing U.S. capital markets and wealth business. Both institutions operate at enormous scale and generate returns that compound favorably over long periods. JPMorgan Chase vs RBC digs into how [...] JPMorgan Chase & Co. (JPM) is one of the world\u2019s largest and most diversified financial\u2026"
+        },
+        {
+          "title": "Diversified Banks Stocks Q3 In Review: JPMorgan Chase (NYSE:JPM) Vs Peers",
+          "url": "https://ca.finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+          "domain": "ca.finance.yahoo.com",
+          "snippet": "Wells Fargo reported revenues of $21.44 billion, up 5.3% year on year. This print surpassed analysts' expectations by 1.5%. More broadly, it was a satisfactory quarter as it also produced a beat of analysts' EPS estimates but a slight miss of analysts' net interest income estimates. The stock is up 9.9% since reporting and currently trades at $86.75. Read our full, actionable report on Wells Fargo here, it's free for active Edge members. ## PNC Financial Services Group (NYSE:PNC) [...] ## Wells Fargo (NYSE:WFC) Founded during the California Gold Rush in 1852 to provide banking and express\u2026"
+        },
+        {
+          "title": "Diversified Banks Stocks Q3 In Review: JPMorgan Chase (NYSE:JPM) Vs Peers",
+          "url": "https://finance.yahoo.com/news/diversified-banks-stocks-q3-review-033102865.html",
+          "domain": "finance.yahoo.com",
+          "snippet": "Wells Fargo reported revenues of $21.44 billion, up 5.3% year on year. This print surpassed analysts' expectations by 1.5%. More broadly, it was a satisfactory quarter as it also produced a beat of analysts' EPS estimates but a slight miss of analysts' net interest income estimates. The stock is up 9.9% since reporting and currently trades at $86.75. Read our full, actionable report on Wells Fargo here, it's free for active Edge members. ## PNC Financial Services Group (NYSE:PNC) [...] ## Wells Fargo (NYSE:WFC) Founded during the California Gold Rush in 1852 to provide banking and express\u2026"
+        }
+      ],
+      "risks": {
+        "kind": "error",
+        "stage": "risk",
+        "message": "SEC filing unavailable (TypeError)"
+      },
+      "news": [
+        {
+          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Rating Reaffirmed as \"Hold\" by TD Cowen",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-jpmorgan-chase-co-nyse-jpm-stock-rating-reaffirmed-as-hold-by-td-cowen-2026-10-08",
+          "domain": "marketbeat.com",
+          "published": "Thu, 08 Oct 2026 13:24:45 GMT"
+        },
+        {
+          "title": "JPMorganChase to Present at Boston BancAnalysts Conference | JPM Stock News",
+          "url": "https://www.stocktitan.net/news/JPM/jp-morgan-chase-to-present-at-the-banc-analysts-association-of-j29ooajxpaty.html",
+          "domain": "stocktitan.net",
+          "published": "Fri, 09 Oct 2026 20:50:00 GMT"
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Stock Position Lifted by GAMMA Investing LLC",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-jpmorgan-chase-co-jpm-stock-position-lifted-by-gamma-investing-llc-2026-10-09",
+          "domain": "marketbeat.com",
+          "published": "Fri, 09 Oct 2026 08:17:19 GMT"
+        },
+        {
+          "title": "JPMorgan Chase & Co. (JPM) Is a Trending Stock: Facts to Know Before Betting on It",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-chase-co-jpm-trending-120004129.html",
+          "domain": "finance.yahoo.com",
+          "published": "Fri, 02 Oct 2026 02:00:00 GMT"
+        }
+      ],
+      "news_error": null,
+      "scorecard": {
+        "factors": [
+          {
+            "name": "valuation",
+            "score": -1,
+            "detail": "P/B 2.5 vs peer median 1.5 (+63%; band \u00b115%)"
+          },
+          {
+            "name": "growth",
+            "score": 1,
+            "detail": "Revenue growth 30.4% vs peer median 16.8% (+13.6 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "profitability",
+            "score": 1,
+            "detail": "ROE 17.8% vs peer median 12.6% (+5.2 pts; band \u00b15 pts)"
+          },
+          {
+            "name": "analyst_upside",
+            "score": 1,
+            "detail": "mean analyst target 372.14 vs price 332.99 (+11.8%; band \u00b110%)"
+          },
+          {
+            "name": "momentum",
+            "score": 1,
+            "detail": "price 332.99 above its 200-day average 319.08; at 62% of the 52-week range"
+          }
+        ],
+        "total": 3,
+        "preliminary_signal": "BUY"
+      },
+      "analyst": {
+        "signal": "BUY",
+        "confidence": 0.68,
+        "changed_from_preliminary": false,
+        "change_reason": null,
+        "valuation_summary": "JPM trades at a premium to peers on its primary multiple: P/B 2.5 vs peer median 1.5 (+63%), Forward P/E 13.3 vs 10.4 (+27%). P/E (ttm) 14.3 is only +3% above the 13.8 median, and the dividend yield of 2.0% trails the 2.4% median.",
+        "thesis": [
+          "ROE of 17.8% exceeds the peer median of 12.6%, supporting a premium valuation.",
+          "Revenue growth of 30.4% versus the 16.8% peer median signals strong top-line momentum.",
+          "Price 332.99 sits above its 200-day average 319.08; mean analyst target is 372.14."
+        ],
+        "counterpoints": [
+          "P/B of 2.5 is +63% above the peer median, leaving less room for multiple expansion.",
+          "Net income dipped from $58.47B in 2024 to $57.05B in 2025 despite revenue growth.",
+          "TD Cowen reaffirmed a Hold rating; dividend yield 2.0% trails the 2.4% peer median."
+        ],
+        "signal_reasoning": "The scorecard totals +3: growth, profitability, analyst upside and momentum each score +1, offset only by valuation at -1 given the +63% P/B premium. Risk data is unavailable and recent news (a reaffirmed Hold, a conference presentation, position changes) is not material enough to override the factors. The preliminary BUY is retained, with confidence tempered by the rich valuation and missing risk disclosures.",
+        "preliminary_signal": "BUY",
+        "reviewed": true
+      },
+      "signal": "BUY",
+      "signal_reviewed": true,
+      "narrative": {
+        "company_overview": "JPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classed within Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. Its business is organised into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. Products include deposits, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalisation of $885.15B, it is a very large participant in its industry.",
+        "financial_commentary": "Revenue rose each year over the period shown, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income climbed from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly in the latest year even as revenue grew.\n\nThe company reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The shares trade at $332.99, within a 52-week range of 279.10 to 366.50. The dividend yield is 2.0%.",
+        "comps_commentary": "The comparison uses financial-sector peers: Bank of America, Wells Fargo, Citigroup, Goldman Sachs and Morgan Stanley. The primary multiple is price-to-book, where JPMorgan stands at 2.5 against a peer median of 1.5, a premium of 63%. On forward P/E it trades at 13.3 versus 10.4, a 27% premium, while its trailing P/E of 14.3 is only 3% above the peer median of 13.8.\n\nThe premium is accompanied by stronger operating metrics. Return on equity of 17.8% is 41% above the peer median of 12.6%, and revenue growth of 30.4% is 81% above the median of 16.8%. The dividend yield of 2.0% is 16% below the peer median of 2.4%. Overall, the market is pricing JPMorgan above most of its peers, a valuation that coincides with its higher profitability and growth.",
+        "risk_commentary": "The risk data for this report was unavailable, so no filing-based risks can be ranked here. Readers should consult the company's latest annual filing for its stated risk factors.\n\nRecent news items are routine, covering an analyst rating reaffirmed as Hold by TD Cowen, an upcoming conference presentation and reports of institutional position changes. None is tied to a specific risk. The analyst consensus shown in the data is a buy with a mean target of 372.14, which is context only and not a view expressed in this report."
+      },
+      "narrative_markdown": "## Company overview\n\nJPMorgan Chase & Co. is a bank and financial holding company in the Financial Services sector, classed within Banks - Diversified. It operates across the United States, the rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America and the Caribbean. Its business is organised into three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. Products include deposits, investment and lending products, cash management, mortgage origination and servicing, home equity loans, credit cards, payment solutions and auto loans. With a market capitalisation of $885.15B, it is a very large participant in its industry.\n\n## Financial commentary\n\nRevenue rose each year over the period shown, from $127.73B in 2022 to $154.95B in 2023, $169.44B in 2024 and $181.85B in 2025. Net income climbed from $37.68B in 2022 to $49.55B in 2023 and $58.47B in 2024, then eased to $57.05B in 2025, so earnings dipped slightly in the latest year even as revenue grew.\n\nThe company reports a net margin of 34.9%, a return on equity of 17.8% and revenue growth of 30.4%. The shares trade at $332.99, within a 52-week range of 279.10 to 366.50. The dividend yield is 2.0%.\n\n## Comps commentary\n\nThe comparison uses financial-sector peers: Bank of America, Wells Fargo, Citigroup, Goldman Sachs and Morgan Stanley. The primary multiple is price-to-book, where JPMorgan stands at 2.5 against a peer median of 1.5, a premium of 63%. On forward P/E it trades at 13.3 versus 10.4, a 27% premium, while its trailing P/E of 14.3 is only 3% above the peer median of 13.8.\n\nThe premium is accompanied by stronger operating metrics. Return on equity of 17.8% is 41% above the peer median of 12.6%, and revenue growth of 30.4% is 81% above the median of 16.8%. The dividend yield of 2.0% is 16% below the peer median of 2.4%. Overall, the market is pricing JPMorgan above most of its peers, a valuation that coincides with its higher profitability and growth.\n\n## Risk commentary\n\nThe risk data for this report was unavailable, so no filing-based risks can be ranked here. Readers should consult the company's latest annual filing for its stated risk factors.\n\nRecent news items are routine, covering an analyst rating reaffirmed as Hold by TD Cowen, an upcoming conference presentation and reports of institutional position changes. None is tied to a specific risk. The analyst consensus shown in the data is a buy with a mean target of 372.14, which is context only and not a view expressed in this report.",
+      "timings_ms": {
+        "validate": 1861,
+        "financials": 1373,
+        "news": 1963,
+        "risk": 6060,
+        "comps": 7357,
+        "comps_ready": 9219,
+        "scorecard": 0,
+        "comps_explain": 3315,
+        "writer": 6689,
+        "analyst": 7160,
+        "signal_ready": 16383,
+        "total": 16383
+      },
+      "llm_usage": [
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 2451,
+          "output_tokens": 136,
+          "ms": 2699,
+          "cost_usd": 0.012524,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "comps",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3524,
+          "output_tokens": 254,
+          "ms": 3315,
+          "cost_usd": 0.019176,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "writer",
+          "model": "claude-sonnet-5-5",
+          "input_tokens": 2112,
+          "output_tokens": 932,
+          "ms": 6688,
+          "cost_usd": 0.013544,
+          "request_id": null,
+          "error": null
+        },
+        {
+          "agent": "analyst",
+          "model": "claude-opus-5-5",
+          "input_tokens": 3186,
+          "output_tokens": 543,
+          "ms": 7160,
+          "cost_usd": 0.023604,
+          "request_id": null,
+          "error": null
+        }
+      ],
+      "cache_hits": [],
+      "quality_warnings": [],
+      "disclaimer": "Educational project - not investment advice."
+    }
+  }
+]

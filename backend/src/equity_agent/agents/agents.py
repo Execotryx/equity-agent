@@ -185,13 +185,24 @@ class RiskAgent(ClaudeAgent[RiskInput, RiskSelection]):
         problems: list[str] = []
         if len(out.risks) != 6:
             problems.append(f"return exactly 6 risks (got {len(out.risks)})")
-        known = {_norm(h) for h in data.headings}
-        missing = [r.title for r in out.risks if _norm(r.source_heading) not in known]
+        known = set(data.headings)
+        selected = [_norm(r.source_heading) for r in out.risks]
+        if len(set(selected)) != len(selected):
+            problems.append("use a different source_heading for each risk")
+        if any(not r.title.strip() or not r.explanation.strip() for r in out.risks):
+            problems.append("risk titles and explanations must not be empty")
+        missing = [r.title for r in out.risks if r.source_heading not in known]
         if missing:
             problems.append("source_heading must be copied verbatim from risk_headings for: " + "; ".join(missing))
-        long = [r.title for r in out.risks if word_count(r.explanation) > 30]
+        long_titles = [r.title for r in out.risks if word_count(r.title) > 8]
+        if long_titles:
+            problems.append("titles must be at most 8 words for: " + "; ".join(long_titles))
+        long = [r.title for r in out.risks if word_count(r.explanation) > 25]
         if long:
-            problems.append("explanations must be at most 30 words for: " + "; ".join(long))
+            problems.append("explanations must be at most 25 words for: " + "; ".join(long))
+        severities = [r.severity for r in out.risks]
+        if severities != sorted(severities, reverse=True):
+            problems.append("order risks from most to least severe")
         return problems
 
 
@@ -231,14 +242,22 @@ class AnalystAgent(ClaudeAgent[AnalystInput, AnalystOutput]):
             problems.append("changed_from_preliminary must be true exactly when signal differs from the preliminary")
         if changed and not (out.change_reason or "").strip():
             problems.append("a change from the preliminary signal needs a change_reason")
+        if not changed and out.change_reason is not None:
+            problems.append("change_reason must be null when the signal is unchanged")
+        if word_count(out.change_reason) > 25:
+            problems.append("change_reason must be at most 25 words")
         if not 0 <= out.confidence <= 1:
             problems.append("confidence must be between 0 and 1")
         if len(out.thesis) != 3 or len(out.counterpoints) != 3:
             problems.append("give exactly 3 thesis points and exactly 3 counterpoints")
-        if word_count(out.valuation_summary) > 60:
-            problems.append("valuation_summary must be at most 60 words")
-        if word_count(out.signal_reasoning) > 80:
-            problems.append("signal_reasoning must be at most 80 words")
+        if any(not text.strip() for text in [out.valuation_summary, out.signal_reasoning, *out.thesis, *out.counterpoints]):
+            problems.append("valuation_summary, signal_reasoning, thesis and counterpoints must not be empty")
+        if any(word_count(text) > 20 for text in [*out.thesis, *out.counterpoints]):
+            problems.append("thesis and counterpoint entries must be at most 20 words")
+        if word_count(out.valuation_summary) > 50:
+            problems.append("valuation_summary must be at most 50 words")
+        if word_count(out.signal_reasoning) > 70:
+            problems.append("signal_reasoning must be at most 70 words")
         return problems
 
 
@@ -251,7 +270,7 @@ SECTIONS = {
     "risk commentary": "risk_commentary",
 }
 MAX_WORDS = 450
-_NUMBER = re.compile(r"(?<![\w.])-?\d[\d,]*(?:\.\d+)?")
+_NUMBER = re.compile(r"(?<![\w.])(?:[+\-−]\s*[$€£]?\s*|[$€£]\s*[+\-−]?\s*)?\d[\d,]*(?:\.\d+)?")
 _SIGNAL_WORDS = re.compile(r"\b(BUY|SELL|HOLD)\b|\b(buy|sell|hold) (rating|recommendation)\b")
 
 
@@ -316,7 +335,7 @@ def parse_sections(markdown: str) -> tuple[ReportNarrative, list[str]]:
 
 def _to_float(token: str) -> float | None:
     try:
-        return float(token.replace(",", ""))
+        return float(token.replace("−", "-").translate(str.maketrans("", "", ", $€£\t\n\r")))
     except ValueError:
         return None
 
@@ -328,7 +347,9 @@ def _decimals(token: str) -> int:
 def ungrounded_numbers(prose: str, source: str) -> list[str]:
     """Numbers in the prose that match no number in the source, allowing rounding (34.82 -> 34.8 or 35).
 
-    Years (1990-2039), small counts (0-12) and hyphenated terms ("52-week") are allowed.
+    Unitless years (1990-2039), small counts (0-12) and hyphenated terms ("52-week") are allowed.
+    Signs are preserved, including Unicode minus and currency forms such as -$25.00M. This checks token presence,
+    not whether a sentence attributes a number to the correct metric.
     """
     available = [v for t in _NUMBER.findall(source) if (v := _to_float(t)) is not None]
     unmatched: list[str] = []
@@ -337,9 +358,12 @@ def ungrounded_numbers(prose: str, source: str) -> list[str]:
         if re.match(r"-[A-Za-z]", prose[match.end() : match.end() + 2]):
             continue  # part of a term such as "52-week", "10-K" or "200-day"
         value = _to_float(token)
-        if value is None or (value.is_integer() and (0 <= value <= 12 or 1990 <= value <= 2039)):
+        unitless = not any(c in token for c in "+-−$€£") and not re.match(
+            r"\s*(?:%|[BMKT]\b|x\b|percent\b)", prose[match.end() :], re.IGNORECASE
+        )
+        if value is None or (unitless and value.is_integer() and (0 <= value <= 12 or 1990 <= value <= 2039)):
             continue
         places = _decimals(token)
-        if not any(abs(round(abs(x), places) - abs(value)) < 1e-9 for x in available):
+        if not any(abs(round(x, places) - value) < 1e-9 for x in available):
             unmatched.append(token)
     return list(dict.fromkeys(unmatched))

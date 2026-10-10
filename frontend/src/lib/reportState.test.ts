@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { isStageError, type CompsTable, type StreamEvent } from "./events";
 import { initialState, reduce, reduceAll } from "./reportState";
-import { FIXTURES, finalState, stateBefore } from "@/test/fixtures";
+import { FIXTURES, finalState, reportOf, stateBefore } from "@/test/fixtures";
 
 const isComps = (e: StreamEvent) => e.event === "partial" && e.data.key === "comps";
 
@@ -48,6 +48,22 @@ describe("fresh run (AAPL)", () => {
 });
 
 describe("cached report", () => {
+  it.each([
+    ["comps", "comps"], ["risk", "risks"], ["analyst", "analyst"], ["writer", "narrative"],
+  ] as const)("keeps a failed %s section visibly failed when served from cache", (stage, section) => {
+    const report = structuredClone(reportOf(FIXTURES.aapl));
+    report[section] = { kind: "error", stage, message: "Section unavailable" };
+    const state = reduceAll([{ event: "report", data: { ...report, from_cache: true } }]);
+    expect(state.stages[stage]).toMatchObject({ status: "failed", cached: true });
+    expect(state.stages.financials).toMatchObject({ status: "done", cached: true });
+  });
+
+  it("keeps a cached news failure visible", () => {
+    const report = { ...reportOf(FIXTURES.aapl), news_error: "service error" };
+    const state = reduceAll([{ event: "report", data: { ...report, from_cache: true } }]);
+    expect(state.stages.news).toMatchObject({ status: "failed", cached: true });
+  });
+
   const state = finalState(FIXTURES.aaplCached);
 
   it("arrives as validation stages and one report, and fills every section", () => {

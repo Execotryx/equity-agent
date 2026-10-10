@@ -119,11 +119,17 @@ class Cache:
         *,
         refresh: bool = False,
         store: Callable[[M], bool] | None = None,
+        accept_cached: Callable[[M], bool] | None = None,
     ) -> Fetched[M]:
-        """`fetch` for an async loader (an agent call)."""
+        """`fetch` for an async loader (an agent call).
+
+        `accept_cached` rechecks application rules on persisted output; a rejected entry is removed and reloaded.
+        """
         found = self.lookup(key, tp, refresh=refresh)
         if found.value is not None:
-            return found  # type: ignore[return-value]
+            if accept_cached is None or accept_cached(found.value):
+                return found  # type: ignore[return-value]
+            self.delete(key)
         value = await loader()
         if store is None or store(value):
             self.set(key, value, tp, ttl)

@@ -250,8 +250,11 @@ class MarketData:
         )
 
     def peers(self, tickers: Sequence[str], *, refresh: bool = False) -> Fetched[PeerBatch]:
-        """Quotes for up to 5 peers fetched concurrently; a failed peer is reported with its reason."""
-        tickers = list(dict.fromkeys(tickers))[:PEER_WORKERS]
+        """Fetch every candidate with at most PEER_WORKERS concurrent calls; report failed peers with a reason.
+
+        Eligibility and the table's peer limit are applied by scoring, after all candidates have been considered.
+        """
+        tickers = list(dict.fromkeys(tickers))
 
         def one(ticker: str) -> Fetched[Quote] | str:
             try:

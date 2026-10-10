@@ -1,0 +1,22 @@
+{
+  "company": "Halyk Bank",
+  "kase_ticker": "HSBK",
+  "input_ticker": "HSBK",
+  "currency": "KZT",
+  "name_fragment": "halyk",
+  "scope": "native",
+  "kind": "bank",
+  "id": "native-HSBK",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": false,
+  "checks": [
+    {
+      "criterion": "quote available",
+      "passed": false,
+      "detail": "ticker not found"
+    }
+  ],
+  "elapsed_seconds": 3.702,
+  "exchange": "",
+  "quote": null
+}
