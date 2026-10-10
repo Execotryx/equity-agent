@@ -29,7 +29,8 @@
     "market_cap": 4869931925504.0,
     "week52_low": 243.42,
     "week52_high": 345.34,
-    "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+    "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026",
+    "quote_provenance": null
    }
   }
  },
@@ -85,7 +86,8 @@
      "market_cap": 4869931925504.0,
      "week52_low": 243.42,
      "week52_high": 345.34,
-     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026",
+     "quote_provenance": null
     },
     "multiples": {
      "pe_ttm": 38.2672,
@@ -1160,7 +1162,9 @@
      }
     ],
     "analyst_target_mean": 328.09384,
-    "analyst_recommendation": "buy"
+    "analyst_recommendation": "buy",
+    "financial_currency": "USD",
+    "enrichment_provenance": null
    }
   }
  },
@@ -1823,7 +1827,8 @@
      "market_cap": 4869931925504.0,
      "week52_low": 243.42,
      "week52_high": 345.34,
-     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026"
+     "business_summary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download\u2026",
+     "quote_provenance": null
     },
     "multiples": {
      "pe_ttm": 38.2672,
@@ -2898,7 +2903,9 @@
      }
     ],
     "analyst_target_mean": 328.09384,
-    "analyst_recommendation": "buy"
+    "analyst_recommendation": "buy",
+    "financial_currency": "USD",
+    "enrichment_provenance": null
    },
    "comps": {
     "metric_set": "general",

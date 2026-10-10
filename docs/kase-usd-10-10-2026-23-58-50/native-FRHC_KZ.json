@@ -1,0 +1,94 @@
+{
+  "company": "Freedom Holding",
+  "kase_ticker": "FRHC_KZ",
+  "input_ticker": "FRHC_KZ",
+  "currency": "USD",
+  "name_fragment": "freedom",
+  "scope": "native",
+  "kind": "standard",
+  "source_url": null,
+  "instrument_type": "ordinary share",
+  "id": "native-FRHC_KZ",
+  "phase": "quote",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "FRHC_KZ"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "Freedom Holding Corp."
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "168.55"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "KASE"
+    }
+  ],
+  "elapsed_seconds": 1.897,
+  "exchange": "KASE",
+  "quote": {
+    "snapshot": {
+      "ticker": "FRHC_KZ",
+      "name": "Freedom Holding Corp.",
+      "sector": "Financial Services",
+      "industry": "Financial Conglomerates",
+      "currency": "USD",
+      "price": 168.55,
+      "market_cap": 10751410276.800472,
+      "week52_low": null,
+      "week52_high": null,
+      "business_summary": "Freedom Holding Corp., through its subsidiaries, provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It operates through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment provides investment banking services, including M&A, underwriting and capital markets advisory; margin lending services collateralized by securities and cash in the customer's account; capital raising solutions; and debt capital markets solutions that focus on structuring and\u2026",
+      "quote_provenance": {
+        "provider": "KASE",
+        "exchange": "KASE",
+        "source_symbol": "FRHC_KZ",
+        "source_url": "https://kase.kz/api/instruments/securities/FRHC_KZ/",
+        "timestamp": "2026-10-09T17:31:02"
+      }
+    },
+    "multiples": {
+      "pe_ttm": 66.8849220542293,
+      "pe_fwd": 37.455552575007374,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": 6.74388807792514,
+      "net_margin": 0.08425,
+      "roe": 0.106809996,
+      "revenue_growth": 0.278,
+      "debt_to_equity": 1.81589,
+      "dividend_yield": 0.0
+    },
+    "analyst_target_mean": null,
+    "analyst_recommendation": null,
+    "financial_currency": "USD",
+    "enrichment_provenance": {
+      "provider": "Yahoo Finance",
+      "source_symbol": "FRHC",
+      "source_url": "https://finance.yahoo.com/quote/FRHC/",
+      "native_isin": "US3563901046",
+      "native_shares_per_unit": 1.0,
+      "source_shares_per_unit": 1.0,
+      "identity_source_url": "https://kase.kz/en/investors/instruments/shares",
+      "analyst_target_basis": null
+    },
+    "diagnostics": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "EV-based multiples unavailable for native KASE instruments."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {"id": "unknown", "status": 404, "body": {"detail": "Не найдено."}, "reason": "ticker not found"},
+  {"id": "currency", "override": {"currency_type": "KZT"}, "reason": "unsupported instrument or currency"},
+  {"id": "instrument", "override": {"sec_type": "bond"}, "reason": "unsupported instrument or currency"},
+  {"id": "malformed", "body": [], "reason": "provider error"},
+  {"id": "timeout", "exception": "TimeoutError", "reason": "provider error"},
+  {"id": "outage", "status": 503, "body": {}, "reason": "provider error"}
+]

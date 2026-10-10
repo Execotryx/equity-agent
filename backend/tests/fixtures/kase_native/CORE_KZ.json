@@ -1,0 +1,16 @@
+{
+  "code": "CORE_KZ",
+  "org_name_en": "Solidcore Resources plc",
+  "sec_type": "share",
+  "currency_type": "USD",
+  "price": null,
+  "close_price": null,
+  "date0": null,
+  "ticker": {
+    "nin": "JE00B6T5S470",
+    "nin2": "",
+    "nind": "",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

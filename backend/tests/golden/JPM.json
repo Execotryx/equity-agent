@@ -240,6 +240,8 @@
    "analyst_recommendation": "buy",
    "analyst_target_mean": 375.8095,
    "ebitda_history": [],
+   "enrichment_provenance": null,
+   "financial_currency": "USD",
    "multiples": {
     "debt_to_equity": null,
     "dividend_yield": 0.019799999999999998,
@@ -1301,6 +1303,7 @@
     "market_cap": 883527974912.0,
     "name": "JPMorgan Chase & Co.",
     "price": 332.38,
+    "quote_provenance": null,
     "sector": "Financial Services",
     "ticker": "JPM",
     "week52_high": 366.5,

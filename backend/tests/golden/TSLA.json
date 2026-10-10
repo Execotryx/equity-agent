@@ -259,6 +259,8 @@
      "year": 2025
     }
    ],
+   "enrichment_provenance": null,
+   "financial_currency": "USD",
    "multiples": {
     "debt_to_equity": 0.18373,
     "dividend_yield": null,
@@ -1320,6 +1322,7 @@
     "market_cap": 1463662804992.0,
     "name": "Tesla, Inc.",
     "price": 370.59,
+    "quote_provenance": null,
     "sector": "Consumer Cyclical",
     "ticker": "TSLA",
     "week52_high": 498.83,

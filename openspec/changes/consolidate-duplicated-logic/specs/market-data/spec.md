@@ -4,7 +4,7 @@
 
 ### Requirement: Failure reasons are stable
 Every data-layer failure SHALL carry a short reason from a fixed set: "invalid ticker", "ticker not found", "only
-individual stocks are supported", or a provider failure. The reason SHALL be available separately from the
+individual stocks are supported", "quote unavailable", "unsupported instrument or currency", or a provider failure. The reason SHALL be available separately from the
 human-readable message, and callers SHALL use it without parsing message text. The same reason SHALL be reported
 whether the failure happens for the target ticker or for a peer.
 

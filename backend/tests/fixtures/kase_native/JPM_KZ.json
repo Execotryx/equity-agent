@@ -1,0 +1,16 @@
+{
+  "code": "JPM_KZ",
+  "org_name_en": "JPMorgan Chase & Co.",
+  "sec_type": "share",
+  "currency_type": "USD",
+  "price": 330.0,
+  "close_price": 330.0,
+  "date0": "2026-10-09T22:00:42",
+  "ticker": {
+    "nin": "US46625H1005",
+    "nin2": "",
+    "nind": "",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

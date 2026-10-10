@@ -39,6 +39,7 @@ from equity_agent.agents.base import ClaudeAgent, StageFailed
 from equity_agent.cache import FOREVER, PEERS_TTL, REPORT_TTL, Cache
 from equity_agent.config import DEFAULT_EFFORT, DEFAULT_MODELS, AgentConfig, AgentName, ScoringConfig, Settings
 from equity_agent.data import DataError, DataLayer, normalize_ticker
+from equity_agent.data.kase import issuer_key, sec_ticker
 from equity_agent.llm import Gateway, LlmClient
 from equity_agent.models import (
     AnalystView,
@@ -214,6 +215,10 @@ class _Run:
 
     async def financials(self, quote: Quote) -> FinancialProfile:
         async def work() -> tuple[FinancialProfile, bool]:
+            if quote.financial_currency is None:
+                message = "Financial reporting currency unknown; monetary history omitted."
+                if message not in self.warnings:
+                    self.warnings.append(message)
             try:
                 fetched = await self.fetch(self.s.data.market.history, quote.snapshot.ticker, refresh=self.refresh)
             except DataError as error:  # the profile still has the snapshot and multiples
@@ -263,7 +268,8 @@ class _Run:
         return table, search_results
 
     async def comps_table(self, quote: Quote, tickers: Sequence[str], **kwargs: Any) -> CompsTable:
-        batch = (await self.fetch(self.s.data.market.peers, list(tickers), refresh=self.refresh)).value
+        peers = [t for t in tickers if issuer_key(t) != issuer_key(quote.snapshot.ticker)]
+        batch = (await self.fetch(self.s.data.market.peers, peers, refresh=self.refresh)).value
         return assemble_comps(quote, tickers, batch, config=self.s.scoring, **kwargs)
 
     async def pick_peers(self, quote: Quote, search: list[SearchResult]) -> CompsTable:
@@ -315,7 +321,10 @@ class _Run:
         snap = quote.snapshot
 
         async def work() -> tuple[RiskReport | Unavailable, bool]:
-            fetched = await self.fetch(self.s.data.sec.risk_headings, snap.ticker, refresh=self.refresh)
+            filing_ticker = sec_ticker(snap.ticker)
+            if filing_ticker is None:
+                return Unavailable(reason="No verified SEC issuer mapping for this KASE instrument"), False
+            fetched = await self.fetch(self.s.data.sec.risk_headings, filing_ticker, refresh=self.refresh)
             headings = fetched.value
             if isinstance(headings, Unavailable):
                 return headings, fetched.hit
@@ -442,6 +451,7 @@ class Pipeline:
             state.fail("validate", error.reason, terminal=True)
             return
         quote = fetched.value
+        state.warnings.extend(quote.diagnostics)
         state.timings["validate"] = state.elapsed_ms()
         state.emit("stage", stage="validate", status="done", ms=state.timings["validate"], cached=fetched.hit)
 
@@ -511,6 +521,7 @@ async def warm_ticker(services: Services, raw_ticker: str) -> WarmResult:
     try:
         ticker = normalize_ticker(raw_ticker)
         quote = (await state.fetch(services.data.market.quote, ticker)).value
+        state.warnings.extend(quote.diagnostics)
     except DataError as error:
         return WarmResult(raw_ticker, "failed", state.elapsed_ms(), [error.reason])
     services.data.cache.delete(_report_key(ticker))

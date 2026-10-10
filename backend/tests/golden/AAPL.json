@@ -259,6 +259,8 @@
      "year": 2025
     }
    ],
+   "enrichment_provenance": null,
+   "financial_currency": "USD",
    "multiples": {
     "debt_to_equity": 0.78445,
     "dividend_yield": 0.0033,
@@ -1320,6 +1322,7 @@
     "market_cap": 4869931925504.0,
     "name": "Apple Inc.",
     "price": 333.69,
+    "quote_provenance": null,
     "sector": "Technology",
     "ticker": "AAPL",
     "week52_high": 345.34,

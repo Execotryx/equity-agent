@@ -259,6 +259,8 @@
      "year": 2026
     }
    ],
+   "enrichment_provenance": null,
+   "financial_currency": "USD",
    "multiples": {
     "debt_to_equity": 0.16971,
     "dividend_yield": 0.0043,
@@ -1320,6 +1322,7 @@
     "market_cap": 5649190617088.0,
     "name": "NVIDIA Corporation",
     "price": 233.95,
+    "quote_provenance": null,
     "sector": "Technology",
     "ticker": "NVDA",
     "week52_high": 237.87,

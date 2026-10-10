@@ -19,7 +19,8 @@ def profile_payload(profile: FinancialProfile) -> dict[str, Any]:
     multiples = {
         METRIC_LABELS[k]: v for k in METRIC_LABELS if (v := metric_text(k, getattr(profile.multiples, k))) is not None
     }
-    return {
+    financial_cur = profile.financial_currency
+    payload = {
         "ticker": snap.ticker,
         "name": snap.name,
         "sector": snap.sector,
@@ -32,9 +33,16 @@ def profile_payload(profile: FinancialProfile) -> dict[str, Any]:
         "analyst_mean_target": f"{profile.analyst_target_mean:.2f}" if profile.analyst_target_mean else None,
         "analyst_recommendation": profile.analyst_recommendation,
         "multiples": multiples,
-        "revenue_by_fiscal_year": {str(y.year): money(y.value, cur) for y in profile.revenue_history},
-        "net_income_by_fiscal_year": {str(y.year): money(y.value, cur) for y in profile.net_income_history},
+        "revenue_by_fiscal_year": {str(y.year): money(y.value, financial_cur) for y in profile.revenue_history} if financial_cur else {},
+        "net_income_by_fiscal_year": {str(y.year): money(y.value, financial_cur) for y in profile.net_income_history} if financial_cur else {},
     }
+    if snap.quote_provenance is not None:
+        payload["quote_provenance"] = snap.quote_provenance.model_dump()
+        payload["financial_currency"] = financial_cur
+        payload["enrichment_provenance"] = profile.enrichment_provenance.model_dump() if profile.enrichment_provenance else None
+    if financial_cur is None:
+        payload["financial_history_note"] = "Reporting currency unknown; monetary history omitted."
+    return payload
 
 
 def comps_payload(table: CompsTable) -> dict[str, Any]:

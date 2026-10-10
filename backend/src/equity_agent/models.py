@@ -14,6 +14,25 @@ from pydantic import BaseModel, Field
 T = TypeVar("T")
 
 
+class QuoteProvenance(BaseModel):
+    provider: str
+    exchange: str
+    source_symbol: str
+    source_url: str
+    timestamp: str | None = None  # provider timestamp, without an invented timezone
+
+
+class EnrichmentProvenance(BaseModel):
+    provider: str = "Yahoo Finance"
+    source_symbol: str
+    source_url: str
+    native_isin: str
+    native_shares_per_unit: float
+    source_shares_per_unit: float
+    identity_source_url: str
+    analyst_target_basis: str | None = None
+
+
 class Snapshot(BaseModel):
     ticker: str
     name: str
@@ -25,6 +44,7 @@ class Snapshot(BaseModel):
     week52_low: float | None = None
     week52_high: float | None = None
     business_summary: str = ""  # at most 600 characters
+    quote_provenance: QuoteProvenance | None = None
 
 
 class Multiples(BaseModel):
@@ -47,6 +67,9 @@ class Quote(BaseModel):
     multiples: Multiples
     analyst_target_mean: float | None = None
     analyst_recommendation: str | None = None
+    financial_currency: str | None = None
+    enrichment_provenance: EnrichmentProvenance | None = None
+    diagnostics: list[str] = Field(default_factory=list)
 
 
 class YearValue(BaseModel):
@@ -75,6 +98,8 @@ class FinancialProfile(BaseModel):
     price_history: list[PricePoint]
     analyst_target_mean: float | None = None
     analyst_recommendation: str | None = None
+    financial_currency: str | None = None
+    enrichment_provenance: EnrichmentProvenance | None = None
 
 
 class PeerBatch(BaseModel):

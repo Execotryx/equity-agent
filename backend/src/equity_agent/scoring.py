@@ -12,6 +12,7 @@ from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
 
 from equity_agent.config import ScoringConfig
+from equity_agent.data.kase import issuer_key
 from equity_agent.formatting import METRIC_LABELS, MISSING, meaningful, metric_text, pct_change
 from equity_agent.models import (
     CompRow,
@@ -79,6 +80,8 @@ def _company_key(name: str) -> str:
 
 
 def _same_company(a: Quote, b: Quote) -> bool:
+    if issuer_key(a.snapshot.ticker) == issuer_key(b.snapshot.ticker):
+        return True
     tickers = {a.snapshot.ticker, b.snapshot.ticker}
     if any(tickers == pair for pair in SHARE_CLASS_PAIRS):
         return True
@@ -107,7 +110,7 @@ def select_peers(
     exclusions: list[PeerExclusion] = []
     for ticker in dict.fromkeys(candidates):
         quote = quotes.get(ticker)
-        if ticker == target.snapshot.ticker:
+        if issuer_key(ticker) == issuer_key(target.snapshot.ticker):
             exclusions.append(PeerExclusion(ticker=ticker, reason="is the target"))
         elif quote is None:
             exclusions.append(PeerExclusion(ticker=ticker, reason=failures.get(ticker, "no data")))

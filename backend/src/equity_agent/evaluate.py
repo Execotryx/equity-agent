@@ -41,7 +41,7 @@ def live_recording_services(settings: Settings, recording: Recording, llm: LlmCl
     return recording_services(
         recording,
         llm,
-        market=market.YahooSource(),
+        market=market.live_source(),
         filings=sec.EdgarSource(settings.edgar_identity),
         search=search.TavilySource(settings.tavily_api_key),
         settings=settings,

@@ -1,0 +1,16 @@
+{
+  "code": "NVDA_KZ",
+  "org_name_en": "NVIDIA Corp.",
+  "sec_type": "share",
+  "currency_type": "USD",
+  "price": 229.95,
+  "close_price": 229.95,
+  "date0": "2026-10-09T22:00:43",
+  "ticker": {
+    "nin": "US67066G1040",
+    "nin2": "",
+    "nind": "",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

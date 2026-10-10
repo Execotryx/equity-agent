@@ -1,0 +1,16 @@
+{
+  "code": "FRHC_KZ",
+  "org_name_en": "Freedom Holding Corp.",
+  "sec_type": "share",
+  "currency_type": "USD",
+  "price": 168.55,
+  "close_price": 167.09,
+  "date0": "2026-10-09T17:31:02",
+  "ticker": {
+    "nin": "US3563901046",
+    "nin2": "",
+    "nind": "",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

@@ -28,7 +28,8 @@ function Bar({ share, label, thin = false }: { share: number; label: string; thi
 /** The target's multiples as a figure grid, plus revenue and EBITDA by fiscal year. */
 export function KeyFinancials({ profile }: { profile: FinancialProfile }) {
   const currency = profile.snapshot.currency;
-  const years = [...profile.revenue_history].sort((a, b) => a.year - b.year).slice(-4);
+  const financialCurrency = profile.financial_currency;
+  const years = financialCurrency ? [...profile.revenue_history].sort((a, b) => a.year - b.year).slice(-4) : [];
   const ebitda = new Map(profile.ebitda_history.map((y) => [y.year, y.value]));
   const top = Math.max(1, ...years.map((y) => y.value));
   return (
@@ -42,7 +43,7 @@ export function KeyFinancials({ profile }: { profile: FinancialProfile }) {
         ))}
         {profile.analyst_target_mean !== null ? (
           <div className="col-span-2 bg-surface px-3 py-2.5 sm:col-span-3">
-            <dt className="text-xs text-muted">Wall Street mean target</dt>
+            <dt className="text-xs text-muted">{profile.enrichment_provenance?.analyst_target_basis ? "Cross-listing mean target estimate" : "Wall Street mean target"}</dt>
             <dd className="font-mono text-xl tabular">
               {money(profile.analyst_target_mean, currency)}
               {profile.analyst_recommendation ? (
@@ -51,11 +52,20 @@ export function KeyFinancials({ profile }: { profile: FinancialProfile }) {
             </dd>
           </div>
         ) : null}
+        {profile.enrichment_provenance ? (
+          <div className="col-span-2 bg-surface px-3 py-2.5 text-xs text-muted sm:col-span-3">
+            Issuer financials: <a href={profile.enrichment_provenance.source_url} target="_blank" rel="noreferrer" className="underline">
+              {profile.enrichment_provenance.provider} · {profile.enrichment_provenance.source_symbol}
+            </a>. Reporting currency: {financialCurrency ?? "unknown"}.
+            {profile.enrichment_provenance.analyst_target_basis ? <p>{profile.enrichment_provenance.analyst_target_basis}</p> : null}
+          </div>
+        ) : null}
+        {!financialCurrency ? <div className="col-span-2 bg-surface px-3 py-2.5 text-xs text-muted sm:col-span-3">Reporting currency unknown; monetary history omitted.</div> : null}
       </dl>
       {years.length > 0 ? (
         <figure>
           <figcaption className="mb-2 font-mono text-[0.68rem] uppercase tracking-wider text-muted">
-            Revenue <span className="text-ink">■</span> and EBITDA <span className="text-accent">■</span> by fiscal year
+            Revenue <span className="text-ink">■</span> and EBITDA <span className="text-accent">■</span> by fiscal year ({financialCurrency})
           </figcaption>
           <ul className="space-y-2.5">
             {years.map((y) => {
@@ -64,8 +74,8 @@ export function KeyFinancials({ profile }: { profile: FinancialProfile }) {
                 <li key={y.year} className="grid grid-cols-[3rem_1fr] items-center gap-2">
                   <span className="font-mono text-xs tabular text-muted">FY{String(y.year).slice(-2)}</span>
                   <div className="space-y-1">
-                    <Bar share={y.value / top} label={money(y.value, currency)} />
-                    {e !== undefined ? <Bar share={Math.max(0, e) / top} label={money(e, currency)} thin /> : null}
+                    <Bar share={y.value / top} label={money(y.value, financialCurrency ?? undefined)} />
+                    {e !== undefined ? <Bar share={Math.max(0, e) / top} label={money(e, financialCurrency ?? undefined)} thin /> : null}
                   </div>
                 </li>
               );

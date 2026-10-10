@@ -54,15 +54,19 @@ PEERS_FALLBACK = json.loads((Path(__file__).parent / "peers_fallback.json").read
 
 
 def build_profile(quote: Quote, history: History) -> FinancialProfile:
+    native = quote.snapshot.quote_provenance is not None and quote.snapshot.quote_provenance.provider == "KASE"
+    monetary_history = quote.financial_currency is not None
     return FinancialProfile(
         snapshot=quote.snapshot,
         multiples=quote.multiples,
-        revenue_history=history.revenue,
-        ebitda_history=history.ebitda,
-        net_income_history=history.net_income,
-        price_history=history.prices,
+        revenue_history=history.revenue if monetary_history else [],
+        ebitda_history=history.ebitda if monetary_history else [],
+        net_income_history=history.net_income if monetary_history else [],
+        price_history=[] if native else history.prices,
         analyst_target_mean=quote.analyst_target_mean,
         analyst_recommendation=quote.analyst_recommendation,
+        financial_currency=quote.financial_currency,
+        enrichment_provenance=quote.enrichment_provenance,
     )
 
 

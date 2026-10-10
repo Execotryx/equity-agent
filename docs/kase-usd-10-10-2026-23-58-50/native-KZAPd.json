@@ -1,0 +1,95 @@
+{
+  "company": "Kazatomprom",
+  "kase_ticker": "KZAPd",
+  "input_ticker": "KZAPD",
+  "currency": "USD",
+  "name_fragment": "kazatomprom",
+  "scope": "native",
+  "kind": "standard",
+  "source_url": null,
+  "instrument_type": "depositary receipt",
+  "id": "native-KZAPd",
+  "phase": "quote",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "KZAPD"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "JSC \"NAC Kazatomprom\""
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "66.01"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "KASE"
+    }
+  ],
+  "elapsed_seconds": 2.052,
+  "exchange": "KASE",
+  "quote": {
+    "snapshot": {
+      "ticker": "KZAPD",
+      "name": "JSC \"NAC Kazatomprom\"",
+      "sector": "Energy",
+      "industry": "Uranium",
+      "currency": "USD",
+      "price": 66.01,
+      "market_cap": null,
+      "week52_low": null,
+      "week52_high": null,
+      "business_summary": "National Atomic Company Kazatomprom JSC explores for, produces, processes, markets, and sells uranium and uranium related products in Kazakhstan, China, the Russian Federation, Canada, France, the United Kingdom, the United States, Jersey, Cayman Islands, the United Arab Emirates, and internationally. The company operates through two segments, Uranium and Ulba Metallurgical Plan. It also processes rare metals; and manufactures and sells beryllium, tantalum, and niobium products. In addition, the company provides communication and security services, and semiconductor materials. Further, it\u2026",
+      "quote_provenance": {
+        "provider": "KASE",
+        "exchange": "KASE",
+        "source_symbol": "KZAPd",
+        "source_url": "https://kase.kz/api/instruments/securities/KZAPd/",
+        "timestamp": "2026-10-09T17:31:02"
+      }
+    },
+    "multiples": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": null,
+      "net_margin": 0.48413,
+      "roe": 0.43286,
+      "revenue_growth": -0.205,
+      "debt_to_equity": 0.05279,
+      "dividend_yield": null
+    },
+    "analyst_target_mean": 25832.5,
+    "analyst_recommendation": "buy",
+    "financial_currency": "KZT",
+    "enrichment_provenance": {
+      "provider": "Yahoo Finance",
+      "source_symbol": "KAP.IL",
+      "source_url": "https://finance.yahoo.com/quote/KAP.IL/",
+      "native_isin": "US63253R2013",
+      "native_shares_per_unit": 1.0,
+      "source_shares_per_unit": 1.0,
+      "identity_source_url": "https://www.kazatomprom.kz/en/investors/faq",
+      "analyst_target_basis": "Cross-listing estimate in USD, adjusted by verified shares per quoted unit."
+    },
+    "diagnostics": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "Price-sensitive valuation metrics unavailable: accounts are not verified USD or quote units/prices are incompatible; no FX conversion.",
+      "EV-based multiples unavailable for native KASE instruments."
+    ]
+  }
+}

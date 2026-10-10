@@ -1,0 +1,16 @@
+{
+  "code": "KSPId",
+  "org_name_en": "Kaspi.kz JSC",
+  "sec_type": "dept",
+  "currency_type": "USD",
+  "price": 95.3,
+  "close_price": 95.3,
+  "date0": "2026-10-09T17:31:02",
+  "ticker": {
+    "nin": "KZ1C00001536",
+    "nin2": "",
+    "nind": "US48581R2058",
+    "nind2": "US48581R1068",
+    "typesec_en": "ordinary"
+  }
+}

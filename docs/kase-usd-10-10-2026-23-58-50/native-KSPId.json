@@ -1,0 +1,95 @@
+{
+  "company": "Kaspi.kz",
+  "kase_ticker": "KSPId",
+  "input_ticker": "KSPID",
+  "currency": "USD",
+  "name_fragment": "kaspi",
+  "scope": "native",
+  "kind": "standard",
+  "source_url": null,
+  "instrument_type": "depositary receipt",
+  "id": "native-KSPId",
+  "phase": "quote",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "KSPID"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "Kaspi.kz JSC"
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "95.3"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "KASE"
+    }
+  ],
+  "elapsed_seconds": 2.228,
+  "exchange": "KASE",
+  "quote": {
+    "snapshot": {
+      "ticker": "KSPID",
+      "name": "Kaspi.kz JSC",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "currency": "USD",
+      "price": 95.3,
+      "market_cap": 18109598505.817833,
+      "week52_low": null,
+      "week52_high": null,
+      "business_summary": "Joint Stock Company Kaspi.kz, together with its subsidiaries, provides payments, marketplace, and fintech solutions for consumers and merchants in Kazakhstan, Azerbaijan, and Ukraine. The company operates through three segments: Payments, Marketplace, and Fintech. The Payments segment offers a platform that facilities transactions between and among merchants and consumers. This segment provides ways for consumers to pay for shopping transactions and regular household bills, as well as make peer to peer payments; and enables merchants to accept payment online and in store, issue and settle\u2026",
+      "quote_provenance": {
+        "provider": "KASE",
+        "exchange": "KASE",
+        "source_symbol": "KSPId",
+        "source_url": "https://kase.kz/api/instruments/securities/KSPId/",
+        "timestamp": "2026-10-09T17:31:02"
+      }
+    },
+    "multiples": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": null,
+      "net_margin": 0.24152,
+      "roe": 0.44781,
+      "revenue_growth": 0.136,
+      "debt_to_equity": 0.22171,
+      "dividend_yield": null
+    },
+    "analyst_target_mean": 106.442535,
+    "analyst_recommendation": "buy",
+    "financial_currency": "KZT",
+    "enrichment_provenance": {
+      "provider": "Yahoo Finance",
+      "source_symbol": "KSPI",
+      "source_url": "https://finance.yahoo.com/quote/KSPI/",
+      "native_isin": "US48581R2058",
+      "native_shares_per_unit": 1.0,
+      "source_shares_per_unit": 1.0,
+      "identity_source_url": "https://ir.kaspi.kz/media/Form_20-F_2023.pdf",
+      "analyst_target_basis": "Cross-listing estimate in USD, adjusted by verified shares per quoted unit."
+    },
+    "diagnostics": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "Price-sensitive valuation metrics unavailable: accounts are not verified USD or quote units/prices are incompatible; no FX conversion.",
+      "EV-based multiples unavailable for native KASE instruments."
+    ]
+  }
+}

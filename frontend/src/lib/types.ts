@@ -188,6 +188,31 @@ export interface components {
             /** Edgar Identity */
             edgar_identity: boolean;
         };
+        /** EnrichmentProvenance */
+        EnrichmentProvenance: {
+            /**
+             * Provider
+             * @default Yahoo Finance
+             */
+            provider: string;
+            /** Source Symbol */
+            source_symbol: string;
+            /** Source Url */
+            source_url: string;
+            /** Native Isin */
+            native_isin: string;
+            /** Native Shares Per Unit */
+            native_shares_per_unit: number;
+            /** Source Shares Per Unit */
+            source_shares_per_unit: number;
+            /** Identity Source Url */
+            identity_source_url: string;
+            /**
+             * Analyst Target Basis
+             * @default null
+             */
+            analyst_target_basis: string | null;
+        };
         /** ErrorBody */
         ErrorBody: {
             /** Message */
@@ -246,6 +271,13 @@ export interface components {
              * @default null
              */
             analyst_recommendation: string | null;
+            /**
+             * Financial Currency
+             * @default null
+             */
+            financial_currency: string | null;
+            /** @default null */
+            enrichment_provenance: components["schemas"]["EnrichmentProvenance"] | null;
         };
         /** HTTPValidationError */
         HTTPValidationError: {
@@ -384,6 +416,22 @@ export interface components {
             date: string;
             /** Close */
             close: number;
+        };
+        /** QuoteProvenance */
+        QuoteProvenance: {
+            /** Provider */
+            provider: string;
+            /** Exchange */
+            exchange: string;
+            /** Source Symbol */
+            source_symbol: string;
+            /** Source Url */
+            source_url: string;
+            /**
+             * Timestamp
+             * @default null
+             */
+            timestamp: string | null;
         };
         /** ReportNarrative */
         ReportNarrative: {
@@ -559,6 +607,8 @@ export interface components {
              * @default
              */
             business_summary: string;
+            /** @default null */
+            quote_provenance: components["schemas"]["QuoteProvenance"] | null;
         };
         /** StageError */
         StageError: {

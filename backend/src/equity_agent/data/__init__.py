@@ -50,7 +50,7 @@ class DataLayer:
         cache = Cache(cache_path)
         return cls(
             cache=cache,
-            market=MarketData(cache, market.YahooSource()),
+            market=MarketData(cache, market.live_source()),
             sec=SecData(cache, sec.EdgarSource(settings.edgar_identity)),
             search=SearchData(cache, search.TavilySource(settings.tavily_api_key)),
         )

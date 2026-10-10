@@ -1,11 +1,13 @@
 """Live USD instruments on KASE; actual KASE symbols and explicit US-listing reports.
 
 RUN_LIVE_TESTS=1 uv run pytest -m live tests/test_kase_usd_live.py -q -s
-The two US-listing reports use Claude/Tavily credits. Five native probes do not.
+Two US-listing reports and one native FRHC_KZ report use Claude/Tavily credits.
+Five native quote probes do not. A recognized instrument without a price still fails live quote acceptance.
 """
 
 from collections.abc import Iterator
 from datetime import datetime, timedelta, timezone
+from dataclasses import replace
 
 import pytest
 from kase_cases import USD_NATIVE_CASES, USD_US_LISTING_CASES, KaseCase
@@ -37,3 +39,7 @@ def test_native_kase_usd_quote(case: KaseCase, evidence: Evidence) -> None:
 @pytest.mark.parametrize("case", USD_US_LISTING_CASES, ids=lambda case: case.id)
 def test_usd_kase_company_us_listing_report(case: KaseCase, settings: Settings, evidence: Evidence) -> None:
     record_report_case(case, settings, evidence)
+
+
+def test_native_kase_freedom_report(settings: Settings, evidence: Evidence) -> None:
+    record_report_case(replace(USD_NATIVE_CASES[3], kind="bank"), settings, evidence)

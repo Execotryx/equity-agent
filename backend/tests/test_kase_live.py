@@ -23,7 +23,7 @@ from kase_cases import GLOBAL_SOURCE, NATIVE_CASES, SHARES_SOURCE, US_LISTING_CA
 from equity_agent.acceptance import Case, Check, Outcome, evaluate_case
 from equity_agent.config import BACKEND_ROOT, Settings, load_settings
 from equity_agent.data import DataError, DataLayer, normalize_ticker
-from equity_agent.data.market import YahooSource, parse_quote
+from equity_agent.data.market import live_source, parse_quote
 from equity_agent.llm import Gateway
 from equity_agent.models import Quote, ResearchReport, ReportNarrative
 from equity_agent.pipeline import RunFailed, Services, run_report
@@ -37,13 +37,15 @@ class Evidence:
     rows: list[dict[str, Any]] = field(default_factory=list)
 
     def save(self, case: KaseCase, checks: list[Check], elapsed: float, **details: Any) -> None:
+        phase = "report" if "report" in details or "acceptance" in details else "quote"
+        identifier = case.id + ("-report" if phase == "report" else "")
         row = {
-            **asdict(case), "id": case.id, "source": case.source,
+            **asdict(case), "id": identifier, "phase": phase, "source": case.source,
             "passed": all(check.passed for check in checks),
             "checks": [asdict(check) for check in checks], "elapsed_seconds": round(elapsed, 3), **details,
         }
         self.rows.append(row)
-        (self.directory / f"{case.id}.json").write_text(json.dumps(row, indent=2) + "\n", encoding="utf-8")
+        (self.directory / f"{identifier}.json").write_text(json.dumps(row, indent=2) + "\n", encoding="utf-8")
 
     def finish(self) -> None:
         (self.directory / "results.json").write_text(json.dumps(self.rows, indent=2) + "\n", encoding="utf-8")
@@ -51,14 +53,14 @@ class Evidence:
             "# Live KASE test execution", "", f"Creation: {self.directory.name.removeprefix('kase-').removeprefix('usd-')} (Asia/Qyzylorda)", "",
             "Native cases require the named issuer, declared quote currency and a KASE trading venue.",
             "US-listing cases research KASE-listed companies using US symbols; their prices are not KASE prices.",
-            "Native probes apply the app's ticker normalization before calling its Yahoo adapter.", "",
+            "All cases use the production market-data router after app ticker normalization. Supported native USD symbols use KASE; other inputs retain Yahoo routing.", "",
             f"Listing sources: [KASE shares]({SHARES_SOURCE}), [KASE Global]({GLOBAL_SOURCE}).", "",
-            "| Company | KASE symbol | Input | Currency | Scope | Result | Failed criteria |",
-            "|---|---|---|---|---|---|---|",
+            "| Company | KASE symbol | Input | Currency | Scope | Phase | Result | Failed criteria |",
+            "|---|---|---|---|---|---|---|---|",
         ]
         for row in self.rows:
             failures = "; ".join(check["criterion"] + ": " + check["detail"] for check in row["checks"] if not check["passed"])
-            lines.append(f"| {row['company']} | {row['kase_ticker']} | {row['input_ticker']} | {row['currency']} | {row['scope']} | {'PASS' if row['passed'] else 'FAIL'} | {failures} |")
+            lines.append(f"| {row['company']} | {row['kase_ticker']} | {row['input_ticker']} | {row['currency']} | {row['scope']} | {row['phase']} | {'PASS' if row['passed'] else 'FAIL'} | {failures} |")
         cost = sum(row.get("acceptance", {}).get("cost_usd", 0) for row in self.rows)
         lines += ["", f"{sum(row['passed'] for row in self.rows)}/{len(self.rows)} cases passed. Recorded Claude cost: ${cost:.4f}.", "",
                   "Pass/fail follows structural acceptance criteria. A reasoned unavailable risk section is allowed;",
@@ -71,7 +73,7 @@ class Evidence:
                 warnings = "; ".join(report["quality_warnings"]) or "none"
                 budget = "within" if row["acceptance"]["within_budget"] else "over"
                 lines.append(f"- {row['input_ticker']}: {risk}. Quality warnings: {warnings}. Performance budget: {budget}.")
-        lines += ["", "Each case JSON preserves checks, timings and observed quote details. US-listing JSON also includes",
+        lines += ["", "Each case JSON preserves checks, timings and observed quote details. Report JSON also includes",
                   "the complete research report, acceptance results, model usage/cost and quality warnings."]
         (self.directory / "results.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -99,9 +101,9 @@ def settings() -> Settings:
 def observe(case: KaseCase) -> tuple[Quote | None, str, list[Check]]:
     try:
         ticker = normalize_ticker(case.input_ticker)
-        raw = YahooSource().info(ticker)
+        raw = live_source().info(ticker)
         quote = parse_quote(ticker, raw)
-        exchange = str(raw.get("fullExchangeName") or raw.get("exchange") or "")
+        exchange = quote.snapshot.quote_provenance.exchange if quote.snapshot.quote_provenance else str(raw.get("fullExchangeName") or raw.get("exchange") or "")
         return quote, exchange, quote_checks(case, quote, exchange)
     except DataError as error:
         criterion = "ticker accepted by application" if error.reason == "invalid ticker" else "quote available"

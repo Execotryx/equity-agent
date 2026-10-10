@@ -1,0 +1,16 @@
+{
+  "code": "AAPL_KZ",
+  "org_name_en": "Apple Inc. ",
+  "sec_type": "share",
+  "currency_type": "USD",
+  "price": 335.2,
+  "close_price": 335.2,
+  "date0": "2026-10-09T22:00:42",
+  "ticker": {
+    "nin": "US0378331005",
+    "nin2": "",
+    "nind": "",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

@@ -259,6 +259,8 @@
      "year": 2025
     }
    ],
+   "enrichment_provenance": null,
+   "financial_currency": "USD",
    "multiples": {
     "debt_to_equity": 0.23953,
     "dividend_yield": 0.0064,
@@ -1320,6 +1322,7 @@
     "market_cap": 408092835840.0,
     "name": "Costco Wholesale Corporation",
     "price": 920.65,
+    "quote_provenance": null,
     "sector": "Consumer Defensive",
     "ticker": "COST",
     "week52_high": 1096.5,

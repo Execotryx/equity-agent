@@ -4,7 +4,7 @@ export const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:800
 
 export const QUICK_PICKS = ["AAPL", "NVDA", "JPM", "COST", "TSLA"] as const;
 
-const TICKER_PATTERN = /^[A-Z][A-Z0-9.\-]{0,9}$/;
+const TICKER_PATTERN = /^[A-Z][A-Z0-9._\-]{0,9}$/;
 
 /** The upper-cased ticker, or null when the input can't be one. */
 export function normalizeTicker(raw: string): string | null {

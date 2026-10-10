@@ -1,7 +1,7 @@
 import { act, cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
-import { isStageError, type AnalystView, type CompsTable as Comps, type RiskReport, type StreamEvent } from "@/lib/events";
+import { isStageError, type AnalystView, type CompsTable as Comps, type FinancialProfile, type RiskReport, type StreamEvent } from "@/lib/events";
 import { initialState, reduce, reduceAll } from "@/lib/reportState";
 import { FIXTURES, finalState, reportOf } from "@/test/fixtures";
 
@@ -24,6 +24,12 @@ const jpm = reportOf(FIXTURES.jpm);
 const noop = () => {};
 
 describe("TickerForm", () => {
+  it("navigates to a native KASE report without changing the underscore", () => {
+    render(<TickerForm />);
+    fireEvent.change(screen.getByLabelText("Ticker symbol"), { target: { value: " frhc_kz " } });
+    fireEvent.submit(screen.getByRole("search"));
+    expect(push).toHaveBeenCalledWith("/report/FRHC_KZ");
+  });
   it("rejects invalid input inline without navigating", () => {
     render(<TickerForm />);
     fireEvent.change(screen.getByLabelText("Ticker symbol"), { target: { value: "$$$" } });
@@ -65,6 +71,45 @@ describe("AgentProgress", () => {
 });
 
 describe("header, financials and chart (AAPL)", () => {
+  it("shows KASE quote provenance, timestamp and official casing", () => {
+    render(<PriceHeader snapshot={{ ...aapl.financials.snapshot, quote_provenance: {
+      provider: "KASE", exchange: "KASE", source_symbol: "KSPId", source_url: "https://kase.kz/api/instruments/securities/KSPId/",
+      timestamp: "2026-10-09T17:31:02",
+    } }} />);
+    expect(screen.getByRole("link", { name: "KASE · KASE · KSPId" }).getAttribute("href")).toContain("KSPId/");
+    expect(screen.getByText("Source timestamp: 2026-10-09T17:31:02")).toBeTruthy();
+  });
+
+  it("labels KZT accounts independently of a USD price and analyst estimate", () => {
+    const { container } = render(<KeyFinancials profile={{ ...aapl.financials, financial_currency: "KZT", enrichment_provenance: {
+      provider: "Yahoo Finance", source_symbol: "KSPI", source_url: "https://finance.yahoo.com/quote/KSPI/",
+      native_isin: "US48581R2058", native_shares_per_unit: 1, source_shares_per_unit: 1,
+      identity_source_url: "https://kase.kz/en/investors/depts/KSPId",
+      analyst_target_basis: "Cross-listing estimate in USD, adjusted by verified shares per quoted unit.",
+    } }} />);
+    expect(screen.getByText(/Reporting currency: KZT/)).toBeTruthy();
+    expect(container.querySelector("figure")?.textContent).toContain("KZT ");
+    expect(container.querySelector("figure")?.textContent).not.toContain("$");
+    expect(screen.getByText("Cross-listing mean target estimate")).toBeTruthy();
+  });
+
+  it("omits monetary history when native reporting currency is unknown", () => {
+    const { container } = render(<KeyFinancials profile={{ ...aapl.financials, financial_currency: null,
+      snapshot: { ...aapl.financials.snapshot, quote_provenance: {
+        provider: "KASE", exchange: "KASE", source_symbol: "CORE_KZ", source_url: "https://kase.kz/", timestamp: null,
+      } },
+    }} />);
+    expect(container.querySelector("figure")).toBeNull();
+    expect(screen.getByText("Reporting currency unknown; monetary history omitted.")).toBeTruthy();
+  });
+
+  it.each(["null", "missing"])("omits legacy monetary history without a reporting currency: %s", (currency) => {
+    const legacy: Partial<FinancialProfile> = { ...aapl.financials, financial_currency: null };
+    if (currency === "missing") delete legacy.financial_currency;
+    const { container } = render(<KeyFinancials profile={legacy as FinancialProfile} />);
+    expect(container.querySelector("figure")).toBeNull();
+    expect(screen.getByText("Reporting currency unknown; monetary history omitted.")).toBeTruthy();
+  });
   it("renders the snapshot", () => {
     render(<PriceHeader snapshot={aapl.financials.snapshot} />);
     expect(screen.getByRole("heading", { level: 1 }).textContent).toContain("AAPL");

@@ -13,7 +13,7 @@ export function TickerForm() {
   const open = (raw: string) => {
     const ticker = normalizeTicker(raw);
     if (!ticker) {
-      setMessage(raw.trim() ? "That doesn't look like a ticker: use letters, digits, “.” or “-”, starting with a letter." : "Enter a ticker, for example AAPL.");
+      setMessage(raw.trim() ? "That doesn't look like a ticker: use up to 10 letters, digits, “.”, “_” or “-”, starting with a letter." : "Enter a ticker, for example AAPL.");
       return;
     }
     setMessage(null);

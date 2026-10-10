@@ -1,0 +1,16 @@
+{
+  "code": "HSBKd",
+  "org_name_en": "Halyk Bank of Kazakhstan JSC",
+  "sec_type": "dept",
+  "currency_type": "USD",
+  "price": 33.42,
+  "close_price": 33.42,
+  "date0": "2026-10-09T17:31:02",
+  "ticker": {
+    "nin": "KZ000A0LE0S4",
+    "nin2": "",
+    "nind": "US46627J3023",
+    "nind2": "US46627J2033",
+    "typesec_en": "ordinary"
+  }
+}

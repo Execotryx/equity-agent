@@ -310,7 +310,8 @@ Also call `edgar.set_cache_directory()` / `use_local_storage()` so filing HTML i
   - Errors are caught most-specific first: `NotFoundError` → bad model name in `.env`; `RateLimitError`; `APIStatusError`; `APIConnectionError`.
   - `message._request_id` is logged when a call fails.
 - **Branches.** Every branch returns `Result | StageError`. A failed branch degrades the report instead of failing it (for example, "SEC filing unavailable: foreign issuer without 10-K/20-F"). Only a Stage 0 failure (unknown ticker) stops the run.
-- **Ticker input.** Matches `^[A-Z][A-Z0-9.\-]{0,9}$` after upper-casing. `BRK.B` is converted to `BRK-B` for Yahoo.
+- **Ticker input.** Matches `^[A-Z][A-Z0-9._\-]{0,9}$` after upper-casing. `BRK.B` is converted to `BRK-B` for Yahoo.
+  Native USD KASE routing and issuer enrichment are specified in `openspec/changes/add-kase-usd-market-data/`.
 - **Secrets.** `ANTHROPIC_API_KEY` and `TAVILY_API_KEY` are never logged or sent to the frontend. `EDGAR_IDENTITY` is required at startup.
 
 ---

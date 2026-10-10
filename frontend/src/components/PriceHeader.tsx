@@ -20,6 +20,14 @@ export function PriceHeader({ snapshot }: { snapshot: Snapshot }) {
         <div>
           <dt className="font-mono text-[0.68rem] uppercase tracking-wider text-muted">Price</dt>
           <dd className="font-mono text-3xl tabular">{money(price, snapshot.currency)}</dd>
+          {snapshot.quote_provenance ? (
+            <dd className="mt-1 text-xs text-muted">
+              <a href={snapshot.quote_provenance.source_url} target="_blank" rel="noreferrer" className="underline">
+                {snapshot.quote_provenance.provider} · {snapshot.quote_provenance.exchange} · {snapshot.quote_provenance.source_symbol}
+              </a>
+              <span className="block">Source timestamp: {snapshot.quote_provenance.timestamp ?? "unavailable"}</span>
+            </dd>
+          ) : null}
         </div>
         <div>
           <dt className="font-mono text-[0.68rem] uppercase tracking-wider text-muted">Market cap</dt>

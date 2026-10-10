@@ -31,6 +31,18 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllGlobals());
 
 describe("research stream transport", () => {
+  it("keeps native KASE symbols in initial and refreshed EventSource requests", () => {
+    const { result, unmount } = renderHook(() => useResearchStream("FRHC_KZ"));
+    const first = TestEventSource.instances[0];
+    expect(new URL(first.url).searchParams.get("ticker")).toBe("FRHC_KZ");
+    act(() => result.current.refresh());
+    const second = new URL(TestEventSource.instances[1].url);
+    expect(second.searchParams.get("ticker")).toBe("FRHC_KZ");
+    expect(second.searchParams.get("refresh")).toBe("true");
+    expect(first.close).toHaveBeenCalledTimes(1);
+    unmount();
+    expect(TestEventSource.instances[1].close).toHaveBeenCalledTimes(1);
+  });
   it("continues through a nonterminal section error and receives the final report", () => {
     const { result } = renderHook(() => useResearchStream("AAPL"));
     const source = TestEventSource.instances[0];

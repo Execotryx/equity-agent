@@ -1,0 +1,679 @@
+{
+  "company": "Freedom Holding",
+  "kase_ticker": "FRHC_KZ",
+  "input_ticker": "FRHC_KZ",
+  "currency": "USD",
+  "name_fragment": "freedom",
+  "scope": "native",
+  "kind": "bank",
+  "source_url": null,
+  "instrument_type": "ordinary share",
+  "id": "native-FRHC_KZ-report",
+  "phase": "report",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "FRHC_KZ"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "Freedom Holding Corp."
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "168.55"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "KASE"
+    },
+    {
+      "criterion": "price and key financials present",
+      "passed": true,
+      "detail": "price 168.55, 4 years of revenue, 8 multiples"
+    },
+    {
+      "criterion": "at least 3 peers with 2+ valuation multiples",
+      "passed": true,
+      "detail": "5 of 5 peers"
+    },
+    {
+      "criterion": "signal with reasoning",
+      "passed": true,
+      "detail": "SELL"
+    },
+    {
+      "criterion": "risk section present or unavailable with a reason",
+      "passed": true,
+      "detail": "SEC filing unavailable (TypeError)"
+    },
+    {
+      "criterion": "disclaimer present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "criterion": "financials metric set",
+      "passed": true,
+      "detail": "financials"
+    },
+    {
+      "criterion": "no EV/EBITDA",
+      "passed": true,
+      "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+    },
+    {
+      "criterion": "writer produced a narrative",
+      "passed": true,
+      "detail": "narrative present"
+    }
+  ],
+  "elapsed_seconds": 22.545,
+  "exchange": "KASE",
+  "quote": {
+    "snapshot": {
+      "ticker": "FRHC_KZ",
+      "name": "Freedom Holding Corp.",
+      "sector": "Financial Services",
+      "industry": "Financial Conglomerates",
+      "currency": "USD",
+      "price": 168.55,
+      "market_cap": 10751410276.800472,
+      "week52_low": null,
+      "week52_high": null,
+      "business_summary": "Freedom Holding Corp., through its subsidiaries, provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It operates through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment provides investment banking services, including M&A, underwriting and capital markets advisory; margin lending services collateralized by securities and cash in the customer's account; capital raising solutions; and debt capital markets solutions that focus on structuring and\u2026",
+      "quote_provenance": {
+        "provider": "KASE",
+        "exchange": "KASE",
+        "source_symbol": "FRHC_KZ",
+        "source_url": "https://kase.kz/api/instruments/securities/FRHC_KZ/",
+        "timestamp": "2026-10-09T17:31:02"
+      }
+    },
+    "multiples": {
+      "pe_ttm": 66.8849220542293,
+      "pe_fwd": 37.455552575007374,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": 6.74388807792514,
+      "net_margin": 0.08425,
+      "roe": 0.106809996,
+      "revenue_growth": 0.278,
+      "debt_to_equity": 1.81589,
+      "dividend_yield": 0.0
+    },
+    "analyst_target_mean": null,
+    "analyst_recommendation": null,
+    "financial_currency": "USD",
+    "enrichment_provenance": {
+      "provider": "Yahoo Finance",
+      "source_symbol": "FRHC",
+      "source_url": "https://finance.yahoo.com/quote/FRHC/",
+      "native_isin": "US3563901046",
+      "native_shares_per_unit": 1.0,
+      "source_shares_per_unit": 1.0,
+      "identity_source_url": "https://kase.kz/en/investors/instruments/shares",
+      "analyst_target_basis": null
+    },
+    "diagnostics": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "EV-based multiples unavailable for native KASE instruments."
+    ]
+  },
+  "acceptance": {
+    "ticker": "FRHC_KZ",
+    "kind": "bank",
+    "passed": true,
+    "failed": [],
+    "checks": [
+      {
+        "criterion": "price and key financials present",
+        "passed": true,
+        "detail": "price 168.55, 4 years of revenue, 8 multiples"
+      },
+      {
+        "criterion": "at least 3 peers with 2+ valuation multiples",
+        "passed": true,
+        "detail": "5 of 5 peers"
+      },
+      {
+        "criterion": "signal with reasoning",
+        "passed": true,
+        "detail": "SELL"
+      },
+      {
+        "criterion": "risk section present or unavailable with a reason",
+        "passed": true,
+        "detail": "SEC filing unavailable (TypeError)"
+      },
+      {
+        "criterion": "disclaimer present",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "criterion": "financials metric set",
+        "passed": true,
+        "detail": "financials"
+      },
+      {
+        "criterion": "no EV/EBITDA",
+        "passed": true,
+        "detail": "pe_ttm, pe_fwd, price_to_book, roe, dividend_yield, revenue_growth"
+      }
+    ],
+    "signal": "SELL",
+    "peers": 5,
+    "comps_ready_ms": 13163,
+    "total_ms": 20814,
+    "llm_calls": 4,
+    "cost_usd": 0.07,
+    "within_budget": false,
+    "timings_ms": {
+      "validate": 2567,
+      "financials": 1011,
+      "risk": 1891,
+      "news": 2161,
+      "comps": 10595,
+      "comps_ready": 13163,
+      "scorecard": 0,
+      "comps_explain": 2607,
+      "analyst": 7117,
+      "signal_ready": 20281,
+      "writer": 7647,
+      "total": 20814
+    }
+  },
+  "report": {
+    "generated_at": "2026-10-10T19:00:04+00:00",
+    "ticker": "FRHC_KZ",
+    "financials": {
+      "snapshot": {
+        "ticker": "FRHC_KZ",
+        "name": "Freedom Holding Corp.",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "currency": "USD",
+        "price": 168.55,
+        "market_cap": 10751410276.800472,
+        "week52_low": null,
+        "week52_high": null,
+        "business_summary": "Freedom Holding Corp., through its subsidiaries, provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It operates through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment provides investment banking services, including M&A, underwriting and capital markets advisory; margin lending services collateralized by securities and cash in the customer's account; capital raising solutions; and debt capital markets solutions that focus on structuring and\u2026",
+        "quote_provenance": {
+          "provider": "KASE",
+          "exchange": "KASE",
+          "source_symbol": "FRHC_KZ",
+          "source_url": "https://kase.kz/api/instruments/securities/FRHC_KZ/",
+          "timestamp": "2026-10-09T17:31:02"
+        }
+      },
+      "multiples": {
+        "pe_ttm": 66.8849220542293,
+        "pe_fwd": 37.455552575007374,
+        "ev_ebitda": null,
+        "ev_revenue": null,
+        "price_to_book": 6.74388807792514,
+        "net_margin": 0.08425,
+        "roe": 0.106809996,
+        "revenue_growth": 0.278,
+        "debt_to_equity": 1.81589,
+        "dividend_yield": 0.0
+      },
+      "revenue_history": [
+        {
+          "year": 2023,
+          "value": 795693000.0
+        },
+        {
+          "year": 2024,
+          "value": 1637560000.0
+        },
+        {
+          "year": 2025,
+          "value": 1987083000.0
+        },
+        {
+          "year": 2026,
+          "value": 2165361000.0
+        }
+      ],
+      "ebitda_history": [
+        {
+          "year": 2023,
+          "value": 450023000.0
+        },
+        {
+          "year": 2024,
+          "value": 954652000.0
+        },
+        {
+          "year": 2025,
+          "value": 657636000.0
+        },
+        {
+          "year": 2026,
+          "value": 749561000.0
+        }
+      ],
+      "net_income_history": [
+        {
+          "year": 2023,
+          "value": 205140000.0
+        },
+        {
+          "year": 2024,
+          "value": 379107000.0
+        },
+        {
+          "year": 2025,
+          "value": 76287000.0
+        },
+        {
+          "year": 2026,
+          "value": 153328000.0
+        }
+      ],
+      "price_history": [],
+      "analyst_target_mean": null,
+      "analyst_recommendation": null,
+      "financial_currency": "USD",
+      "enrichment_provenance": {
+        "provider": "Yahoo Finance",
+        "source_symbol": "FRHC",
+        "source_url": "https://finance.yahoo.com/quote/FRHC/",
+        "native_isin": "US3563901046",
+        "native_shares_per_unit": 1.0,
+        "source_shares_per_unit": 1.0,
+        "identity_source_url": "https://kase.kz/en/investors/instruments/shares",
+        "analyst_target_basis": null
+      }
+    },
+    "comps": {
+      "metric_set": "financials",
+      "metrics": [
+        "pe_ttm",
+        "pe_fwd",
+        "price_to_book",
+        "roe",
+        "dividend_yield",
+        "revenue_growth"
+      ],
+      "primary_metric": "price_to_book",
+      "rows": [
+        {
+          "ticker": "FRHC_KZ",
+          "name": "Freedom Holding Corp.",
+          "market_cap": 10751410276.800472,
+          "multiples": {
+            "pe_ttm": 66.8849220542293,
+            "pe_fwd": 37.455552575007374,
+            "ev_ebitda": null,
+            "ev_revenue": null,
+            "price_to_book": 6.74388807792514,
+            "net_margin": 0.08425,
+            "roe": 0.106809996,
+            "revenue_growth": 0.278,
+            "debt_to_equity": 1.81589,
+            "dividend_yield": 0.0
+          },
+          "is_target": true,
+          "sector": "Financial Services",
+          "industry": "Financial Conglomerates",
+          "business_summary": "Freedom Holding Corp., through its subsidiaries, provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It operates through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment provides investment banking services, including M&A, underwriting and capital markets advisory; margin lending services collateralized by securities and cash in the customer's account; capital raising solutions; and debt capital markets solutions that focus on structuring and\u2026"
+        },
+        {
+          "ticker": "IBKR",
+          "name": "Interactive Brokers Group, Inc.",
+          "market_cap": 149714272256.0,
+          "multiples": {
+            "pe_ttm": 34.86905,
+            "pe_fwd": 26.990833,
+            "ev_ebitda": null,
+            "ev_revenue": -4.231,
+            "price_to_book": 6.706098,
+            "net_margin": 0.16474001,
+            "roe": 0.24018998,
+            "revenue_growth": 0.263,
+            "debt_to_equity": 2.05748,
+            "dividend_yield": 0.004
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "Interactive Brokers Group, Inc. operates as an automated electronic broker in the United States and internationally. The company engages in the execution, clearance, and settlement of trades in stocks, options, futures, foreign exchange instruments, bonds, precious metals, and cryptocurrencies; and the company provides custody, prime brokerage, securities, and margin lending services. It also offers custody and service accounts for hedge and mutual funds, ETFs, registered investment advisors, proprietary trading groups, introducing brokers, and individual investors. In addition, the company\u2026"
+        },
+        {
+          "ticker": "SCHW",
+          "name": "The Charles Schwab Corporation",
+          "market_cap": 167226753024.0,
+          "multiples": {
+            "pe_ttm": 17.613844,
+            "pe_fwd": 12.202616,
+            "ev_ebitda": null,
+            "ev_revenue": 5.874,
+            "price_to_book": 3.8036423,
+            "net_margin": 0.38793,
+            "roe": 0.20273,
+            "revenue_growth": 0.209,
+            "debt_to_equity": 1.5110599999999998,
+            "dividend_yield": 0.0132
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "The Charles Schwab Corporation, together with its subsidiaries, operates as a savings and loan holding company that provides wealth management, securities brokerage, banking, asset management, custody, and financial advisory services in the United States and internationally. The company operates in two segments, Investor Services and Advisor Services. It offers brokerage accounts with equity and fixed income trading, margin lending, options trading, futures and forex trading, and cash management capabilities, including money market funds, and certificates of deposit; third-party mutual funds\u2026"
+        },
+        {
+          "ticker": "HOOD",
+          "name": "Robinhood Markets, Inc.",
+          "market_cap": 98017951744.0,
+          "multiples": {
+            "pe_ttm": 48.026432,
+            "pe_fwd": 31.717861,
+            "ev_ebitda": null,
+            "ev_revenue": 19.688,
+            "price_to_book": 10.338549,
+            "net_margin": 0.42011002,
+            "roe": 0.23618999,
+            "revenue_growth": 0.323,
+            "debt_to_equity": 2.40279,
+            "dividend_yield": 0.0
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "Robinhood Markets, Inc. operates financial services platform in the United States. The company's platform allows users to invest in stocks, exchange-traded funds (ETFs), and American depository receipts. It offers fractional trading, recurring investments, access to investing on margin, fully-paid securities lending, cash sweep, instant withdrawals, retirement program, around-the-clock trading, joint investing accounts, event contracts, future contract services, and short selling. The company also provides various learning and education solutions comprise Snacks, an accessible digest of\u2026"
+        },
+        {
+          "ticker": "VIRT",
+          "name": "Virtu Financial, Inc.",
+          "market_cap": 5078172160.0,
+          "multiples": {
+            "pe_ttm": 9.601002,
+            "pe_fwd": 8.062888,
+            "ev_ebitda": null,
+            "ev_revenue": -1.981,
+            "price_to_book": 2.7164516,
+            "net_margin": 0.16874,
+            "roe": 0.53617,
+            "revenue_growth": 0.291,
+            "debt_to_equity": 4.15015,
+            "dividend_yield": 0.0167
+          },
+          "is_target": false,
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "business_summary": "Virtu Financial, Inc. operates as a financial services company in the United States, Ireland, and internationally. It operates in two segments, Market Making and Execution Services. The company is involved in buying and selling securities to broker dealers, banks and institutions; trading direct to clients, exchanges, alternative trading systems, and other market centers; cash trading business; and pre- and post-trade services, data products, and compliance tools. It also provides agency execution services and trading venues for transparent trading in global equities, ETFs, fixed income,\u2026"
+        },
+        {
+          "ticker": "KSPI",
+          "name": "Joint Stock Company Kaspi.kz",
+          "market_cap": 17670635520.0,
+          "multiples": {
+            "pe_ttm": 8.523373,
+            "pe_fwd": 0.013668085,
+            "ev_ebitda": null,
+            "ev_revenue": null,
+            "price_to_book": 0.007808716,
+            "net_margin": 0.24152,
+            "roe": 0.44781,
+            "revenue_growth": 0.136,
+            "debt_to_equity": 0.22171,
+            "dividend_yield": 0.0617
+          },
+          "is_target": false,
+          "sector": "Technology",
+          "industry": "Software - Infrastructure",
+          "business_summary": "Joint Stock Company Kaspi.kz, together with its subsidiaries, provides payments, marketplace, and fintech solutions for consumers and merchants in Kazakhstan, Azerbaijan, and Ukraine. The company operates through three segments: Payments, Marketplace, and Fintech. The Payments segment offers a platform that facilities transactions between and among merchants and consumers. This segment provides ways for consumers to pay for shopping transactions and regular household bills, as well as make peer to peer payments; and enables merchants to accept payment online and in store, issue and settle\u2026"
+        }
+      ],
+      "median": {
+        "pe_ttm": 17.613844,
+        "pe_fwd": 12.202616,
+        "ev_ebitda": null,
+        "ev_revenue": 12.780999999999999,
+        "price_to_book": 3.8036423,
+        "net_margin": 0.24152,
+        "roe": 0.24018998,
+        "revenue_growth": 0.263,
+        "debt_to_equity": 2.05748,
+        "dividend_yield": 0.0132
+      },
+      "target_vs_median_pct": {
+        "pe_ttm": 2.797292746218787,
+        "pe_fwd": 2.0694690855638966,
+        "price_to_book": 0.7730079607972444,
+        "roe": -0.5553103589083941,
+        "dividend_yield": -1.0,
+        "revenue_growth": 0.057034220532319546
+      },
+      "peer_rationales": {
+        "IBKR": "Both provide securities brokerage and margin lending services to customers.",
+        "SCHW": "Both offer securities brokerage, margin lending, and banking services.",
+        "HOOD": "Both provide retail securities brokerage with margin investing access.",
+        "VIRT": "Both engage in market making and securities trading services.",
+        "KSPI": "Both serve consumers in Kazakhstan; Kaspi offers fintech, Freedom offers banking."
+      },
+      "peer_origin": {
+        "IBKR": "agent",
+        "SCHW": "agent",
+        "HOOD": "agent",
+        "VIRT": "agent",
+        "KSPI": "agent"
+      },
+      "exclusions": [],
+      "sources": [
+        "https://rocketreach.co/freedom-holding-corp-competitors_b79dfba4c590936e",
+        "https://www.cbinsights.com/company/freedom-holding",
+        "https://www.marketbeat.com/stocks/NASDAQ/FRHC/competitors-and-alternatives",
+        "https://en.wikipedia.org/wiki/Freedom_Holding",
+        "https://www.americanbanker.com/press-release/freedom-holding-corp-more-than-doubles-net-income-and-reports-record-revenue-in-fiscal-2026"
+      ],
+      "insufficient": false
+    },
+    "competitor_search": [
+      {
+        "title": "Freedom Holding Corp. Competitors | Companies like Freedom Holding Corp.",
+        "url": "https://rocketreach.co/freedom-holding-corp-competitors_b79dfba4c590936e",
+        "domain": "rocketreach.co",
+        "snippet": "Image 1: RocketReach logoToggle navigation Log In Sign Up Image 2: stars 1Image 3: stars 2Image 4: stars 3 ## Company Information ## Email Format ## Management ## Competitors Image 5: Freedom Holding Corp. # Freedom Holding Corp. Competitors View More Freedom Holding Corp. Competitors View Freedom Holding Corp.'s top competitors like Ally, ETRADE Bank c/o ETRADE Financial, LLC, and Fidelity Investments. Image 6: Fidelity Investments [...] 602 $1.7b Image 32: Dwight Asset Management, a Goldman Sachs CompanyDwight Asset Management, a Goldman Sachs Company 15 $53.6b Image 33: Anchorage\u2026"
+      },
+      {
+        "title": "Freedom Holding - Products, Competitors, Financials, Employees, Headquarters Locations",
+        "url": "https://www.cbinsights.com/company/freedom-holding",
+        "domain": "cbinsights.com",
+        "snippet": "Freedom Holding was founded in 2008. Where is Freedom Holding's headquarters? Freedom Holding's headquarters is located at 3960 Howard Hughes Parkway, Las Vegas. What is Freedom Holding's latest funding round? Freedom Holding's latest funding round is IPO. Who are Freedom Holding's competitors? Competitors of Freedom Holding include Integral, Shizuoka Financial Group, Irostors, Aroundtown, tradeMONSTER Group and 7 more. Loading... ## Compare Freedom Holding to Competitors [...] Morgan Stanley Wealth Management Logo Morgan Stanley Wealth Management [...] romni pentru accesul la pie\u021bele\u2026"
+      },
+      {
+        "title": "Top Freedom (FRHC) Competitors 2026 | MarketBeat",
+        "url": "https://www.marketbeat.com/stocks/NASDAQ/FRHC/competitors-and-alternatives",
+        "domain": "marketbeat.com",
+        "snippet": "Should you buy Freedom stock or one of its competitors? Freedom's main competitors and comparable companies include Orix Corp Ads (IX), Equitable (EQH), Voya Financial (VOYA), Neostellar Capital (NSLR), and Oxford Square Capital (OXSQ). Companies are selected based on similarities in market, industry, and size. These companies are all part of the \"diversified financial services\" industry. ### How does Freedom compare to Orix Corp Ads? [...] | Company | Gross Revenue | Price/Sales Ratio | Net Income | Earnings Per Share | Price/Earnings Ratio | --- --- --- | | Voya Financial | $8.19B | 1.07 |\u2026"
+      },
+      {
+        "title": "Freedom Holding - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Freedom_Holding",
+        "domain": "en.wikipedia.org",
+        "snippet": "Freedom Holding Corp. is an American investment conglomerate headquartered in Almaty, Kazakhstan. Founded in 2008 by Timur Turlov in the United States, the company provides a range of services in retail financial securities brokerage and trading, asset management, capital markets, investment research and counseling, investment banking and underwriting services, mortgages, insurance, banking and other consumer services. Its main area of focus is in the American stock market, as well as the [...] In 2015 the Company became a market maker for stocks of the national power operator of Kazakhstan,\u2026"
+      },
+      {
+        "title": "Freedom Holding Corp. More Than Doubles Net Income and Reports Record Revenue in Fiscal 2026 | American Banker",
+        "url": "https://www.americanbanker.com/press-release/freedom-holding-corp-more-than-doubles-net-income-and-reports-record-revenue-in-fiscal-2026",
+        "domain": "americanbanker.com",
+        "snippet": "Moody\u2019s assigned Freedom Bank Kazakhstan ratings with a stable outlook, including Ba3 long-term local- and foreign-currency deposit ratings, a b1 baseline credit assessment, a b1 adjusted baseline credit assessment, a Ba2 long-term counterparty risk assessment and Ba2 long-term counterparty risk ratings. BlackRock, Morgan Stanley and J.P. Morgan increased their holdings in Freedom Holding Corp. shares. BlackRock remained the company\u2019s largest institutional shareholder. [...] Freedom Holding Corp. provides financial services in 22 countries, including Kazakhstan, the United States, Cyprus,\u2026"
+      }
+    ],
+    "risks": {
+      "kind": "error",
+      "stage": "risk",
+      "message": "SEC filing unavailable (TypeError)"
+    },
+    "news": [
+      {
+        "title": "Freedom Holding Is General Partner of 2026 Chess Match | FRHC Stock News",
+        "url": "https://www.stocktitan.net/news/FRHC/freedom-holding-corp-backs-the-fide-world-championship-match-2026-as-zho5jfbzgo1p.html",
+        "domain": "stocktitan.net",
+        "published": "Thu, 17 Sep 2026 12:00:00 GMT"
+      },
+      {
+        "title": "Freedom Holding Corp stock hits 52-week high at 177.26 USD By Investing.com",
+        "url": "https://www.investing.com/news/company-news/freedom-holding-corp-stock-hits-52week-high-at-17726-usd-93CH-4911403",
+        "domain": "investing.com",
+        "published": "Tue, 22 Sep 2026 17:42:03 GMT"
+      },
+      {
+        "title": "42,745 Shares in Freedom Holding Corp. $FRHC Bought by Bank of America Corp DE",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-42745-shares-in-freedom-holding-corp-frhc-bought-by-bank-of-america-corp-de-2026-09-28",
+        "domain": "marketbeat.com",
+        "published": "Mon, 28 Sep 2026 07:21:01 GMT"
+      },
+      {
+        "title": "Freedom Holding Corp (FRHC) Stock Down 4.6% but Still Overvalued",
+        "url": "https://www.gurufocus.com/news/9116404/freedom-holding-corp-frhc-stock-down-46-but-still-overvalued-gf-score-78100",
+        "domain": "gurufocus.com",
+        "published": "Fri, 09 Oct 2026 18:00:00 GMT"
+      },
+      {
+        "title": "Freedom Holding Corp. Named Among America's Greenest Companies 2026 by... | Value The Markets",
+        "url": "https://www.valuethemarkets.com/news/press-releases/freedom-holding-corp-named-among-americas-greenest-compani",
+        "domain": "valuethemarkets.com",
+        "published": "Wed, 07 Oct 2026 10:40:00 GMT"
+      }
+    ],
+    "news_error": null,
+    "scorecard": {
+      "factors": [
+        {
+          "name": "valuation",
+          "score": -1,
+          "detail": "P/B 6.7 vs peer median 3.8 (+77%; band \u00b115%)"
+        },
+        {
+          "name": "growth",
+          "score": 0,
+          "detail": "Revenue growth 27.8% vs peer median 26.3% (+1.5 pts; band \u00b15 pts)"
+        },
+        {
+          "name": "profitability",
+          "score": -1,
+          "detail": "ROE 10.7% vs peer median 24.0% (-13.3 pts; band \u00b15 pts)"
+        },
+        {
+          "name": "analyst_upside",
+          "score": 0,
+          "detail": "insufficient data"
+        },
+        {
+          "name": "momentum",
+          "score": 0,
+          "detail": "insufficient data"
+        }
+      ],
+      "total": -2,
+      "preliminary_signal": "SELL"
+    },
+    "analyst": {
+      "signal": "SELL",
+      "confidence": 0.6,
+      "changed_from_preliminary": false,
+      "change_reason": null,
+      "valuation_summary": "FRHC_KZ trades at a P/B of 6.7 versus a peer median of 3.8 (+77%), with P/E (ttm) of 66.9 versus 17.6 (+280%) and Forward P/E of 37.5 versus 12.2 (+207%). It pays no dividend against a 1.3% peer median.",
+      "thesis": [
+        "Revenue growth of 27.8% slightly exceeds the peer median of 26.3%.",
+        "Revenue rose from $795.69M in 2023 to $2.17B in 2026.",
+        "Net income recovered to $153.33M in 2026 from $76.29M in 2025; stock recently hit a 52-week high."
+      ],
+      "counterpoints": [
+        "P/B of 6.7 is +77% above the peer median of 3.8.",
+        "ROE of 10.7% trails the peer median of 24.0% by 13.3 points.",
+        "Debt/Equity of 1.82 and net margin of 8.4% suggest leverage with thin profitability."
+      ],
+      "signal_reasoning": "The scorecard totals -2: valuation scores -1 (P/B +77% above peers) and profitability -1 (ROE 10.7% vs 24.0%), while growth is neutral and analyst upside and momentum lack data. Filing risks are unavailable and recent news (sponsorships, an institutional purchase, a 52-week high) is not material enough to override, so the preliminary SELL is kept.",
+      "preliminary_signal": "SELL",
+      "reviewed": true
+    },
+    "signal": "SELL",
+    "signal_reviewed": true,
+    "narrative": {
+      "company_overview": "Freedom Holding Corp. is a financial conglomerate in the Financial Services sector, with a market capitalization of $10.75B. Through its subsidiaries it provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It reports through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment covers investment banking, including M&A, underwriting and capital markets advisory, as well as margin lending and debt capital markets solutions.",
+      "financial_commentary": "Revenue grew from $795.69M in fiscal 2023 to $1.64B in fiscal 2024, then to $1.99B in fiscal 2025 and $2.17B in fiscal 2026. The most recent revenue growth rate is given as 27.8%. Net income has been far less steady: $205.14M in fiscal 2023, $379.11M in fiscal 2024, a drop to $76.29M in fiscal 2025, and a partial recovery to $153.33M in fiscal 2026.\n\nThe net margin is 8.4% and return on equity is 10.7%. Debt/Equity stands at 1.82. The dividend yield is 0.0%, so the company currently returns no income to shareholders through dividends. Growth in sales has therefore not translated into smooth profit growth, which is worth keeping in mind when reading the valuation multiples.",
+      "comps_commentary": "The comparison uses P/B as the primary multiple, against a peer group of Interactive Brokers, Charles Schwab, Robinhood, Virtu Financial and Kaspi.kz. Freedom Holding trades at a P/B of 6.7 against a peer median of 3.8, a premium of 77%. On earnings, its trailing P/E of 66.9 compares with a peer median of 17.6 (+280%), and its forward P/E of 37.5 compares with 12.2 (+207%).\n\nProfitability and income metrics point the other way. Its ROE of 10.7% is 56% below the peer median of 24.0%, and its dividend yield of 0.0% compares with a peer median of 1.3%. Revenue growth of 27.8% is 6% above the peer median of 26.3%, so the premium valuation rests on growth that is only slightly ahead of peers, while returns on equity are well behind. One caution is that Kaspi.kz shows a forward P/E and P/B of 0.0, which look like missing data and may distort the peer medians.",
+      "risk_commentary": "The risk data for this report is unavailable, so no filing-based risks can be ranked or described here. Readers should consult the company's latest annual report for its stated risk factors.\n\nRecent news is mostly not tied to specific risks. One headline describes the stock as down 4.6% but still overvalued, which echoes the premium multiples above. Another notes a 52-week high of 177.26 USD in September 2026. The remaining headlines cover a sponsorship, an institutional share purchase and an environmental recognition, and none of them bears directly on risk."
+    },
+    "narrative_markdown": "## Company overview\n\nFreedom Holding Corp. is a financial conglomerate in the Financial Services sector, with a market capitalization of $10.75B. Through its subsidiaries it provides securities brokerage, securities dealing, market making, investment research, investment counseling, retail and commercial banking, and insurance products. It reports through four segments: Brokerage, Banking, Insurance, and Other. The Brokerage segment covers investment banking, including M&A, underwriting and capital markets advisory, as well as margin lending and debt capital markets solutions.\n\n## Financial commentary\n\nRevenue grew from $795.69M in fiscal 2023 to $1.64B in fiscal 2024, then to $1.99B in fiscal 2025 and $2.17B in fiscal 2026. The most recent revenue growth rate is given as 27.8%. Net income has been far less steady: $205.14M in fiscal 2023, $379.11M in fiscal 2024, a drop to $76.29M in fiscal 2025, and a partial recovery to $153.33M in fiscal 2026.\n\nThe net margin is 8.4% and return on equity is 10.7%. Debt/Equity stands at 1.82. The dividend yield is 0.0%, so the company currently returns no income to shareholders through dividends. Growth in sales has therefore not translated into smooth profit growth, which is worth keeping in mind when reading the valuation multiples.\n\n## Comps commentary\n\nThe comparison uses P/B as the primary multiple, against a peer group of Interactive Brokers, Charles Schwab, Robinhood, Virtu Financial and Kaspi.kz. Freedom Holding trades at a P/B of 6.7 against a peer median of 3.8, a premium of 77%. On earnings, its trailing P/E of 66.9 compares with a peer median of 17.6 (+280%), and its forward P/E of 37.5 compares with 12.2 (+207%).\n\nProfitability and income metrics point the other way. Its ROE of 10.7% is 56% below the peer median of 24.0%, and its dividend yield of 0.0% compares with a peer median of 1.3%. Revenue growth of 27.8% is 6% above the peer median of 26.3%, so the premium valuation rests on growth that is only slightly ahead of peers, while returns on equity are well behind. One caution is that Kaspi.kz shows a forward P/E and P/B of 0.0, which look like missing data and may distort the peer medians.\n\n## Risk commentary\n\nThe risk data for this report is unavailable, so no filing-based risks can be ranked or described here. Readers should consult the company's latest annual report for its stated risk factors.\n\nRecent news is mostly not tied to specific risks. One headline describes the stock as down 4.6% but still overvalued, which echoes the premium multiples above. Another notes a 52-week high of 177.26 USD in September 2026. The remaining headlines cover a sponsorship, an institutional share purchase and an environmental recognition, and none of them bears directly on risk.",
+    "timings_ms": {
+      "validate": 2567,
+      "financials": 1011,
+      "risk": 1891,
+      "news": 2161,
+      "comps": 10595,
+      "comps_ready": 13163,
+      "scorecard": 0,
+      "comps_explain": 2607,
+      "analyst": 7117,
+      "signal_ready": 20281,
+      "writer": 7647,
+      "total": 20814
+    },
+    "llm_usage": [
+      {
+        "agent": "comps",
+        "model": "claude-opus-5-5",
+        "input_tokens": 2405,
+        "output_tokens": 160,
+        "ms": 5978,
+        "cost_usd": 0.01282,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "comps",
+        "model": "claude-opus-5-5",
+        "input_tokens": 3525,
+        "output_tokens": 211,
+        "ms": 2607,
+        "cost_usd": 0.01832,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "analyst",
+        "model": "claude-opus-5-5",
+        "input_tokens": 3441,
+        "output_tokens": 508,
+        "ms": 7116,
+        "cost_usd": 0.023924,
+        "request_id": null,
+        "error": null
+      },
+      {
+        "agent": "writer",
+        "model": "claude-sonnet-5-5",
+        "input_tokens": 2416,
+        "output_tokens": 1006,
+        "ms": 7647,
+        "cost_usd": 0.014892,
+        "request_id": null,
+        "error": null
+      }
+    ],
+    "cache_hits": [],
+    "quality_warnings": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "EV-based multiples unavailable for native KASE instruments.",
+      "narrative numbers not found in the input: 56"
+    ],
+    "disclaimer": "Educational project - not investment advice."
+  }
+}

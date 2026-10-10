@@ -3,7 +3,7 @@
 Type a stock ticker and get a research report: company overview, key financials, a peer comps table with
 valuation multiples, 10-K risk factors, and a BUY / HOLD / SELL signal with reasoning. Five agents do the work:
 Financial Data, Comps, Risk, Analyst and Writer. They run on Claude (Anthropic SDK) using data from Yahoo Finance,
-SEC EDGAR and Tavily web search. Everything runs locally; only the model and search APIs are remote.
+KASE, SEC EDGAR and Tavily web search. The application runs locally and contacts remote data, model and search providers.
 
 > Educational project - not investment advice.
 
@@ -23,6 +23,55 @@ SEC EDGAR and Tavily web search. Everything runs locally; only the model and sea
 | `add-research-api`: streamed research over Server-Sent Events, cached reports, warm start, generated TypeScript types | done |
 | `add-research-web-ui`: the report page, sections appearing as their agents finish | done |
 | `add-demo-readiness`: cache warm-up, offline demo mode, acceptance evaluation of the test tickers, demo runbook | done |
+| `add-kase-usd-market-data`: native USD quotes, explicit issuer enrichment, reporting currencies and provenance | implemented; live availability remains provider-dependent |
+
+## Native KASE USD research
+
+Enter `FRHC_KZ`, `HSBKd`, `KSPId`, `KZAPd`, or a supported KASE Global symbol such as `AAPL_KZ`.
+Ticker validation accepts underscores, trims whitespace and uppercases inputs (up to ten characters).
+The official depositary-receipt casing is retained beside the quote. `CORE_KZ` is recognized but currently
+has no quoted price; it returns **quote unavailable**. KZT ordinary-share coverage is unchanged.
+
+The production router fetches KASE's public website JSON with a ten-second timeout. Only a positive finite
+`price` is used. A missing price, changed instrument identity, unsupported currency/type, malformed response
+or outage stays visible. Quotes never fall back to a foreign exchange, `close_price`, bids or offers.
+The website API is undocumented, so its availability and schema can change.
+
+| Native research input | Yahoo issuer enrichment | Shares per native / source unit | SEC input |
+|---|---|---|---|
+| `FRHC_KZ` | `FRHC` | 1 / 1 | `FRHC` |
+| `KSPID` | `KSPI` | 1 / 1 | `KSPI` |
+| `HSBKD` | `HSBK.IL` | 40 / 40 | unavailable |
+| `KZAPD` | `KAP.IL` | 1 / 1 | unavailable |
+| `AAPL_KZ` | `AAPL` | 1 / 1 | `AAPL` |
+| `NVDA_KZ` | `NVDA` | 1 / 1 | `NVDA` |
+| `JPM_KZ` | `JPM` | 1 / 1 | `JPM` |
+| `CORE_KZ` | none | no enrichment | unavailable |
+
+Mappings include expected issuer identities, ISINs and verified share units. Private London identifiers retain
+`.IL`; aliases are never inferred by removing suffixes. Financial histories remain in their reporting currency,
+including KZT accounts for a USD-traded receipt. Unknown reporting currency suppresses monetary history with a
+diagnostic. Old saved reports remain readable; monetary history without a known currency is hidden until refreshed.
+
+For verified USD accounts, P/E, forward P/E and P/B use `native price / (alias price × native/source shares)`;
+dividend yield uses the inverse adjustment. Verified USD capitalization uses the same price ratio. USD analyst
+targets use the shares-per-unit conversion and are labelled cross-listing estimates. No FX conversion is performed.
+Non-USD accounts leave price-sensitive valuation ratios unavailable; EV-based ratios are unavailable for all native
+KASE targets. Native annual trading history and 52-week ranges are unavailable, with neutral momentum. Alias
+prices and histories cannot become KASE quotes or charts. Enrichment failures preserve the native quote.
+
+Offline regressions: `uv run --directory backend pytest tests/test_kase_adapter.py tests/test_kase_cases.py`.
+The opt-in USD matrix runs five native quote probes, two US-listing reports and a native `FRHC_KZ` report:
+
+```powershell
+cd backend
+$env:RUN_LIVE_TESTS = '1'
+uv run pytest -m live tests/test_kase_usd_live.py -q -s
+```
+
+Reports use Claude/Tavily credits. Each run creates a new timestamped `docs/kase-usd-*` directory containing
+quotes, full reports, checks, cost and diagnostics. A missing live price fails quote availability; its controlled
+handling is tested separately offline. Earlier execution evidence is preserved.
 
 ## Setup
 

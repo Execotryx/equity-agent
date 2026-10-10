@@ -1,0 +1,16 @@
+{
+  "code": "KZAPd",
+  "org_name_en": "JSC \"NAC Kazatomprom\"",
+  "sec_type": "dept",
+  "currency_type": "USD",
+  "price": 66.01,
+  "close_price": 66.01,
+  "date0": "2026-10-09T17:31:02",
+  "ticker": {
+    "nin": "KZ1C00001619",
+    "nin2": "",
+    "nind": "US63253R2013",
+    "nind2": "",
+    "typesec_en": "ordinary"
+  }
+}

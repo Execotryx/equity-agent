@@ -9,7 +9,7 @@ financial history and price history, so later stages never call the market data 
 
 ### Requirement: Ticker input is normalised and validated
 The system SHALL convert ticker input to upper case and trim surrounding whitespace. It SHALL reject input that does
-not match one letter followed by up to nine letters, digits, dots or hyphens. It SHALL convert a class-share dot
+not match one letter followed by up to nine letters, digits, dots, underscores or hyphens. It SHALL convert a class-share dot
 (for example `BRK.B`) to the provider's hyphen form (`BRK-B`).
 
 #### Scenario: Lower-case input
@@ -26,7 +26,9 @@ not match one letter followed by up to nine letters, digits, dots or hyphens. It
 
 ### Requirement: Unknown or non-equity tickers are rejected
 The system SHALL treat a ticker as valid only when the market data provider returns a quote type of equity and a
-current price. Otherwise it SHALL return a "ticker not found" error. It SHALL NOT return an empty or partial
+current price. Yahoo instruments without a quote SHALL return a "ticker not found" error. A recognized native
+KASE instrument without a positive finite `price` SHALL return "quote unavailable"; unsupported KASE instruments
+or currencies SHALL return "unsupported instrument or currency". It SHALL NOT return an empty or partial
 snapshot.
 
 #### Scenario: Unknown ticker

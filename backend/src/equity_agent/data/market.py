@@ -1,4 +1,4 @@
-"""Market data from Yahoo Finance: ticker validation, quote, history and concurrent peer batches.
+"""Market data from Yahoo Finance and native USD KASE: validation, quotes, history and peer batches.
 
 yfinance is imported at module level on purpose: it takes several seconds to import, and that cost must be paid at
 service start-up, not inside the first request.
@@ -10,7 +10,7 @@ import math
 import re
 from collections.abc import Callable, Sequence
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
+from datetime import UTC, date, datetime
 from typing import Any, ClassVar, Protocol, TypeVar
 
 import yfinance as yf
@@ -21,7 +21,7 @@ from equity_agent.models import Fetched, History, Multiples, PeerBatch, PricePoi
 
 T = TypeVar("T")
 
-TICKER_PATTERN = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
+TICKER_PATTERN = re.compile(r"^[A-Z][A-Z0-9._\-]{0,9}$")
 SUMMARY_CHARS = 600
 PEER_WORKERS = 5
 
@@ -56,10 +56,18 @@ class ProviderError(DataError):
     reason = "provider error"
 
 
+class QuoteUnavailable(DataError):
+    reason = "quote unavailable"
+
+
+class UnsupportedInstrument(DataError):
+    reason = "unsupported instrument or currency"
+
+
 def normalize_ticker(raw: str) -> str:
     """Upper-case, trim and convert a class-share dot to Yahoo's hyphen (`brk.b` -> `BRK-B`)."""
     ticker = (raw or "").strip().upper()
-    if not TICKER_PATTERN.match(ticker):
+    if not TICKER_PATTERN.fullmatch(ticker):
         raise InvalidTicker(repr(raw))
     return ticker.replace(".", "-")
 
@@ -73,7 +81,7 @@ def try_normalize_ticker(raw: str) -> str | None:
 
 
 class MarketSource(Protocol):
-    """Raw provider access. `YahooSource` is the live one; tests and offline mode read recorded JSON."""
+    """Raw provider access. The production router combines KASE/Yahoo; offline sources read recorded JSON."""
 
     def info(self, ticker: str) -> dict[str, Any]: ...
 
@@ -101,7 +109,24 @@ def _clean(value: Any) -> float | None:
 
 class YahooSource:
     def info(self, ticker: str) -> dict[str, Any]:
-        return dict(yf.Ticker(ticker).info or {})
+        raw = dict(yf.Ticker(ticker).info or {})
+        if raw.get("quoteType") == "EQUITY":
+            timestamp = _clean(raw.get("regularMarketTime"))
+            try:
+                as_of = datetime.fromtimestamp(timestamp, UTC).isoformat() if timestamp else None
+            except (ValueError, OSError, OverflowError):
+                as_of = None
+            raw["quoteProvenance"] = {
+                "provider": "Yahoo Finance", "exchange": str(raw.get("fullExchangeName") or raw.get("exchange") or "unknown"),
+                "source_symbol": ticker, "source_url": "https://finance.yahoo.com/quote/" + ticker + "/", "timestamp": as_of,
+            }
+            currency = raw.get("financialCurrency")
+            if not isinstance(currency, str) or len(currency) != 3 or not currency.isalpha():
+                raw["financialCurrency"] = None
+                raw["diagnostics"] = ["Financial reporting currency unknown; monetary history omitted."]
+            else:
+                raw["financialCurrency"] = currency.upper()
+        return raw
 
     def income(self, ticker: str) -> dict[str, dict[str, float | None]]:
         frame = yf.Ticker(ticker).income_stmt
@@ -132,6 +157,7 @@ QUOTE_FIELDS = (
     "marketCap", "fiftyTwoWeekLow", "fiftyTwoWeekHigh", "longBusinessSummary", "trailingPE", "forwardPE",
     "enterpriseToEbitda", "enterpriseToRevenue", "priceToBook", "profitMargins", "returnOnEquity", "revenueGrowth",
     "debtToEquity", "dividendYield", "targetMeanPrice", "recommendationKey",
+    "financialCurrency", "quoteProvenance", "enrichmentProvenance", "diagnostics",
 )  # fmt: skip
 
 
@@ -174,6 +200,7 @@ def parse_quote(ticker: str, raw: dict[str, Any]) -> Quote:
         week52_low=_clean(info.get("fiftyTwoWeekLow")),
         week52_high=_clean(info.get("fiftyTwoWeekHigh")),
         business_summary=summary,
+        quote_provenance=info.get("quoteProvenance"),
     )
     multiples = Multiples(
         pe_ttm=_clean(info.get("trailingPE")),
@@ -192,6 +219,9 @@ def parse_quote(ticker: str, raw: dict[str, Any]) -> Quote:
         multiples=multiples,
         analyst_target_mean=_clean(info.get("targetMeanPrice")),
         analyst_recommendation=info.get("recommendationKey"),
+        financial_currency=info.get("financialCurrency"),
+        enrichment_provenance=info.get("enrichmentProvenance"),
+        diagnostics=info.get("diagnostics") or [],
     )
 
 
@@ -223,10 +253,11 @@ def from_provider(ticker: str, call: Callable[[], T]) -> T:
 class MarketData:
     def __init__(self, cache: Cache, source: MarketSource | None = None) -> None:
         self.cache = cache
-        self.source: MarketSource = source or YahooSource()
+        self.source: MarketSource = source or live_source()
 
     def quote(self, ticker: str, *, refresh: bool = False) -> Fetched[Quote]:
         """Validated snapshot and valuation inputs (15-minute cache). Raises a DataError for bad tickers."""
+        ticker = normalize_ticker(ticker)
         return self.cache.fetch(
             f"quote:{ticker}",
             Quote,
@@ -241,6 +272,12 @@ class MarketData:
 
     def history(self, ticker: str, *, refresh: bool = False) -> Fetched[History]:
         """Up to 4 fiscal years of revenue, EBITDA and net income, plus 1 year of daily closes (24-hour cache)."""
+        ticker = normalize_ticker(ticker)
+        from equity_agent.data.kase import is_kase
+        if is_kase(ticker):
+            quote = self.quote(ticker).value
+            if quote.financial_currency is None or quote.enrichment_provenance is None:
+                return Fetched(History())
         return self.cache.fetch(
             f"fin:{ticker}",
             History,
@@ -274,3 +311,10 @@ class MarketData:
                 quotes[outcome.value.snapshot.ticker] = outcome.value
                 hits.extend(outcome.hits)
         return Fetched(PeerBatch(quotes=quotes, failed=failed), hits)
+
+
+def live_source() -> MarketSource:
+    """One production routing policy for API, CLI and fixture recorders."""
+    from equity_agent.data.kase import RoutedSource
+
+    return RoutedSource()

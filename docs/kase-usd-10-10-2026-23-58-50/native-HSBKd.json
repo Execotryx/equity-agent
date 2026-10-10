@@ -1,0 +1,85 @@
+{
+  "company": "Halyk Bank",
+  "kase_ticker": "HSBKd",
+  "input_ticker": "HSBKD",
+  "currency": "USD",
+  "name_fragment": "halyk",
+  "scope": "native",
+  "kind": "bank",
+  "source_url": null,
+  "instrument_type": "depositary receipt",
+  "id": "native-HSBKd",
+  "phase": "quote",
+  "source": "https://kase.kz/en/investors/instruments/shares",
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "requested ticker retained",
+      "passed": true,
+      "detail": "HSBKD"
+    },
+    {
+      "criterion": "expected company",
+      "passed": true,
+      "detail": "Halyk Bank of Kazakhstan JSC"
+    },
+    {
+      "criterion": "positive price",
+      "passed": true,
+      "detail": "33.42"
+    },
+    {
+      "criterion": "expected quote currency",
+      "passed": true,
+      "detail": "expected USD; got USD"
+    },
+    {
+      "criterion": "expected trading venue",
+      "passed": true,
+      "detail": "KASE"
+    }
+  ],
+  "elapsed_seconds": 4.017,
+  "exchange": "KASE",
+  "quote": {
+    "snapshot": {
+      "ticker": "HSBKD",
+      "name": "Halyk Bank of Kazakhstan JSC",
+      "sector": null,
+      "industry": null,
+      "currency": "USD",
+      "price": 33.42,
+      "market_cap": null,
+      "week52_low": null,
+      "week52_high": null,
+      "business_summary": "",
+      "quote_provenance": {
+        "provider": "KASE",
+        "exchange": "KASE",
+        "source_symbol": "HSBKd",
+        "source_url": "https://kase.kz/api/instruments/securities/HSBKd/",
+        "timestamp": "2026-10-09T17:31:02"
+      }
+    },
+    "multiples": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "ev_ebitda": null,
+      "ev_revenue": null,
+      "price_to_book": null,
+      "net_margin": null,
+      "roe": null,
+      "revenue_growth": null,
+      "debt_to_equity": null,
+      "dividend_yield": null
+    },
+    "analyst_target_mean": null,
+    "analyst_recommendation": null,
+    "financial_currency": null,
+    "enrichment_provenance": null,
+    "diagnostics": [
+      "Native KASE annual price history and 52-week range unavailable; momentum is neutral.",
+      "Issuer enrichment unavailable (ValueError); financial currency unknown, monetary history omitted."
+    ]
+  }
+}

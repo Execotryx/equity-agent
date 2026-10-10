@@ -65,15 +65,22 @@ def test_usd_issuer_alias_uses_shares_listing_evidence(case):
 
 
 @pytest.mark.parametrize("case", USD_NATIVE_CASES[-2:], ids=lambda case: case.id)
-def test_unsupported_kase_symbol_stops_before_yahoo(case, monkeypatch):
-    from equity_agent.data.market import YahooSource
+def test_underscore_kase_symbols_reach_native_provider(case, monkeypatch):
+    from equity_agent.data import kase
+    import test_kase_live
+    from test_kase_adapter import instrument
     from test_kase_live import observe
 
-    def forbidden_call(*args):
-        raise AssertionError("invalid input must be rejected before provider access")
-
-    monkeypatch.setattr(YahooSource, "info", forbidden_call)
+    calls = []
+    def native(ticker):
+        calls.append(ticker)
+        return instrument(ticker)
+    monkeypatch.setattr(test_kase_live, "live_source", lambda: kase.RoutedSource(fetch=native))
+    # Disable enrichment explicitly to keep this routing regression offline.
+    monkeypatch.setattr(kase.YahooSource, "info", lambda _: {})
     observed, venue, checks = observe(case)
-    assert observed is None and venue == ""
-    assert failed_checks(checks) == {"ticker accepted by application"}
-    assert checks[0].detail == "invalid ticker"
+    assert calls == [case.input_ticker]
+    if case.input_ticker == "CORE_KZ":
+        assert observed is None and checks[0].detail == "quote unavailable"
+    else:
+        assert observed is not None and venue == "KASE" and not failed_checks(checks)
