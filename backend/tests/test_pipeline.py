@@ -236,6 +236,79 @@ def test_writer_failure_is_recorded_once():
     assert [u.agent for u in report.llm_usage].count("writer") == 1
 
 
+def test_cached_report_identity_mismatch_is_discarded():
+    from equity_agent.models import ResearchReport
+    from equity_agent.pipeline import cached_report
+    services = fake_services()
+    try:
+        report = report_from_event(collect_events(services)[-1])
+        services.data.cache.set("report:FRHC_KZ", report, ResearchReport, 60)
+        assert cached_report(services.data.cache, "FRHC_KZ") is None
+        assert services.data.cache.get_raw("report:FRHC_KZ") is None
+        corrupted = report.model_copy(deep=True)
+        corrupted.financials.snapshot.ticker = "MSFT"
+        services.data.cache.set("report:AAPL", corrupted, ResearchReport, 60)
+        assert cached_report(services.data.cache, "AAPL") is None
+    finally:
+        services.data.close()
+
+
+def test_legacy_report_remains_readable_but_native_history_is_rejected():
+    from equity_agent.models import QuoteProvenance, ResearchReport
+    from equity_agent.pipeline import cached_report
+    services = fake_services()
+    try:
+        report = report_from_event(collect_events(services)[-1])
+        report.financials.snapshot.quote_provenance = None
+        report.financials.financial_currency = None
+        services.data.cache.set("report:AAPL", report, ResearchReport, 60)
+        assert cached_report(services.data.cache, "AAPL") is not None
+        report.ticker = report.financials.snapshot.ticker = "FRHC_KZ"
+        report.financials.snapshot.week52_low = report.financials.snapshot.week52_high = None
+        report.financials.snapshot.quote_provenance = QuoteProvenance(
+            provider="KASE", exchange="KASE", source_symbol="FRHC_KZ", source_url="https://kase.kz/api/instruments/securities/FRHC_KZ/")
+        assert isinstance(report.comps, CompsTable)
+        report.comps.target.ticker = "FRHC_KZ"
+        services.data.cache.set("report:FRHC_KZ", report, ResearchReport, 60)
+        assert cached_report(services.data.cache, "FRHC_KZ") is None
+        report.financials.price_history = []
+        services.data.cache.set("report:FRHC_KZ", report, ResearchReport, 60)
+        assert cached_report(services.data.cache, "FRHC_KZ") is not None
+    finally:
+        services.data.close()
+
+
+def test_bad_history_date_degrades_only_history(monkeypatch):
+    services = fake_services()
+    monkeypatch.setattr(services.data.market.source, "income", lambda ticker: {"Total Revenue": {"bad-date": 10}})
+    try:
+        report = report_from_event(collect_events(services)[-1])
+        assert report.financials.snapshot.price > 0 and not report.financials.revenue_history
+        assert any("financial history unavailable" in warning for warning in report.quality_warnings)
+    finally:
+        services.data.close()
+
+
+def test_writer_failure_after_delta_keeps_partial_text_and_usage_once():
+    import time
+    class PartialWriter(FakeClaude):
+        async def stream(self, agent, system, user, on_usage):
+            yield "## Company overview\nPartial text."
+            usage = self._usage(agent, time.perf_counter(), error="fixture stream failure")
+            on_usage(usage)
+            raise LlmError("connection", "fixture stream failure", usage)
+    services = fake_services(PartialWriter())
+    try:
+        events = collect_events(services)
+        report = report_from_event(events[-1])
+        assert any(event.event == "narrative" for event in events)
+        assert isinstance(report.narrative, StageError)
+        assert report.narrative_markdown.endswith("Partial text.")
+        assert len([usage for usage in report.llm_usage if usage.agent == "writer"]) == 1
+    finally:
+        services.data.close()
+
+
 def test_composite_lookups_report_every_cache_key():
     data = DataLayer.recorded()
     data.market.peers(["MSFT", "GOOGL"])

@@ -5,6 +5,7 @@ import { useCallback, useEffect, useReducer, useState } from "react";
 import { streamUrl } from "./api";
 import { EVENT_NAMES, isFinal, type StreamEvent } from "./events";
 import { initialState, reduce, type ReportState } from "./reportState";
+import { parseStreamEvent } from "./parseStreamEvent";
 
 type Run = { nonce: number; refresh: boolean };
 
@@ -32,11 +33,7 @@ export function useResearchStream(ticker: string): {
       if (finished || !(message instanceof MessageEvent) || typeof message.data !== "string") return;
       let event: StreamEvent;
       try {
-        const data: unknown = JSON.parse(message.data);
-        if (data === null || typeof data !== "object" || Array.isArray(data)) {
-          throw new Error("Research event data must be an object");
-        }
-        event = { event: name, data } as StreamEvent;
+        event = parseStreamEvent(name, JSON.parse(message.data), ticker);
       } catch {
         finished = true;
         source.close();

@@ -31,6 +31,41 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllGlobals());
 
 describe("research stream transport", () => {
+  it.each([
+    ["report", {}],
+    ["partial", { key: "financials", value: null }],
+    ["partial", { key: "news", value: [null] }],
+    ["narrative", { delta: 17 }],
+    ["stage", { stage: "risk", status: "done", ms: "fast", cached: false }],
+    ["error", { stage: "risk", message: "bad", terminal: "false" }],
+  ])("closes cleanly for malformed %s objects", (name, data) => {
+    const { result } = renderHook(() => useResearchStream("AAPL"));
+    const source = TestEventSource.instances[0];
+    act(() => source.dispatchEvent(new MessageEvent(name as string, { data: JSON.stringify(data) })));
+    expect(result.current.state.fatal?.stage).toBe("stream");
+    expect(result.current.state.connection).toBe("closed");
+    expect(source.close).toHaveBeenCalledTimes(1);
+    act(() => source.send(FIXTURES.aapl[0]));
+    expect(result.current.state.events).toBe(1);
+  });
+
+  it("rejects another ticker's otherwise valid report", () => {
+    const { result } = renderHook(() => useResearchStream("MSFT"));
+    act(() => TestEventSource.instances[0].send(FIXTURES.aaplCached.at(-1)!));
+    expect(result.current.state.fatal?.stage).toBe("stream");
+    expect(result.current.state.report).toBeUndefined();
+  });
+
+  it("unmounts the old ticker before mounting its successor", () => {
+    const first = renderHook(() => useResearchStream("AAPL"));
+    const oldSource = TestEventSource.instances[0];
+    first.unmount();
+    const next = renderHook(() => useResearchStream("JPM"));
+    act(() => oldSource.send(FIXTURES.aaplCached.at(-1)!));
+    expect(next.result.current.state.events).toBe(0);
+    act(() => FIXTURES.jpm.forEach((event) => TestEventSource.instances[1].send(event)));
+    expect(next.result.current.state.report?.ticker).toBe("JPM");
+  });
   it("keeps native KASE symbols in initial and refreshed EventSource requests", () => {
     const { result, unmount } = renderHook(() => useResearchStream("FRHC_KZ"));
     const first = TestEventSource.instances[0];

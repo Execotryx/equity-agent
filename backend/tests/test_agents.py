@@ -214,6 +214,19 @@ def test_counts_and_confidence_checked(data):
     assert any("exactly 3" in p for p in problems) and any("confidence" in p for p in problems)
 
 
+@pytest.mark.parametrize("confidence", [float("nan"), float("inf"), -float("inf")])
+def test_nonfinite_confidence_rejected(data, confidence):
+    assert any("confidence" in p for p in AnalystAgent().validate(view(confidence=confidence), analyst_input(data)))
+
+
+@pytest.mark.parametrize("extra", [0, 1])
+def test_analyst_exact_word_limit(data, extra):
+    result = view(valuation_summary=" ".join(["word"] * (50 + extra)),
+                  signal_reasoning=" ".join(["word"] * 70), thesis=[" ".join(["word"] * 20)] * 3)
+    problems = AnalystAgent().validate(result, analyst_input(data))
+    assert bool(problems) == bool(extra)
+
+
 def test_analyst_rules_match_the_prompt(data):
     problems = AnalystAgent().validate(view(
         reason="word " * 26, valuation_summary="word " * 51,

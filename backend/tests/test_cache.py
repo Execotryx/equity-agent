@@ -82,3 +82,34 @@ def test_store_veto_skips_caching():
     cache.fetch("k", YearValue, 60, load, store=lambda v: False)
     cache.fetch("k", YearValue, 60, load, store=lambda v: False)
     assert len(calls) == 2
+
+
+def test_exact_expiry_and_failed_loader_retry():
+    import pytest
+    clock = Clock()
+    cache = Cache(None, clock=clock)
+    try:
+        cache.set("k", YearValue(year=2025, value=1), YearValue, 60)
+        clock.now += 60
+        assert cache.get("k", YearValue) is None
+        def fail():
+            raise TimeoutError()
+        with pytest.raises(TimeoutError):
+            cache.fetch("k", YearValue, 60, fail)
+        result = cache.fetch("k", YearValue, 60, counting_loader(2)[0])
+        assert not result.hit and result.value.value == 2
+    finally:
+        cache.close()
+
+
+def test_sync_cached_acceptance_rejects_and_replaces():
+    cache = Cache(None)
+    try:
+        cache.set("k", YearValue(year=2024, value=1), YearValue, 60)
+        result = cache.fetch("k", YearValue, 60, counting_loader(2)[0],
+                             accept_cached=lambda v: v.value == 2)
+        assert not result.hit and result.value.value == 2
+        cached = cache.get("k", YearValue)
+        assert cached is not None and cached.value == 2
+    finally:
+        cache.close()

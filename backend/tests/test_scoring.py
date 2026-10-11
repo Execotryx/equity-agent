@@ -39,6 +39,23 @@ def test_target_proposed_as_own_peer_excluded():
     assert [(e.ticker, e.reason) for e in selection.exclusions] == [("AAPL", "is the target")]
 
 
+@pytest.mark.parametrize("value", [float("inf"), float("nan"), -float("inf")])
+def test_nonfinite_medians_and_upside_are_neutral(value):
+    assert median_of("revenue_growth", [Multiples(revenue_growth=value)]) is None
+    card = build_scorecard(quote("EDGE", target=value), None, [])
+    assert card.factors[3].score == 0 and card.factors[3].detail == INSUFFICIENT
+
+
+def test_overflowed_derived_values_are_unavailable():
+    assert pct_vs(1e308, 1e-308) is None
+    assert median_of("pe_ttm", [Multiples(pe_ttm=1e308)] * 2) is None
+    prices = [PricePoint(date=date(2025, 1, 1), close=1e308)] * 200
+    assert moving_average(prices, 200) is None
+    assert range_position(1e308, -1e308, 1e308) is None
+    card = build_scorecard(quote("EDGE", price=1e-308, target=1e308), None, [])
+    assert card.factors[3].score == 0
+
+
 def test_duplicate_share_class_keeps_first():
     quotes = {"GOOGL": quote("GOOGL", "Alphabet Inc."), "GOOG": quote("GOOG", "Alphabet Inc.")}
     selection = select_peers(quote("MSFT"), ["GOOGL", "GOOG"], quotes, {})

@@ -142,3 +142,32 @@ def test_warm_retrieves_each_configured_model_once():
     asyncio.run(gw.warm())
     paths = sorted(r.url.path for r in seen)
     assert paths == ["/v1/models/claude-opus-5-5", "/v1/models/claude-sonnet-5-5"]
+
+
+@pytest.mark.parametrize("stop,kind", [("max_tokens", "truncated"), ("refusal", "refusal")])
+def test_stream_partial_then_terminal_failure_records_usage_once(stop, kind):
+    initial = message("")
+    initial["content"] = []
+    initial["usage"]["output_tokens"] = 0
+    events = [
+        ("message_start", {"type": "message_start", "message": initial}),
+        ("content_block_start", {"type": "content_block_start", "index": 0, "content_block": {"type": "text", "text": ""}}),
+        ("content_block_delta", {"type": "content_block_delta", "index": 0, "delta": {"type": "text_delta", "text": "partial"}}),
+        ("content_block_stop", {"type": "content_block_stop", "index": 0}),
+        ("message_delta", {"type": "message_delta", "delta": {"stop_reason": stop, "stop_sequence": None}, "usage": {"output_tokens": 20}}),
+        ("message_stop", {"type": "message_stop"}),
+    ]
+    body = "".join(f"event: {name}\ndata: {json.dumps(data)}\n\n" for name, data in events).encode()
+    gw, _ = gateway(lambda r, n: httpx2.Response(200, headers={"content-type": "text/event-stream"}, content=body))
+    chunks, usages = [], []
+    async def scenario():
+        try:
+            with pytest.raises(LlmError) as caught:
+                async for chunk in gw.stream("writer", "s", "u", usages.append):
+                    chunks.append(chunk)
+            assert caught.value.kind == kind
+            assert chunks == ["partial"] and len(usages) == 1
+            assert usages[0].output_tokens == 20 and usages[0].error
+        finally:
+            await gw.close()
+    asyncio.run(scenario())

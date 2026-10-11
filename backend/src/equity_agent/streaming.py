@@ -45,13 +45,28 @@ class SharedRun:
             async for event in source:
                 self.events.append(event)
                 self._notify()
+                if is_final(event):
+                    break
+            if not self.events or not is_final(self.events[-1]):
+                self._fail("research stream ended before completion")
         except Exception as error:  # noqa: BLE001 - subscribers must always get a final event
             logger.exception("research run failed")
-            message = f"unexpected error ({type(error).__name__})"
-            self.events.append(PipelineEvent(event="error", data={"stage": "pipeline", "message": message, "terminal": True}))
+            self._fail(f"unexpected error ({type(error).__name__})")
         finally:
-            self.done = True
-            self._notify()
+            try:
+                close = getattr(source, "aclose", None)
+                if close is not None:
+                    await close()
+            except Exception as error:
+                logger.exception("research producer cleanup failed")
+                self._fail(f"unexpected error ({type(error).__name__})")
+            finally:
+                self.done = True
+                self._notify()
+
+    def _fail(self, message: str) -> None:
+        if not self.events or not is_final(self.events[-1]):
+            self.events.append(PipelineEvent(event="error", data={"stage": "pipeline", "message": message, "terminal": True}))
 
     async def follow(self) -> AsyncIterator[PipelineEvent]:
         """Every event from the start, then live ones, ending after the final event or when the run stops."""

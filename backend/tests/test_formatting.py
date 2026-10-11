@@ -1,7 +1,18 @@
 import pytest
 
-from equity_agent.formatting import metric_text, money, pct_change, truncate_words
+from equity_agent.formatting import meaningful, metric_text, money, pct_change, truncate_words
 
+
+@pytest.mark.parametrize("value", [float("nan"), float("inf"), -float("inf")])
+def test_nonfinite_financial_formatting_is_missing(value):
+    assert meaningful("net_margin", value) is None
+    assert metric_text("pe_ttm", value) is None
+    assert money(value) is None and pct_change(value) is None
+
+
+def test_percentage_formatting_cannot_overflow():
+    assert metric_text("net_margin", 1e308) is None
+    assert pct_change(1e308) is None
 
 @pytest.mark.parametrize(
     ("metric", "value", "text"),

@@ -28,7 +28,7 @@ export function metricLabel(metric: string): string {
 }
 
 export function meaningful(metric: string, value: number | null | undefined): number | null {
-  if (value === null || value === undefined || Number.isNaN(value)) return null;
+  if (value === null || value === undefined || !Number.isFinite(value)) return null;
   if (POSITIVE_ONLY.has(metric) && value <= 0) return null;
   return value;
 }
@@ -37,13 +37,13 @@ export function meaningful(metric: string, value: number | null | undefined): nu
 export function metricText(metric: string, value: number | null | undefined): string {
   const v = meaningful(metric, value);
   if (v === null) return MISSING;
-  if (PERCENT_METRICS.has(metric)) return `${(v * 100).toFixed(1)}%`;
+  if (PERCENT_METRICS.has(metric)) return Number.isFinite(v * 100) ? `${(v * 100).toFixed(1)}%` : MISSING;
   return metric === "debt_to_equity" ? v.toFixed(2) : v.toFixed(1);
 }
 
 /** Compact money: "$4.82T", "$391.04B", "-$12.50M", "$212.43". */
 export function money(value: number | null | undefined, currency = "USD"): string {
-  if (value === null || value === undefined || Number.isNaN(value)) return MISSING;
+  if (value === null || value === undefined || !Number.isFinite(value)) return MISSING;
   const sign = value < 0 ? "-" : "";
   const abs = Math.abs(value);
   const symbol = currency === "USD" ? "$" : `${currency} `;
@@ -59,23 +59,24 @@ export function money(value: number | null | undefined, currency = "USD"): strin
 
 /** A fraction as a signed whole percent: 0.123 -> "+12%". */
 export function pctChange(value: number | null | undefined): string {
-  if (value === null || value === undefined || Number.isNaN(value)) return MISSING;
+  if (value === null || value === undefined || !Number.isFinite(value * 100)) return MISSING;
   const pct = Math.round(value * 100);
   return `${pct > 0 ? "+" : pct < 0 ? "−" : "±"}${Math.abs(pct)}%`;
 }
 
 /** A fraction as a plain percent: 0.62 -> "62%". */
 export function percent(value: number | null | undefined, digits = 0): string {
-  if (value === null || value === undefined || Number.isNaN(value)) return MISSING;
+  if (value === null || value === undefined || !Number.isFinite(value * 100)) return MISSING;
   return `${(value * 100).toFixed(digits)}%`;
 }
 
 /** Milliseconds as seconds with one decimal: 8400 -> "8.4 s". */
 export function seconds(ms: number | null | undefined): string {
-  if (ms === null || ms === undefined) return MISSING;
+  if (ms === null || ms === undefined || !Number.isFinite(ms)) return MISSING;
   return `${(ms / 1000).toFixed(1)} s`;
 }
 
 export function usd(value: number): string {
+  if (!Number.isFinite(value)) return MISSING;
   return `$${value.toFixed(value < 0.01 ? 4 : 3)}`;
 }

@@ -166,3 +166,56 @@ def test_undeclared_field_read_fails():
 
     with pytest.raises(KeyError, match="not declared"):
         DeclaredFields({"beta": 1.2}).get("beta")
+
+
+@pytest.mark.parametrize("price", [-1, 0, True, float("nan"), float("inf"), 10**400])
+def test_unusable_price_uses_only_valid_yahoo_alternate(price):
+    raw = {"quoteType": "EQUITY", "currentPrice": price, "regularMarketPrice": 20}
+    assert parse_quote("EDGE", raw).snapshot.price == 20
+    raw.pop("regularMarketPrice")
+    with pytest.raises(TickerNotFound):
+        parse_quote("EDGE", raw)
+
+
+def test_malformed_peer_does_not_abort_valid_candidates():
+    class Source(FixtureMarketSource):
+        def info(self, ticker):
+            if ticker == "BAD":
+                return {"quoteType": "EQUITY", "currentPrice": 10, "longBusinessSummary": 123}
+            return super().info(ticker)
+
+    cache = Cache(None)
+    try:
+        market = MarketData(cache, Source())
+        batch = market.peers(["BAD", "MSFT"]).value
+        assert batch.failed == {"BAD": "provider error"}
+        assert list(batch.quotes) == ["MSFT"]
+        assert cache.get_raw("quote:BAD") is None
+    finally:
+        cache.close()
+
+
+def test_history_omits_invalid_numbers_preserves_zero_and_losses():
+    from equity_agent.data.market import parse_history
+    history = parse_history(
+        {"Total Revenue": {"2023-12-31": 0, "2024-12-31": float("nan")},
+         "Net Income": {"2023-12-31": -10, "2024-12-31": float("inf")}},
+        [("2024-01-01", 0), ("2024-01-02", -1), ("2024-01-03", float("inf")),
+         ("2024-01-04", True), ("2024-01-05", 5)],
+    )
+    assert [p.value for p in history.revenue] == [0]
+    assert [p.value for p in history.net_income] == [-10]
+    assert [p.close for p in history.prices] == [5]
+
+
+def test_cached_quote_with_wrong_ticker_is_reloaded():
+    from equity_agent.models import Quote
+    cache = Cache(None)
+    try:
+        market = MarketData(cache, FixtureMarketSource())
+        wrong = market.quote("AAPL").value
+        cache.set("quote:MSFT", wrong, Quote, 60)
+        fetched = market.quote("MSFT")
+        assert fetched.value.snapshot.ticker == "MSFT" and not fetched.hit
+    finally:
+        cache.close()

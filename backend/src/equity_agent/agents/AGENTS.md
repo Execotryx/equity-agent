@@ -7,6 +7,8 @@ or cached model outputs, including validation performed by callers outside this 
   `payloads.py` produces compact evidence; `prompts/` contains Markdown prompts.
 - Supply preformatted financial figures. Deterministic backend code performs arithmetic; models do not calculate.
   Keep evidence payloads compact and use at most one bounded re-ask for invalid output.
+- Reject nonfinite confidence. Record every attempt's usage once, including failed re-asks and Writer failures
+  after text was emitted; preserve partial narrative text alongside its failure diagnostic.
 - Validate generated and cached risk selections against source headings: six distinct headings, nonempty text,
   verbatim references, prompt word limits and descending severity. Analyst validation must agree with its prompt too.
 - Number grounding preserves signs, including Unicode minus and currency prefixes. Token presence is diagnostic;

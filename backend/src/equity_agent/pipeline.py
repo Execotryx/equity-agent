@@ -40,6 +40,7 @@ from equity_agent.cache import FOREVER, PEERS_TTL, REPORT_TTL, Cache
 from equity_agent.config import DEFAULT_EFFORT, DEFAULT_MODELS, AgentConfig, AgentName, ScoringConfig, Settings
 from equity_agent.data import DataError, DataLayer, normalize_ticker
 from equity_agent.data.kase import issuer_key, sec_ticker
+from equity_agent.data.market import quote_matches, try_normalize_ticker
 from equity_agent.llm import Gateway, LlmClient
 from equity_agent.models import (
     AnalystView,
@@ -551,7 +552,22 @@ def _report_key(ticker: str) -> str:
 
 def cached_report(cache: Cache, ticker: str) -> ResearchReport | None:
     """The unexpired report for a normalised ticker, or None."""
-    return cache.get(_report_key(ticker), ResearchReport)
+    key = _report_key(ticker)
+    report = cache.get(key, ResearchReport)
+    if report is None:
+        return None
+    quote = Quote(snapshot=report.financials.snapshot, multiples=report.financials.multiples)
+    valid = try_normalize_ticker(report.ticker) == ticker and quote_matches(ticker, quote)
+    if isinstance(report.comps, CompsTable):
+        targets = [row for row in report.comps.rows if row.is_target]
+        valid = valid and len(targets) == 1 and try_normalize_ticker(targets[0].ticker) == ticker
+    from equity_agent.data.kase import is_kase
+    if is_kase(ticker) and report.financials.price_history:
+        valid = False
+    if not valid:
+        cache.delete(key)
+        return None
+    return report
 
 
 def clear_agent_caches(cache: Cache, ticker: str) -> None:

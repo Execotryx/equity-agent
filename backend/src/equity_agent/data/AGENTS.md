@@ -9,6 +9,13 @@ scoring, CLI/API execution, evaluation or recording workflows.
   Use that production factory in CLI, API, recording and probes.
 - Normalize native symbols before cache access. Keep native symbols and enrichment aliases as separate cache
   identities; preserve TTLs, Refresh behavior and provider resource cleanup.
+- Quote prices must be positive and finite. Numeric overflow is unusable input; parsing failures become
+  controlled provider errors so one malformed peer cannot fail its batch. Yahoo's valid alternate price is
+  permitted; KASE never substitutes another price field or venue.
+- Omit nonfinite history values and nonpositive closes while retaining zero accounts and negative earnings.
+  Malformed dates fail history through a provider error, preserving the already validated quote.
+- Synchronous cache loaders support the same optional acceptance predicate as async loaders. Reject wrong-symbol
+  quotes, native quotes without KASE provenance, and native cached histories containing trading prices.
 - Refresh SEC latest-filing lookup. Parsed content and valid risk selections remain reusable for unchanged accessions.
   Only EDGAR's `CompanyNotFoundError` means an absent company; never cache provider failures as missing filings.
   Use mapped SEC tickers for eligible US issuers and retain filing provenance.

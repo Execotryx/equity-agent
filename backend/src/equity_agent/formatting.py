@@ -6,6 +6,12 @@ non-meaningful values (a negative P/E) as missing.
 
 from __future__ import annotations
 
+import math
+
+
+def finite(value: float | None) -> float | None:
+    return value if value is not None and math.isfinite(value) else None
+
 METRIC_LABELS = {
     "pe_ttm": "P/E (ttm)",
     "pe_fwd": "Forward P/E",
@@ -25,6 +31,7 @@ MISSING = "—"
 
 
 def meaningful(metric: str, value: float | None) -> float | None:
+    value = finite(value)
     if value is None or (metric in POSITIVE_ONLY and value <= 0):
         return None
     return value
@@ -36,11 +43,14 @@ def metric_text(metric: str, value: float | None) -> str | None:
     if value is None:
         return None
     if metric in PERCENT_METRICS:
+        if finite(value * 100) is None:
+            return None
         return f"{value * 100:.1f}%"
     return f"{value:.2f}" if metric == "debt_to_equity" else f"{value:.1f}"
 
 
 def money(value: float | None, currency: str = "USD") -> str | None:
+    value = finite(value)
     if value is None:
         return None
     sign = "-" if value < 0 else ""
@@ -53,7 +63,10 @@ def money(value: float | None, currency: str = "USD") -> str | None:
 
 
 def pct_change(value: float | None) -> str | None:
-    return None if value is None else f"{value * 100:+.0f}%"
+    value = finite(value)
+    if value is None or finite(value * 100) is None:
+        return None
+    return f"{value * 100:+.0f}%"
 
 
 def truncate_words(text: str, limit: int) -> str:

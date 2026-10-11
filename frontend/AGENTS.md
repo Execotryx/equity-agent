@@ -19,6 +19,11 @@ Follow the root guide for shared contracts, generated types and change records.
 - A recoverable application SSE `error` is a `MessageEvent`, distinct from EventSource's transport error.
   Terminal events close the stream. Treat malformed JSON as a controlled failure and ignore callbacks from
   closed or superseded streams.
+- `src/lib/parseStreamEvent.ts` validates event/section shapes, array elements, finite numbers and target identity
+  before reducer dispatch. Invalid recognized events close with the controlled retry message. Unknown extra fields
+  and optional legacy provenance remain compatible; native KASE snapshots require KASE provenance and no alias history.
+- Next.js supplies decoded route parameters. Never decode them a second time: percent-containing invalid tickers
+  must reach normal ticker validation instead of crashing metadata or page rendering. Keep report views keyed by ticker.
 - Derive final progress failures from report sections, including cached reports; cache reuse does not imply success.
 - Preserve underscore tickers through validation, navigation, requests and cached/shared-run keys.
   Keep trimming, uppercasing, ten-character limits and existing class-share normalization.

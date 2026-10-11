@@ -162,6 +162,9 @@ class RoutedSource:
                     or alias.get("currency") != "USD"
                     or (alias.get("isin") is not None and alias["isin"] not in mapping.isins)):
                 raise ValueError("Yahoo listing identity or quote currency mismatch")
+            for key in ("sector", "industry", "longBusinessSummary", "recommendationKey"):
+                if alias.get(key) is not None and not isinstance(alias[key], str):
+                    raise ValueError("malformed Yahoo enrichment text")
             alias_price = _clean(alias.get("currentPrice")) or _clean(alias.get("regularMarketPrice"))
             currency = alias.get("financialCurrency")
             if not isinstance(currency, str) or len(currency) != 3 or not currency.isalpha():

@@ -13,7 +13,7 @@ from dataclasses import dataclass
 
 from equity_agent.config import ScoringConfig
 from equity_agent.data.kase import issuer_key
-from equity_agent.formatting import METRIC_LABELS, MISSING, meaningful, metric_text, pct_change
+from equity_agent.formatting import METRIC_LABELS, MISSING, finite, meaningful, metric_text, pct_change
 from equity_agent.models import (
     CompRow,
     CompsTable,
@@ -62,13 +62,14 @@ def primary_metric(metric_set: MetricSet, target: Multiples) -> str:
 
 def median_of(metric: str, peers: Iterable[Multiples]) -> float | None:
     values = [v for p in peers if (v := meaningful(metric, getattr(p, metric))) is not None]
-    return statistics.median(values) if values else None
+    return finite(statistics.median(values)) if values else None
 
 
 def pct_vs(value: float | None, median: float | None) -> float | None:
-    if value is None or median is None or median <= 0:
+    if finite(value) is None or finite(median) is None or median is None or median <= 0 or value is None:
         return None
-    return value / median - 1
+    result = finite(value / median - 1)
+    return result if result is not None and finite(result * 100) is not None else None
 
 
 # ---- peer eligibility -----------------------------------------------------------------------------------------
@@ -193,16 +194,21 @@ INSUFFICIENT = "insufficient data"
 
 
 def moving_average(prices: Sequence[PricePoint], window: int) -> float | None:
-    if len(prices) < window:
+    if window <= 0 or len(prices) < window or any(finite(p.close) is None or p.close <= 0 for p in prices[-window:]):
         return None
-    return statistics.fmean(p.close for p in prices[-window:])
+    try:
+        return finite(statistics.fmean(p.close for p in prices[-window:]))
+    except OverflowError:
+        return None
 
 
 def range_position(price: float, low: float | None, high: float | None) -> float | None:
     """0 at the 52-week low, 1 at the high."""
-    if low is None or high is None or high <= low:
+    if (finite(price) is None or finite(low) is None or finite(high) is None
+            or low is None or high is None or high <= low or finite(high - low) is None):
         return None
-    return (price - low) / (high - low)
+    result = finite((price - low) / (high - low))
+    return result if result is not None and finite(result * 100) is not None else None
 
 
 def _banded(diff: float, band: float, higher_is_better: bool) -> int:
@@ -231,11 +237,13 @@ def score_valuation(table: CompsTable, config: ScoringConfig) -> FactorScore:
 
 
 def _points_factor(name: str, metric: str, table: CompsTable, band: float) -> FactorScore:
-    target = getattr(table.target.multiples, metric)
-    median = getattr(table.median, metric)
+    target = meaningful(metric, getattr(table.target.multiples, metric))
+    median = meaningful(metric, getattr(table.median, metric))
     if target is None or median is None:
         return FactorScore(name=name, score=0, detail=INSUFFICIENT)  # type: ignore[arg-type]
     diff = target - median
+    if finite(diff) is None or finite(diff * 100) is None:
+        return FactorScore(name=name, score=0, detail=INSUFFICIENT)  # type: ignore[arg-type]
     score = _banded(diff, band, higher_is_better=True)
     return FactorScore(
         name=name,  # type: ignore[arg-type]
@@ -247,9 +255,11 @@ def _points_factor(name: str, metric: str, table: CompsTable, band: float) -> Fa
 
 def score_upside(quote: Quote, config: ScoringConfig) -> FactorScore:
     target, price = quote.analyst_target_mean, quote.snapshot.price
-    if target is None or not price:
+    if finite(target) is None or finite(price) is None or target is None or target <= 0 or price <= 0:
         return FactorScore(name="analyst_upside", score=0, detail=INSUFFICIENT)
     upside = target / price - 1
+    if finite(upside) is None or finite(upside * 100) is None:
+        return FactorScore(name="analyst_upside", score=0, detail=INSUFFICIENT)
     return FactorScore(
         name="analyst_upside",
         score=_banded(upside, config.upside_band, higher_is_better=True),  # type: ignore[arg-type]

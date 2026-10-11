@@ -1,6 +1,22 @@
 import { describe, expect, it } from "vitest";
 
+import * as formatting from "./format";
 import { metricText, money, pctChange, percent, seconds } from "./format";
+
+it.each([NaN, Infinity, -Infinity])("renders nonfinite numbers as missing: %s", (value) => {
+  expect(formatting.money(value)).toBe(formatting.MISSING);
+  expect(formatting.metricText("net_margin", value)).toBe(formatting.MISSING);
+  expect(formatting.pctChange(value)).toBe(formatting.MISSING);
+  expect(formatting.percent(value)).toBe(formatting.MISSING);
+  expect(formatting.seconds(value)).toBe(formatting.MISSING);
+  expect(formatting.usd(value)).toBe(formatting.MISSING);
+});
+
+it("omits percentages whose scaling overflows", () => {
+  expect(formatting.percent(1e308)).toBe(formatting.MISSING);
+  expect(formatting.metricText("net_margin", 1e308)).toBe(formatting.MISSING);
+  expect(formatting.pctChange(1e308)).toBe(formatting.MISSING);
+});
 
 describe("metricText", () => {
   it("formats percent metrics from fractions", () => {

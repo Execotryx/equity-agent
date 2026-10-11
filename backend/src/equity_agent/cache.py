@@ -144,15 +144,19 @@ class Cache:
         *,
         refresh: bool = False,
         store: Callable[[M], bool] | None = None,
+        accept_cached: Callable[[M], bool] | None = None,
     ) -> Fetched[M]:
         """Return the cached value, or call `loader`, store its result and return it.
 
         `refresh` skips the read but still overwrites the entry. `store` can veto caching a result
-        (for example a transient failure).
+        (for example a transient failure). `accept_cached` removes and reloads persisted values
+        that no longer satisfy application rules, just as in `afetch`.
         """
         found = self.lookup(key, tp, refresh=refresh)
         if found.value is not None:
-            return found  # type: ignore[return-value]
+            if accept_cached is None or accept_cached(found.value):
+                return found  # type: ignore[return-value]
+            self.delete(key)
         value = loader()
         if store is None or store(value):
             self.set(key, value, tp, ttl)

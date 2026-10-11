@@ -444,3 +444,39 @@ def test_invalid_equivalent_price_ratio_cannot_create_valuation_or_lose_unit_bas
     assert quote.multiples.dividend_yield is None and quote.snapshot.market_cap is None
     assert quote.analyst_target_mean == 120
     assert any("Price-sensitive valuation metrics unavailable" in warning for warning in quote.diagnostics)
+
+
+def test_oversized_native_price_is_unavailable_without_fallback():
+    raw = instrument("FRHC_KZ")
+    raw.update(price=10**400, close_price=100)
+    with pytest.raises(QuoteUnavailable):
+        kase.RoutedSource(fetch=lambda _: raw).info("FRHC_KZ")
+
+
+@pytest.mark.parametrize("field", ["sector", "industry", "longBusinessSummary", "recommendationKey"])
+def test_malformed_enrichment_text_cannot_remove_native_quote(monkeypatch, field):
+    routed, yahoo = source()
+    original = yahoo.info
+    monkeypatch.setattr(yahoo, "info", lambda ticker: {**original(ticker), field: ["malformed"]})
+    quote = parse_quote("FRHC_KZ", routed.info("FRHC_KZ"))
+    assert quote.snapshot.price == instrument("FRHC_KZ")["price"]
+    assert quote.enrichment_provenance is None
+    assert any("Issuer enrichment unavailable" in warning for warning in quote.diagnostics)
+
+
+def test_native_cache_cannot_supply_foreign_quote_or_history():
+    from datetime import date
+    from equity_agent.models import PricePoint
+    routed, _ = source()
+    cache = Cache(None)
+    try:
+        market = MarketData(cache, routed)
+        wrong = Quote(snapshot=Snapshot(ticker="FRHC_KZ", name="Foreign", price=99), multiples=Multiples())
+        cache.set("quote:FRHC_KZ", wrong, Quote, 60)
+        fetched = market.quote("FRHC_KZ")
+        assert not fetched.hit and fetched.value.snapshot.quote_provenance is not None
+        cache.set("fin:FRHC_KZ", History(prices=[PricePoint(date=date(2025, 1, 1), close=99)]), History, 60)
+        history = market.history("FRHC_KZ")
+        assert not history.hit and history.value.prices == []
+    finally:
+        cache.close()

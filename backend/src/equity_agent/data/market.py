@@ -102,7 +102,7 @@ def _clean(value: Any) -> float | None:
         return None
     try:
         number = float(value)
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
         return None
     return None if math.isnan(number) or math.isinf(number) else number
 
@@ -177,7 +177,8 @@ def parse_quote(ticker: str, raw: dict[str, Any]) -> Quote:
     """Validate and normalise a raw quote. Raises TickerNotFound or NotSupported."""
     info = DeclaredFields(raw)
     quote_type = info.get("quoteType")
-    price = _clean(info.get("currentPrice")) or _clean(info.get("regularMarketPrice"))
+    price = next((p for key in ("currentPrice", "regularMarketPrice")
+                  if (p := _clean(info.get(key))) is not None and p > 0), None)
     if quote_type is None or (quote_type == "EQUITY" and not price):
         raise TickerNotFound(ticker)
     if quote_type != "EQUITY":
@@ -228,10 +229,12 @@ def parse_quote(ticker: str, raw: dict[str, Any]) -> Quote:
 def parse_history(income: dict[str, dict[str, float | None]], closes: list[tuple[str, float]]) -> History:
     def series(row: str) -> list[YearValue]:
         values = income.get(row, {})
-        points = [YearValue(year=int(period[:4]), value=v) for period, v in values.items() if v is not None]
+        points = [YearValue(year=date.fromisoformat(period).year, value=value)
+                  for period, v in values.items() if (value := _clean(v)) is not None]
         return sorted(points, key=lambda p: p.year)[-4:]
 
-    prices = sorted((PricePoint(date=date.fromisoformat(d), close=c) for d, c in closes), key=lambda p: p.date)
+    prices = sorted((PricePoint(date=date.fromisoformat(d), close=value) for d, c in closes
+                     if (value := _clean(c)) is not None and value > 0), key=lambda p: p.date)
     return History(
         revenue=series("Total Revenue"),
         ebitda=series("EBITDA"),
@@ -250,6 +253,21 @@ def from_provider(ticker: str, call: Callable[[], T]) -> T:
         raise ProviderError(ticker, type(error).__name__) from error
 
 
+def quote_matches(ticker: str, quote: Quote) -> bool:
+    """Recheck cached quote identity and native venue boundaries without provider access."""
+    from equity_agent.data.kase import is_kase
+    snap = quote.snapshot
+    price = _clean(snap.price)
+    if try_normalize_ticker(snap.ticker) != ticker or price is None or price <= 0:
+        return False
+    if not is_kase(ticker):
+        return True  # Provenance is optional in legacy Yahoo reports.
+    provenance = snap.quote_provenance
+    return (provenance is not None and provenance.provider == "KASE" and provenance.exchange == "KASE"
+            and provenance.source_symbol.upper() == ticker and snap.currency == "USD"
+            and snap.week52_low is None and snap.week52_high is None)
+
+
 class MarketData:
     def __init__(self, cache: Cache, source: MarketSource | None = None) -> None:
         self.cache = cache
@@ -262,8 +280,9 @@ class MarketData:
             f"quote:{ticker}",
             Quote,
             QUOTE_TTL,
-            lambda: parse_quote(ticker, from_provider(ticker, lambda: self.source.info(ticker))),
+            lambda: from_provider(ticker, lambda: parse_quote(ticker, self.source.info(ticker))),
             refresh=refresh,
+            accept_cached=lambda quote: quote_matches(ticker, quote),
         )
 
     def peer_quote(self, ticker: str, *, refresh: bool = False) -> Fetched[Quote]:
@@ -274,7 +293,8 @@ class MarketData:
         """Up to 4 fiscal years of revenue, EBITDA and net income, plus 1 year of daily closes (24-hour cache)."""
         ticker = normalize_ticker(ticker)
         from equity_agent.data.kase import is_kase
-        if is_kase(ticker):
+        native = is_kase(ticker)
+        if native:
             quote = self.quote(ticker).value
             if quote.financial_currency is None or quote.enrichment_provenance is None:
                 return Fetched(History())
@@ -284,6 +304,7 @@ class MarketData:
             HISTORY_TTL,
             lambda: from_provider(ticker, lambda: parse_history(self.source.income(ticker), self.source.closes(ticker))),
             refresh=refresh,
+            accept_cached=lambda history: not native or not history.prices,
         )
 
     def peers(self, tickers: Sequence[str], *, refresh: bool = False) -> Fetched[PeerBatch]:

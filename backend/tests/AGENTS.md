@@ -12,6 +12,12 @@ Run commands below from `backend/`. Follow the root and backend guides.
   PowerShell: set `$env:RUN_LIVE_TESTS = '1'` before invoking them.
   Evidence directories below are relative to the repository root.
 
+Edge-case regressions extend the existing market, cache, scoring, agent, gateway, pipeline and KASE tests;
+`test_streaming.py` covers producer EOF, late replay and terminal cleanup without network/model dependencies.
+Use injected clocks and synchronization events for boundary/concurrency tests. First reproduce a defect, then
+verify its fix; complete pytest/Pyright and frontend gates before recording convergence. Do not regenerate
+goldens merely to make failing edge cases pass.
+
 ## KASE ordinary-share matrix
 
 The matrix is in `kase_cases.py`. Run `uv run pytest tests/test_kase_cases.py` for offline identity regressions.

@@ -23,10 +23,15 @@ payloads or generated/cached output validation. Test-specific rules live in [tes
   Exclude mapped aliases of the target from its peers.
 - Validate generated and cached risk selections against their source headings using the agent guide's full contract.
 - Missing momentum evidence remains neutral and visible. Preserve provider and enrichment diagnostics.
+- Reject cached quotes/reports whose canonical identity disagrees with their key. Native cached reports require
+  KASE provenance and no foreign price history; valid legacy Yahoo reports retain optional provenance defaults.
+- Nonfinite arithmetic becomes unavailable evidence and neutral scoring, never an infinite value in report prose.
 - A subscriber disconnect stops that subscription; the registry pump continues to cache its report.
   Shutdown stops accepting runs and cancels model work once. Drain owned tasks, background explanations and
   already-running provider threads before closing shared services. Cancellation cannot interrupt a running Python
   provider thread. Terminal SSE events close subscriptions.
+- A producer ending without a terminal event emits one pipeline error. Stop at the first terminal event and close
+  its producer; shutdown cancellation still drains owned work without caching an incomplete report.
 
 ## Verification
 
